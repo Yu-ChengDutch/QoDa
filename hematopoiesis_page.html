@@ -26,6 +26,7 @@
         function appendData(data) {
             var mainContainer = document.getElementById("myData");
             for (var i = 0; i < data.length; i++) {
+                console.log(data[i].Name);
                 var div = document.createElement("div");
                 div.innerHTML = 'Name: ' + data[i].Name;
                 mainContainer.appendChild(div);
