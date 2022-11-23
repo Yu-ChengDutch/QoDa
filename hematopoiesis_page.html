@@ -16,11 +16,11 @@
         fetch('./hematopoiesis.json')
             .then(function (response) {
                 console.log("File found and accessed")
-                console.log(data)
-                console.log("Check again")
                 return response.json();
             })
             .then(function (data) {
+                console.log(data)
+                console.log("Check again")
                 appendData(data);
             })
             .catch(function (err) {
