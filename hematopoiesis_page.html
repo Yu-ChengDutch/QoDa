@@ -12,9 +12,10 @@
 
     <div id="myData"></div>
     <script>
-        console.log("Hi")
+        console.log("Accessing JS")
         fetch('./hematopoiesis.json')
             .then(function (response) {
+                console.log("File found and accessed")
                 return response.json();
             })
             .then(function (data) {
@@ -24,6 +25,7 @@
                 console.log('error: ' + err);
             });
         function appendData(data) {
+            console.log("Accessing function appenData")
             var mainContainer = document.getElementById("myData");
             for (var i = 0; i < data.length; i++) {
                 console.log(data[i].Name);
