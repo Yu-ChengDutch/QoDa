@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
 </head>
 <body>
 
@@ -22,17 +25,33 @@
             .then(function (data) {
                 console.log(data)
 
-                name = data.Name;
-
-                console.log(name);
-
-                let html_insert = "<h4>" + name + "<h4>";
+                let html_insert = "<h4>" + data["Name"] + "<h4>";
 
                 card.innerHTML += html_insert;
+
+                card.addEventListener("click", addCards(data["Subsequent cells"]))
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
+
+        function addCards(listOfThings) {
+            for (thing in listOfThings) {
+                console.log(thing["Name"]);
+                var div = document.createElement('div');
+
+                var name = thing["Name"];
+
+                div.innerHTML = 
+                    <div class="card>">
+                        <h4>${name}</h4>
+                    </div>
+                ;
+
+                document.body.insertBefore(div, document.body.childNodes[0])
+            }
+        }
+
     </script>
 </body>
 </html>
