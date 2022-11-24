@@ -29,29 +29,27 @@
 
                 card.innerHTML += html_insert;
 
-                card.addEventListener("click", addCards(data["Subsequent cells"]))
+                card.addEventListener("click", function() {
+                    for (key in Object.keys(listOfThings)) {
+                        thing = listOfThings[key]
+                        console.log()
+                        console.log(thing["Name"]);
+                        var div = document.createElement('div');
+                        var name = thing["Name"];
+        
+                        div.innerHTML = `
+                            <div class="card">
+                                <h4>${name}</h4>
+                            </div>
+                        `;
+        
+                        document.body.insertBefore(div, document.body.childNodes[0])
+                    }
+                });
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
-
-        function addCards(listOfThings) {
-            for (key in Object.keys(listOfThings)) {
-                thing = listOfThings[key]
-                console.log()
-                console.log(thing["Name"]);
-                var div = document.createElement('div');
-                var name = thing["Name"];
-
-                div.innerHTML = `
-                    <div class="card">
-                        <h4>${name}</h4>
-                    </div>
-                `;
-
-                document.body.insertBefore(div, document.body.childNodes[0])
-            }
-        }
 
     </script>
 </body>
