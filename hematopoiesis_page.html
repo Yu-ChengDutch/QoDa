@@ -23,7 +23,10 @@
                 console.log(data)
 
                 name = data.Name;
-                let html_insert = "<h4>${name}<h4>";
+
+                console.log(name);
+
+                let html_insert = "<h4> ${name} <h4>";
 
                 card.innerHTML += html_insert;
                 appendData(data);
