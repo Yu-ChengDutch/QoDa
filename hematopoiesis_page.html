@@ -25,6 +25,8 @@
             .then(function (data) {
                 console.log(data)
 
+                console.log(data["Subsequent cells"])
+
                 let html_insert = "<h4>" + data["Name"] + "<h4>";
 
                 card.innerHTML += html_insert;
