@@ -6,13 +6,14 @@
 </head>
 <body>
 
-    <div class="card">
-        <h4><b>Hematopoiesis test</b></h4>
+    <div class="card" id="testCard">
     </div>
 
-    <div id="myData"></div>
     <script>
         console.log("Accessing JS")
+
+        card = document.getElementById('testCard');
+
         fetch('./hematopoiesis.json')
             .then(function (response) {
                 console.log("File found and accessed")
@@ -20,23 +21,16 @@
             })
             .then(function (data) {
                 console.log(data)
-                console.log("Check again")
+
+                name = data.Name;
+                let html_insert = "<h4>${name}<h4>";
+
+                card.innerHTML += html_insert;
                 appendData(data);
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
-        function appendData(data) {
-            console.log("Accessing function appenData")
-            var mainContainer = document.getElementById("myData");
-            for (var i = 0; i < data.length; i++) {
-                console.log(i)
-                console.log(data[i].Name);
-                var div = document.createElement("div");
-                div.innerHTML = 'Name: ' + data[i].Name;
-                mainContainer.appendChild(div);
-            }
-        }
     </script>
 </body>
 </html>
