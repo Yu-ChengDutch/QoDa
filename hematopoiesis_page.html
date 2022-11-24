@@ -30,14 +30,16 @@
                 card.innerHTML += html_insert;
 
                 card.addEventListener("click", addCards)
+                card.evt = data;
+
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
 
-        function addCards(data) {
-            console.log(data);
-            listOfThings = data["Subsequent cells"];
+        function addCards(evt) {
+            console.log(evt.currentTarget.data);
+            listOfThings = evt.currentTarget.data["Subsequent cells"];
             console.log(listOfThings);
             for (key in Object.keys(listOfThings)) {
                 thing = listOfThings[key]
