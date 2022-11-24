@@ -29,7 +29,7 @@
 
                 card.innerHTML += html_insert;
 
-                card.addEventListener("click", addCards.bind(null, event, data["Subsequent cells"]));
+                card.addEventListener("click", addCards.bind(null, data["Subsequent cells"]));
 
             })
             .catch(function (err) {
