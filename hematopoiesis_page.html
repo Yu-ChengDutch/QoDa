@@ -36,7 +36,9 @@
             });
 
         function addCards(data) {
+            console.log(data);
             listOfThings = data["Subsequent cells"];
+            console.log(listOfThings);
             for (key in Object.keys(listOfThings)) {
                 thing = listOfThings[key]
                 console.log()
