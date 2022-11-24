@@ -25,8 +25,6 @@
             .then(function (data) {
                 console.log(data)
 
-                console.log(data["Subsequent cells"][0])
-
                 let html_insert = "<h4>" + data["Name"] + "<h4>";
 
                 card.innerHTML += html_insert;
@@ -38,8 +36,9 @@
             });
 
         function addCards(listOfThings) {
-            for (thing in listOfThings) {
-                console.log(thing)
+            for (key in Object.keys(listOfThings)) {
+                thing = listOfThings[key]
+                console.log()
                 console.log(thing["Name"]);
                 var div = document.createElement('div');
                 var name = thing["Name"];
