@@ -29,7 +29,7 @@
 
                 card.innerHTML += html_insert;
 
-                card.addEventListener("click", addCards)
+                card.addEventListener("click", addCards(data))
             })
             .catch(function (err) {
                 console.log('error: ' + err);
