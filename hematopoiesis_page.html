@@ -15,6 +15,44 @@
         </div>
     </a>
 
+    <div class="card">
+
+        <h4>Check</h4>
+
+        <input type="text" placeholders="Type here" id="inputId" class="inputClass" onkeypress="clickPress(event);">
+
+        <h4>Check</h4>
+
+    </div>
+
+    <div id="placeholder">
+
+    </div>
+    
+    <script>
+        function clickPress(event) {
+            let inputVal = document.getElementsByClassName("inputClass")[0].value;
+
+            let card = document.getElementById('testCard');
+            
+            if (event.key == "Enter") {
+
+                var div = document.createElement('div');
+
+                div.innerHTML = `
+                    <div class="card">
+                        <h4>${inputVal}</h4>
+                    </div>
+                `;
+
+                alert(document.body.childNodes.length);
+
+                document.body.insertBefore(div, document.getElementById("placeholder"))
+
+            }
+        };
+    </script>
+
     <div class="card" id="testCard">
     </div>
 
