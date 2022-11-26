@@ -1,14 +1,25 @@
+.main-card {
+    /* Add shadows */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5vw; /* 5px rounded corners */
+    width: 70vw;
+    text-align: center;
+    padding-top:0.05px;
+    padding-bottom:0.05px;
+    margin-left: 13vw;
+    margin-top: 5vh;
+    font-size: 5vw;
+}
+
 .card {
     /* Add shadows */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5vw; /* 5px rounded corners */
-    width: 20vw;
+    width: 70vw;
     text-align: center;
-    padding-top:5vh;
-    padding-bottom: 5vh;
-    padding-left: 2vw;
-    padding-right: 2vw; 
-    margin-left: 40vw;
+    padding-top:0.05px;
+    padding-bottom:0.05px;
+    margin-left: 13vw;
     margin-top: 5vh;
     font-size: 2.5vw;
 }

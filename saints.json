@@ -1,0 +1,264 @@
+{
+    "Name": "Saints",
+    "Groups": [
+        {
+            "Name": "Confessors",
+            "Groups": [
+                {
+                    "Name": "Doctors of the church",
+                    "Saints": [
+                        {
+                            "Name": "Three Holy Hierarchs",
+                            "Saints": [
+                                {
+                                    "Name": "Saint Basil the Great",
+                                    "Life": {
+                                        "Year of birth": 330,
+                                        "Year of death": 379
+                                    },
+                                    "Canonization": {
+                                        "Year of canonization": "Pre-congregation",
+                                        "Canonizer": "Pre-congregation"
+                                    },
+                                    "Commemoration": {
+                                        "Date of commemoration": "January 2",
+                                        "Type of commemoration": "Memorial"
+                                    },
+                                    "Attributes": [
+                                        "Omophorion",
+                                        "Gospel book",
+                                        "Black beard"
+                                    ]
+                                },
+                                {
+                                    "Name": "Saint Gregory of Nazianzus",
+                                    "Life": {
+                                        "Year of birth": 329,
+                                        "Year of death": 390
+                                    },
+                                    "Canonization": {
+                                        "Year of canonization": "Pre-congregation",
+                                        "Canonizer": "Pre-congregation"
+                                    },
+                                    "Commemoration": {
+                                        "Date of commemoration": "January 2",
+                                        "Type of commemoration": "Memorial"
+                                    },
+                                    "Attributes": [
+                                        "Omophorion",
+                                        "Gospel book",
+                                        "White beard"
+                                    ],
+                                    "Patronage": [
+                                        "Canon lawyers"
+                                    ]
+                                },
+                                {
+                                    "Name": "Saint John Chrystosom",
+                                    "Life": {
+                                        "Year of birth": 347,
+                                        "Year of death": 407
+                                    },
+                                    "Canonization": {
+                                        "Year of canonization": "Pre-congregation",
+                                        "Canonizer": "Pre-congregation"
+                                    },
+                                    "Commemoration": {
+                                        "Date of commemoration": "September 13",
+                                        "Type of commemoration": "Memorial"
+                                    },
+                                    "Attributes": [
+                                        "Omophorion",
+                                        "Gospel book",
+                                        "Right hand raised in blessing",
+                                        "Emaciated",
+                                        "Beehive",
+                                        "A pan"
+                                    ],
+                                    "Patronage": [
+                                        "Education",
+                                        "Epilepsy",
+                                        "Lecturers",
+                                        "Public speakers"
+                                    ]
+                                }
+                            ]                            
+                        },
+                        {
+                            "Name": "Saint Hilary of Poitiers",
+                            "Life": {
+                                "Year of birth": 310,
+                                "Year of death": 367
+                            },
+                            "Canonization": {
+                                "Year of canonization": "Pre-congregation",
+                                "Canonizer": "Pre-congregation"
+                            },
+                            "Commemoration": {
+                                "Date of commemoration": "January 13",
+                                "Type of commemoration": "Optionalemorial"
+                            },
+                            "Attributes": "Skimming across the sea with his cape",
+                            "Patronage": [
+                                "Mitre",
+                                "Crozier",
+                                "White beard"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Saint Raymond of Penyafort",
+                    "Life": {
+                        "Year of birth": 1175,
+                        "Year of death": 1275
+                    },
+                    "Canonization": {
+                        "Year of beatification": 1542,
+                        "Beatifier": "Pope Paul III",
+                        "Year of canonization": 1601,
+                        "Canonizer": "Pope Clement VIII"
+                    },
+                    "Commemoration": {
+                        "Date of commemoration": "January 7",
+                        "Type of commemoration": "Optional memorial"
+                    },
+                    "Attributes": "Skimming across the sea with his cape",
+                    "Patronage": [
+                        "Canon lawyers"
+                    ]
+                },
+                {
+                    "Name": "Saint Anthony",
+                    "Life": {
+                        "Year of birth": 251,
+                        "Year of death": 356
+                    },
+                    "Canonization": {
+                        "Year of canonization": "Pre-congregation"
+                    },
+                    "Commemoration": {
+                        "Date of commemoration": "January 17",
+                        "Type of commemoration": "Memorial"
+                    },
+                    "Attributes": [
+                        "Bell",
+                        "Pig",
+                        "Book",
+                        "Tau cross",
+                        "Cross with bell pendant"
+                    ],
+                    "Patronage": [
+                        "Animals",
+                        "Skin diseases",
+                        "Farmers",
+                        "Butchers",
+                        "Basket makers",
+                        "Brushmakers",
+                        "Gravediggers",
+                        "Pontifical Ecclesiastical Academy Rome"
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Martyrs",
+            "Saints": [
+                {
+                    "Name": "Saint Fabian",
+                    "Life": {
+                        "Year of birth": "Unknown",
+                        "Year of death": 250
+                    },
+                    "Canonization": {
+                        "Year of canonization": "Pre-congregation"
+                    },
+                    "Commemoration": {
+                        "Date of commemoration": "January 20",
+                        "Type of commemoration": "Optional memorial"
+                    },
+                    "Attributes": [
+                        "Dove",
+                        "Papal vestments",
+                        "Papal tiara"
+                    ]
+                },
+                {
+                    "Name": "Saint Sebastian",
+                    "Life": {
+                        "Year of birth": 255,
+                        "Year of death": 288
+                    },
+                    "Commemoration": {
+                        "Date of commemoration": "January 20",
+                        "Type of commemoration": "Optional memorial"
+                    },
+                    "Attributes": [
+                        "Tied to a pole",
+                        "Shot by arrows"
+                    ],
+                    "Patronage": [
+                        "Soldiers",
+                        "Plague-stricken",
+                        "Archers",
+                        "Disabled people",
+                        "Athletes",
+                        "Cyclists"
+                    ]
+                },
+                {
+                    "Name": "Saint Agnes",
+                    "Life": {
+                        "Year of birth": 291,
+                        "Year of death": 304
+                    },
+                    "Canonization": {
+                        "Year of canonization": "Pre-congregation"
+                    },
+                    "Commemoration": {
+                        "Date of commemoration": "January 21",
+                        "Type of commemoration": "Memorial"
+                    },
+                    "Attributes": [
+                        "A lamb",
+                        "Martyr's palm"
+                    ],
+                    "Patronage": [
+                        "Girls",
+                        "Chastity",
+                        "Virgins",
+                        "Victims of sexual abuse",
+                        "Bethrothed couples",
+                        "Gardeners",
+                        "Girl guides"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "Name": "Saint Vincent"
+},
+{
+    "Name": "Saint Francis de Sales"
+},
+{
+    "Name": "Saint Paul the Apostle"
+},
+{
+    "Name": "Saint Timothy"
+},
+{
+    "Name": "Saint Titus"
+},
+{
+    "Name": "Saint Angela Merici"
+},
+{
+    "Name": "Saint Thomas Aquinas"
+},
+{
+    "Name": "Saint John Bosco"
+}
