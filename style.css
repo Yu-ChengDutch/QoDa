@@ -39,9 +39,8 @@ a {
     transition: 0.3s;
 }
 
-a:hover {
+a:hover, a:active {
     color: gray;
-    text-decoration: italic;
     transition: 0.3s;
 }
 
