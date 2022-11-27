@@ -27,6 +27,8 @@
 
             answers = {};
 
+            console.log(Object.keys(subsequent_cells));
+
             for (key in Object.keys(subsequent_cells)) {
                 answers[subsequent_cells[key].Name] = key;
             }; 
@@ -58,7 +60,7 @@
                         addQuestion(subsequent_cells, name);
                     };
                     
-                    document.getElementById(name + "_input").remove();
+                    document.getElementById(name + "_question").remove();
 
                 } else {
                     alert("Oops, this is not correct.");
@@ -102,7 +104,7 @@
             console.log(name);
             console.log(subsequent_cells);
 
-            if (document.getElementById(name) == null){
+            if (document.getElementById(name + "_question") == null){
                 var list_length = Object.keys(subsequent_cells).length.toString();
 
                 var introduction = `${name} has ${list_length} subsequent cells left.`;
