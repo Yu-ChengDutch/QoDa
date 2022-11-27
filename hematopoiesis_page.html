@@ -105,9 +105,9 @@
 
             console.log("Answers: " + answers);
 
-            div.addEventListener("keypress", clickPress().bind(answers));
-
             document.body.insertBefore(div, document.getElementById("placeholder"))
+
+            div.addEventListener("keypress", clickPress().bind(answers));            
 
         };
 
