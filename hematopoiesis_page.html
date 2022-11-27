@@ -23,7 +23,14 @@
     </div>
 
     <script>
-        function clickPress(answers) {
+        function clickPress(subsequent_cells, name) {
+
+            answers = [];
+
+            for (key in Object.keys(subsequent_cells)) {
+                answers.push(subsequent_cells[key].Name);
+            }; 
+
             console.log(answers);
 
             console.log(typeof(answers));
@@ -34,9 +41,8 @@
             
             if (event.key == "Enter") {
 
-                alert(inputVal);
-
                 if (answers.includes(inputVal)){
+                    
                     var div = document.createElement('div');
 
                     div.innerHTML = `
@@ -46,9 +52,23 @@
                     `;
 
                     document.body.insertBefore(div, document.getElementById("placeholder"));
+
+                    document.getElementById('inputId').value = ""; 
+                    
+                    subsequent_cells.delete(inputVal);
+
+                    if (Object.keys(subsequent_cells).length > 0){
+                        addQuestion(subsequent_cells, name)
+                    }
+                    
+                    document.body.removeChild(document.getElementById(name));
+
                 } else {
                     alert("Oops, this is not correct.");
-                }                
+                    document.getElementById('inputId').value = "";
+                
+                }
+                
             }
         };
     
@@ -84,13 +104,13 @@
 
             var list_length = Object.keys(subsequent_cells).length.toString();
 
-            var introduction = `${name} has ${list_length} of subsequent cells.`;
+            var introduction = `${name} has ${list_length} subsequent cells left.`;
             var question = "Please enter these, one by one.";
 
             var div = document.createElement('div');
 
             div.innerHTML=`
-                <div class="card">
+                <div class="card" id=${name}>
 
                     <h4>${introduction}</h4>
             
@@ -101,15 +121,9 @@
                 </div>
             `;
 
-            answers = [];
-
-            for (key in Object.keys(subsequent_cells)) {
-                answers.push(subsequent_cells[key].Name);
-            } 
-
             document.body.insertBefore(div, document.getElementById("placeholder"))
 
-            div.addEventListener("keypress", clickPress.bind(null, answers));            
+            div.addEventListener("keypress", clickPress.bind(null, subsequent_cells, name));            
 
         };
 
