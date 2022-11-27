@@ -48,7 +48,7 @@
                     `;
 
                     document.body.insertBefore(div, document.getElementById("placeholder"));
-                    document.getElementById(inputVal).addEventListener("click", addQuestion(subsequent_cells[answers[inputVal]]["Subsequent cells"]));
+                    div.addEventListener("click", addQuestion(subsequent_cells[answers[inputVal]]["Subsequent cells"]));
 
                     delete subsequent_cells[answers[inputVal]];
 
