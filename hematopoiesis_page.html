@@ -55,7 +55,7 @@
 
                     document.getElementById('inputId').value = ""; 
                     
-                    delete subsequent_cells(inputVal);
+                    delete subsequent_cells[inputVal];
 
                     if (Object.keys(subsequent_cells).length > 0){
                         addQuestion(subsequent_cells, name)
