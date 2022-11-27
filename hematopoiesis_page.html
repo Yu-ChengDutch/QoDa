@@ -15,14 +15,7 @@
         </div>
     </a>
 
-    <div class="card">
-
-        <h4>Check</h4>
-
-        <input type="text" placeholders="Type here" id="inputId" class="inputClass" onkeypress="clickPress(event);">
-
-        <h4>Check</h4>
-
+    <div class="card" id="initial">
     </div>
 
     <div id="placeholder">
@@ -30,34 +23,36 @@
     </div>
 
     <script>
-        function clickPress(event) {
+        function clickPress(event, answers) {
             let inputVal = document.getElementsByClassName("inputClass")[0].value;
 
             let card = document.getElementById('testCard');
+
+            console.log(answers);
             
             if (event.key == "Enter") {
+                if (answers.includes(inputVal)){
+                    var div = document.createElement('div');
 
-                var div = document.createElement('div');
+                    div.innerHTML = `
+                        <div class="card">
+                            <h4>${inputVal}</h4>
+                        </div>
+                    `;
 
-                div.innerHTML = `
-                    <div class="card">
-                        <h4>${inputVal}</h4>
-                    </div>
-                `;
-
-                document.body.insertBefore(div, document.getElementById("placeholder"));
-
+                    document.body.insertBefore(div, document.getElementById("placeholder"));
+                } else {
+                    alert("Oops, this is not correct.");
+                }                
             }
         };
+    
     </script>
-
-    <div class="card" id="testCard">
-    </div>
 
     <script>
         console.log("Accessing JS")
 
-        card = document.getElementById('testCard');
+        card = document.getElementById('initial');
 
         fetch('./hematopoiesis.json')
             .then(function (response) {
@@ -67,27 +62,47 @@
             .then(function (data) {
                 console.log(data)
 
-                loader(data);
+                var name = data["Name"];
+
+                let html_insert = "<h4>" + name + "<h4>";
+
+                card.innerHTML += html_insert;
+
+                card.addEventListener("click", addQuestion.bind(null, data["Subsequent cells"], name));
 
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
 
-        function loader(data) {
-            console.log("Now loading...");
+        function addQuestion(subsequent_cells, name) {
 
-            var div = document.createElement('div');
-            var div = data["Name"];
+            var list_length = Object.keys(subsequent_cells).length.toString();
 
-            div.innerHTML = `
+            var introduction = `${name} has ${list_length} number of subsequent cells.`;
+            var question = "Please enter these, one by one.";
+
+            var answers = [];
+
+            for (key in Object.keys(subsequent_cells)) {
+                answers.push(subsequent_cells[key].Name);
+            } 
+
+            div.innerHTML=`
                 <div class="card">
-                    <h4>${name}</h4>
+
+                    <h4>${introduction}</h4>
+            
+                    <input type="text" placeholders="Type here" id="inputId" class="inputClass" onkeypress="clickPress(event, ${answers});">
+            
+                    <h4>${question}</h4>
+            
                 </div>
             `;
 
-            document.body.insertBefore(div, document.getElementById("placeholder"));
-        }
+            document.body.insertBefore(div, document.getElementById("placeholder"))
+
+        };
 
         function addCards(listOfThings) {
             console.log(listOfThings);
