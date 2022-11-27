@@ -88,8 +88,6 @@
             var introduction = `${name} has ${list_length} of subsequent cells.`;
             var question = "Please enter these, one by one.";
 
-            var subsequent_cells = subsequent_cells;
-
             var div = document.createElement('div');
 
             div.innerHTML=`
@@ -97,7 +95,7 @@
 
                     <h4>${introduction}</h4>
             
-                    <input type="text" placeholders="Type here" id="inputId" class="inputClass" onkeypress="clickPress(event, subsequent_cells);">
+                    <input type="text" placeholders="Type here" id="inputId" class="inputClass" onkeypress="clickPress(event, ${subsequent_cells});">
             
                     <h4>${question}</h4>
             
