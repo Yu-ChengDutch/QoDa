@@ -31,10 +31,6 @@
                 answers.push(subsequent_cells[key].Name);
             }; 
 
-            console.log(answers);
-
-            console.log(typeof(answers));
-
             let inputVal = document.getElementById("inputId").value;
 
             let card = document.getElementById('testCard');
@@ -54,11 +50,11 @@
                     document.body.insertBefore(div, document.getElementById("placeholder"));
 
                     delete subsequent_cells[inputVal];
+                    console.log(subsequent_cells);
 
                     document.getElementById('inputId').value = ""; 
 
                     if (Object.keys(subsequent_cells).length > 0){
-                        console.log(subsequent_cells);
                         addQuestion(subsequent_cells, name);
                     };
                     
