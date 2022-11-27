@@ -49,10 +49,7 @@
 
                     document.body.insertBefore(div, document.getElementById("placeholder"));
 
-                    console.log(answers[inputVal]);
-                    console.log(subsequent_cells[answers[inputVal]]);
                     delete subsequent_cells[answers[inputVal]];
-                    console.log(subsequent_cells);
 
                     document.getElementById('inputId').value = ""; 
 
@@ -122,6 +119,7 @@
 
             document.body.insertBefore(div, document.getElementById("placeholder"))
 
+            console.log(subsequent_cells);
             div.addEventListener("keypress", clickPress.bind(null, subsequent_cells, name));            
 
         };
