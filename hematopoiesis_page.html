@@ -48,7 +48,7 @@
                     `;
 
                     document.body.insertBefore(div, document.getElementById("placeholder"));
-                    div.addEventListener("click", addQuestion(subsequent_cells[answers[inputVal]]["Subsequent cells"]));
+                    div.addEventListener("click", addQuestion(subsequent_cells[answers[inputVal]]["Subsequent cells"], inputVal));
 
                     delete subsequent_cells[answers[inputVal]];
 
@@ -98,6 +98,9 @@
             });
 
         function addQuestion(subsequent_cells, name) {
+
+            console.log(name);
+            console.log(subsequent_cells);
 
             var list_length = Object.keys(subsequent_cells).length.toString();
 
