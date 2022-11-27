@@ -25,23 +25,22 @@
     <script>
         function clickPress(subsequent_cells, name) {
 
-            answers = {};
-
-            console.log(Object.keys(subsequent_cells));
-
-            for (key in Object.keys(subsequent_cells)) {
-                console.log(key);
-                console.log(subsequent_cells[key]);
-                console.log(subsequent_cells[key].Name);
-                answers[subsequent_cells[key].Name] = key;
-                
-            }; 
-
             let inputVal = document.getElementById(name + "_input").value;
 
             let card = document.getElementById('testCard');
             
             if (event.key == "Enter") {
+
+                answers = {};
+
+                console.log(Object.keys(subsequent_cells));
+    
+                for (key in Object.keys(subsequent_cells)) {
+                    console.log(key);
+                    console.log(subsequent_cells[key]);
+                    console.log(subsequent_cells[key].Name);
+                    answers[subsequent_cells[key].Name] = key;
+                }; 
 
                 if (Object.keys(answers).includes(inputVal)){
                     
