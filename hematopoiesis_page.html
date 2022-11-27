@@ -37,10 +37,10 @@
                 console.log(subsequent_cells);
     
                 for (key in Object.keys(subsequent_cells)) {
-                    console.log(key);
-                    console.log(subsequent_cells[key]);
-                    console.log(subsequent_cells[key].Name);
-                    answers[subsequent_cells[key].Name] = key;
+                    if (subsequent_cells[key] != undefined) {
+                        answers[subsequent_cells[key].Name] = key;
+                    }
+                    
                 }; 
 
                 if (Object.keys(answers).includes(inputVal)){
