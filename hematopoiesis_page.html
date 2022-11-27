@@ -38,14 +38,14 @@
 
                 console.log
     
-                for (key in Object.keys(subsequent_cells)) {
+                for (let i = 0; i < Object.keys(subsequent_cells).length - 1; i++) {
 
-                    console.log(key);
-                    console.log(subsequent_cells[key]);
+                    console.log(i);
+                    console.log(subsequent_cells[i]);
 
 
-                    if (subsequent_cells[key] != undefined) {
-                        answers[subsequent_cells[key].Name] = key;
+                    if (subsequent_cells[i] != undefined) {
+                        answers[subsequent_cells[i].Name] = key;
                     }
                     
                 }; 
