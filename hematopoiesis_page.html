@@ -47,15 +47,15 @@
                         </div>
                     `;
 
-                    document.body.insertBefore(div, document.getElementById("placeholder"));
-                    div.addEventListener("click", addQuestion(subsequent_cells[answers[inputVal]]["Subsequent cells"], inputVal));
+                    document.body.insertAfter(div, document.getElementById("placeholder"));
+                    div.addEventListener("click", addQuestion(subsequent_cells[answers[inputVal]]["Subsequent cells"], inputVal, name));
 
                     delete subsequent_cells[answers[inputVal]];
 
                     document.getElementById('inputId').value = ""; 
 
                     if (Object.keys(subsequent_cells).length > 0){
-                        addQuestion(subsequent_cells, name);
+                        addQuestion(subsequent_cells, name, name);
                     };
                     
                     document.getElementById(name).remove();
@@ -90,14 +90,14 @@
 
                 card.innerHTML += html_insert;
 
-                card.addEventListener("click", addQuestion.bind(null, data["Subsequent cells"], name));
+                card.addEventListener("click", addQuestion.bind(null, data["Subsequent cells"], name, name));
 
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
 
-        function addQuestion(subsequent_cells, name) {
+        function addQuestion(subsequent_cells, name, place) {
 
             console.log(name);
             console.log(subsequent_cells);
@@ -121,7 +121,7 @@
                 </div>
             `;
 
-            document.body.insertBefore(div, document.getElementById("placeholder"))
+            document.body.insertAfter(div, document.getElementById(place))
 
             div.addEventListener("keypress", clickPress.bind(null, subsequent_cells, name));            
 
