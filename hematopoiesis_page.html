@@ -23,12 +23,18 @@
     </div>
 
     <script>
-        function clickPress(event, answers) {
+        function clickPress(event, subsequent_cells) {
             let inputVal = document.getElementsByClassName("inputClass")[0].value;
 
             let card = document.getElementById('testCard');
 
-            console.log(answers);
+            var answers = [];
+
+            for (key in Object.keys(subsequent_cells)) {
+                answers.push(subsequent_cells[key].Name);
+            } 
+
+            console.log("Answers: " + answers);
             
             if (event.key == "Enter") {
                 if (answers.includes(inputVal)){
@@ -82,12 +88,6 @@
             var introduction = `${name} has ${list_length} of subsequent cells.`;
             var question = "Please enter these, one by one.";
 
-            var answers = [];
-
-            for (key in Object.keys(subsequent_cells)) {
-                answers.push(subsequent_cells[key].Name);
-            } 
-
             var div = document.createElement('div');
 
             div.innerHTML=`
@@ -95,7 +95,7 @@
 
                     <h4>${introduction}</h4>
             
-                    <input type="text" placeholders="Type here" id="inputId" class="inputClass" onkeypress="clickPress(event, ${answers});">
+                    <input type="text" placeholders="Type here" id="inputId" class="inputClass" onkeypress="clickPress(event, subsequent_cells);">
             
                     <h4>${question}</h4>
             
