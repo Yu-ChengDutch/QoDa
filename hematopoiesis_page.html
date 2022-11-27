@@ -25,10 +25,10 @@
     <script>
         function clickPress(subsequent_cells, name) {
 
-            answers = [];
+            answers = {};
 
             for (key in Object.keys(subsequent_cells)) {
-                answers.push(subsequent_cells[key].Name);
+                answers.put(subsequent_cells[key].Name, key);
             }; 
 
             let inputVal = document.getElementById("inputId").value;
@@ -37,7 +37,7 @@
             
             if (event.key == "Enter") {
 
-                if (answers.includes(inputVal)){
+                if (Object.keys(answers).includes(inputVal)){
                     
                     var div = document.createElement('div');
 
@@ -49,8 +49,8 @@
 
                     document.body.insertBefore(div, document.getElementById("placeholder"));
 
-                    console.log(inputVal);
-                    console.log(subsequent_cells[inputVal]);
+                    console.log(answers[inputVal]);
+                    console.log(subsequent_cells[answers[inputVal]]);
                     delete subsequent_cells[inputVal];
                     console.log(subsequent_cells);
 
