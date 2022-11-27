@@ -102,7 +102,7 @@
             console.log(name);
             console.log(subsequent_cells);
 
-            if (document.findElementById(name) == null){
+            if (document.getElementById(name) == null){
                 var list_length = Object.keys(subsequent_cells).length.toString();
 
                 var introduction = `${name} has ${list_length} subsequent cells left.`;
