@@ -47,15 +47,15 @@
                         </div>
                     `;
 
-                    document.body.insertAfter(div, document.getElementById("placeholder"));
-                    div.addEventListener("click", addQuestion(subsequent_cells[answers[inputVal]]["Subsequent cells"], inputVal, name));
+                    document.body.insertBefore(div, document.getElementById("placeholder"));
+                    div.addEventListener("click", addQuestion.bind(null, subsequent_cells[answers[inputVal]]["Subsequent cells"], inputVal));
 
                     delete subsequent_cells[answers[inputVal]];
 
                     document.getElementById('inputId').value = ""; 
 
                     if (Object.keys(subsequent_cells).length > 0){
-                        addQuestion(subsequent_cells, name, name);
+                        addQuestion(subsequent_cells, name);
                     };
                     
                     document.getElementById(name).remove();
@@ -82,7 +82,7 @@
                 return response.json();
             })
             .then(function (data) {
-                console.log(data)
+                console.log(data);
 
                 var name = data["Name"];
 
@@ -90,14 +90,14 @@
 
                 card.innerHTML += html_insert;
 
-                card.addEventListener("click", addQuestion.bind(null, data["Subsequent cells"], name, name));
+                card.addEventListener("click", addQuestion.bind(null, data["Subsequent cells"], name));
 
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
 
-        function addQuestion(subsequent_cells, name, place) {
+        function addQuestion(subsequent_cells, name) {
 
             console.log(name);
             console.log(subsequent_cells);
@@ -121,7 +121,7 @@
                 </div>
             `;
 
-            document.body.insertAfter(div, document.getElementById(place))
+            document.body.insertBefore(div, document.getElementById("placeholder"));
 
             div.addEventListener("keypress", clickPress.bind(null, subsequent_cells, name));            
 
