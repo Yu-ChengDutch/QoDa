@@ -26,6 +26,8 @@
         function clickPress(answers) {
             console.log(answers);
 
+            console.log(typeof(answers));
+
             let inputVal = document.getElementById("inputId").value;
 
             let card = document.getElementById('testCard');
@@ -34,7 +36,7 @@
 
                 alert(inputVal);
 
-                if (answers.has(inputVal)){
+                if (answers.includes(inputVal)){
                     var div = document.createElement('div');
 
                     div.innerHTML = `
