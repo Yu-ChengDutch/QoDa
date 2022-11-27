@@ -102,29 +102,31 @@
             console.log(name);
             console.log(subsequent_cells);
 
-            var list_length = Object.keys(subsequent_cells).length.toString();
+            if (document.findElementById(name) == null){
+                var list_length = Object.keys(subsequent_cells).length.toString();
 
-            var introduction = `${name} has ${list_length} subsequent cells left.`;
-            var question = "Please enter these, one by one.";
+                var introduction = `${name} has ${list_length} subsequent cells left.`;
+                var question = "Please enter these, one by one.";
 
-            var div = document.createElement('div');
+                var div = document.createElement('div');
 
-            div.innerHTML=`
-                <div class="card" id=${name}>
+                div.innerHTML=`
+                    <div class="card" id=${name}>
 
-                    <h4>${introduction}</h4>
-            
-                    <input type="text" placeholders="Type here" id="inputId" class="inputClass">
-            
-                    <h4>${question}</h4>
-            
-                </div>
-            `;
+                        <h4>${introduction}</h4>
+                
+                        <input type="text" placeholders="Type here" id="inputId" class="inputClass">
+                
+                        <h4>${question}</h4>
+                
+                    </div>
+                `;
 
-            document.body.insertBefore(div, document.getElementById("placeholder"));
+                document.body.insertBefore(div, document.getElementById("placeholder"));
 
-            div.addEventListener("keypress", clickPress.bind(null, subsequent_cells, name));            
+                div.addEventListener("keypress", clickPress.bind(null, subsequent_cells, name));            
 
+            };
         };
 
         function addCards(listOfThings) {
