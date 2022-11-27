@@ -23,7 +23,7 @@
     </div>
 
     <script>
-        function clickPress(answers) {
+        function clickPress(event, answers) {
             console.log(answers);
 
             console.log(typeof(answers));
@@ -101,7 +101,7 @@
                 </div>
             `;
 
-            var answers = [];
+            answers = [];
 
             for (key in Object.keys(subsequent_cells)) {
                 answers.push(subsequent_cells[key].Name);
@@ -109,7 +109,7 @@
 
             document.body.insertBefore(div, document.getElementById("placeholder"))
 
-            div.addEventListener("keypress", clickPress.bind(answers));            
+            div.addEventListener("keypress", clickPress.bind(event, answers));            
 
         };
 
