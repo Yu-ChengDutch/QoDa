@@ -24,7 +24,6 @@
 
     <script>
         function clickPress(answers) {
-            console.log("Click function correctly loaded!");
             console.log(answers);
 
             let inputVal = document.getElementById("inputId").value;
@@ -32,7 +31,10 @@
             let card = document.getElementById('testCard');
             
             if (event.key == "Enter") {
-                if (answers.includes(inputVal)){
+
+                alert(inputVal);
+
+                if (answers.has(inputVal)){
                     var div = document.createElement('div');
 
                     div.innerHTML = `
@@ -102,8 +104,6 @@
             for (key in Object.keys(subsequent_cells)) {
                 answers.push(subsequent_cells[key].Name);
             } 
-
-            console.log("Answers: " + answers);
 
             document.body.insertBefore(div, document.getElementById("placeholder"))
 
