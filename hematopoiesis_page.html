@@ -28,7 +28,7 @@
             answers = {};
 
             for (key in Object.keys(subsequent_cells)) {
-                answers.put(subsequent_cells[key].Name, key);
+                answers[subsequent_cells[key].Name] = key;
             }; 
 
             let inputVal = document.getElementById("inputId").value;
