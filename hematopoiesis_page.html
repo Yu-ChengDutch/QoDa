@@ -42,12 +42,13 @@
                     var div = document.createElement('div');
 
                     div.innerHTML = `
-                        <div class="card">
+                        <div class="card" id=${inputVal}>
                             <h4>${inputVal}</h4>
                         </div>
                     `;
 
                     document.body.insertBefore(div, document.getElementById("placeholder"));
+                    document.getElementById(inputVal).addEventListener("click", addQuestion(subsequent_cells[answers[inputVal]]["Subsequent cells"]));
 
                     delete subsequent_cells[answers[inputVal]];
 
@@ -119,7 +120,6 @@
 
             document.body.insertBefore(div, document.getElementById("placeholder"))
 
-            console.log(subsequent_cells);
             div.addEventListener("keypress", clickPress.bind(null, subsequent_cells, name));            
 
         };
