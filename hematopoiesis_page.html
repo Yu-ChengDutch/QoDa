@@ -67,16 +67,27 @@
             .then(function (data) {
                 console.log(data)
 
-                let html_insert = "<h4>" + data["Name"] + "<h4>";
-
-                card.innerHTML += html_insert;
-
-                card.addEventListener("click", addCards.bind(null, data["Subsequent cells"]));
+                loader(data);
 
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
+
+        function loader(data) {
+            console.log("Now loading...");
+
+            var div = document.createElement('div');
+            var div = data["Name"];
+
+            div.innerHTML = `
+                <div class="card">
+                    <h4>${name}</h4>
+                </div>
+            `;
+
+            document.body.insertBefore(div, document.body.getElementById("placeholder"));
+        }
 
         function addCards(listOfThings) {
             console.log(listOfThings);
