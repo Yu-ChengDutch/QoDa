@@ -31,15 +31,13 @@
                 answers[subsequent_cells[key].Name] = key;
             }; 
 
-            let inputVal = document.getElementById(name + "_inputId").value;
+            let inputVal = document.getElementById(name + "_input").value;
 
             let card = document.getElementById('testCard');
             
             if (event.key == "Enter") {
 
                 if (Object.keys(answers).includes(inputVal)){
-
-                    console.log(name);
                     
                     var div = document.createElement('div');
 
@@ -54,18 +52,17 @@
 
                     delete subsequent_cells[answers[inputVal]];
 
-                    document.getElementById(name + "_inputId").value = ""; 
+                    document.getElementById(name + "_input").value = ""; 
 
                     if (Object.keys(subsequent_cells).length > 0){
                         addQuestion(subsequent_cells, name);
                     };
                     
-                    console.log(name);
-                    document.getElementById(name).remove();
+                    document.getElementById(name + "_input").remove();
 
                 } else {
                     alert("Oops, this is not correct.");
-                    document.getElementById(name + "_inputId").value = "";
+                    document.getElementById(name + "_input").value = "";
                 
                 }
                 
@@ -118,7 +115,7 @@
 
                         <h4>${introduction}</h4>
                 
-                        <input type="text" placeholders="Type here" id=${name + "_inputId"} class="inputClass">
+                        <input type="text" placeholders="Type here" id=${name + "_input"} class="inputClass">
                 
                         <h4>${question}</h4>
                 
