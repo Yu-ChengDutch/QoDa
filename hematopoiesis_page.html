@@ -23,21 +23,13 @@
     </div>
 
     <script>
-        function clickPress(event,name) {
+        function clickPress(answers) {
             console.log("Click function correctly loaded!");
-            console.log(name);
+            console.log(answers);
 
             let inputVal = document.getElementById("inputId").value;
 
             let card = document.getElementById('testCard');
-
-            var answers = [];
-
-            for (key in Object.keys(subsequent_cells)) {
-                answers.push(subsequent_cells[key].Name);
-            } 
-
-            console.log("Answers: " + answers);
             
             if (event.key == "Enter") {
                 if (answers.includes(inputVal)){
@@ -98,12 +90,22 @@
 
                     <h4>${introduction}</h4>
             
-                    <input type="text" placeholders="Type here" id="inputId" class="inputClass" onkeypress="clickPress(event, ${name});">
+                    <input type="text" placeholders="Type here" id="inputId" class="inputClass">
             
                     <h4>${question}</h4>
             
                 </div>
             `;
+
+            var answers = [];
+
+            for (key in Object.keys(subsequent_cells)) {
+                answers.push(subsequent_cells[key].Name);
+            } 
+
+            console.log("Answers: " + answers);
+
+            div.addEventListener("keypress", clickPress().bind(answers));
 
             document.body.insertBefore(div, document.getElementById("placeholder"))
 
