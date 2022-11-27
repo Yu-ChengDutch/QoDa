@@ -23,7 +23,7 @@
     </div>
 
     <script>
-        function clickPress(event, answers) {
+        function clickPress(answers) {
             console.log(answers);
 
             console.log(typeof(answers));
@@ -109,7 +109,7 @@
 
             document.body.insertBefore(div, document.getElementById("placeholder"))
 
-            div.addEventListener("keypress", clickPress.bind(event, answers));            
+            div.addEventListener("keypress", clickPress.bind(null, answers));            
 
         };
 
