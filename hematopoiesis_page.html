@@ -58,10 +58,11 @@
                     delete subsequent_cells[inputVal];
 
                     if (Object.keys(subsequent_cells).length > 0){
-                        addQuestion(subsequent_cells, name)
-                    }
+                        console.log(subsequent_cells);
+                        addQuestion(subsequent_cells, name);
+                    };
                     
-                    document.body.removeChild(document.getElementById(name));
+                    document.getElementById(name).remove();
 
                 } else {
                     alert("Oops, this is not correct.");
