@@ -23,7 +23,7 @@
     </div>
 
     <script>
-        function clickPress(event, [subsequent_cells]) {
+        function clickPress(event) {
             console.log("Click function correctly loaded!");
 
             let inputVal = document.getElementsById("inputId").value;
@@ -97,7 +97,7 @@
 
                     <h4>${introduction}</h4>
             
-                    <input type="text" placeholders="Type here" id="inputId" class="inputClass" onkeypress="clickPress(event, ${[subsequent_cells]});">
+                    <input type="text" placeholders="Type here" id="inputId" class="inputClass" onkeypress="clickPress(event);">
             
                     <h4>${question}</h4>
             
