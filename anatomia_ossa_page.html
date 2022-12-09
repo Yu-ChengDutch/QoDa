@@ -85,8 +85,10 @@
             let given_answer = document.getElementById("input").value;
             
             if (prompt == "Division") {
-                let true_answer = (cell.Division).Name
+                true_answer_base = cell.Division;
             }
+
+            true_answer = true_answer_base.Name;
             
             if (event.key == "Enter") {
                 if (given_answer == true_answer) {
