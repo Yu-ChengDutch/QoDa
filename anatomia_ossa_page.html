@@ -21,11 +21,13 @@
 
         fetch('./anatomia_ossa.json')
             .then(function(response){
-                console.log("File found and accessed")
+                console.log("File found and accessed");
                 return response.json();
             })
             .then(function(data){
-                addCard(data.Name)
+                console.log("Accesing file: ");
+                console.log(data.Name);
+                addCard(data.Name);
             })
 
         /* This function adds cards */
