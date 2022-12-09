@@ -62,7 +62,7 @@
             }
 
             div.innerHTML=`
-                    <div class="card" id=${name + "_question"}>
+                    <div class="card" id="question"}>
 
                         <h4>${introduction}</h4>
                 
@@ -81,13 +81,20 @@
         /* This function checks the answer */
 
         function answer_checker(cell, prompt) {
-
-            console.log(cell.Name);
             
-            let inputVal = document.getElementById("input").value;
+            let given_answer = document.getElementById("input").value;
+            
+            if (prompt == "Division") {
+                let true_answer = cell.Division.Name
+            }
             
             if (event.key == "Enter") {
-                console.log(inputVal);
+                if (given_answer == true_answer) {
+                    document.getElementById("question").remove();
+                } else {
+                    console.log("Given answer: " + given_answer);
+                    console.log("True answer: " + true_answer);
+                }
             }
         }
 
