@@ -32,6 +32,7 @@
         /* This function adds cards */
         
         function addCard(name_par){
+            console.log("Adding card: " + name_par);
             var div = document.createElement('div');
             var name = name_par;
 
@@ -41,7 +42,8 @@
                 </div>
             `;
 
-            document.body.insertBefore(div, document.getElementById("placeholder"));          
+            document.body.insertBefore(div, document.getElementById("placeholder"));
+            console.log("Added card: " + name);          
         }
     </script>
 </body>
