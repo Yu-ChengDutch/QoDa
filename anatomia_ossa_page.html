@@ -25,16 +25,15 @@
                 return response.json();
             })
             .then(function(data){
-                console.log("Accesing file: ");
-                console.log(data.Name);
+                console.log("Accesing file: " + data.Name);
                 addCard(data.Name);
             })
 
         /* This function adds cards */
         
-        function addCard(name){
+        function addCard(name_par){
             var div = document.createElement('div');
-            var name = name;
+            var name = name_par;
 
             div.innerHTML = `
                 <div class="card">
@@ -42,7 +41,7 @@
                 </div>
             `;
 
-            document.body.insertBefore(div, document.body.childNodes[0])
+            document.body.insertBefore(div, document.getElementById("placeholder"));          
         }
     </script>
 </body>
