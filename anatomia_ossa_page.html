@@ -81,10 +81,10 @@
         /* This function checks the answer */
 
         function answer_checker(cell, prompt) {
+
+            console.log(cell.Name)
             
             let inputVal = document.getElementById(cell.Name + "_input").value;
-
-            let card = document.getElementById('testCard');
             
             if (event.key == "Enter") {
                 console.log(inputVal);
