@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+
+    <a style="display:blcok" href="./index.html">
+        <div class="main-card">
+            <h4><b>Hematopoiesis</b></h4>
+        </div>
+    </a>
+
+    <div class="card" id="initial">
+    </div>
+
+    <div id="placeholder">
+
+    </div>
+
+    <script>
+        function clickPress(subsequent_cells, name) {
+
+            let inputVal = document.getElementById(name + "_input").value;
+
+            let card = document.getElementById('testCard');
+            
+            if (event.key == "Enter") {
+
+                answers = {};
+    
+                for (cell in subsequent_cells) {
+                    answers[cell.Name] = cell;
+                    console.log(cell.Name);
+                }; 
+
+                if (Object.keys(answers).includes(inputVal)){
+                    
+                    var div = document.createElement('div');
+
+                    div.innerHTML = `
+                        <div class="card" id=${inputVal + "_card"}>
+                            <h4>${inputVal}</h4>
+                        </div>
+                    `;
+
+                    document.body.insertBefore(div, document.getElementById("placeholder"));
+                    div.addEventListener("click", addQuestion.bind(null, subsequent_cells[answers[inputVal]], inputVal));
+
+                    let new_subsequent_cells = [];
+
+                    for (cell in subsequent_cells) {
+                        if (cell != answers[inputVal]){
+                            new_subsequent_cells.push(cell);
+                        }
+                    }
+
+                    document.getElementById(name + "_input").value = ""; 
+
+                    if (subsequent_cells.length > 0){
+                        addQuestion(subsequent_cells, name);
+                    };
+                    
+                    document.getElementById(name + "_question").remove();
+
+                } else {
+                    alert("Oops, this is not correct.");
+                    document.getElementById(name + "_input").value = "";
+                
+                }
+                
+            }
+        };
+    
+    </script>
+
+    <script>
+        console.log("Accessing JS")
+
+        card = document.getElementById('initial');
+
+        fetch('./anatomia_ossa.json')
+            .then(function (response) {
+                console.log("File found and accessed")
+                return response.json();
+            })
+            .then(function (data) {
+                console.log(data);
+
+                var name = data["Name"];
+
+                let html_insert = "<h4>" + name + "<h4>";
+
+                card.innerHTML += html_insert;
+
+                card.addEventListener("click", addQuestion.bind(null, data["Subsequent cells"], name));
+
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        function addQuestion(subsequent_cells, name) {
+
+            console.log(name);
+            console.log(subsequent_cells);
+
+            if (document.getElementById(name + "_question") == null){
+                var list_length = Object.keys(subsequent_cells).length.toString();
+
+                var introduction = `${name} has ${list_length} subsequent cells left.`;
+                var question = "Please enter these, one by one.";
+
+                var div = document.createElement('div');
+
+                div.innerHTML=`
+                    <div class="card" id=${name + "_question"}>
+
+                        <h4>${introduction}</h4>
+                
+                        <input type="text" placeholders="Type here" id=${name + "_input"} class="inputClass">
+                
+                        <h4>${question}</h4>
+                
+                    </div>
+                `;
+
+                document.body.insertBefore(div, document.getElementById("placeholder"));
+
+                div.addEventListener("keypress", clickPress.bind(null, subsequent_cells, name));            
+
+            };
+        };
+
+        function addCards(listOfThings) {
+            console.log(listOfThings);
+            for (key in Object.keys(listOfThings)) {
+                thing = listOfThings[key]
+                console.log()
+                console.log(thing["Name"]);
+                var div = document.createElement('div');
+                var name = thing["Name"];
+
+                div.innerHTML = `
+                    <div class="card">
+                        <h4>${name}</h4>
+                    </div>
+                `;
+
+                document.body.insertBefore(div, document.body.childNodes[0])
+            }
+        }
+
+    </script>
+</body>
+</html>

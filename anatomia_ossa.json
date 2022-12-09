@@ -1,0 +1,34 @@
+{
+    "Name": "Human body",
+    "Division": {
+        "Name": "Anatomical regions",
+        "Anatomical regions": [
+            {
+                "Name": "Bones of the head"
+            },
+            {
+                "Name": "Bones of the spine"
+            },
+            {
+                "Name": "Bones of the thorax"
+            },
+            {
+                "Name": "Bones of the pelvis",
+                "Division": {
+                    "Name": "Individual bones",
+                    "Individual bones": [
+                        {
+                            "Name": "Pelvic bone"
+                        }
+                    ]
+                }
+            },
+            {
+                "Name": "Bones of the upper extremity"
+            },
+            {
+                "Name": "Bones of the lower extremity"
+            }
+        ]
+    }
+}
