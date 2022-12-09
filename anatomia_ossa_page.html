@@ -26,15 +26,14 @@
             })
             .then(function(data){
                 console.log("Accesing file: " + data.Name);
-                addCard(data.Name);
+                addCard_plain(data);
             })
 
         /* This function adds cards */
         
-        function addCard(name_par){
-            console.log("Adding card: " + name_par);
+        function addCard_plain(cell){
             var div = document.createElement('div');
-            var name = name_par;
+            var name = cell.Name;
 
             div.innerHTML = `
                 <div class="card">
@@ -42,9 +41,55 @@
                 </div>
             `;
 
-            document.body.insertBefore(div, document.getElementById("placeholder"));
-            console.log("Added card: " + name);          
+            document.body.insertBefore(div, document.body.childNodes[0]);
+            
+            if ("Division" in Object.Keys(cell)){
+                div.addEventListener("click", addCard_question.bind(null, cell, "Division"));
+            } 
+
         }
+
+        /* This function adds question cards */
+
+        function addCard_question(cell, prompt){
+
+            var div = document.createElement('div');
+            var name = cell.Name;
+
+            if (prompt == "Division") {
+                var introduction = `${name} is divided in what?`;
+                var question = "Please enter the answer";
+            }
+
+            div.innerHTML=`
+                    <div class="card" id=${name + "_question"}>
+
+                        <h4>${introduction}</h4>
+                
+                        <input type="text" placeholders="Type here" id=${name + "_input"} class="inputClass">
+                
+                        <h4>${question}</h4>
+                
+                    </div>
+                `;
+
+            document.body.insertBefore(div, document.body.childNodes[0]);
+            
+            div.addEventListener("keypress", answer_checker.bind(null, cell, "Division"));
+        }
+
+        /* This function checks the answer */
+
+        function answer_checker(cell, prompt) {
+            let inputVal = document.getElementById(name + "_input").value;
+
+            let card = document.getElementById('testCard');
+            
+            if (event.key == "Enter") {
+                console.log(inputVal);
+            }
+        }
+
     </script>
 </body>
 </html>
