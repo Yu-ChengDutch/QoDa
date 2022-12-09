@@ -32,26 +32,11 @@
             if (event.key == "Enter") {
 
                 answers = {};
-
-                console.log(Object.keys(subsequent_cells));
-                console.log(subsequent_cells);
-
-                console.log
     
-                for (let i = 0; i < Object.keys(subsequent_cells).length - 1; i++) {
-
-                    console.log(i);
-                    console.log(Object.keys(subsequent_cells)[i]);
-                    console.log(subsequent_cells[Object.keys(subsequent_cells)[i]]);
-
-
-                    if (subsequent_cells[Object.keys(subsequent_cells)[i]] != undefined) {
-                        answers[subsequent_cells[Object.keys(subsequent_cells)[i]].Name] = Object.keys(subsequent_cells)[i];
-                    }
-                    
+                for (cell in subsequent_cells) {
+                    answers[cell.Name] = cell;
+                    console.log(cell.Name);
                 }; 
-
-                console.log(answers);
 
                 if (Object.keys(answers).includes(inputVal)){
                     
@@ -64,13 +49,19 @@
                     `;
 
                     document.body.insertBefore(div, document.getElementById("placeholder"));
-                    div.addEventListener("click", addQuestion.bind(null, subsequent_cells[answers[inputVal]]["Subsequent cells"], inputVal));
+                    div.addEventListener("click", addQuestion.bind(null, subsequent_cells[answers[inputVal]], inputVal));
 
-                    delete subsequent_cells[answers[inputVal]];
+                    let new_subsequent_cells = [];
+
+                    for (cell in subsequent_cells) {
+                        if (cell != answers[inputVal]){
+                            new_subsequent_cells.push(cell);
+                        }
+                    }
 
                     document.getElementById(name + "_input").value = ""; 
 
-                    if (Object.keys(subsequent_cells).length > 0){
+                    if (subsequent_cells.length > 0){
                         addQuestion(subsequent_cells, name);
                     };
                     
