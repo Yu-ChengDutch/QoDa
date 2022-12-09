@@ -17,11 +17,31 @@
     </div>
 
     <script>
+        /* This initialises the whole thing */
+
         fetch('./anatomia_ossa.json')
             .then(function(response){
                 console.log("File found and accessed")
                 return response.json();
             })
+            .then(function(data){
+                addCard(data.Name)
+            })
+
+        /* This function adds cards */
+        
+        function addCard(name){
+            var div = document.createElement('div');
+            var name = name;
+
+            div.innerHTML = `
+                <div class="card">
+                    <h4>${name}</h4>
+                </div>
+            `;
+
+            document.body.insertBefore(div, document.body.childNodes[0])
+        }
     </script>
 </body>
 </html>
