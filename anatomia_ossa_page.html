@@ -82,7 +82,8 @@
 
         function answer_checker(cell, prompt) {
 
-            console.log(cell.Name)
+            console.log(cell.Name);
+            console.log(document.getElementById(cell.Name + "_input"));
             
             let inputVal = document.getElementById(cell.Name + "_input").value;
             
