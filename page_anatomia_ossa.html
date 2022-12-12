@@ -125,8 +125,6 @@
 
         function delete_card_list(levels) {
 
-            console.log(levels);
-
             true_answers = {};
 
             for (let i = 0; i < levels.length; i++) {
@@ -136,10 +134,15 @@
             let given_answer = document.getElementById("input").value;
         
             if (event.key == "Enter") {
+                console.log(levels);
+
                 if (Object.keys(true_answers).includes(given_answer)) {
                     document.getElementById("question").remove();
                     add_card_plain(levels[true_answers[given_answer]]);
                     levels.splice(true_answers[given_answer], 1);
+
+                    console.log(levels);
+
                     add_card_levels(levels);
                     console.log("Deleting card...")
                 } else {
