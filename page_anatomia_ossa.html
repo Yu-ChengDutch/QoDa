@@ -90,12 +90,14 @@
                     </div>
                 `;
 
-            if (document.body.contains(document.getElementById(precursor))) {
-                insertAfter(div, document.getElementById(precursor));
-            } else {
-                document.body.insertBefore(div, document.body.childNodes[0]);
-            };         
-
+            if (!document.body.contains(document.getElementById("question"))){
+                if (document.body.contains(document.getElementById(precursor))) {
+                    insertAfter(div, document.getElementById(precursor));
+                } else {
+                    document.body.insertBefore(div, document.body.childNodes[0]);
+                };   
+            }
+                  
             div.addEventListener("keypress", delete_card_division.bind(null, cell.Division, precursor));
 
         }
