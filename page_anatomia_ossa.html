@@ -19,19 +19,19 @@
     <script>
         /* This initialises the whole JS script */
 
-        fetch('./anatomia_ossa.json')
+        fetch('./data_anatomia_ossa.json')
             .then(function(response){
                 console.log("File found and accessed");
                 return response.json();
             })
             .then(function(data){
                 console.log("Accesing file: " + data.Name);
-                addCard_plain(data);
+                add_card_plain(data);
             })
 
         /* This function adds cards */
         
-        function addCard_plain(cell){
+        function add_card_plain(cell){
             var div = document.createElement('div');
             var name = cell.Name;
 
@@ -44,14 +44,14 @@
             document.body.insertBefore(div, document.body.childNodes[0]);
             
             if (Object.keys(cell).includes("Division")){
-                div.addEventListener("click", add_card_division_question.bind(null, cell));
+                div.addEventListener("click", add_card_division.bind(null, cell));
             } 
 
         }
 
         /* This function adds question cards */
 
-        function add_card_division_question(cell){
+        function add_card_division(cell){
 
             var div = document.createElement('div');
             var name = cell.Name;
