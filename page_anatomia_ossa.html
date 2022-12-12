@@ -78,11 +78,12 @@
 
             if (document.body.contains(document.getElementById("question"))) {
                 document.body.insertAfter(div, document.getElementById("question"));
-                div.addEventListener("keypress", delete_card_plain.bind(null, cell.Division));
             } else {
                 document.body.insertBefore(div, document.body.childNodes[0]);
-                div.addEventListener("keypress", delete_card_plain.bind(null, cell.Division));
             };
+
+            div.addEventListener("keypress", delete_card_plain.bind(null, cell.Division));
+
         }
 
         function add_card_levels(cell){
@@ -109,7 +110,8 @@
 
             if (document.body.contains(document.getElementById("question"))) {
                 document.body.insertAfter(div, document.getElementById("question"));
-                div.addEventListener("keypress", delete_card_plain.bind(null, cell.Division));
+            } else {
+                document.body.insertBefore(div, document.body.childNodes[0]);
             };
             
             div.addEventListener("keypress", delete_card_list.bind(null, cell));
@@ -167,6 +169,7 @@
         }
 
         function insertAfter(newNode, existingNode) {
+            console.log("Inserting after...");
             existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
         }
 
