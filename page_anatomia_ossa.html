@@ -84,8 +84,8 @@
                     </div>
                 `;
 
-            if (document.body.contains(document.getElementById(cell.Name))) {
-                insertAfter(div, document.getElementById(cell.Name));
+            if (document.body.contains(document.getElementById(precursor))) {
+                insertAfter(div, document.getElementById(precursor));
             } else {
                 document.body.insertBefore(div, document.body.childNodes[0]);
             };
