@@ -84,11 +84,15 @@
                     </div>
                 `;
 
-            if (document.body.contains(document.getElementById(precursor))) {
-                insertAfter(div, document.getElementById(precursor));
+            if (!document.body.contains(document.getElementById("question"))) {
+                if (document.body.contains(document.getElementById(precursor))) {
+                    insertAfter(div, document.getElementById(precursor));
+                } else {
+                    document.body.insertBefore(div, document.body.childNodes[0]);
+                };
             } else {
-                document.body.insertBefore(div, document.body.childNodes[0]);
-            };
+                console.log("Oops, there's already a question to solve!");
+            }            
 
             div.addEventListener("keypress", delete_card_division.bind(null, cell.Division, precursor));
 
