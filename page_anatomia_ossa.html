@@ -81,7 +81,7 @@
 
             let true_answer = true_answer_base.Name; 
             
-            div.addEventListener("keypress", function(event, given_answer, true_answer) {
+            div.addEventListener("keypress", (event, given_answer, true_answer) => {
 
                 console.log(given_answer);
                 console.log(true_answer);
