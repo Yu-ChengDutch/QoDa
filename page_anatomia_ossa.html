@@ -57,7 +57,9 @@
 
             if (Object.keys(cell).includes("Division")){
                 div.addEventListener("click", add_question_division.bind(null, cell, id));
-            } 
+            } else {
+                div.addEventListener("click", delete_card_plain.bind(null, cell, id));
+            }
 
         }
 
@@ -178,6 +180,10 @@
                     console.log("True answer: " + JSON.stringify(true_answers));
                 }
             }
+        }
+
+        function delete_card_plain(cell, id) {
+            document.getElementById(id).remove();
         }
 
         function insertAfter(newNode, existingNode) {
