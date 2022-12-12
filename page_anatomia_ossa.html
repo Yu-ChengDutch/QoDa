@@ -102,7 +102,7 @@
 
             document.body.insertBefore(div, document.body.childNodes[0]);
             
-            div.addEventListener("keypress", delete_card_list.bind(null, cell.Levels));
+            div.addEventListener("keypress", delete_card_list.bind(null, cell));
         }
 
 
@@ -123,7 +123,9 @@
             }
         }
 
-        function delete_card_list(levels) {
+        function delete_card_list(cell) {
+
+            levels = cell.Levels;
 
             true_answers = {};
 
@@ -143,7 +145,7 @@
 
                     console.log(levels);
 
-                    add_card_levels(levels);
+                    add_card_levels({"Name": cell.Name, "Levels": levels});
                     console.log("Deleting card...")
                 } else {
                     console.log("Given answer: " + given_answer);
