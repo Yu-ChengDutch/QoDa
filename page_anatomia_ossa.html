@@ -188,6 +188,11 @@
 
         function delete_card_plain(cell, id) {
             document.getElementById(id).remove();
+
+            if (document.body.contains(document.getElementById("question"))) {
+                document.getElementById("question").remove();
+            };
+
         }
 
         function insertAfter(newNode, existingNode) {
