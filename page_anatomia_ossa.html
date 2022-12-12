@@ -41,11 +41,13 @@
                 </div>
             `;
 
-            document.body.insertBefore(div, document.body.childNodes[0]);
-            
-            if (Object.keys(cell).includes("Division")){
-                div.addEventListener("click", add_card_division.bind(null, cell));
-            } 
+            if (document.body.contains(document.body.getElementById("question"))) {
+                document.body.insertAfter(div, document.body.getElementById("question"));
+
+                if (Object.keys(cell).includes("Division")){
+                    div.addEventListener("click", add_card_division.bind(null, cell));
+                } 
+            };
 
         }
 
@@ -72,12 +74,12 @@
                     </div>
                 `;
 
-            document.body.insertBefore(div, document.body.childNodes[0]);
-            
-            div.addEventListener("keypress", delete_card_plain.bind(null, cell.Division));
+            if (document.body.contains(document.body.getElementById("question"))) {
+                document.body.insertAfter(div, document.body.getElementById("question"));
+                div.addEventListener("keypress", delete_card_plain.bind(null, cell.Division));
+            };
         }
 
-        
         function add_card_levels(cell){
 
             console.log("Adding card...");
@@ -100,11 +102,13 @@
                     </div>
                 `;
 
-            document.body.insertBefore(div, document.body.childNodes[0]);
+            if (document.body.contains(document.body.getElementById("question"))) {
+                document.body.insertAfter(div, document.body.getElementById("question"));
+                div.addEventListener("keypress", delete_card_plain.bind(null, cell.Division));
+            };
             
             div.addEventListener("keypress", delete_card_list.bind(null, cell));
         }
-
 
         function delete_card_plain(division) {
 
@@ -157,6 +161,9 @@
             }
         }
 
+        function insertAfter(newNode, existingNode) {
+            existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+        }
 
     </script>
 </body>
