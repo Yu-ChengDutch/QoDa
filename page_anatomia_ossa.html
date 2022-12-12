@@ -42,9 +42,9 @@
             `;
 
             if (document.body.contains(document.getElementById("question"))) {
-                document.body.insertAfter(div, document.getElementById("question"));
+                insertAfter(div, document.getElementById("question"));
             } else {
-                document.body.insertBefore(div, document.body.childNodes[0]);
+                insertBefore(div, document.body.childNodes[0]);
             }
 
             if (Object.keys(cell).includes("Division")){
@@ -77,9 +77,9 @@
                 `;
 
             if (document.body.contains(document.getElementById(cell.Name))) {
-                document.body.insertAfter(div, document.getElementById(cell.Name));
+                insertAfter(div, document.getElementById(cell.Name));
             } else {
-                document.body.insertBefore(div, document.body.childNodes[0]);
+                insertBefore(div, document.body.childNodes[0]);
             };
 
             div.addEventListener("keypress", delete_card_division.bind(null, cell.Division, precursor));
@@ -109,9 +109,9 @@
                 `;
 
             if (document.body.contains(document.getElementById(precursor))) {
-                document.body.insertAfter(div, document.getElementById(precursor));
+                insertAfter(div, document.getElementById(precursor));
             } else {
-                document.body.insertBefore(div, document.body.childNodes[0]);
+                insertBefore(div, document.body.childNodes[0]);
             };
             
             div.addEventListener("keypress", delete_card_levels.bind(null, cell, precursor));
