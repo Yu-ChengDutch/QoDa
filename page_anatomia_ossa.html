@@ -74,16 +74,17 @@
                 `;
 
             document.body.insertBefore(div, document.body.childNodes[0]);
+
+            let given_answer = document.getElementById("input").value;
             
-            div.addEventListener("keypress", function(event, cell) {
+            true_answer_base = cell.Division;
 
-                console.log(cell);
-
-                let given_answer = document.getElementById("input").value;
+            let true_answer = true_answer_base.Name; 
             
-                true_answer_base = cell.Division;
+            div.addEventListener("keypress", function(event, given_answer, true_answer) {
 
-                let true_answer = true_answer_base.Name;
+                console.log(given_answer);
+                console.log(true_answer);
             
                 if (event.key == "Enter") {
                     if (given_answer == true_answer) {
