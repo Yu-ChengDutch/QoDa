@@ -33,7 +33,9 @@
         
         function add_card_plain(cell, precursor){
             var div = document.createElement('div');
-            var name = cell.Name;
+            
+            name = cell.Name;
+            name = name.replace(" ", "_");
 
             div.innerHTML = `
                 <div class="card" id=${name}>
@@ -46,6 +48,7 @@
             console.log("Precursor: " + precursor);
 
             if (document.body.contains(document.getElementById(precursor))) {
+                console.log("We've found a precursor!");
                 insertAfter(div, document.getElementById(precursor));
             } else {
                 document.body.insertBefore(div, document.body.childNodes[0]);
