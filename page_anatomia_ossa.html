@@ -69,27 +69,52 @@
                         <input type="text" placeholders="Type here" id="input" class="inputClass">
                 
                         <h4>${question}</h4>
-                d
                     </div>
                 `;
 
             document.body.insertBefore(div, document.body.childNodes[0]);
-
-            true_answer = (cell.Division).Name; 
             
-            div.addEventListener("keypress", delete_card.bind(null, true_answer));
+            div.addEventListener("keypress", delete_card_plain.bind(null, cell.Division));
         }
 
-        function delete_card(true_answer) {
+        
+        function add_card_levels(cell){
 
+            console.log("Adding card...");
+
+            var div = document.createElement('div');
+            var len = cell.Levels.length.toString();
+            var name = cell.Name;
+
+            var introduction = `There are ${len} ${name}. What are they?`;
+            var question = "Please enter the answer one by one";
+
+            div.innerHTML=`
+                    <div class="card" id="question"}>
+
+                        <h4>${introduction}</h4>
+                
+                        <input type="text" placeholders="Type here" id="input" class="inputClass">
+                
+                        <h4>${question}</h4>
+                    </div>
+                `;
+
+            document.body.insertBefore(div, document.body.childNodes[0]);
+            
+            div.addEventListener("keypress", delete_card_list.bind(null, cell.Levels));
+        }
+
+
+        function delete_card_plain(division) {
+
+            let true_answer = division.Name;
             let given_answer = document.getElementById("input").value;
-
-            console.log(given_answer);
-            console.log(true_answer);
         
             if (event.key == "Enter") {
                 if (given_answer == true_answer) {
                     document.getElementById("question").remove();
+                    add_card_levels(division);
                     console.log("Deleting card...")
                 } else {
                     console.log("Given answer: " + given_answer);
@@ -97,6 +122,31 @@
                 }
             }
         }
+
+        function delete_card_list(levels) {
+
+            let true_answers = {};
+
+            for (let i = 0; i < levels.length; i++) {
+                true_answers[levels[i].Name] = i;
+            }
+
+            let given_answer = document.getElementById("input").value;
+        
+            if (event.key == "Enter") {
+                if (given_answer in Object.keys(true_answers)) {
+                    document.getElementById("question").remove();
+                    add_card_division(cell);
+                    levels.splice(true_answers[given_answer], 1);
+                    add_card_levels(levels);
+                    console.log("Deleting card...")
+                } else {
+                    console.log("Given answer: " + given_answer);
+                    console.log("True answer: " + true_answer);
+                }
+            }
+        }
+
 
     </script>
 </body>
