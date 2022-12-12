@@ -35,15 +35,16 @@
             var div = document.createElement('div');
             
             name = cell.Name;
-            name = name.replace(" ", "_");
+
+            id = name.replaceAll(" ", "_");
 
             div.innerHTML = `
-                <div class="card" id=${name}>
+                <div class="card" id=${id}>
                     <h4>${name}</h4>
                 </div>
             `;
 
-            precursor = precursor.replace(" ", "_")
+            precursor = precursor.replaceAll(" ", "_")
 
             console.log("Precursor: " + precursor);
 
