@@ -75,27 +75,29 @@
 
             document.body.insertBefore(div, document.body.childNodes[0]);
 
+            let true_answer = true_answer_base.Name; 
+            
+            div.addEventListener("keypress", delete_card(null, true_answer));
+        }
+
+        function delete_card(true_answer) {
+
             let given_answer = document.getElementById("input").value;
             
             true_answer_base = cell.Division;
 
-            let true_answer = true_answer_base.Name; 
-            
-            div.addEventListener("keypress", (event, given_answer, true_answer) => {
-
-                console.log(given_answer);
-                console.log(true_answer);
-            
-                if (event.key == "Enter") {
-                    if (given_answer == true_answer) {
-                        document.getElementById("question").remove();
-                        console.log("Deleting card...")
-                    } else {
-                        console.log("Given answer: " + given_answer);
-                        console.log("True answer: " + true_answer);
-                    }
+            console.log(given_answer);
+            console.log(true_answer);
+        
+            if (event.key == "Enter") {
+                if (given_answer == true_answer) {
+                    document.getElementById("question").remove();
+                    console.log("Deleting card...")
+                } else {
+                    console.log("Given answer: " + given_answer);
+                    console.log("True answer: " + true_answer);
                 }
-            });
+            }
         }
 
     </script>
