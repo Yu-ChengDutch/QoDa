@@ -125,6 +125,8 @@
 
         function delete_card_list(levels) {
 
+            console.log(levels);
+
             true_answers = {};
 
             for (let i = 0; i < levels.length; i++) {
@@ -138,7 +140,6 @@
                     document.getElementById("question").remove();
                     add_card_plain(levels[true_answers[given_answer]]);
                     levels.splice(true_answers[given_answer], 1);
-                    console.log(levels);
                     add_card_levels(levels);
                     console.log("Deleting card...")
                 } else {
