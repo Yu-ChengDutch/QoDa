@@ -169,13 +169,15 @@
                     add_card_plain(levels[true_answers[given_answer]], precursor);
                     levels.splice(true_answers[given_answer], 1);
 
-                    document.getElementById("question").remove();
-
+                    if (document.body.contains(document.getElementById("question"))) {
+                        document.getElementById("question").remove();
+                    };
+                    
                     if (levels.length > 0) {
                         add_question_levels({"Name": cell.Name, "Levels": levels}, precursor);
                     } else {
                         document.getElementById(precursor).remove();
-                    }
+                    };
 
                 } else {
                     console.log("Given answer: " + given_answer);
