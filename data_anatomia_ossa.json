@@ -2,7 +2,7 @@
     "Name": "Skeletal system",
     "Division": {
         "Name": "Anatomical regions",
-        "Anatomical regions": [
+        "Levels": [
             {
                 "Name": "Bones of the head"
             },
@@ -16,7 +16,7 @@
                 "Name": "Bones of the pelvis",
                 "Division": {
                     "Name": "Individual bones",
-                    "Individual bones": [
+                    "Levels": [
                         {
                             "Name": "Pelvic bone"
                         }
