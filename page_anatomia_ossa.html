@@ -74,6 +74,8 @@
                 `;
 
             document.body.insertBefore(div, document.body.childNodes[0]);
+            
+            true_answer_base = cell.Division;
 
             let true_answer = true_answer_base.Name; 
             
@@ -83,8 +85,6 @@
         function delete_card(true_answer) {
 
             let given_answer = document.getElementById("input").value;
-            
-            true_answer_base = cell.Division;
 
             console.log(given_answer);
             console.log(true_answer);
