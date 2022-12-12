@@ -41,8 +41,10 @@
                 </div>
             `;
 
-            if (document.body.contains(document.getElementById("question"))) {
-                insertAfter(div, document.getElementById("question"));
+            console.log(precursor);
+
+            if (document.body.contains(document.getElementById(precursor))) {
+                insertAfter(div, document.getElementById(precursor));
             } else {
                 document.body.insertBefore(div, document.body.childNodes[0]);
             }
