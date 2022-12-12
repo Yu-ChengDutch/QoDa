@@ -41,7 +41,7 @@
                 </div>
             `;
 
-            console.log(precursor);
+            console.log("Precursor: " + precursor);
 
             if (document.body.contains(document.getElementById(precursor))) {
                 insertAfter(div, document.getElementById(precursor));
@@ -159,6 +159,8 @@
 
                     if (levels.length > 0) {
                         add_question_levels({"Name": cell.Name, "Levels": levels});
+                    } else {
+
                     }
 
                 } else {
