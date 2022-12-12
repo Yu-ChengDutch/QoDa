@@ -41,6 +41,8 @@
                 </div>
             `;
 
+            precursor = precursor.replace(" ", "_")
+
             console.log("Precursor: " + precursor);
 
             if (document.body.contains(document.getElementById(precursor))) {
@@ -95,6 +97,7 @@
             var div = document.createElement('div');
             var len = cell.Levels.length.toString();
             var name = cell.Name;
+            var name = name.replace(" ", "_");
 
             var introduction = `There are ${len} ${name}. What are they?`;
             var question = "Please enter the answer one by one";
