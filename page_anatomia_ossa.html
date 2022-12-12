@@ -43,11 +43,13 @@
 
             if (document.body.contains(document.getElementById("question"))) {
                 document.body.insertAfter(div, document.getElementById("question"));
+            } else {
+                document.body.insertBefore(div, document.body.childNodes[0]);
+            }
 
-                if (Object.keys(cell).includes("Division")){
-                    div.addEventListener("click", add_card_division.bind(null, cell));
-                } 
-            };
+            if (Object.keys(cell).includes("Division")){
+                div.addEventListener("click", add_card_division.bind(null, cell));
+            } 
 
         }
 
