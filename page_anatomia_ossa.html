@@ -53,6 +53,8 @@
 
         function add_card_division(cell){
 
+            console.log("Adding card...");
+
             var div = document.createElement('div');
             var name = cell.Name;
 
@@ -75,6 +77,7 @@
             document.body.insertBefore(div, document.body.childNodes[0]);
             
             div.addEventListener("keypress", function(cell) {
+
                 let given_answer = document.getElementById("input").value;
             
                 if (prompt == "Division") {
@@ -86,6 +89,7 @@
                 if (event.key == "Enter") {
                     if (given_answer == true_answer) {
                         document.getElementById("question").remove();
+                        console.log("Deleting card...")
                     } else {
                         console.log("Given answer: " + given_answer);
                         console.log("True answer: " + true_answer);
