@@ -145,7 +145,10 @@
 
                     console.log(levels);
 
-                    add_card_levels({"Name": cell.Name, "Levels": levels});
+                    if (levels.length > 0) {
+                        add_card_levels({"Name": cell.Name, "Levels": levels});
+                    }
+
                     console.log("Deleting card...")
                 } else {
                     console.log("Given answer: " + given_answer);
