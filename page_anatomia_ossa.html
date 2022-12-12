@@ -55,6 +55,10 @@
                 document.body.insertBefore(div, document.body.childNodes[0]);
             }
 
+            if (document.body.contains(document.getElementById("question"))) {
+                document.getElementById("question").remove();
+            }
+
             if (Object.keys(cell).includes("Division")){
                 div.addEventListener("click", add_question_division.bind(null, cell, id));
             } else {
@@ -85,10 +89,6 @@
                         <h4>${question}</h4>
                     </div>
                 `;
-
-            if (document.body.contains(document.getElementById("question"))) {
-                document.getElementById("question").remove();
-            }
 
             if (document.body.contains(document.getElementById(precursor))) {
                 insertAfter(div, document.getElementById(precursor));
