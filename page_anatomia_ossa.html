@@ -31,12 +31,12 @@
 
         /* This function adds cards */
         
-        function add_card_plain(cell){
+        function add_card_plain(cell, precursor){
             var div = document.createElement('div');
             var name = cell.Name;
 
             div.innerHTML = `
-                <div class="card">
+                <div class="card" id=${name}>
                     <h4>${name}</h4>
                 </div>
             `;
@@ -48,14 +48,14 @@
             }
 
             if (Object.keys(cell).includes("Division")){
-                div.addEventListener("click", add_card_division.bind(null, cell));
+                div.addEventListener("click", add_question_division.bind(null, cell, cell.Name));
             } 
 
         }
 
         /* This function adds question cards */
 
-        function add_card_division(cell){
+        function add_question_division(cell, precursor){
 
             console.log("Adding card...");
 
@@ -76,17 +76,17 @@
                     </div>
                 `;
 
-            if (document.body.contains(document.getElementById("question"))) {
-                document.body.insertAfter(div, document.getElementById("question"));
+            if (document.body.contains(document.getElementById(cell.Name))) {
+                document.body.insertAfter(div, document.getElementById(cell.Name));
             } else {
                 document.body.insertBefore(div, document.body.childNodes[0]);
             };
 
-            div.addEventListener("keypress", delete_card_plain.bind(null, cell.Division));
+            div.addEventListener("keypress", delete_card_division.bind(null, cell.Division, precursor));
 
         }
 
-        function add_card_levels(cell){
+        function add_question_levels(cell, precursor){
 
             console.log("Adding card...");
 
@@ -108,16 +108,16 @@
                     </div>
                 `;
 
-            if (document.body.contains(document.getElementById("question"))) {
-                document.body.insertAfter(div, document.getElementById("question"));
+            if (document.body.contains(document.getElementById(precursor))) {
+                document.body.insertAfter(div, document.getElementById(precursor));
             } else {
                 document.body.insertBefore(div, document.body.childNodes[0]);
             };
             
-            div.addEventListener("keypress", delete_card_list.bind(null, cell));
+            div.addEventListener("keypress", delete_card_levels.bind(null, cell, precursor));
         }
 
-        function delete_card_plain(division) {
+        function delete_card_division(division, precursor) {
 
             let true_answer = division.Name;
             let given_answer = document.getElementById("input").value;
@@ -125,7 +125,7 @@
             if (event.key == "Enter") {
                 if (given_answer == true_answer) {
                     document.getElementById("question").remove();
-                    add_card_levels(division);
+                    add_question_levels(division, precursor);
                     console.log("Deleting card...")
                 } else {
                     console.log("Given answer: " + given_answer);
@@ -134,7 +134,7 @@
             }
         }
 
-        function delete_card_list(cell) {
+        function delete_card_levels(cell, precursor) {
 
             levels = cell.Levels;
 
@@ -150,17 +150,15 @@
                 console.log(levels);
 
                 if (Object.keys(true_answers).includes(given_answer)) {
-                    document.getElementById("question").remove();
-                    add_card_plain(levels[true_answers[given_answer]]);
+                    add_card_plain(levels[true_answers[given_answer]], precursor);
                     levels.splice(true_answers[given_answer], 1);
 
-                    console.log(levels);
+                    document.getElementById("question").remove();
 
                     if (levels.length > 0) {
-                        add_card_levels({"Name": cell.Name, "Levels": levels});
+                        add_question_levels({"Name": cell.Name, "Levels": levels});
                     }
 
-                    console.log("Deleting card...")
                 } else {
                     console.log("Given answer: " + given_answer);
                     console.log("True answer: " + JSON.stringify(true_answers));
