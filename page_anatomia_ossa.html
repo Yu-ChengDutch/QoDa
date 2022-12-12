@@ -136,7 +136,9 @@
             if (event.key == "Enter") {
                 if (Object.keys(true_answers).includes(given_answer)) {
                     document.getElementById("question").remove();
+                    add_card_plain(levels[given_answer]);
                     levels.splice(true_answers[given_answer], 1);
+                    console.log(levels);
                     add_card_levels(levels);
                     console.log("Deleting card...")
                 } else {
