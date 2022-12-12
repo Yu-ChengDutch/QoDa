@@ -134,7 +134,7 @@
             let given_answer = document.getElementById("input").value;
         
             if (event.key == "Enter") {
-                if (Object.keys(true_answers).contains(given_answer)) {
+                if (Object.keys(true_answers).includes(given_answer)) {
                     document.getElementById("question").remove();
                     add_card_division(cell);
                     levels.splice(true_answers[given_answer], 1);
