@@ -1,18 +1,32 @@
 body {
     padding: 0px;
     margin: 0px;
+    font-family: 'Segoe UI';
+}
+
+/* Define fonts */
+
+h1 {
+    font-weight: bolder;
+    font-size: 5vw;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: white
 }
 
 .main-card {
     /* Same as Duolingo chapter thing */
     width: 90vw;
+    height: 20vh;
     text-align: left;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
     margin: 0px;
-    font-size: 5vw;
     background-color: limegreen;
     color: white
 }
@@ -26,20 +40,22 @@ body {
 
 .card {
     /* Add shadows */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0px 1.5vh rgba(0, 128, 0, 1);
+    background-color: limegreen;
     border-radius: 5vw; /* 5px rounded corners */
-    width: 70vw;
+    width: 22vw;
+    height: 11vh;
     text-align: center;
-    padding-top:0.05px;
-    padding-bottom:0.05px;
-    margin-left: 13vw;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    margin-left: 39vw;
     margin-top: 5vh;
     font-size: 2.5vw;
     transition: 0.3s;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0px 2vh rgba(0, 128, 0, 1);
     transition: 0.3s;
 }
 
