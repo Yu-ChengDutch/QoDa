@@ -11,9 +11,12 @@ fetch('./data_anatomy_skeletal_bones.json')
             })
             .then(function(data){
                 console.log("Accesing file: " + data.Name);
+                createQuestions(data);
             })
 
-
+function createQuestions(data){
+    console.log(data)
+}
 
 /* Define the functions */
 

@@ -1,12 +1,5 @@
 {
     "Name": "Skeleton",
-    "Questions": [
-        {
-            "Type": "Group",
-            "Trigger": "Division",
-            "Description": "To which group does this one belong: "
-        }
-    ],
     "Division": [
             {
                 "Name": "Bones of the head",
