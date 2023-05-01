@@ -196,15 +196,7 @@
                 ]
             },
             {
-                "Name": "Bones of the pelvis",
-                "Division": {
-                    "Name": "Individual bones",
-                    "Levels": [
-                        {
-                            "Name": "Pelvic bone"
-                        }
-                    ]
-                }
+                "Name": "Pelvic bone"
             },
             {
                 "Name": "Bones of the upper extremity",

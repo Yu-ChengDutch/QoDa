@@ -20,7 +20,7 @@ fetch('./data_anatomy_skeletal_bones.json')
                 console.log("Accesing file: " + data.Name);
                 createQuestions(data);
                 chooseQuestions();
-                implementQuestions();
+                setQuestion("Question 1");
             })
 
 function createQuestions(data){
@@ -80,8 +80,13 @@ function chooseQuestions(){
 
 }
 
-function implementQuestions(){
-    console.log(question_dict)
+function setQuestion(question_title){
+
+    q_and_a = question_dict[question_title];
+
+    document.getElementById('question-title').innerText = question_title;
+    document.getElementById('question-description').innerText = q_and_a[1];
+
 }
 
 function rand(length){
@@ -101,11 +106,18 @@ function checkAnswer(){
 
     console.log("The given answer is: " + given_answer);
 
-    let right_answer = question_dict[title_text]
+    let right_answer = question_dict[title_text][0]
 
     if (given_answer == right_answer) {
         console.log("The answer is correct");
         textfield.value = "";
+
+        let next_int = Object.keys(question_dict).indexOf(title_text) + 1
+
+        if (next_int <= Object.keys(question_dict)) {
+            setQuestion(question_dict[next_int])
+        }
+
     } else {
         console.log("The answer was incorrect, the correct answer is: " + right_answer);
     };
