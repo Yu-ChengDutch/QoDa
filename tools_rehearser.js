@@ -8,6 +8,6 @@ function createNew(){
     console.log(ogham_class);
 
     if (ogham_class = "ogham-zero") {
-        ogham.className = "ogham-one";
+        Element.style.height = "6vh";
     };
 }
