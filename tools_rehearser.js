@@ -87,6 +87,8 @@ function setQuestion(question_title){
     document.getElementById('question-title').innerText = question_title;
     document.getElementById('question-description').innerText = q_and_a[1];
 
+
+
 }
 
 function rand(length){
@@ -112,11 +114,10 @@ function checkAnswer(){
         console.log("The answer is correct");
         textfield.value = "";
 
-        let next_int = Object.keys(question_dict).indexOf(title_text) + 1;
-
-        console.log("Now to question: " + next_int);
+        let next_int = Object.keys(question_dict).indexOf(title_text) + 1;        
 
         if (next_int <= Object.keys(question_dict)) {
+            console.log("To question: " + question_dict[next_int])
             setQuestion(question_dict[next_int])
         };
 
