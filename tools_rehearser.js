@@ -14,7 +14,7 @@ function checkAnswer(){
 
     const title = title_text.innerText;
 
-    console.log(title);
+    console.log("Title" + title);
 
     const textfield = document.getElementById('text-field');
     const given_answer = textfield.value;
