@@ -36,6 +36,19 @@ h4 {
     color: white
 }
 
+.title-card {
+    width: 90vw;
+    height: 10vh;
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin: 0px;
+    background-color: limegreen;
+    color: white
+}
+
 /* The cards */
 
 .card {
@@ -74,5 +87,45 @@ a {
 a:hover, a:active {
     color: gray;
     transition: 0.3s;
+}
+
+/* The Ogham bar and related things*/
+
+.ogham-bar {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 10vh;
+}
+
+.ogham-letter {
+    float: left;
+    background-color: grey;
+    box-shadow: 0px 1.5vh rgb(60, 60, 60);
+    width: 20vw;
+    height: 5vh;
+    padding: 0px;
+}
+
+#beith {
+    box-shadow: 0px 1.5vh rgba(0, 128, 0, 1);
+    background-color: limegreen;
+}
+
+#luis {
+    box-shadow: 0px 1.5vh rgba(0, 128, 0, 1);
+    background-color: limegreen;
+    height: 7vh;
+}
+
+#fearn{
+
+}
+
+#saille{
+}
+
+#nuin{
+
 }
 
