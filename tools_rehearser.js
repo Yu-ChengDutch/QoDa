@@ -118,7 +118,7 @@ function checkAnswer(){
 
         let next_int = Object.keys(question_dict).indexOf(title_text) + 1;        
 
-        if (next_int <= Object.keys(question_dict)) {
+        if (next_int <= Object.keys(question_dict).length) {
             console.log("To question: " + question_dict[next_int])
             setQuestion(question_dict[next_int])
         };
