@@ -15,7 +15,7 @@ function checkAnswer(){
 
     console.log("The given answer is: " + given_answer);
 
-    const right_answer = question_dict[title_text]
+    let right_answer = question_dict[title_text]
 
     if (given_answer == right_answer) {
         console.log("The answer is correct");
