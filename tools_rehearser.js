@@ -13,6 +13,8 @@ function checkAnswer(){
     const textfield = document.getElementById('text-field');
     const given_answer = textfield.value;
 
+    console.log("Talking about: " + title_text);
+
     console.log("The given answer is: " + given_answer);
 
     let right_answer = question_dict[title_text]
