@@ -21,7 +21,15 @@ function createQuestions(data){
     let traversable = [data]
 
     while (traversable.length > 0){
-        console.log(traversable[0].Name)
+
+        let current_item = traversable[0]
+
+        console.log(current_item.Name)
+        
+        if ("Division" in current_item) {
+            traversable.push(current_item.Division)
+        }
+
         traversable.splice(0, 1)
     }
 
