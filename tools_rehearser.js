@@ -1,5 +1,6 @@
 /* Create an empty dictionary */
 
+let possible_questions_dict = {};
 let question_dict = {};
 
 /* Load the database (for now still hardcoded) */
@@ -27,11 +28,24 @@ function createQuestions(data){
         console.log(current_item.Name)
         
         if ("Division" in current_item) {
-            if (Array.isArray(current_item.Division)) {
+
+            next_item = current_item.Division
+
+            if (Array.isArray(next_item)) {
                 console.log("-> Found another layer")
-                traversable = traversable.concat(current_item.Division)
+                traversable = traversable.concat(next_item)
+
+                let temp_array = []
+
+                for (let i = 0; i < next_item.length; i++) {
+                    temp_array.push(next_item[i].Name)
+                  }
+
+                  possible_questions_dict[current_item.Name] = temp_array
+
             } else {
-                traversable.push(current_item.Division)
+                traversable.push(next_item)
+                possible_questions_dict[current_item.Name] = next_item.Name
             }
         }
 
@@ -39,6 +53,8 @@ function createQuestions(data){
     }
 
     console.log("Finished analysis...")
+
+    console.log(possible_questions_dict)
 
 }
 
