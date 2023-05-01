@@ -112,11 +112,15 @@ function checkAnswer(){
         console.log("The answer is correct");
         textfield.value = "";
 
-        let next_int = Object.keys(question_dict).indexOf(title_text) + 1
+        let next_int = Object.keys(question_dict).indexOf(title_text) + 1;
+
+        console.log("Now to question: " + next_int);
 
         if (next_int <= Object.keys(question_dict)) {
             setQuestion(question_dict[next_int])
-        }
+        };
+
+        console.log("Set up new question");
 
     } else {
         console.log("The answer was incorrect, the correct answer is: " + right_answer);
