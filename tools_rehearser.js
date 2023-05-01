@@ -30,6 +30,7 @@ function createQuestions(data){
             if (Array.isArray(current_item.Division)) {
                 console.log("-> Found another layer")
                 traversable.concat(current_item.Division)
+                console.log(traversable.length)
             } else {
                 traversable.push(current_item.Division)
             }
