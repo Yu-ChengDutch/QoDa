@@ -1,5 +1,5 @@
 function createNew(){
-    const ogham = document.getElementById('beith')
+    const ogham = document.getElementById('saille')
 
     console.log("Check this")
 
