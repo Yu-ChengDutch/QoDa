@@ -121,8 +121,8 @@ function checkAnswer(){
         console.log(next_int);
 
         if (next_int <= Object.keys(question_dict).length) {
-            console.log("To question: " + question_dict[Object.keys(question_dict)[next_int]])
-            setQuestion(question_dict[Object.keys(question_dict)[next_int]])
+            console.log("To question: " + Object.keys(question_dict)[next_int])
+            setQuestion(Object.keys(question_dict)[next_int])
         };
 
         console.log("Set up new question");
