@@ -12,7 +12,7 @@ function checkAnswer(){
 
     console.log(title_text);
 
-    const title = title_text.value;
+    const title = title_text.innerText;
 
     console.log(title);
 
