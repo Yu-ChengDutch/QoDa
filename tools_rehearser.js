@@ -8,13 +8,7 @@ let question_dict = {
 
 function checkAnswer(){
 
-    const title_text = document.getElementById('question-title');
-
-    console.log(title_text);
-
-    const title = title_text.innerText;
-
-    console.log("Title" + title);
+    const title_text = document.getElementById('question-title').innerText;
 
     const textfield = document.getElementById('text-field');
     const given_answer = textfield.value;
