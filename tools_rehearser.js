@@ -4,6 +4,6 @@ function createNew(){
     var ogham_class = ogham.className;
 
     if (ogham_class = "ogham-zero") {
-        ogham.setAttribute("class", "ogham-one")
-    }
+        ogham.className = "ogham-one";
+    };
 }
