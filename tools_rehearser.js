@@ -21,7 +21,7 @@ function checkAnswer(){
         console.log("The answer is correct");
         textfield.value = "";
     } else {
-        console.log("The answer was incorrect");
+        console.log("The answer was incorrect, the correct answer is: " + right_answer);
     };
 
 };
