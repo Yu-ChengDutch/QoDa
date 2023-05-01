@@ -1,7 +1,9 @@
 function createNew(){
     const ogham = document.getElementById('beith')
 
-    if (ogham.getAttribute("class") = "ogham-zero") {
+    var ogham_class = ogham.className;
+
+    if (ogham_class = "ogham-zero") {
         ogham.setAttribute("class", "ogham-one")
     }
 }
