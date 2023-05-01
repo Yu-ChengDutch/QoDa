@@ -82,6 +82,8 @@ function chooseQuestions(){
 
 function setQuestion(question_title){
 
+    console.log("Setting up question: " + question_title)
+
     q_and_a = question_dict[question_title];
 
     document.getElementById('question-title').innerText = question_title;
