@@ -120,7 +120,7 @@ function checkAnswer(){
         
         console.log(next_int);
 
-        if (next_int <= Object.keys(question_dict).length) {
+        if (next_int <= Object.keys(question_dict).length - 1) {
             console.log("To question: " + Object.keys(question_dict)[next_int])
             setQuestion(Object.keys(question_dict)[next_int])
         } else {
