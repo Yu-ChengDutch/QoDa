@@ -15,7 +15,18 @@ fetch('./data_anatomy_skeletal_bones.json')
             })
 
 function createQuestions(data){
-    console.log(data)
+    
+    console.log("Starting analysis:")
+
+    let traversable = [data]
+
+    while (traversable.length > 0){
+        console.log(traversable[0].Name)
+        traversable.splice(0, 1)
+    }
+
+    console.log("Finished analysis...")
+
 }
 
 /* Define the functions */
