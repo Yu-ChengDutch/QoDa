@@ -1,7 +1,13 @@
 /* Create an empty dictionary */
 
 let possible_questions_dict = {};
-let question_dict = {};
+let question_dict = {
+    "Question 1": {},
+    "Question 2": {},
+    "Question 3": {},
+    "Question 4": {},
+    "Question 5": {}
+};
 
 /* Load the database (for now still hardcoded) */
 
@@ -13,6 +19,8 @@ fetch('./data_anatomy_skeletal_bones.json')
             .then(function(data){
                 console.log("Accesing file: " + data.Name);
                 createQuestions(data);
+                chooseQuestions();
+                implementQuestions();
             })
 
 function createQuestions(data){
@@ -25,7 +33,7 @@ function createQuestions(data){
 
         let current_item = traversable[0]
 
-        console.log(current_item.Name)
+        /* console.log(current_item.Name) */
         
         if ("Division" in current_item) {
 
@@ -56,6 +64,28 @@ function createQuestions(data){
 
     console.log(possible_questions_dict)
 
+}
+
+function chooseQuestions(){
+    let key_array = Object.keys(possible_questions_dict)
+
+    for (let i = 0; i < Object.keys(questions_array).length; i++){
+
+        let answer = key_array[rand(key_array.length)]
+        let question_data = possible_questions_dict[answer][rand(possible_questions_dict[answer].length)]
+        let question = "What group does" + question_data + "belong to?"
+        
+        questions_array[Object.keys(questions_array)[i]] = [answer, question]
+    }
+
+}
+
+function implementQuestions(){
+    console.log(question_dict)
+}
+
+function rand(length){
+    return Math.floor(Math.random() * length);
 }
 
 /* Define the functions */
