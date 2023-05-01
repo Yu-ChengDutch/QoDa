@@ -73,7 +73,7 @@ function chooseQuestions(){
 
         let answer = key_array[rand(key_array.length)]
         let question_data = possible_questions_dict[answer][rand(possible_questions_dict[answer].length)]
-        let question = "What group does" + question_data + "belong to?"
+        let question = "What group does " + question_data + " belong to?"
         
         question_dict[Object.keys(question_dict)[i]] = [answer, question]
     }
