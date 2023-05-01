@@ -27,7 +27,7 @@ function createQuestions(data){
         console.log(current_item.Name)
         
         if ("Division" in current_item) {
-            if (current_item.Division.isArray()) {
+            if (Array.isArray(current_item.Division)) {
                 traversable.concat(current_item.Division)
             } else {
                 traversable.push(current_item.Division)
