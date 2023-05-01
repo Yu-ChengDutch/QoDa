@@ -8,6 +8,6 @@ function createNew(){
     console.log(ogham_class);
 
     if (ogham_class = "ogham-zero") {
-        Element.style.height = "6vh";
+        ogham.style.height = "6vh";
     };
 }
