@@ -1,10 +1,21 @@
-let question_dict = {
-    "Question 1": "Test",
-    "Question 2": "Test",
-    "Question 3": "Test",
-    "Question 4": "Test",
-    "Question 5": "Test",
-};
+/* Create an empty dictionary */
+
+let question_dict = {};
+
+/* Load the database (for now still hardcoded) */
+
+fetch('./data_anatomy_skeletal_bones.json')
+            .then(function(response){
+                console.log("File found and accessed");
+                return response.json();
+            })
+            .then(function(data){
+                console.log("Accesing file: " + data.Name);
+            })
+
+
+
+/* Define the functions */
 
 function checkAnswer(){
 

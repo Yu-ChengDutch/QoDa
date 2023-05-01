@@ -1,16 +1,206 @@
 {
-    "Name": "Bones",
-    "Division": {
-        "Name": "Anatomical regions",
-        "Levels": [
+    "Name": "Skeleton",
+    "Questions": [
+        {
+            "Type": "Group",
+            "Trigger": "Division",
+            "Description": "To which group does this one belong: "
+        }
+    ],
+    "Division": [
             {
-                "Name": "Bones of the head"
+                "Name": "Bones of the head",
+                "Division": [
+                    {
+                        "Name": "Cranial bones",
+                        "Division": [
+                            {
+                                "Name": "Occipital bone"
+                            },
+                            {
+                                "Name": "Parietal bones",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left parietal bone"
+                                    },
+                                    {
+                                        "Name": "Right parietal bone"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Frontal bone"
+                            },
+                            {
+                                "Name": "Temporal bone",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left temporal bone"
+                                    },
+                                    {
+                                        "Name": "Right temporal bone"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Sphenoidal bone"
+                            },
+                            {
+                                "Name": "Ethmoidal bone"
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Facial bones",
+                        "Division": [
+                            {
+                                "Name": "Nasal bone",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left nasal bone"
+                                    },
+                                    {
+                                        "Name": "Right nasal bone"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Maxilla",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left maxilla"
+                                    },
+                                    {
+                                        "Name": "Right maxilla"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Lacrimal bone",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left lacrimal bone"
+                                    },
+                                    {
+                                        "Name": "Right lacrimal bone"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Zygomatic bone",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left zygomatic bone"
+                                    },
+                                    {
+                                        "Name": "Right zygomatic bone"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Palatine bone",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left palatine bone"
+                                    },
+                                    {
+                                        "Name": "Right palatine bone"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Inferior nasal concha",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left inferior nasal concha"
+                                    },
+                                    {
+                                        "Name": "Right inferior nasal concha bone"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Vomer"
+                            },
+                            {
+                                "Name": "Hyoid bone"
+                            },
+                            {
+                                "Name": "Mandible"
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Ossicles",
+                        "Division": [
+                            {
+                                "Name": "Malleus",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left malleus"
+                                    },
+                                    {
+                                        "Name": "Right malleus"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Incus",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left incus"
+                                    },
+                                    {
+                                        "Name": "Right incus"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Stapes",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left stapes"
+                                    },
+                                    {
+                                        "Name": "Right stapes"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+
             },
             {
-                "Name": "Bones of the spine"
+                "Name": "Bones of the spine",
+                "Division": [
+                    {
+                        "Name": "Cervical spine"
+                    },
+                    {
+                        "Name": "Thoracic spine"
+                    },
+                    {
+                        "Name": "Lumbar spine"
+                    },
+                    {
+                        "Name": "Sacrum"
+                    },
+                    {
+                        "Name": "Coccyx"
+                    }
+                ]
             },
             {
-                "Name": "Bones of the thorax"
+                "Name": "Bones of the thorax",
+                "Division": [
+                    {
+                        "Name": "Sternum"
+                    },
+                    {
+                        "Name": "Ribs"
+                    }
+                ]
             },
             {
                 "Name": "Bones of the pelvis",
@@ -24,11 +214,215 @@
                 }
             },
             {
-                "Name": "Bones of the upper extremity"
+                "Name": "Bones of the upper extremity",
+                "Division": [
+                    {
+                        "Name": "Bones of the upper arm",
+                        "Division": [
+                            {
+                                "Name": "Humerus",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left humerus"
+                                    },
+                                    {
+                                        "Name": "Right humerus"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Shoulder girdle",
+                                "Division": [
+                                    {
+                                        "Name": "Scapula",
+                                        "Individual bones": [
+                                            {
+                                                "Name": "Left scapula"
+                                            },
+                                            {
+                                                "Name": "Right scapula"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Clavicula",
+                                        "Individual bones": [
+                                            {
+                                                "Name": "Left clavicula"
+                                            },
+                                            {
+                                                "Name": "Right clavicula"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Bones of the lower arm",
+                        "Division": [
+                            {
+                                "Name": "Ulna",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left ulna"
+                                    },
+                                    {
+                                        "Name": "Right ulna"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Radius",
+                                "Individual bones": [
+                                    {
+                                        "Name": "Left radius"
+                                    },
+                                    {
+                                        "Name": "Right radius"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Bones of the hand",
+                        "Division": [
+                            {
+                                "Name": "Carpal bones",
+                                "Division": [
+                                    {
+                                        "Name": "Proximal carpal bones",
+                                        "Division": [
+                                            {
+                                                "Name": "Scaphoid bone"
+                                            },
+                                            {
+                                                "Name": "Lunate bone"
+                                            },
+                                            {
+                                                "Name": "Triquetral bone"
+                                            },
+                                            {
+                                                "Name": "Pisiform bone"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Distal carpal bones",
+                                        "Division": [
+                                            {
+                                                "Name": "Trapezium bone"
+                                            },
+                                            {
+                                                "Name": "Trapezoid bone"
+                                            },
+                                            {
+                                                "Name": "Capitate bone"
+                                            },
+                                            {
+                                                "Name": "Hamate bone",
+                                                "Etymology": {
+                                                    "Language of origin": ["Latin"],
+                                                    "Word of origin": ["Hamatus"],
+                                                    "Original meaning": ["Hooked"] 
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Metacarpal bones"
+                            },
+                            {
+                                "Name": "Phalanges of the hand",
+                                "Division": [
+                                    {
+                                        "Name": "Proximal phalanges of the hand"
+                                    },
+                                    {
+                                        "Name": "Intermediate phalanges of the hand"
+                                    },
+                                    {
+                                        "Name": "Distal phalanges of the hand"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "Name": "Bones of the lower extremity"
+                "Name": "Bones of the lower extremity",
+                "Division": [
+                    {
+                        "Name": "Femur"
+                    },
+                    {
+                        "Name": "Patella"
+                    },
+                    {
+                        "Name": "Tibia"
+                    },
+                    {
+                        "Name": "Fibula"
+                    },
+                    {
+                        "Name": "Bones of the feet",
+                        "Division": [
+                            {
+                                "Name": "Tarsal bones",
+                                "Division": [
+                                    {
+                                        "Name": "Calcaneus"
+                                    },
+                                    {
+                                        "Name": "Talus"
+                                    },
+                                    {
+                                        "Name": "Navicular bone"
+                                    },
+                                    {
+                                        "Name": "Cuneiform bones",
+                                        "Division": [
+                                            {
+                                                "Name": "Medial cuneiform bone"
+                                            },
+                                            {
+                                                "Name": "Intermediate cuneiform bone"
+                                            },
+                                            {
+                                                "Name": "Lateral cuneiform bone"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Cuboid bone"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Metatarsal bones"
+                            },
+                            {
+                                "Name": "Phalanges of the foot",
+                                "Division": [
+                                    {
+                                        "Name": "Proximal phalanges of the foot"
+                                    },
+                                    {
+                                        "Name": "Intermediate phalanges of the foot"
+                                    },
+                                    {
+                                        "Name": "Distal phalanges of the foot"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     }
-}
