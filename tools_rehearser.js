@@ -123,6 +123,9 @@ function checkAnswer(){
         if (next_int <= Object.keys(question_dict).length) {
             console.log("To question: " + Object.keys(question_dict)[next_int])
             setQuestion(Object.keys(question_dict)[next_int])
+        } else {
+            document.getElementById('question-title').innerText = "Done!";
+            document.getElementById('question-description').innerText = "";
         };
 
         console.log("Set up new question");
