@@ -9,6 +9,17 @@
 </head>
 <body>
 
+    <script>
+        fetch('./data_anatomy_skeletal_bones.json')
+            .then(function(response){
+                console.log("File found and accessed");
+                return response.json();
+            })
+            .then(function(data){
+                console.log("Accesing file: " + data.Name);
+            })
+    </script>
+
     <script type="text/javascript" src="tools_rehearser.js"></script>
     
     <div class="title-card">
