@@ -92,7 +92,8 @@ function createQuestions(data, questions){
                 } else {
 
                     console.log("This is not an array: " + questions[i] + " of " + current_item.Name)
-                    
+                    console.log(next_item.Name);
+
                     possible_questions[questions[i]][current_item.Name] = next_item.Name
                 }
 
