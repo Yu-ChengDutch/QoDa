@@ -128,12 +128,12 @@ function chooseQuestions(){
 
             for (let i = 0; i < Object.keys(final_questions); i++){
                 if (answer in final_questions[Object.keys(final_questions[i])]) {
-                    passable = false;
                     console.log("Found a duplicate!");
-                } else {
-                    passable = true;
-                };
+                } 
             };
+
+            passable = true;
+
         };
         
         let question_data = current_array[answer][rand(current_array[answer].length)];
