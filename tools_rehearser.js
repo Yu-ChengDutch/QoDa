@@ -24,6 +24,9 @@ let databases = {
 /* Check what database to load */ 
 
 const subject_title = document.getElementById('true-title').innerText;
+
+console.log(subject_title);
+
 const current_database = databases[subject_title];
 
 /* Load the database (for now still hardcoded) */
