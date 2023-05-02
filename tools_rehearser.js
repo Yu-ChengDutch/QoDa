@@ -127,12 +127,17 @@ function chooseQuestions(){
             if (!answer in Object.keys(final_questions)) {
                 passable = true;
             }
+
+            console.log("Found a duplicate!");
+
         }
         
         let question_data = current_array[answer][rand(current_array[answer].length)];
         let question = question_texts[current_type] + question_data;
         
         final_questions[Object.keys(final_questions)[i]] = [answer, question];
+
+        console.log(final_questions);
     };
 
 }
