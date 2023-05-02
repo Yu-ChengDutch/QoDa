@@ -124,7 +124,11 @@ function chooseQuestions(){
 
             answer = key_array[rand(key_array.length)];
 
-            if (!answer in Object.keys(final_questions)) {
+            print(answer);
+
+            if (answer in Object.keys(final_questions)) {
+                passable = false;
+            } else {
                 passable = true;
             }
 
