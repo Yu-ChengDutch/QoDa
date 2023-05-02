@@ -78,6 +78,10 @@ function createQuestions(data, questions){
 
                 next_item = current_item[questions[i]]
 
+                if (questions[i] == "Continues") {
+                    console.log("Found a continuation on " + next_item.Name)
+                }
+
                 if (Array.isArray(next_item)) {
                     traversable = traversable.concat(next_item)
     
