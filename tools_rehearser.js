@@ -73,8 +73,6 @@ function createQuestions(data, questions){
 
         let current_item = traversable[0]
 
-        console.log(current_item.Name)
-
         for (let i =0; i < questions.length; i++){
             if (questions[i] in current_item){
 
@@ -92,7 +90,9 @@ function createQuestions(data, questions){
                       possible_questions[questions[i]][current_item.Name] = temp_array
     
                 } else {
-                    traversable.push(next_item)
+
+                    console.log("This is not an array: " + questions[i] + " of " + current_item.Name)
+                    
                     possible_questions[questions[i]][current_item.Name] = next_item.Name
                 }
 
