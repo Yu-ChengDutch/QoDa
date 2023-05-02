@@ -153,9 +153,70 @@
                         }
                     ],
                     "Continues": {
-                        "Name": "Common iliac arteries",
+                        "Name": "Common iliac artery",
                         "Continues at": "L4",
-                        "Branches to": "Posterior"
+                        "Branches to": "Posterior",
+                        "Continues": [
+                            {
+                                "Name": "External iliac artery",
+                                "Branches": [
+                                    {
+                                        "Name": "Inferior epigastric artery"
+                                    },
+                                    {
+                                        "Name": "Deep circumflex iliac artery"
+                                    }
+                                ],
+                                "Continues": [
+                                    {
+                                        "Name": "Femoral artery",
+                                        "Branches": [
+                                            {
+                                                "Name": "Superficial circumflex iliac artery"
+                                            },
+                                            {
+                                                "Name": "Superficial epigastric artery"
+                                            },
+                                            {
+                                                "Name": "Superficial external pudendal artery"
+                                            },
+                                            {
+                                                "Name": "Deep external pudendal artery"
+                                            },
+                                            {
+                                                "Name": "Deep femoral artery"
+                                            },
+                                            {
+                                                "Name": "Descending genicular artery"
+                                            }
+                                        ],
+                                        "Continues": {
+                                            "Name": "Popliteal artery",
+                                            "Continues": [
+                                                {
+                                                    "Name": "Anterior tibial artery"
+                                                },
+                                                {
+                                                    "Name": "Posterior tibial artery"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Internal iliac artery",
+                                "Alternative name": "Hypogastric artery",
+                                "Continues": [
+                                    {
+                                        "Name": "Anterior division"
+                                    },
+                                    {
+                                        "Name": "Posterior division"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 }
             ]
