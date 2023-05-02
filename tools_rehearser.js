@@ -6,8 +6,10 @@ let branches_questions = {};
 
 let question_texts = {
     "Division": "The body consists of groups of bones. Of what group is the following a part? ",
-    "Parts": "Structures may be divided in parts. Of what structure is the following a part?",
-    "Branches": "Structures may branch off. Of what structure did the following branch off?"
+    "Parts": "Structures may be divided in parts. Of what structure is the following a part? ",
+    "Branches": "Structures may branch off. Of what structure did the following branch off? ",
+    "Continues": "Structures may take a different name at some point. What is this structure called further upstream? ",
+    "Branches at": "Branching occurs at a certain point. At what point does this structure branch off? "
 };
 
 let final_questions = {
@@ -19,11 +21,14 @@ let final_questions = {
 };
 
 let current_database = ""
+let questions = [];
 
 let databases = {
-    "Skeletal System - Bones": './data_anatomy_skeletal_bones.json',
-    "Circulatory System - Arteries": './data_anatomy_circulatory_arterial.json'
+    "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts"]},
+    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arterial.json', "Questions": ["Division", "Parts"]}
 };
+
+let locations = {};
 
 /* Check what database to load */ 
 
@@ -31,7 +36,8 @@ function setUp(subject){
 
     let subject_title = document.getElementById('true-title').innerText
 
-    current_database = databases[subject_title];
+    current_database = databases[subject_title]["Database"];
+    questions = databases[subject_title]["Questions"];
 
     fetch(current_database)
             .then(function(response){
@@ -40,7 +46,7 @@ function setUp(subject){
             })
             .then(function(data){
                 console.log("Accesing file: " + data.Name);
-                createQuestions(data);
+                createQuestions(data, questions);
                 chooseQuestions();
                 setQuestion("Question 1");
             })
@@ -50,11 +56,13 @@ function setUp(subject){
 /* Load the database (for now still hardcoded) */
 
 
-function createQuestions(data){
+function createQuestions(data, questions){
     
     console.log("Starting analysis:")
 
     let traversable = [data]
+
+    console.log(questions);
 
     while (traversable.length > 0){
 

@@ -16,7 +16,64 @@
             "Name": "Aortic arch",
             "Branches": [
                 {
-                    "Name": "Brachiocephalic trunk"
+                    "Name": "Brachiocephalic trunk",
+                    "Branches": [
+                        {
+                            "Name": "Right common carotid artery"
+                        },
+                        {
+                            "Name": "Right subclavian artery",
+                            "Parts": [
+                                {
+                                    "Name": "Right prescalene part",
+                                    "Branches": [
+                                        {
+                                            "Name": "Right vertebral artery"
+                                        },
+                                        {
+                                            "Name": "Right internal thoracic artery"
+                                        },
+                                        {
+                                            "Name": "Right thyrocervical trunk"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Right scalene part",
+                                    "Branches": [
+                                        {
+                                            "Name": "Right costocervical trunk"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Right postscalene part",
+                                    "Branches": [
+                                        {
+                                            "Name": "Right dorsal scapular artery"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "Continues": {
+                        "Name": "Right axillary artery",
+                        "Parts": [
+                            {
+                                "Name": "Right suprapectoral part"
+                            },
+                            {
+                                "Name": "Right pectoral part"
+                            },
+                            {
+                                "Name": "Right infrapectoral part"
+                            }
+                        ],
+                        "Continues": {
+                            "Name": "Right brachial artery"
+                        }
+                    }
                 },
                 {
                     "Name": "Left common carotid artery"
@@ -27,10 +84,81 @@
             ]
         },
         {
-            "Name": "Thoracic aorta"
-        },
-        {
-            "Name": "Abdominal aorta"
+            "Name": "Descending aorta",
+            "Parts": [
+                {
+                    "Name": "Thoracic aorta"
+                },
+                {
+                    "Name": "Abdominal aorta",
+                    "Parts": [
+                        {
+                            "Name": "Suprarenal aorta",
+                            "Branches": [
+                                {
+                                    "Name": "Inferior phrenic arteries",
+                                    "Branches at": "T12",
+                                    "Branches to": "Posterior"
+                                },
+                                {
+                                    "Name": "Celiac trunk",
+                                    "Branches at": "T12",
+                                    "Branches to": "Anterior"
+                                },
+                                {
+                                    "Name": "Superior mesenteric artery",
+                                    "Branches at": "L1",
+                                    "Branches to": "Anterior"
+                                },
+                                {
+                                    "Name": "Middle suprarenal arteries",
+                                    "Branches at": "L1",
+                                    "Branches to": "Posterior"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Renal aorta",
+                            "Branches": [
+                                {
+                                    "Name": "Renal arteries",
+                                    "Branches at": "T1",
+                                    "Branches to": "Posterior"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Infrarenal aorta",
+                            "Branches": [
+                                {
+                                    "Name": "Gonadal arteries",
+                                    "Branches at": "L2",
+                                    "Branches to": "Anterior"
+                                },
+                                {
+                                    "Name": "Lumbar arteries",
+                                    "Branches to": "Posterior"
+                                },
+                                {
+                                    "Name": "Inferior mesenteric artery",
+                                    "Branches at": "L3",
+                                    "Branches to": "Anterior"
+                                },
+                                {
+                                    "Name": "Median sacral artery",
+                                    "Branches at": "L4",
+                                    "Branches to": "Posterior"
+                                }
+                            ]
+                        }
+                    ],
+                    "Continues": {
+                        "Name": "Common iliac arteries",
+                        "Continues at": "L4",
+                        "Branches to": "Posterior"
+                    }
+                }
+            ]
         }
     ]
 }
