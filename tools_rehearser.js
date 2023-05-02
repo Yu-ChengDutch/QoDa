@@ -116,7 +116,19 @@ function chooseQuestions(){
 
         let key_array = Object.keys(current_array);
 
-        let answer = key_array[rand(key_array.length)];
+        let answer = "";
+
+        let passable = false;
+
+        while (passable == false){
+
+            answer = key_array[rand(key_array.length)];
+
+            if (!answer in Object.keys(final_questions)) {
+                passable = true;
+            }
+        }
+        
         let question_data = current_array[answer][rand(current_array[answer].length)];
         let question = question_texts[current_type] + question_data;
         

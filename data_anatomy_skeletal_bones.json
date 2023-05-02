@@ -100,7 +100,18 @@
                 "Name": "Bones of the thorax",
                 "Division": [
                     {
-                        "Name": "Sternum"
+                        "Name": "Sternum",
+                        "Parts": [
+                            {
+                                "Name": "Manubrium"
+                            },
+                            {
+                                "Name": "Gladiolus"
+                            },
+                            {
+                                "Name": "Xiphoid process"
+                            }
+                        ]
                     },
                     {
                         "Name": "Ribs"
@@ -137,7 +148,18 @@
                                         "Name": "Scapula"
                                     },
                                     {
-                                        "Name": "Clavicula"
+                                        "Name": "Clavicula",
+                                        "Parts": [
+                                            {
+                                                "Name": "Sternal end"
+                                            },
+                                            {
+                                                "Name": "Acromial end"
+                                            },
+                                            {
+                                                "Name": "Clavicular shaft"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -226,7 +248,18 @@
                 "Name": "Bones of the lower extremity",
                 "Division": [
                     {
-                        "Name": "Femur"
+                        "Name": "Femur",
+                        "Parts": [
+                            {
+                                "Name": "Upper extremity of the femur"
+                            },
+                            {
+                                "Name": "Body of the femur"
+                            },
+                            {
+                                "Name": "Lower extremity of the femur"
+                            }
+                        ]
                     },
                     {
                         "Name": "Patella"
