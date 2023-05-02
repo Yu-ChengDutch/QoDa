@@ -139,7 +139,18 @@
                         "Name": "Bones of the upper arm",
                         "Division": [
                             {
-                                "Name": "Humerus"
+                                "Name": "Humerus",
+                                "Parts": [
+                                    {
+                                        "Name": "Upper extremity of the humerus"
+                                    },
+                                    {
+                                        "Name": "Body of the humerus"
+                                    },
+                                    {
+                                        "Name": "Lower extremity of the humerus"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "Shoulder girdle",
@@ -265,7 +276,18 @@
                         "Name": "Patella"
                     },
                     {
-                        "Name": "Tibia"
+                        "Name": "Tibia",
+                        "Parts": [
+                            {
+                                "Name": "Upper extremity of the tibia"
+                            },
+                            {
+                                "Name": "Body of the tibia"
+                            },
+                            {
+                                "Name": "Lower extremity of the tibia"
+                            }
+                        ]
                     },
                     {
                         "Name": "Fibula"
