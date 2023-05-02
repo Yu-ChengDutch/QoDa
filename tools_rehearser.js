@@ -3,7 +3,12 @@
 let division_questions = {};
 let parts_questions = {};
 
-let question_dict = {
+let question_texts = {
+    "Division": "The following is part of what group: ",
+    "Parts": "The follow is a part of what bone: "
+};
+
+let final_questions = {
     "Question 1": {},
     "Question 2": {},
     "Question 3": {},
@@ -91,16 +96,31 @@ function createQuestions(data){
 }
 
 function chooseQuestions(){
-    let key_array = Object.keys(division_questions)
 
-    for (let i = 0; i < Object.keys(question_dict).length; i++){
+    let question_types = Object.keys(question_texts);
 
-        let answer = key_array[rand(key_array.length)]
-        let question_data = division_questions[answer][rand(division_questions[answer].length)]
-        let question = "What group does " + question_data + " belong to?"
+    for (let i = 0; i < Object.keys(final_questions).length; i++){
+
+        let current_type = question_types[rand(question_types.length)];
+
+        if (current_type == 'Division') {
+
+            let current_array = division_questions;
+
+        } else if (current_type == 'Parts') {
+
+            let current_array = parts_questions;
+
+        };
+
+        let key_array = Object.keys(current_array);
+
+        let answer = key_array[rand(key_array.length)];
+        let question_data = current_array[answer][rand(current_array[answer].length)];
+        let question = question_texts[current_type] + question_data;
         
-        question_dict[Object.keys(question_dict)[i]] = [answer, question]
-    }
+        final_questions[Object.keys(final_questions)[i]] = [answer, question];
+    };
 
 }
 
@@ -108,7 +128,7 @@ function setQuestion(question_title){
 
     console.log("Setting up question: " + question_title)
 
-    q_and_a = question_dict[question_title];
+    q_and_a = final_questions[question_title];
 
     document.getElementById('question-title').innerText = question_title;
     document.getElementById('question-description').innerText = q_and_a[1];
@@ -134,19 +154,19 @@ function checkAnswer(){
 
     console.log("The given answer is: " + given_answer);
 
-    let right_answer = question_dict[title_text][0]
+    let right_answer = final_questions[title_text][0]
 
     if (given_answer == right_answer) {
         console.log("The answer is correct");
         textfield.value = "";
 
-        let next_int = Object.keys(question_dict).indexOf(title_text) + 1;
+        let next_int = Object.keys(final_questions).indexOf(title_text) + 1;
         
         console.log(next_int);
 
-        if (next_int <= Object.keys(question_dict).length - 1) {
-            console.log("To question: " + Object.keys(question_dict)[next_int])
-            setQuestion(Object.keys(question_dict)[next_int])
+        if (next_int <= Object.keys(final_questions).length - 1) {
+            console.log("To question: " + Object.keys(final_questions)[next_int])
+            setQuestion(Object.keys(final_questions)[next_int])
         } else {
             document.getElementById('question-title').innerText = "Done!";
             document.getElementById('question-description').innerText = "";
