@@ -77,7 +77,7 @@ function createQuestions(data, questions){
 
         let current_item = traversable[0]
 
-        /* console.log(current_item.Name) */
+        console.log(current_item.Name)
 
         for (let i =0; i < questions.length; i++){
             if (questions[i] in current_item){
