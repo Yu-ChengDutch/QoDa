@@ -16,6 +16,8 @@ let final_questions = {
     "Question 5": {}
 };
 
+let current_database = ""
+
 let databases = {
     "Skeletal System - Bones": "./data_anatomy_skeletal_bones.json",
     "Circulatory System - Arteries": "./data_anatomy_circulatory_arterial.json"
@@ -23,11 +25,12 @@ let databases = {
 
 /* Check what database to load */ 
 
-const subject_title = document.getElementById('question-title').innerText;
+function setUp(subject){
 
-console.log(subject_title);
+    let subject_title = document.getElementById('true-title').innerText
 
-const current_database = databases[subject_title];
+    current_database = databases[subject_title];
+}
 
 /* Load the database (for now still hardcoded) */
 
