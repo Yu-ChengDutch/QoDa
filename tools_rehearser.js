@@ -36,7 +36,7 @@ function setUp(subject){
 
 fetch(current_database)
             .then(function(response){
-                console.log("File found and accessed");
+                console.log("File found and accessed at " + current_database);
                 return response.json();
             })
             .then(function(data){
