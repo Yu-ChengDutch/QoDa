@@ -28,8 +28,8 @@ let current_database = ""
 let questions = [];
 
 let databases = {
-    "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Branches", "Parts"]},
-    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arterial.json', "Questions": ["Division", "Parts"]}
+    "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts"]},
+    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arterial.json', "Questions": ["Branches", "Parts"]}
 };
 
 let locations = {
