@@ -34,7 +34,7 @@ function setUp(subject){
 
 /* Load the database (for now still hardcoded) */
 
-fetch(current_database)
+fetch('./data_anatomy_skeletal_bones.json')
             .then(function(response){
                 console.log("File found and accessed at " + current_database);
                 return response.json();
