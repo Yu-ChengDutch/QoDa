@@ -38,11 +38,16 @@ let locations = {
 
 /* Check what database to load */ 
 
-function setUp(subject){
+function setUp(){
 
-    let subject_title = document.getElementById('true-title').innerText
+    let subject_title = document.getElementById('true-title').innerText;
+
+    console.log("Fetching: " + subject_title);
 
     current_database = databases[subject_title]["Database"];
+
+    console.log("From database: " + current_database);
+
     questions = databases[subject_title]["Questions"];
 
     fetch(current_database)
