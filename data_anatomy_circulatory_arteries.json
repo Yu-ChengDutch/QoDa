@@ -1,0 +1,36 @@
+{
+    "Name": "Aorta",
+    "Parts": [
+        {
+            "Name": "Ascending aorta",
+            "Branches": [
+                {
+                    "Name": "Left coronary artery"
+                },
+                {
+                    "Name": "Right coronary artery"
+                }
+            ]
+        },
+        {
+            "Name": "Aortic arch",
+            "Branches": [
+                {
+                    "Name": "Brachiocephalic trunk"
+                },
+                {
+                    "Name": "Left common carotid artery"
+                },
+                {
+                    "Name": "Left subclavian artery"
+                }
+            ]
+        },
+        {
+            "Name": "Thoracic aorta"
+        },
+        {
+            "Name": "Abdominal aorta"
+        }
+    ]
+}
