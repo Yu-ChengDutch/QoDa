@@ -98,6 +98,7 @@ function createQuestions(data){
 function chooseQuestions(){
 
     let question_types = Object.keys(question_texts);
+    let current_array = [];
 
     for (let i = 0; i < Object.keys(final_questions).length; i++){
 
@@ -105,11 +106,11 @@ function chooseQuestions(){
 
         if (current_type == 'Division') {
 
-            let current_array = division_questions;
+            current_array = division_questions;
 
         } else if (current_type == 'Parts') {
 
-            let current_array = parts_questions;
+            current_array = parts_questions;
 
         };
 
