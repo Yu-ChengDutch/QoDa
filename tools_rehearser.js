@@ -23,7 +23,7 @@ let databases = {
 
 /* Check what database to load */ 
 
-const subject_title = document.getElementById('true-title');
+const subject_title = document.getElementById('question-title').innerText;
 
 console.log(subject_title);
 
