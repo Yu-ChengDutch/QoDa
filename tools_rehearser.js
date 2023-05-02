@@ -53,7 +53,7 @@ function setUp(subject){
             .then(function(data){
                 console.log("Accesing file: " + data.Name);
                 createQuestions(data, questions);
-                chooseQuestions();
+                chooseQuestions(questions);
                 setQuestion("Question 1");
             })
 
@@ -108,24 +108,15 @@ function createQuestions(data, questions){
 
 }
 
-function chooseQuestions(){
+function chooseQuestions(questions){
 
-    let question_types = Object.keys(question_texts);
     let current_array = [];
 
     for (let i = 0; i < Object.keys(final_questions).length; i++){
 
-        let current_type = question_types[rand(question_types.length)];
+        let current_type = questions[rand(questions.length)];
 
-        if (current_type == 'Division') {
-
-            current_array = possible_questions["Division"];
-
-        } else if (current_type == 'Parts') {
-
-            current_array = possible_questions["Parts"];
-
-        };
+        current_array = possible_questions[current_type]
 
         let key_array = Object.keys(current_array);
 
