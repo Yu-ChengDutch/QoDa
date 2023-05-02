@@ -19,8 +19,8 @@ let final_questions = {
 let current_database = ""
 
 let databases = {
-    "Skeletal System - Bones": "./data_anatomy_skeletal_bones.json",
-    "Circulatory System - Arteries": "./data_anatomy_circulatory_arterial.json"
+    "Skeletal System - Bones": './data_anatomy_skeletal_bones.json',
+    "Circulatory System - Arteries": './data_anatomy_circulatory_arterial.json'
 };
 
 /* Check what database to load */ 
