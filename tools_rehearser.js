@@ -30,11 +30,8 @@ function setUp(subject){
     let subject_title = document.getElementById('true-title').innerText
 
     current_database = databases[subject_title];
-}
 
-/* Load the database (for now still hardcoded) */
-
-fetch('./data_anatomy_skeletal_bones.json')
+    fetch(current_database)
             .then(function(response){
                 console.log("File found and accessed at " + current_database);
                 return response.json();
@@ -45,6 +42,11 @@ fetch('./data_anatomy_skeletal_bones.json')
                 chooseQuestions();
                 setQuestion("Question 1");
             })
+
+}
+
+/* Load the database (for now still hardcoded) */
+
 
 function createQuestions(data){
     
