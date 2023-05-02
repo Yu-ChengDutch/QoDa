@@ -2,10 +2,12 @@
 
 let division_questions = {};
 let parts_questions = {};
+let branches_questions = {}; 
 
 let question_texts = {
     "Division": "The body consists of groups of bones. Of what group is the following a part? ",
-    "Parts": "Bones may be divided in parts. Of what bone is the following a part?"
+    "Parts": "Structures may be divided in parts. Of what structure is the following a part?",
+    "Branches": "Structures may branch off. Of what structure did the following branch off?"
 };
 
 let final_questions = {
@@ -99,6 +101,28 @@ function createQuestions(data){
             } else {
                 traversable.push(next_item)
                 parts_questions[current_item.Name] = next_item.Name
+            }
+
+        }
+
+        if ("Branches" in current_item) {
+
+            next_item = current_item.Branches
+
+            if (Array.isArray(next_item)) {
+                traversable = traversable.concat(next_item)
+
+                let temp_array = []
+
+                for (let i = 0; i < next_item.length; i++) {
+                    temp_array.push(next_item[i].Name)
+                  }
+
+                  branches_questions[current_item.Name] = temp_array
+
+            } else {
+                traversable.push(next_item)
+                branches_questions[current_item.Name] = next_item.Name
             }
 
         }
