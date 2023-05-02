@@ -1,6 +1,8 @@
 /* Create an empty dictionary */
 
-let possible_questions_dict = {};
+let division_questions = {};
+let parts_questions = {};
+
 let question_dict = {
     "Question 1": {},
     "Question 2": {},
@@ -40,7 +42,6 @@ function createQuestions(data){
             next_item = current_item.Division
 
             if (Array.isArray(next_item)) {
-                console.log("-> Found another layer")
                 traversable = traversable.concat(next_item)
 
                 let temp_array = []
@@ -49,12 +50,34 @@ function createQuestions(data){
                     temp_array.push(next_item[i].Name)
                   }
 
-                  possible_questions_dict[current_item.Name] = temp_array
+                  division_questions[current_item.Name] = temp_array
 
             } else {
                 traversable.push(next_item)
-                possible_questions_dict[current_item.Name] = next_item.Name
+                division_questions[current_item.Name] = next_item.Name
             }
+        }
+
+        if ("Parts" in current_item) {
+
+            next_item = current_item.Parts
+
+            if (Array.isArray(next_item)) {
+                traversable = traversable.concat(next_item)
+
+                let temp_array = []
+
+                for (let i = 0; i < next_item.length; i++) {
+                    temp_array.push(next_item[i].Name)
+                  }
+
+                  parts_questions[current_item.Name] = temp_array
+
+            } else {
+                traversable.push(next_item)
+                parts_questions[current_item.Name] = next_item.Name
+            }
+
         }
 
         traversable.splice(0, 1)
@@ -62,17 +85,18 @@ function createQuestions(data){
 
     console.log("Finished analysis...")
 
-    console.log(possible_questions_dict)
+    console.log("The division questions are: " + division_questions)
+    console.log("The parts questions are: " + parts_questions)
 
 }
 
 function chooseQuestions(){
-    let key_array = Object.keys(possible_questions_dict)
+    let key_array = Object.keys(division_questions)
 
     for (let i = 0; i < Object.keys(question_dict).length; i++){
 
         let answer = key_array[rand(key_array.length)]
-        let question_data = possible_questions_dict[answer][rand(possible_questions_dict[answer].length)]
+        let question_data = division_questions[answer][rand(division_questions[answer].length)]
         let question = "What group does " + question_data + " belong to?"
         
         question_dict[Object.keys(question_dict)[i]] = [answer, question]

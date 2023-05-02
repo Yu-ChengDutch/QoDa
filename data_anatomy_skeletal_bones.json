@@ -11,29 +11,13 @@
                                 "Name": "Occipital bone"
                             },
                             {
-                                "Name": "Parietal bones",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left parietal bone"
-                                    },
-                                    {
-                                        "Name": "Right parietal bone"
-                                    }
-                                ]
+                                "Name": "Parietal bones"
                             },
                             {
                                 "Name": "Frontal bone"
                             },
                             {
-                                "Name": "Temporal bone",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left temporal bone"
-                                    },
-                                    {
-                                        "Name": "Right temporal bone"
-                                    }
-                                ]
+                                "Name": "Temporal bone"
                             },
                             {
                                 "Name": "Sphenoidal bone"
@@ -47,70 +31,22 @@
                         "Name": "Facial bones",
                         "Division": [
                             {
-                                "Name": "Nasal bone",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left nasal bone"
-                                    },
-                                    {
-                                        "Name": "Right nasal bone"
-                                    }
-                                ]
+                                "Name": "Nasal bone"
                             },
                             {
-                                "Name": "Maxilla",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left maxilla"
-                                    },
-                                    {
-                                        "Name": "Right maxilla"
-                                    }
-                                ]
+                                "Name": "Maxilla"
                             },
                             {
-                                "Name": "Lacrimal bone",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left lacrimal bone"
-                                    },
-                                    {
-                                        "Name": "Right lacrimal bone"
-                                    }
-                                ]
+                                "Name": "Lacrimal bone"
                             },
                             {
-                                "Name": "Zygomatic bone",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left zygomatic bone"
-                                    },
-                                    {
-                                        "Name": "Right zygomatic bone"
-                                    }
-                                ]
+                                "Name": "Zygomatic bone"
                             },
                             {
-                                "Name": "Palatine bone",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left palatine bone"
-                                    },
-                                    {
-                                        "Name": "Right palatine bone"
-                                    }
-                                ]
+                                "Name": "Palatine bone"
                             },
                             {
-                                "Name": "Inferior nasal concha",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left inferior nasal concha"
-                                    },
-                                    {
-                                        "Name": "Right inferior nasal concha bone"
-                                    }
-                                ]
+                                "Name": "Inferior nasal concha"
                             },
                             {
                                 "Name": "Vomer"
@@ -127,37 +63,13 @@
                         "Name": "Ossicles",
                         "Division": [
                             {
-                                "Name": "Malleus",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left malleus"
-                                    },
-                                    {
-                                        "Name": "Right malleus"
-                                    }
-                                ]
+                                "Name": "Malleus"
                             },
                             {
-                                "Name": "Incus",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left incus"
-                                    },
-                                    {
-                                        "Name": "Right incus"
-                                    }
-                                ]
+                                "Name": "Incus"
                             },
                             {
-                                "Name": "Stapes",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left stapes"
-                                    },
-                                    {
-                                        "Name": "Right stapes"
-                                    }
-                                ]
+                                "Name": "Stapes"
                             }
                         ]
                     }
@@ -196,7 +108,18 @@
                 ]
             },
             {
-                "Name": "Pelvic bone"
+                "Name": "Pelvic bone",
+                "Parts": [
+                    {
+                        "Name": "Ilium"
+                    },
+                    {
+                        "Name": "Ischium"
+                    },
+                    {
+                        "Name": "Pubis"
+                    }
+                ]
             },
             {
                 "Name": "Bones of the upper extremity",
@@ -205,40 +128,16 @@
                         "Name": "Bones of the upper arm",
                         "Division": [
                             {
-                                "Name": "Humerus",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left humerus"
-                                    },
-                                    {
-                                        "Name": "Right humerus"
-                                    }
-                                ]
+                                "Name": "Humerus"
                             },
                             {
                                 "Name": "Shoulder girdle",
                                 "Division": [
                                     {
-                                        "Name": "Scapula",
-                                        "Individual bones": [
-                                            {
-                                                "Name": "Left scapula"
-                                            },
-                                            {
-                                                "Name": "Right scapula"
-                                            }
-                                        ]
+                                        "Name": "Scapula"
                                     },
                                     {
-                                        "Name": "Clavicula",
-                                        "Individual bones": [
-                                            {
-                                                "Name": "Left clavicula"
-                                            },
-                                            {
-                                                "Name": "Right clavicula"
-                                            }
-                                        ]
+                                        "Name": "Clavicula"
                                     }
                                 ]
                             }
@@ -248,26 +147,10 @@
                         "Name": "Bones of the lower arm",
                         "Division": [
                             {
-                                "Name": "Ulna",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left ulna"
-                                    },
-                                    {
-                                        "Name": "Right ulna"
-                                    }
-                                ]
+                                "Name": "Ulna"
                             },
                             {
-                                "Name": "Radius",
-                                "Individual bones": [
-                                    {
-                                        "Name": "Left radius"
-                                    },
-                                    {
-                                        "Name": "Right radius"
-                                    }
-                                ]
+                                "Name": "Radius"
                             }
                         ]
                     },
