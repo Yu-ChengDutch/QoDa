@@ -105,6 +105,7 @@ function createQuestions(data, questions){
     console.log(possible_questions["Division"]);
     console.log(possible_questions["Parts"]);
     console.log(possible_questions["Continues"]);
+    console.log(possible_questions["Branches"]);
 
 }
 
