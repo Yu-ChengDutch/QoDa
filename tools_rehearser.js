@@ -85,8 +85,8 @@ function createQuestions(data){
 
     console.log("Finished analysis...")
 
-    console.log("The division questions are: " + division_questions)
-    console.log("The parts questions are: " + parts_questions)
+    console.log(division_questions)
+    console.log(parts_questions)
 
 }
 
