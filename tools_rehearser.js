@@ -91,9 +91,6 @@ function createQuestions(data, questions){
     
                 } else {
 
-                    console.log("This is not an array: " + questions[i] + " of " + current_item.Name)
-                    console.log(next_item.Name);
-
                     possible_questions[questions[i]][current_item.Name] = next_item.Name
                 }
 
@@ -114,9 +111,15 @@ function chooseQuestions(questions){
 
     let current_array = [];
 
+    /* Iterate through all final questions*/
+
     for (let i = 0; i < Object.keys(final_questions).length; i++){
 
+        /* Assign to current_type a random question type */ 
+
         let current_type = questions[rand(questions.length)];
+
+        /* Assign to current array all possible questions of that type */
 
         current_array = possible_questions[current_type]
 
@@ -142,7 +145,16 @@ function chooseQuestions(questions){
 
         };
         
-        let question_data = current_array[answer][rand(current_array[answer].length)];
+        /* From all possible questions of this type, take the one matching the answer. From there, take a random instance */
+
+        let question_data = ""
+        
+        if (Array.isArray(current_array[answer])) {
+            question_data = current_array[answer][rand(current_array[answer].length)];
+        } else {
+            question_data = current_array[answer];
+        }        
+        
         let question = question_texts[current_type] + question_data;
         
         final_questions[Object.keys(final_questions)[i]] = [answer, question];
