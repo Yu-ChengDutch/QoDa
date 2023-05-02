@@ -4,8 +4,8 @@ let division_questions = {};
 let parts_questions = {};
 
 let question_texts = {
-    "Division": "The following is part of what group: ",
-    "Parts": "The follow is a part of what bone: "
+    "Division": "The body consists of groups of bones. Of what group is the following a part? ",
+    "Parts": "Bones may be divided in parts. Of what bone is the following a part?"
 };
 
 let final_questions = {
@@ -16,9 +16,19 @@ let final_questions = {
     "Question 5": {}
 };
 
+let databases = {
+    "Skeletal System - Bones": "./data_anatomy_skeletal_bones.json",
+    "Circulatory System - Arteries": "./data_anatomy_circulatory_arterial.json"
+};
+
+/* Check what database to load */ 
+
+const subject_title = document.getElementById('true-title').innerText;
+const current_database = databases[subject_title];
+
 /* Load the database (for now still hardcoded) */
 
-fetch('./data_anatomy_skeletal_bones.json')
+fetch(current_database)
             .then(function(response){
                 console.log("File found and accessed");
                 return response.json();
@@ -154,8 +164,6 @@ function setQuestion(question_title){
 
     document.getElementById('question-title').innerText = question_title;
     document.getElementById('question-description').innerText = q_and_a[1];
-
-
 
 }
 
