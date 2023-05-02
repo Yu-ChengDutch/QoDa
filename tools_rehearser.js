@@ -103,8 +103,8 @@ function createQuestions(data, questions){
 
     console.log("Finished analysis...")
 
-    console.log(possible_questions[Division])
-    console.log(possible_questions[Parts])
+    console.log(possible_questions["Division"])
+    console.log(possible_questions["Parts"])
 
 }
 
@@ -119,11 +119,11 @@ function chooseQuestions(){
 
         if (current_type == 'Division') {
 
-            current_array = possible_questions[Division];
+            current_array = possible_questions["Division"];
 
         } else if (current_type == 'Parts') {
 
-            current_array = possible_questions[Parts];
+            current_array = possible_questions["Parts"];
 
         };
 
