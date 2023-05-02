@@ -32,10 +32,6 @@ let databases = {
     "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Parts"]}
 };
 
-let locations = {
-    "Division": {}
-};
-
 /* Check what database to load */ 
 
 function setUp(){
