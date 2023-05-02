@@ -1,9 +1,5 @@
 /* Create an empty dictionary */
 
-let division_questions = {};
-let parts_questions = {};
-let branches_questions = {}; 
-
 let question_texts = {
     "Division": "The body consists of groups of bones. Of what group is the following a part? ",
     "Parts": "Structures may be divided in parts. Of what structure is the following a part? ",
@@ -11,6 +7,14 @@ let question_texts = {
     "Continues": "Structures may take a different name at some point. What is this structure called further upstream? ",
     "Branches at": "Branching occurs at a certain point. At what point does this structure branch off? "
 };
+
+let possible_questions = {
+    "Division": {},
+    "Parts": {},
+    "Branches": {},
+    "Continues": {},
+    "Branches at": {}
+}
 
 let final_questions = {
     "Question 1": {},
@@ -28,7 +32,9 @@ let databases = {
     "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arterial.json', "Questions": ["Division", "Parts"]}
 };
 
-let locations = {};
+let locations = {
+    "Division": {}
+};
 
 /* Check what database to load */ 
 
@@ -62,77 +68,34 @@ function createQuestions(data, questions){
 
     let traversable = [data]
 
-    console.log(questions);
-
     while (traversable.length > 0){
 
         let current_item = traversable[0]
 
         /* console.log(current_item.Name) */
-        
-        if ("Division" in current_item) {
 
-            next_item = current_item.Division
+        for (let i =0; i < questions.length; i++){
+            if (questions[i] in current_item){
 
-            if (Array.isArray(next_item)) {
-                traversable = traversable.concat(next_item)
+                next_item = current_item[questions[i]]
 
-                let temp_array = []
+                if (Array.isArray(next_item)) {
+                    traversable = traversable.concat(next_item)
+    
+                    let temp_array = []
+    
+                    for (let i = 0; i < next_item.length; i++) {
+                        temp_array.push(next_item[i].Name)
+                      }
+    
+                      possible_questions[questions[i]][current_item.Name] = temp_array
+    
+                } else {
+                    traversable.push(next_item)
+                    possible_questions[questions[i]][current_item.Name] = next_item.Name
+                }
 
-                for (let i = 0; i < next_item.length; i++) {
-                    temp_array.push(next_item[i].Name)
-                  }
-
-                  division_questions[current_item.Name] = temp_array
-
-            } else {
-                traversable.push(next_item)
-                division_questions[current_item.Name] = next_item.Name
             }
-        }
-
-        if ("Parts" in current_item) {
-
-            next_item = current_item.Parts
-
-            if (Array.isArray(next_item)) {
-                traversable = traversable.concat(next_item)
-
-                let temp_array = []
-
-                for (let i = 0; i < next_item.length; i++) {
-                    temp_array.push(next_item[i].Name)
-                  }
-
-                  parts_questions[current_item.Name] = temp_array
-
-            } else {
-                traversable.push(next_item)
-                parts_questions[current_item.Name] = next_item.Name
-            }
-
-        }
-
-        if ("Branches" in current_item) {
-
-            next_item = current_item.Branches
-
-            if (Array.isArray(next_item)) {
-                traversable = traversable.concat(next_item)
-
-                let temp_array = []
-
-                for (let i = 0; i < next_item.length; i++) {
-                    temp_array.push(next_item[i].Name)
-                  }
-
-                  branches_questions[current_item.Name] = temp_array
-
-            } else {
-                traversable.push(next_item)
-                branches_questions[current_item.Name] = next_item.Name
-            }
-
         }
 
         traversable.splice(0, 1)
@@ -140,8 +103,8 @@ function createQuestions(data, questions){
 
     console.log("Finished analysis...")
 
-    console.log(division_questions)
-    console.log(parts_questions)
+    console.log(possible_questions[Division])
+    console.log(possible_questions[Parts])
 
 }
 
@@ -156,11 +119,11 @@ function chooseQuestions(){
 
         if (current_type == 'Division') {
 
-            current_array = division_questions;
+            current_array = possible_questions[Division];
 
         } else if (current_type == 'Parts') {
 
-            current_array = parts_questions;
+            current_array = possible_questions[Parts];
 
         };
 
