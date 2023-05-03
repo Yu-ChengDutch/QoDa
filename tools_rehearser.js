@@ -48,6 +48,7 @@ let databases = {
 function setUp(){
 
     let subject_title = document.getElementById('true-title').innerText;
+    let side_db = {};
 
     console.log("Fetching: " + subject_title);
 
@@ -79,12 +80,14 @@ function setUp(){
 
         } else {
 
+            side_db = databases[Object.keys(databases)[i]]["Database"]
+
             console.log(Object.keys(databases)[i] + " is found not to be the same as " + subject_title);
 
-            fetch(databases[Object.keys(databases)[i]]["Database"])
-            .then(function(response){
-                console.log("File found and accessed at " + databases[Object.keys(databases)[i]]);
-                return response.json();
+            fetch(side_db)
+            .then(function(side_response){
+                console.log("File found and accessed at " + side_db);
+                return side_response.json();
             })
             .then(function(side_data){
                 console.log("Accesing file: " + side_data.Name);
