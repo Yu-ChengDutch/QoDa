@@ -231,6 +231,9 @@ function chooseQuestions(questions){
             let current_side_question = side_questions[side_keys[j]];
             let current_side_question_keys = Object.keys(current_side_question)
 
+            console.log(current_side_question)
+            console.log(current_side_question_keys)
+
             for (let z = 0; z < current_side_question_keys.length; z++) {
 
                 console.log("---> Going through " + current_side_question_keys[z])
