@@ -227,9 +227,9 @@ function chooseQuestions(questions){
         console.log(Object.keys(side_questions));
         console.log(Object.values(side_questions));
 
-        for (let j = 0; j < side_keys.length; j++){
+        for (var key in side_keys){
 
-            console.log("--> Going through " + side_keys[j]);
+            console.log("--> Going through " + key);
 
             let current_side_question = side_questions[side_keys[j]];
 
