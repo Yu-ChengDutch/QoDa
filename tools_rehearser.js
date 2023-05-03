@@ -227,8 +227,8 @@ function chooseQuestions(questions){
         for (var key in side_questions){
 
             console.log("--> Going through " + key);
-            
-            current_side_db = side_questions[key];
+
+            current_side_db[key] = side_questions[key];
 
             addSides(answer, i);
 
