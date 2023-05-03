@@ -228,7 +228,6 @@ function chooseQuestions(questions){
 
             console.log("--> Going through " + key);
             
-            current_side_db = {};
             current_side_db = side_questions[key];
 
             addSides(answer, i);
