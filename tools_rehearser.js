@@ -230,10 +230,10 @@ function chooseQuestions(questions){
             
             current_side_db = side_questions[key];
 
-            console.log(current_side_question);
-            console.log(current_side_question["Skeleton"])
+            console.log(current_side_db);
+            console.log(current_side_db["Skeleton"])
 
-            for (var key in current_side_question) {
+            for (var key in current_side_db) {
 
                 console.log("---> Now going through " + key)
                 console.log(current_side_questions);
