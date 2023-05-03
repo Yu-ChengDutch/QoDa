@@ -224,7 +224,6 @@ function chooseQuestions(questions){
 
         console.log("-> Now generating side questions");
 
-        console.log(side_questions["Division"])
         console.log(side_questions["Division"]["Skeleton"])
 
         // console.log(final_questions);
