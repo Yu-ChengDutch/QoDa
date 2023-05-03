@@ -97,12 +97,12 @@
                             "Branches": [
                                 {
                                     "Name": "Inferior phrenic arteries",
-                                    "Branches at": "T12",
+                                    "Branches at": "Th12",
                                     "Branches to": "Posterior"
                                 },
                                 {
                                     "Name": "Celiac trunk",
-                                    "Branches at": "T12",
+                                    "Branches at": "Th12",
                                     "Branches to": "Anterior"
                                 },
                                 {
@@ -122,7 +122,7 @@
                             "Branches": [
                                 {
                                     "Name": "Renal arteries",
-                                    "Branches at": "T1",
+                                    "Branches at": "Th1",
                                     "Branches to": "Posterior"
                                 }
                             ]
