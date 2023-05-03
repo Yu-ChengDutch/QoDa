@@ -194,8 +194,6 @@ function rand(length){
     return Math.floor(Math.random() * length);
 }
 
-/* Define the functions */
-
 function checkAnswer(){
 
     const title_text = document.getElementById('question-title').innerText;
@@ -229,6 +227,8 @@ function checkAnswer(){
 
     } else {
         console.log("The answer was incorrect, the correct answer is: " + right_answer);
+
+        document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + right_answer + ". Please enter this.";
     };
 
 };

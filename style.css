@@ -152,6 +152,17 @@ a:hover, a:active {
     margin-top: 2.5vh;
 }
 
+#remark-card {
+    color: black;
+    height: 18vh;
+    width: 60vw;
+    border-radius: 5vw;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    background-color: white;
+}
+
+
 /* The Ogham bar and related things*/
 
 .ogham-bar {
