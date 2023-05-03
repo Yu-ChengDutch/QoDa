@@ -262,7 +262,7 @@ function createSideQuestions(){
 
         for (var key in question_texts) {
 
-            console.log(side_questions[key])
+            console.log(Object.keys(side_questions[key]))
 
         }
 
