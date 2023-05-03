@@ -231,8 +231,7 @@ function chooseQuestions(questions){
             for (var key in current_side_questions) {
 
                 console.log("---> Going through " + key)
-
-                console.log(current_side_question[current_side_question_keys[z]]);
+                console.log(current_side_questions[key]);
                 console.log(answer);
 
                 if (current_side_question[current_side_question_keys[z]].includes(answer)) {
