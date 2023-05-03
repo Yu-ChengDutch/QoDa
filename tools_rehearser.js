@@ -260,7 +260,7 @@ function createSideQuestions(){
 
         console.log(answer);
 
-        console.log(sideQuestions["Division"])
+        console.log(side_questions["Division"])
 
     }
 
