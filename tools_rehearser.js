@@ -54,39 +54,6 @@ function setUp(){
 
     questions = databases[subject_title]["Questions"];
 
-    for (let i = 0; i < Object.keys(databases).length; i++) {
-
-        /* console.log("Assessing database: " + Object.keys(databases)[i]); */ 
-
-        if (Object.keys(databases)[i] === subject_title) {
-
-            /* console.log("Already assessed: " + Object.keys(databases)[i] + " & " + subject_title); */
-
-        } else {
-
-            side_db = databases[Object.keys(databases)[i]]["Database"]
-
-            console.log("Fetching side DB at: " + side_db);
-
-            /* console.log(Object.keys(databases)[i] + " is found not to be the same as " + subject_title); */
-
-            fetch(side_db)
-            .then(function(side_response){
-                console.log("- > File found and accessed at " + side_db);
-                return side_response.json();
-            })
-            .then(function(side_data){
-                console.log("- > Accesing file: " + side_data.Name);
-                createQuestions(side_data, databases[Object.keys(databases)[i]]["Questions"], side_questions);
-            })
-
-            console.log("- > Generated the following side database: ");
-            console.log(side_questions);
-            console.log("")
-
-        }
-    }
-
     fetch(current_database)
     .then(function(response){
         console.log("- > File found and accessed at " + current_database);
@@ -97,6 +64,40 @@ function setUp(){
         createQuestions(data, questions, possible_questions);
         chooseQuestions(["Branches at"]);
         setQuestion("Question 1");
+    })
+    .then(function(){
+        for (let i = 0; i < Object.keys(databases).length; i++) {
+
+            /* console.log("Assessing database: " + Object.keys(databases)[i]); */ 
+    
+            if (Object.keys(databases)[i] === subject_title) {
+    
+                /* console.log("Already assessed: " + Object.keys(databases)[i] + " & " + subject_title); */
+    
+            } else {
+    
+                side_db = databases[Object.keys(databases)[i]]["Database"]
+    
+                console.log("Fetching side DB at: " + side_db);
+    
+                /* console.log(Object.keys(databases)[i] + " is found not to be the same as " + subject_title); */
+    
+                fetch(side_db)
+                .then(function(side_response){
+                    console.log("- > File found and accessed at " + side_db);
+                    return side_response.json();
+                })
+                .then(function(side_data){
+                    console.log("- > Accesing file: " + side_data.Name);
+                    createQuestions(side_data, databases[Object.keys(databases)[i]]["Questions"], side_questions);
+                })
+    
+                console.log("- > Generated the following side database: ");
+                console.log(side_questions);
+                console.log("")
+    
+            }
+        }
     })
 
     console.log("- > Generated the following main questions: ");
