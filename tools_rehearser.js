@@ -28,6 +28,7 @@ let side_questions = {
 }
 
 let final_questions = {};
+let current_side_db = {};
 
 let current_database = ""
 let questions = [];
@@ -227,7 +228,7 @@ function chooseQuestions(questions){
 
             console.log("--> Going through " + key);
             
-            let current_side_question = side_questions[key];
+            current_side_db = side_questions[key];
 
             console.log(current_side_question);
             console.log(current_side_question["Skeleton"])
@@ -272,6 +273,9 @@ function setQuestion(question_title){
     for (const key in final_questions) {
         console.log("Key found: " + key)
     }
+
+    console.log(Object.keys(final_questions))
+    console.log(Object.getOwnPropertyNames(final_questions))
 
 }
 
