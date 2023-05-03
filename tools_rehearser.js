@@ -248,9 +248,6 @@ function chooseQuestions(questions){
                     final_questions[question_string] = [answer, question];
 
                     console.log("--> Done formulating question " + j + ".1");
-
-                    z = current_side_question_keys.length;
-                    j = side_keys.length;
                 }
 
             }
