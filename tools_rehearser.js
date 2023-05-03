@@ -67,6 +67,7 @@ function setUp(){
 
     console.log("- > Generated the following main questions: ");
     console.log(final_questions);
+    console.log(Object.keys(final_questions));
     console.log("")
 
     for (let i = 0; i < Object.keys(databases).length; i++) {
