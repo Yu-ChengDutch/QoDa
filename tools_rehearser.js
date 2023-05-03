@@ -295,6 +295,8 @@ function checkAnswer(){
 
             for (var key in new_dict) {
 
+                console.log(new_dict[key])
+
                 if (given_answer in new_dict[key]) {
                     
                     console.log("Found a match!")
