@@ -73,7 +73,11 @@ function setUp(){
 
         console.log("Assessing database: " + Object.keys(databases)[i]);
 
-        if (!Object.keys(databases)[i] === subject_title) {
+        if (Object.keys(databases)[i] === subject_title) {
+
+            console.log("Already assessed: " + Object.keys(databases)[i] + " & " + subject_title);
+
+        } else {
 
             console.log(Object.keys(databases)[i] + " is found not to be the same as " + subject_title);
 
