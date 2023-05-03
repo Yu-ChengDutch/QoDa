@@ -1,11 +1,11 @@
 /* Create an empty dictionary */
 
 let question_texts = {
-    "Division": "The body consists of groups of bones. Of what group is the following a part? ",
-    "Parts": "Structures may be divided in parts. Of what structure is the following a part? ",
-    "Branches": "Structures may branch off. Of what structure did the following branch off? ",
-    "Continues": "Structures may take a different name at some point. What is this structure called further upstream? ",
-    "Branches at": "Branching occurs at a certain point. At what point does this structure branch off? "
+    "Division": ["The body consists of groups of bones. Of what group is <", "> a part?"],
+    "Parts": ["Structures may be divided in parts. Of what structure is <", "> a part?"],
+    "Branches": ["Structures may branch off. Of what structure did <", "> branch off?"],
+    "Continues": ["Structures may take a different name at some point. What is <", "> called further upstream?"],
+    "Branches at": ["Branching occurs at a certain point. At what point does <", "> branch off?"]
 };
 
 let possible_questions = {
@@ -164,7 +164,7 @@ function chooseQuestions(questions){
             question_data = current_array[answer];
         }        
         
-        let question = question_texts[current_type] + question_data;
+        let question = question_texts[current_type][0] + question_data + question_texts[current_type][1];
         
         final_questions[Object.keys(final_questions)[i]] = [answer, question];
 
