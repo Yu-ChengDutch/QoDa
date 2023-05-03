@@ -216,7 +216,7 @@ function chooseQuestions(questions){
         /* A question is added to the roster here */
 
         let question_string = "Question " + (i+1);
-        final_questions = Object.assign(final_questions, {question_string : [answer, question]});
+        final_questions[question_string] = [answer, question];
 
         /* First, I want to determine whether there's a side quest */
 
@@ -230,12 +230,12 @@ function chooseQuestions(questions){
 
             let current_side_question = side_questions[side_keys[j]];
 
-            console.log(Object.keys(current_side_question))
-
+            
             let current_side_question_keys = Object.keys(current_side_question);
 
             console.log(current_side_question);
             console.log(current_side_question_keys);
+            console.log(Object.values(current_side_question));
 
             for (let z = 0; z < current_side_question_keys.length; z++) {
 
