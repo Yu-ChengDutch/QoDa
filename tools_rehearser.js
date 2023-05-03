@@ -62,8 +62,8 @@ function setUp(){
     .then(function(data){
         console.log("- > Accesing file: " + data.Name);
         createQuestions(data, questions, possible_questions);
-        chooseQuestions(["Branches at"]);
         setQuestion("Question 1");
+        chooseQuestions(["Branches at"]);
     })
     .then(function(){
         for (let i = 0; i < Object.keys(databases).length; i++) {
@@ -98,9 +98,6 @@ function setUp(){
     
             }
         }
-    })
-    .then(function(){
-        createSideQuestions()
     })
 
     console.log("- > Generated the following main questions: ");
@@ -239,7 +236,7 @@ function chooseQuestions(questions){
 
 };
 
-function setQuestion(question_title){
+function setQuestion(data, questions, output){
 
     // console.log("Setting up question: " + question_title)
 
@@ -248,21 +245,7 @@ function setQuestion(question_title){
     document.getElementById('question-title').innerText = question_title;
     document.getElementById('question-description').innerText = q_and_a[1];
 
-}
-
-function createSideQuestions(){
-
-    let answer = ""
-
-    for (var key in final_questions) {
-
-        answer = final_questions[key][0]
-
-        console.log(answer);
-
-        console.log(side_questions["Division"])
-
-    }
+    console.log(final_questions)
 
 }
 
