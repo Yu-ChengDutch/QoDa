@@ -230,6 +230,9 @@ function chooseQuestions(questions){
             
             current_side_db[key] = side_questions[key];
 
+            console.log(current_side_db);
+            console.log(current_side_db[key]);
+
             addSides(answer);
 
         }
@@ -246,8 +249,7 @@ function addSides(answer){
 
     console.log(Object.getOwnPropertyNames(current_side_db))
 
-    console.log(current_side_db);
-    console.log(current_side_db["Skeleton"])
+    // console.log(current_side_db);
 
     for (var key in current_side_db) {
 
