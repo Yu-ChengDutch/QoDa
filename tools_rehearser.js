@@ -272,7 +272,7 @@ function checkAnswer(){
 
             for (let j = 0; j < current_side_question_keys.length; j++) {
 
-                // console.log(current_side_question[current_side_question_keys[j]]);
+                console.log(current_side_question[current_side_question_keys[j]]);
 
                 if (given_answer in current_side_question[current_side_question_keys[j]]) {
                     console.log("FOUND A MATCH!");
