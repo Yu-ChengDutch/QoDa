@@ -229,8 +229,8 @@ function chooseQuestions(questions){
 
             for (let j = 0; j < current_side_question_keys.length; j++) {
 
-                // console.log(current_side_question[current_side_question_keys[j]]);
-                // console.log(given_answer);
+                console.log(current_side_question[current_side_question_keys[j]]);
+                console.log(given_answer);
 
                 if (current_side_question[current_side_question_keys[j]].includes(answer)) {
                     console.log("-> Found matching in " + side_keys[i]);
@@ -240,6 +240,8 @@ function chooseQuestions(questions){
 
                     question_string = "Question " + i + ".1";
                     final_questions[question_string] = [answer, question];
+
+                    console.log("--> Done formulating question " + i + ".1");
                 }
 
             }
