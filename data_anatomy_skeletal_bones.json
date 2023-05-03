@@ -80,13 +80,91 @@
                 "Name": "Bones of the spine",
                 "Division": [
                     {
-                        "Name": "Cervical spine"
+                        "Name": "Cervical spine",
+                        "Division": [
+                            {
+                                "Name": "Atlas"
+                            },
+                            {
+                                "Name": "Axis"
+                            },
+                            {
+                                "Name": "C3"
+                            },
+                            {
+                                "Name": "C4"
+                            },
+                            {
+                                "Name": "C5"
+                            },
+                            {
+                                "Name": "C6"
+                            },
+                            {
+                                "Name": "C7"
+                            }
+                        ]
                     },
                     {
-                        "Name": "Thoracic spine"
+                        "Name": "Thoracic spine",
+                        "Division": [
+                            {
+                                "Name": "Th1"
+                            },
+                            {
+                                "Name": "Th2"
+                            },
+                            {
+                                "Name": "Th3"
+                            },
+                            {
+                                "Name": "Th4"
+                            },
+                            {
+                                "Name": "Th5"
+                            },
+                            {
+                                "Name": "Th6"
+                            },
+                            {
+                                "Name": "Th7"
+                            },
+                            {
+                                "Name": "Th8"
+                            },
+                            {
+                                "Name": "Th9"
+                            },
+                            {
+                                "Name": "Th10"
+                            },
+                            {
+                                "Name": "Th11"
+                            },
+                            {
+                                "Name": "Th12"
+                            }
+                        ]
                     },
                     {
-                        "Name": "Lumbar spine"
+                        "Name": "Lumbar spine",
+                        "Division": [
+                            {
+                                "Name": "L1"
+                            },
+                            {
+                                "Name": "L2"
+                            },
+                            {
+                                "Name": "L3"
+                            },
+                            {
+                                "Name": "L4"
+                            },
+                            {
+                                "Name": "L5"
+                            }
+                        ]
                     },
                     {
                         "Name": "Sacrum"
