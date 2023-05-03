@@ -6,7 +6,7 @@ let question_texts = {
     "Branches": ["Structures may branch off. Of what structure did <", "> branch off?"],
     "Continues": ["Structures may take a different name at some point. What is <", "> called further upstream?"],
     "Branches at": ["Branching occurs at a certain point. At what point does <", "> branch off?"],
-    "Branches to": ["Branching occurs in a certain direction. What direction does<", "> branch to?"]
+    "Branches to": ["Branching occurs in a certain direction. What direction does <", "> branch to?"]
 };
 
 let possible_questions = {
