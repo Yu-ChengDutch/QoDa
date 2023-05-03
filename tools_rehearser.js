@@ -228,10 +228,7 @@ function chooseQuestions(questions){
 
             console.log("--> Going through " + key);
             
-            current_side_db[key] = side_questions[key];
-
-            console.log(current_side_db);
-            console.log(current_side_db[key]);
+            current_side_db = side_questions[key];
 
             addSides(answer);
 
@@ -254,7 +251,7 @@ function addSides(answer){
     for (var key in current_side_db) {
 
         console.log("---> Now going through " + key)
-        console.log(current_side_questions);
+        console.log(current_side_db);
         console.log(answer);
 
         if (current_side_question[current_side_question_keys[z]].includes(answer)) {
