@@ -216,7 +216,7 @@ function chooseQuestions(questions){
         /* A question is added to the roster here */
 
         let question_string = "Question " + i;
-        final_questions.set(question_string, [answer, question]);
+        final_questions[question_string] = [answer, question];
 
         /* First, I want to determine whether there's a side quest */
 
@@ -239,7 +239,7 @@ function chooseQuestions(questions){
                     answer = current_side_question_keys[j];
 
                     question_string = "Question " + i + ".1";
-                    final_questions.set(question_string, [answer, question]);
+                    final_questions[question_string] = [answer, question];
                 }
 
             }
