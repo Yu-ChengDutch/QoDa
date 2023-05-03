@@ -260,11 +260,7 @@ function createSideQuestions(){
 
         console.log(answer);
 
-        for (var key in question_texts) {
-
-            console.log(Object.keys(side_questions[key]))
-
-        }
+        console.log(sideQuestions["Division"])
 
     }
 
