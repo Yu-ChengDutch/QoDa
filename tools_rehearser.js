@@ -222,7 +222,11 @@ function chooseQuestions(questions){
 
         let side_keys = Object.keys(side_questions)
 
+        console.log("-> Now generating side questions");
+
         for (let i = 0; i < side_keys.length; i++){
+
+            console.log("--> Going through " + side_keys[i]);
 
             let current_side_question = side_questions[side_keys[i]];
             let current_side_question_keys = Object.keys(current_side_question)
