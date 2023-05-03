@@ -236,7 +236,7 @@ function chooseQuestions(questions){
 
 };
 
-function setQuestion(data, questions, output){
+function setQuestion(question_title){
 
     // console.log("Setting up question: " + question_title)
 
