@@ -91,7 +91,7 @@ function createQuestions(data, questions){
     
                 } else if (typeof next_item === 'string' || next_item instanceof String) {
                     
-                    possible_questions[questions[i]][current_item.Name] = next_item
+                    possible_questions[questions[i]][next_item] = current_item
 
                 } else {
 
