@@ -67,7 +67,7 @@ function setUp(){
     .then(function(data){
         console.log("- > Accesing file: " + data.Name);
         createQuestions(data, questions, possible_questions);
-        chooseQuestions(["Branches at", "Branches to"]);
+        chooseQuestions(["Branches at"]);
         setQuestion("Question 1");
     })
 
@@ -273,6 +273,7 @@ function checkAnswer(){
             for (let j = 0; j < current_side_question_keys.length; j++) {
 
                 console.log(current_side_question[current_side_question_keys[j]]);
+                print(given_answer);
 
                 if (given_answer in current_side_question[current_side_question_keys[j]]) {
                     console.log("FOUND A MATCH!");
@@ -288,6 +289,8 @@ function checkAnswer(){
         let next_int = Object.keys(final_questions).indexOf(title_text) + 1;
         
         // console.log(next_int);
+
+        document.getElementById('remark-card').innerText = "";
 
         if (next_int <= Object.keys(final_questions).length - 1) {
             // console.log("To question: " + Object.keys(final_questions)[next_int])
