@@ -70,7 +70,12 @@ function setUp(){
     })
 
     for (let i = 0; i < Object.keys(databases).length; i++) {
+
+        console.log("Assessing database: " + Object.keys(databases)[i]);
+
         if (!Object.keys(databases)[i] === subject_title) {
+
+            console.log(Object.keys(databases)[i] + " is found not to be the same as " + subject_title);
 
             fetch(databases[Object.keys(databases)[i]])
             .then(function(response){
