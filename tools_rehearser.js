@@ -18,6 +18,15 @@ let possible_questions = {
     "Branches to": {}
 }
 
+let side_questions = {
+    "Division": {},
+    "Parts": {},
+    "Branches": {},
+    "Continues": {},
+    "Branches at": {},
+    "Branches to": {}
+}
+
 let final_questions = {
     "Question 1": {},
     "Question 2": {},
@@ -49,23 +58,38 @@ function setUp(){
     questions = databases[subject_title]["Questions"];
 
     fetch(current_database)
+    .then(function(response){
+        console.log("File found and accessed at " + current_database);
+        return response.json();
+    })
+    .then(function(data){
+        console.log("Accesing file: " + data.Name);
+        createQuestions(data, questions, possible_questions);
+        chooseQuestions(questions);
+        setQuestion("Question 1");
+    })
+
+    for (let i = 0; i < Object.keys(databases).length; i++) {
+        if (!Object.keys(databases)[i] === subject_title) {
+
+            fetch(databases[Object.keys(databases)[i]])
             .then(function(response){
-                console.log("File found and accessed at " + current_database);
+                console.log("File found and accessed at " + databases[Object.keys(databases)[i]]);
                 return response.json();
             })
-            .then(function(data){
-                console.log("Accesing file: " + data.Name);
-                createQuestions(data, questions);
-                chooseQuestions(questions);
-                setQuestion("Question 1");
+            .then(function(side_data){
+                console.log("Accesing file: " + side_data.Name);
+                createQuestions(side_data, databases[Object.keys(databases)[i]]["Questions"], side_questions);
             })
+        }
+    }
 
 }
 
 /* Load the database (for now still hardcoded) */
 
 
-function createQuestions(data, questions){
+function createQuestions(data, questions, output){
     
     console.log("Starting analysis:")
 
@@ -89,11 +113,11 @@ function createQuestions(data, questions){
                         temp_array.push(next_item[i].Name)
                       }
     
-                      possible_questions[questions[i]][current_item.Name] = temp_array
+                      output[questions[i]][current_item.Name] = temp_array
     
                 } else if (typeof next_item === 'string' || next_item instanceof String) {
 
-                    possible_questions[questions[i]][next_item] = current_item.Name
+                    output[questions[i]][next_item] = current_item.Name
 
                 } else {
 
@@ -103,7 +127,7 @@ function createQuestions(data, questions){
                         }
                     }
 
-                    possible_questions[questions[i]][current_item.Name] = next_item.Name
+                    output[questions[i]][current_item.Name] = next_item.Name
 
                 }
 
