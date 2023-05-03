@@ -40,7 +40,7 @@ let questions = [];
 
 let databases = {
     "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts"]},
-    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches at", "Branches to"]}
+    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Parts", "Continues", "Branches at", "Branches to"]}
 };
 
 /* Check what database to load */ 
@@ -67,7 +67,7 @@ function setUp(){
     .then(function(data){
         console.log("- > Accesing file: " + data.Name);
         createQuestions(data, questions, possible_questions);
-        chooseQuestions(questions);
+        chooseQuestions(["Branches at", "Branches to"]);
         setQuestion("Question 1");
     })
 
