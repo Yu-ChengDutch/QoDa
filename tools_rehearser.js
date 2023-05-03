@@ -233,6 +233,8 @@ function chooseQuestions(questions){
 
             for (let j = 0; j < current_side_question_keys.length; j++) {
 
+                console.log("---> Going through " + current_side_question_keys[j])
+
                 console.log(current_side_question[current_side_question_keys[j]]);
                 console.log(answer);
 
