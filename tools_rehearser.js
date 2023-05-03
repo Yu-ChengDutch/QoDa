@@ -286,12 +286,12 @@ function checkAnswer(){
 
         for (var key in side_questions) {
 
-            // console.log("Analysing: " + key);
+            console.log("Analysing: " + key);
 
             new_dict = side_questions[key]
             temp_type = key
 
-            // console.log(new_dict)
+            console.log(new_dict)
 
             for (var key in new_dict) {
 
