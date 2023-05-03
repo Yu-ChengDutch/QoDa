@@ -229,7 +229,7 @@ function chooseQuestions(questions){
             let current_side_question = side_questions[key];
 
             console.log(current_side_question);
-            console.log(Object.keys(current_side_question))
+            console.log(current_side_question["Skeleton"])
 
             for (var key in current_side_question) {
 
