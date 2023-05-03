@@ -5,7 +5,8 @@ let question_texts = {
     "Parts": ["Structures may be divided in parts. Of what structure is <", "> a part?"],
     "Branches": ["Structures may branch off. Of what structure did <", "> branch off?"],
     "Continues": ["Structures may take a different name at some point. What is <", "> called further upstream?"],
-    "Branches at": ["Branching occurs at a certain point. At what point does <", "> branch off?"]
+    "Branches at": ["Branching occurs at a certain point. At what point does <", "> branch off?"],
+    "Branches to": ["Branching occurs in a certain direction. What direction does<", "> branch to?"]
 };
 
 let possible_questions = {
@@ -29,7 +30,7 @@ let questions = [];
 
 let databases = {
     "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts"]},
-    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Parts", "Continues", "Branches at"]}
+    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Parts", "Continues", "Branches at", "Branches to"]}
 };
 
 /* Check what database to load */ 
