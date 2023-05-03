@@ -204,6 +204,8 @@ function chooseQuestions(questions){
 
         /* Here we will check if there is a good side question */
 
+        /*
+
         let side_keys = Object.keys(side_questions)
 
         for (i = 0; i < side_keys.length; i++) {
@@ -214,6 +216,8 @@ function chooseQuestions(questions){
                 console.log("Found a match!");
             }
         };
+
+        */
 
         console.log("Done formulating question " + i);
 
