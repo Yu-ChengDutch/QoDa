@@ -269,6 +269,10 @@ function setQuestion(question_title){
     document.getElementById('question-title').innerText = question_title;
     document.getElementById('question-description').innerText = q_and_a[1];
 
+    for (const key in final_questions) {
+        console.log("Key found: " + key)
+    }
+
 }
 
 function rand(length){
