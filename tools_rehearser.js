@@ -232,33 +232,7 @@ function chooseQuestions(questions){
 
     };
 
-}
-
-function addSides(answer, number){
-
-    // console.log(Object.getOwnPropertyNames(current_side_db))
-
-    // console.log(current_side_db);
-
-    for (var key in current_side_db) {
-
-        console.log("---> Now going through " + key)
-        console.log(current_side_db);
-        console.log(current_side_db[key]);
-        console.log(answer);
-
-        if (current_side_db[key].includes(answer)) {
-            console.log("-> Found matching in " + key);
-
-            question = question_texts[side_keys[number]][0] + answer + question_texts[side_keys[number]][1];
-            answer = current_side_db[key];
-
-            question_string = "Question " + (number+1) + ".1";
-            final_questions[question_string] = [answer, question];
-        }
-
-    }
-}
+};
 
 function setQuestion(question_title){
 
@@ -268,17 +242,6 @@ function setQuestion(question_title){
 
     document.getElementById('question-title').innerText = question_title;
     document.getElementById('question-description').innerText = q_and_a[1];
-
-    console.log(final_questions)
-
-    for (const key in final_questions) {
-        console.log("Key found: " + key)
-    }
-
-    console.log(Object.keys(final_questions))
-    console.log(Object.getOwnPropertyNames(final_questions))
-
-    console.log(Object.keys(current_side_db))
 
 }
 
