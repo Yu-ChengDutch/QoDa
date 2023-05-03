@@ -296,6 +296,7 @@ function checkAnswer(){
             for (var key in new_dict) {
 
                 console.log(new_dict[key])
+                print(given_answer)
 
                 if (given_answer in new_dict[key]) {
                     
