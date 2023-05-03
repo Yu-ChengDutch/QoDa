@@ -54,23 +54,6 @@ function setUp(){
 
     questions = databases[subject_title]["Questions"];
 
-    fetch(current_database)
-    .then(function(response){
-        console.log("- > File found and accessed at " + current_database);
-        return response.json();
-    })
-    .then(function(data){
-        console.log("- > Accesing file: " + data.Name);
-        createQuestions(data, questions, possible_questions);
-        chooseQuestions(["Branches at"]);
-        setQuestion("Question 1");
-    })
-
-    console.log("- > Generated the following main questions: ");
-    console.log(final_questions);
-    console.log(Object.keys(final_questions));
-    console.log("")
-
     for (let i = 0; i < Object.keys(databases).length; i++) {
 
         /* console.log("Assessing database: " + Object.keys(databases)[i]); */ 
@@ -101,10 +84,25 @@ function setUp(){
             console.log(side_questions);
             console.log("")
 
-            createSideQuestions()
-
         }
     }
+
+    fetch(current_database)
+    .then(function(response){
+        console.log("- > File found and accessed at " + current_database);
+        return response.json();
+    })
+    .then(function(data){
+        console.log("- > Accesing file: " + data.Name);
+        createQuestions(data, questions, possible_questions);
+        chooseQuestions(["Branches at"]);
+        setQuestion("Question 1");
+    })
+
+    console.log("- > Generated the following main questions: ");
+    console.log(final_questions);
+    console.log(Object.keys(final_questions));
+    console.log("")
 
 }
 
