@@ -286,6 +286,8 @@ function setQuestion(question_title){
     console.log(Object.keys(final_questions))
     console.log(Object.getOwnPropertyNames(final_questions))
 
+    console.log(Object.keys(current_side_db))
+
 }
 
 function rand(length){
