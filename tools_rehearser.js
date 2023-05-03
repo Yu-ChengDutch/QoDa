@@ -298,7 +298,7 @@ function checkAnswer(){
                 // console.log(new_dict[key])
                 // console.log(given_answer)
 
-                if (new_dict[key].contains(given_answer)) {
+                if (new_dict[key].includes(given_answer)) {
                     
                     console.log("Found a match!")
                     console.log(temp_type)
