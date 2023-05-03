@@ -268,15 +268,13 @@ function checkAnswer(){
         for (let i = 0; i < side_keys.length; i++){
 
             let current_side_question = side_questions[side_keys[i]];
-            let current_side_key = Object.keys(current_side_question)
+            let current_side_question_keys = Object.keys(current_side_question)
 
-            for (let j = 0; j < current_side_key.length; j++) {
+            for (let j = 0; j < current_side_question_keys.length; j++) {
 
-                console.log(current_side_key);
+                console.log(current_side_question[current_side_question_keys[j]]);
 
-                console.log(current_side_question[current_side_key]);
-
-                if (given_answer in current_side_question[current_side_key]) {
+                if (given_answer in current_side_question[current_side_question_keys[j]]) {
                     console.log("FOUND A MATCH!");
                 }
 
