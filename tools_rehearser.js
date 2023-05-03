@@ -225,14 +225,10 @@ function chooseQuestions(questions){
         for (var key in side_questions){
 
             console.log("--> Going through " + key);
-            console.log(side_questions)
-            console.log(Object.entries(side_questions[key]))
-            console.log(Object.keys(side_questions[key]))
             
-            current_side_questions = side_questions[key];
+            let current_side_question = side_questions[key];
 
-            console.log(current_side_questions)
-            console.log(Object.keys(current_side_questions))
+            console.log(current_side_question);
 
             for (var key in current_side_questions) {
 
