@@ -252,8 +252,20 @@ function setQuestion(question_title){
 
 function createSideQuestions(){
 
-    for (key in final_questions) {
-        console.log(final_questions[key]);
+    let answer = ""
+
+    for (var key in final_questions) {
+
+        answer = final_questions[key][0]
+
+        console.log(answer);
+
+        for (var key in question_texts) {
+
+            console.log(side_questions[key])
+
+        }
+
     }
 
 }
