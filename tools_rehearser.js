@@ -100,6 +100,9 @@ function setUp(){
             console.log("- > Generated the following side database: ");
             console.log(side_questions);
             console.log("")
+
+            createSideQuestions()
+
         }
     }
 
