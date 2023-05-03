@@ -89,6 +89,10 @@ function createQuestions(data, questions){
     
                       possible_questions[questions[i]][current_item.Name] = temp_array
     
+                } else if (typeof next_item === 'string' || next_item instanceof String) {
+                    
+                    possible_questions[questions[i]][current_item.Name] = next_item
+
                 } else {
 
                     for (let j =0; j < questions.length; j++) {
