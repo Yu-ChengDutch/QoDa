@@ -228,9 +228,10 @@ function chooseQuestions(questions){
 
             console.log("--> Going through " + key);
             
+            current_side_db = {};
             current_side_db = side_questions[key];
 
-            addSides(answer);
+            addSides(answer, i);
 
         }
 
@@ -242,9 +243,9 @@ function chooseQuestions(questions){
 
 }
 
-function addSides(answer){
+function addSides(answer, number){
 
-    console.log(Object.getOwnPropertyNames(current_side_db))
+    // console.log(Object.getOwnPropertyNames(current_side_db))
 
     // console.log(current_side_db);
 
@@ -252,15 +253,16 @@ function addSides(answer){
 
         console.log("---> Now going through " + key)
         console.log(current_side_db);
+        current_side_db[key]
         console.log(answer);
 
-        if (current_side_question[current_side_question_keys[z]].includes(answer)) {
-            console.log("-> Found matching in " + side_keys[j]);
+        if (current_side_db[key].includes(answer)) {
+            console.log("-> Found matching in " + key);
 
-            question = question_texts[side_keys[j]][0] + answer + question_texts[side_keys[j]][1];
-            answer = current_side_question_keys[z];
+            question = question_texts[side_keys[number]][0] + answer + question_texts[side_keys[number]][1];
+            answer = current_side_db[key];
 
-            question_string = "Question " + (j+1) + ".1";
+            question_string = "Question " + (number+1) + ".1";
             final_questions[question_string] = [answer, question];
         }
 
