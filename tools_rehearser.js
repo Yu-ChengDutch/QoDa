@@ -62,8 +62,8 @@ function setUp(){
     .then(function(data){
         console.log("- > Accesing file: " + data.Name);
         createQuestions(data, questions, possible_questions);
-        setQuestion("Question 1");
         chooseQuestions(["Branches at"]);
+        setQuestion("Question 1");
     })
     .then(function(){
         for (let i = 0; i < Object.keys(databases).length; i++) {
@@ -276,6 +276,24 @@ function checkAnswer(){
         // console.log(next_int);
 
         document.getElementById('remark-card').innerText = "";
+
+        let new_dict = {}
+
+        for (var key in side_questions) {
+
+            console.log("Analysing: " + key);
+
+            new_dict = side_questions[key]
+
+            console.log(new_dict)
+
+            for (var key in new_dict) {
+
+                console.log(new_dict[key])
+
+            }
+
+        }
 
         if (next_int <= Object.keys(final_questions).length - 1) {
             // console.log("To question: " + Object.keys(final_questions)[next_int])
