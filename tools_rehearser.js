@@ -231,7 +231,7 @@ function chooseQuestions(questions){
             for (var key in current_side_questions) {
 
                 console.log("---> Going through " + key)
-                console.log(current_side_questions[key]);
+                console.log(current_side_questions);
                 console.log(answer);
 
                 if (current_side_question[current_side_question_keys[z]].includes(answer)) {
@@ -242,8 +242,6 @@ function chooseQuestions(questions){
 
                     question_string = "Question " + (j+1) + ".1";
                     final_questions[question_string] = [answer, question];
-
-                    console.log("--> Done formulating question " + j + ".1");
                 }
 
             }
@@ -252,7 +250,7 @@ function chooseQuestions(questions){
 
         // console.log(final_questions);
 
-        console.log("-> Done formulating question " + i);
+        console.log("-> Done formulating question " + (i+1));
 
     };
 
