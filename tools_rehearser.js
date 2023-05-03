@@ -81,7 +81,7 @@ function setUp(){
 
             console.log(Object.keys(databases)[i] + " is found not to be the same as " + subject_title);
 
-            fetch(databases[Object.keys(databases)[i]])
+            fetch(databases[Object.keys(databases)[i]]["Database"])
             .then(function(response){
                 console.log("File found and accessed at " + databases[Object.keys(databases)[i]]);
                 return response.json();
