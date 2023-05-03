@@ -27,13 +27,7 @@ let side_questions = {
     "Branches to": {}
 }
 
-let final_questions = {
-    "Question 1": {},
-    "Question 2": {},
-    "Question 3": {},
-    "Question 4": {},
-    "Question 5": {}
-};
+let final_questions = {};
 
 let current_database = ""
 let questions = [];
@@ -175,7 +169,7 @@ function chooseQuestions(questions){
 
     /* Iterate through all final questions*/
 
-    for (let i = 0; i < Object.keys(final_questions).length; i++){
+    for (let i = 0; i < 5; i++){
 
         /* Assign to current_type a random question type */ 
 
@@ -221,7 +215,36 @@ function chooseQuestions(questions){
         
         /* A question is added to the roster here */
 
-        final_questions[Object.keys(final_questions)[i]] = [answer, question];
+        let question_string = "Question " + i;
+        final_questions.put(question_string, [answer, question]);
+
+        /* First, I want to determine whether there's a side quest */
+
+        let side_keys = Object.keys(side_questions)
+
+        for (let i = 0; i < side_keys.length; i++){
+
+            let current_side_question = side_questions[side_keys[i]];
+            let current_side_question_keys = Object.keys(current_side_question)
+
+            for (let j = 0; j < current_side_question_keys.length; j++) {
+
+                // console.log(current_side_question[current_side_question_keys[j]]);
+                // console.log(given_answer);
+
+                if (current_side_question[current_side_question_keys[j]].includes(answer)) {
+                    console.log("-> Found matching in " + side_keys[i]);
+
+                    question = question_texts[side_keys[i]][0] + answer + question_texts[side_keys[i]][1];
+                    answer = current_side_question_keys[j];
+
+                    question_string = "Question " + i + ".1";
+                    final_questions.put(question_string, [answer, question]);
+                }
+
+            }
+
+        }
 
         // console.log(final_questions);
 
@@ -260,28 +283,6 @@ function checkAnswer(){
     let right_answer = final_questions[title_text][0]
 
     if (given_answer == right_answer) {
-
-        /* First, I want to determine whether there's a side quest */
-
-        let side_keys = Object.keys(side_questions)
-
-        for (let i = 0; i < side_keys.length; i++){
-
-            let current_side_question = side_questions[side_keys[i]];
-            let current_side_question_keys = Object.keys(current_side_question)
-
-            for (let j = 0; j < current_side_question_keys.length; j++) {
-
-                console.log(current_side_question[current_side_question_keys[j]]);
-                console.log(given_answer);
-
-                if (current_side_question[current_side_question_keys[j]].includes(given_answer)) {
-                    console.log("FOUND A MATCH!");
-                }
-
-            }
-
-        }
 
         // console.log("The answer is correct");
         textfield.value = "";
