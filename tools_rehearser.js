@@ -252,7 +252,7 @@ function addSides(answer, number){
 
         console.log("---> Now going through " + key)
         console.log(current_side_db);
-        current_side_db[key]
+        console.log(current_side_db[key]);
         console.log(answer);
 
         if (current_side_db[key].includes(answer)) {
