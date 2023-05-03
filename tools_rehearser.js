@@ -14,7 +14,8 @@ let possible_questions = {
     "Parts": {},
     "Branches": {},
     "Continues": {},
-    "Branches at": {}
+    "Branches at": {},
+    "Branches to": {}
 }
 
 let final_questions = {
@@ -91,10 +92,6 @@ function createQuestions(data, questions){
                       possible_questions[questions[i]][current_item.Name] = temp_array
     
                 } else if (typeof next_item === 'string' || next_item instanceof String) {
-                    
-                    console.log("Treating " + next_item)
-                    console.log("Treating " + current_item.Name)
-                    console.log("Treating " + questions[i])
 
                     possible_questions[questions[i]][next_item] = current_item.Name
 
