@@ -196,9 +196,25 @@ function chooseQuestions(questions){
         
         let question = question_texts[current_type][0] + question_data + question_texts[current_type][1];
         
+        /* A question is added to the roster here */
+
         final_questions[Object.keys(final_questions)[i]] = [answer, question];
 
         console.log(final_questions);
+
+        /* Here we will check if there is a good side question */
+
+        let side_keys = Object.keys(side_questions)
+
+        for (i = 0; i < side_keys.length; i++) {
+
+            console.log(Object.keys(side_questions[side_keys[i]]))
+
+            if (answer in Object.keys(side_questions[side_keys[i]])){
+                console.log("Found a match!");
+            }
+        };
+
     };
 
 }
