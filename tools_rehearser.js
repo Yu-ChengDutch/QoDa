@@ -50,49 +50,58 @@ function setUp(){
     let subject_title = document.getElementById('true-title').innerText;
     let side_db = {};
 
-    console.log("Fetching: " + subject_title);
+    console.log("Welcome!");
+    console.log("");
 
     current_database = databases[subject_title]["Database"];
 
-    console.log("From database: " + current_database);
+    console.log("Fetching main DB at: " + current_database);
 
     questions = databases[subject_title]["Questions"];
 
     fetch(current_database)
     .then(function(response){
-        console.log("File found and accessed at " + current_database);
+        console.log("- > File found and accessed at " + current_database);
         return response.json();
     })
     .then(function(data){
-        console.log("Accesing file: " + data.Name);
+        console.log("- > Accesing file: " + data.Name);
         createQuestions(data, questions, possible_questions);
         chooseQuestions(questions);
         setQuestion("Question 1");
     })
 
+    console.log("- > Generated the following main questions: ");
+    console.log(final_questions);
+    console.log("")
+
     for (let i = 0; i < Object.keys(databases).length; i++) {
 
-        console.log("Assessing database: " + Object.keys(databases)[i]);
+        /* console.log("Assessing database: " + Object.keys(databases)[i]); */ 
 
         if (Object.keys(databases)[i] === subject_title) {
 
-            console.log("Already assessed: " + Object.keys(databases)[i] + " & " + subject_title);
+            /* console.log("Already assessed: " + Object.keys(databases)[i] + " & " + subject_title); */
 
         } else {
 
             side_db = databases[Object.keys(databases)[i]]["Database"]
 
-            console.log(Object.keys(databases)[i] + " is found not to be the same as " + subject_title);
+            /* console.log(Object.keys(databases)[i] + " is found not to be the same as " + subject_title); */
 
             fetch(side_db)
             .then(function(side_response){
-                console.log("File found and accessed at " + side_db);
+                console.log("- > File found and accessed at " + side_db);
                 return side_response.json();
             })
             .then(function(side_data){
-                console.log("Accesing file: " + side_data.Name);
+                console.log("- > Accesing file: " + side_data.Name);
                 createQuestions(side_data, databases[Object.keys(databases)[i]]["Questions"], side_questions);
             })
+
+            console.log("- > Generated the following side questions: ");
+            console.log(side_questions);
+            console.log("")
         }
     }
 
@@ -103,7 +112,7 @@ function setUp(){
 
 function createQuestions(data, questions, output){
     
-    console.log("Starting analysis:")
+    // console.log("Starting analysis:")
 
     let traversable = [data]
 
@@ -149,12 +158,12 @@ function createQuestions(data, questions, output){
         traversable.splice(0, 1)
     }
 
-    console.log("Finished analysis...")
+    // console.log("Finished analysis...")
 
-    console.log(possible_questions["Division"]);
-    console.log(possible_questions["Parts"]);
-    console.log(possible_questions["Continues"]);
-    console.log(possible_questions["Branches"]);
+    // console.log(possible_questions["Division"]);
+    // console.log(possible_questions["Parts"]);
+    // console.log(possible_questions["Continues"]);
+    // console.log(possible_questions["Branches"]);
 
 }
 
@@ -184,11 +193,11 @@ function chooseQuestions(questions){
 
             answer = key_array[rand(key_array.length)];
 
-            console.log(answer);
+            // console.log(answer);
 
             for (let i = 0; i < Object.keys(final_questions); i++){
                 if (answer in final_questions[Object.keys(final_questions[i])]) {
-                    console.log("Found a duplicate!");
+                    // console.log("Found a duplicate!");
                 } 
             };
 
@@ -212,7 +221,7 @@ function chooseQuestions(questions){
 
         final_questions[Object.keys(final_questions)[i]] = [answer, question];
 
-        console.log(final_questions);
+        // console.log(final_questions);
 
         /* Here we will check if there is a good side question */
 
@@ -231,7 +240,7 @@ function chooseQuestions(questions){
 
         */
 
-        console.log("Done formulating question " + i);
+        console.log("-> Done formulating question " + i);
 
     };
 
@@ -239,7 +248,7 @@ function chooseQuestions(questions){
 
 function setQuestion(question_title){
 
-    console.log("Setting up question: " + question_title)
+    // console.log("Setting up question: " + question_title)
 
     q_and_a = final_questions[question_title];
 
@@ -259,48 +268,34 @@ function checkAnswer(){
     const textfield = document.getElementById('text-field');
     const given_answer = textfield.value;
 
-    console.log("For " + title_text + ":");
+    // console.log("For " + title_text + ":");
 
-    console.log("The given answer is: " + given_answer);
+    // console.log("The given answer is: " + given_answer);
 
     let right_answer = final_questions[title_text][0]
 
     if (given_answer == right_answer) {
-        console.log("The answer is correct");
+        // console.log("The answer is correct");
         textfield.value = "";
 
         let next_int = Object.keys(final_questions).indexOf(title_text) + 1;
         
-        console.log(next_int);
+        // console.log(next_int);
 
         if (next_int <= Object.keys(final_questions).length - 1) {
-            console.log("To question: " + Object.keys(final_questions)[next_int])
+            // console.log("To question: " + Object.keys(final_questions)[next_int])
             setQuestion(Object.keys(final_questions)[next_int])
         } else {
             document.getElementById('question-title').innerText = "Done!";
             document.getElementById('question-description').innerText = "";
         };
 
-        console.log("Set up new question");
+        // console.log("Set up new question");
 
     } else {
-        console.log("The answer was incorrect, the correct answer is: " + right_answer);
+        // console.log("The answer was incorrect, the correct answer is: " + right_answer);
 
         document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + right_answer + ". Please enter this.";
     };
 
-};
-
-function setProgress(){
-    const ogham = document.getElementById('saille')
-
-    console.log("Check this")
-
-    var ogham_class = ogham.className;
-
-    console.log(ogham_class);
-
-    if (ogham_class == "ogham-zero") {
-        ogham.style.height = "6vh";
-    };
 };
