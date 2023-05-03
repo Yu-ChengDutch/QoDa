@@ -230,6 +230,8 @@ function chooseQuestions(questions){
             
             current_side_db = side_questions[key];
 
+            console.log(Object.getOwnPropertyNames(current_side_db))
+
             console.log(current_side_db);
             console.log(current_side_db["Skeleton"])
 
@@ -269,6 +271,8 @@ function setQuestion(question_title){
 
     document.getElementById('question-title').innerText = question_title;
     document.getElementById('question-description').innerText = q_and_a[1];
+
+    console.log(final_questions)
 
     for (const key in final_questions) {
         console.log("Key found: " + key)
