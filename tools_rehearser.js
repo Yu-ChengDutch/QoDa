@@ -273,6 +273,9 @@ function checkAnswer(){
             for (let j = 0; j < current_side_key.length; j++) {
 
                 console.log(current_side_key);
+
+                console.log(current_side_question[current_side_key]);
+
                 if (given_answer in current_side_question[current_side_key]) {
                     console.log("FOUND A MATCH!");
                 }
