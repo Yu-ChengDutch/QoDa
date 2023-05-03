@@ -40,7 +40,7 @@ let questions = [];
 
 let databases = {
     "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts"]},
-    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Parts", "Continues", "Branches at", "Branches to"]}
+    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches at", "Branches to"]}
 };
 
 /* Check what database to load */ 
@@ -86,6 +86,8 @@ function setUp(){
         } else {
 
             side_db = databases[Object.keys(databases)[i]]["Database"]
+
+            console.log("Fetching side DB at: " + side_db);
 
             /* console.log(Object.keys(databases)[i] + " is found not to be the same as " + subject_title); */
 
@@ -223,23 +225,6 @@ function chooseQuestions(questions){
 
         // console.log(final_questions);
 
-        /* Here we will check if there is a good side question */
-
-        /*
-
-        let side_keys = Object.keys(side_questions)
-
-        for (i = 0; i < side_keys.length; i++) {
-
-            console.log(Object.keys(side_questions[side_keys[i]]))
-
-            if (answer in Object.keys(side_questions[side_keys[i]])){
-                console.log("Found a match!");
-            }
-        };
-
-        */
-
         console.log("-> Done formulating question " + i);
 
     };
@@ -275,6 +260,27 @@ function checkAnswer(){
     let right_answer = final_questions[title_text][0]
 
     if (given_answer == right_answer) {
+
+        /* First, I want to determine whether there's a side quest */
+
+        let side_keys = Object.keys(side_questions)
+
+        for (let i = 0; i < side_keys.length; i++){
+
+            let current_side_question = side_questions[side_keys[i]];
+            let current_side_key = Object.keys(current_side_question)
+
+            for (let j = 0; j < current_side_key.length; j++) {
+
+                console.log(current_side_key);
+                if (given_answer in current_side_question[current_side_key]) {
+                    console.log("FOUND A MATCH!");
+                }
+
+            }
+
+        }
+
         // console.log("The answer is correct");
         textfield.value = "";
 
@@ -293,6 +299,7 @@ function checkAnswer(){
         // console.log("Set up new question");
 
     } else {
+
         // console.log("The answer was incorrect, the correct answer is: " + right_answer);
 
         document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + right_answer + ". Please enter this.";
