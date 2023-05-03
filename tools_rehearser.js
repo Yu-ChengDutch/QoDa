@@ -230,6 +230,7 @@ function chooseQuestions(questions){
         for (var key in side_keys){
 
             console.log("--> Going through " + key);
+            console.log(side_questions.key)
 
             let current_side_question = side_questions[side_keys[j]];
 
