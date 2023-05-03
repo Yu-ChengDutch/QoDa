@@ -220,14 +220,9 @@ function chooseQuestions(questions){
 
         /* First, I want to determine whether there's a side quest */
 
-        let side_keys = Object.keys(side_questions)
-
         console.log("-> Now generating side questions");
-        console.log(side_questions);
-        console.log(Object.keys(side_questions));
-        console.log(Object.values(side_questions));
 
-        for (var key in side_keys){
+        for (var key in side_questions){
 
             console.log("--> Going through " + key);
             console.log(side_questions.key)
