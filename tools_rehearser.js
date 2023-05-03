@@ -99,6 +99,9 @@ function setUp(){
             }
         }
     })
+    .then(function(){
+        createSideQuestions()
+    })
 
     console.log("- > Generated the following main questions: ");
     console.log(final_questions);
