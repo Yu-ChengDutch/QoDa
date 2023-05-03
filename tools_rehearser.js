@@ -225,20 +225,12 @@ function chooseQuestions(questions){
         for (var key in side_questions){
 
             console.log("--> Going through " + key);
-            console.log(side_questions[key])
-
-            let current_side_question = side_questions[side_keys[j]];
-
             
-            let current_side_question_keys = Object.keys(current_side_question);
+            current_side_questions = side_questions[key];
 
-            console.log(current_side_question);
-            console.log(current_side_question_keys);
-            console.log(Object.values(current_side_question));
+            for (var key in current_side_questions) {
 
-            for (let z = 0; z < current_side_question_keys.length; z++) {
-
-                console.log("---> Going through " + current_side_question_keys[z])
+                console.log("---> Going through " + key)
 
                 console.log(current_side_question[current_side_question_keys[z]]);
                 console.log(answer);
