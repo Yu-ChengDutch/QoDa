@@ -279,17 +279,56 @@ function checkAnswer(){
 
         let new_dict = {}
 
+        let temp_dict = {}
+        let temp_string = ""
+        let temp_type = ""
+        let temp_answer = ""
+
         for (var key in side_questions) {
 
-            console.log("Analysing: " + key);
+            // console.log("Analysing: " + key);
 
             new_dict = side_questions[key]
+            temp_type = key
 
-            console.log(new_dict)
+            // console.log(new_dict)
 
             for (var key in new_dict) {
 
-                console.log(new_dict[key])
+                if (given_answer in new_dict[key]) {
+                    
+                    console.log("Found a match!")
+                    console.log(temp_type)
+
+                    temp_answer = key
+
+                    console.log(temp_answer)
+
+                    for (var key in final_questions) {
+
+                        if (key === title_text) {
+
+                            temp_string = key + ".1"
+
+                            let question = question_texts[temp_type][0] + given_answer + question_texts[temp_type][1];
+
+                            temp_dict[key] = final_questions[key]
+                            temp_dict[temp_string] = [temp_answer, question]
+
+                        } else {
+
+                            temp_dict[key] = final_questions[key]
+
+                        }
+                        
+
+                    }
+
+                    final_questions = temp_dict
+
+                    console.log(final_questions)
+
+                }
 
             }
 
@@ -313,3 +352,5 @@ function checkAnswer(){
     };
 
 };
+
+
