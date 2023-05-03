@@ -97,7 +97,7 @@ function setUp(){
                 createQuestions(side_data, databases[Object.keys(databases)[i]]["Questions"], side_questions);
             })
 
-            console.log("- > Generated the following side questions: ");
+            console.log("- > Generated the following side database: ");
             console.log(side_questions);
             console.log("")
         }
@@ -242,6 +242,14 @@ function setQuestion(question_title){
 
     document.getElementById('question-title').innerText = question_title;
     document.getElementById('question-description').innerText = q_and_a[1];
+
+}
+
+function createSideQuestions(){
+
+    for (key in final_questions) {
+        console.log(final_questions[key]);
+    }
 
 }
 
