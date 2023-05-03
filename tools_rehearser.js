@@ -92,7 +92,10 @@ function createQuestions(data, questions){
     
                 } else if (typeof next_item === 'string' || next_item instanceof String) {
                     
-                    possible_questions[questions[i]][next_item] = current_item
+                    console.log("Treating " + next_item)
+                    console.log("Treating " + current_item.Name)
+
+                    possible_questions[questions[i]][next_item] = current_item.Name
 
                 } else {
 
