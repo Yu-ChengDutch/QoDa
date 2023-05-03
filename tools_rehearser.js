@@ -230,28 +230,7 @@ function chooseQuestions(questions){
             
             current_side_db = side_questions[key];
 
-            console.log(Object.getOwnPropertyNames(current_side_db))
-
-            console.log(current_side_db);
-            console.log(current_side_db["Skeleton"])
-
-            for (var key in current_side_db) {
-
-                console.log("---> Now going through " + key)
-                console.log(current_side_questions);
-                console.log(answer);
-
-                if (current_side_question[current_side_question_keys[z]].includes(answer)) {
-                    console.log("-> Found matching in " + side_keys[j]);
-
-                    question = question_texts[side_keys[j]][0] + answer + question_texts[side_keys[j]][1];
-                    answer = current_side_question_keys[z];
-
-                    question_string = "Question " + (j+1) + ".1";
-                    final_questions[question_string] = [answer, question];
-                }
-
-            }
+            addSides(answer);
 
         }
 
@@ -261,6 +240,32 @@ function chooseQuestions(questions){
 
     };
 
+}
+
+function addSides(answer){
+
+    console.log(Object.getOwnPropertyNames(current_side_db))
+
+    console.log(current_side_db);
+    console.log(current_side_db["Skeleton"])
+
+    for (var key in current_side_db) {
+
+        console.log("---> Now going through " + key)
+        console.log(current_side_questions);
+        console.log(answer);
+
+        if (current_side_question[current_side_question_keys[z]].includes(answer)) {
+            console.log("-> Found matching in " + side_keys[j]);
+
+            question = question_texts[side_keys[j]][0] + answer + question_texts[side_keys[j]][1];
+            answer = current_side_question_keys[z];
+
+            question_string = "Question " + (j+1) + ".1";
+            final_questions[question_string] = [answer, question];
+        }
+
+    }
 }
 
 function setQuestion(question_title){
