@@ -275,7 +275,7 @@ function checkAnswer(){
                 console.log(current_side_question[current_side_question_keys[j]]);
                 console.log(given_answer);
 
-                if (given_answer in current_side_question[current_side_question_keys[j]]) {
+                if (current_side_question[current_side_question_keys[j]].includes(given_answer)) {
                     console.log("FOUND A MATCH!");
                 }
 
