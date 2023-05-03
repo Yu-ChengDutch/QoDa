@@ -94,6 +94,7 @@ function createQuestions(data, questions){
                     
                     console.log("Treating " + next_item)
                     console.log("Treating " + current_item.Name)
+                    console.log("Treating " + questions[i])
 
                     possible_questions[questions[i]][next_item] = current_item.Name
 
