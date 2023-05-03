@@ -215,7 +215,7 @@ function chooseQuestions(questions){
         
         /* A question is added to the roster here */
 
-        let question_string = "Question " + i;
+        let question_string = "Question " + (i+1);
         final_questions[question_string] = [answer, question];
 
         /* First, I want to determine whether there's a side quest */
@@ -224,33 +224,33 @@ function chooseQuestions(questions){
 
         console.log("-> Now generating side questions");
 
-        for (let i = 0; i < side_keys.length; i++){
+        for (let j = 0; j < side_keys.length; j++){
 
-            console.log("--> Going through " + side_keys[i]);
+            console.log("--> Going through " + side_keys[j]);
 
-            let current_side_question = side_questions[side_keys[i]];
+            let current_side_question = side_questions[side_keys[j]];
             let current_side_question_keys = Object.keys(current_side_question)
 
-            for (let j = 0; j < current_side_question_keys.length; j++) {
+            for (let z = 0; z < current_side_question_keys.length; z++) {
 
-                console.log("---> Going through " + current_side_question_keys[j])
+                console.log("---> Going through " + current_side_question_keys[z])
 
-                console.log(current_side_question[current_side_question_keys[j]]);
+                console.log(current_side_question[current_side_question_keys[z]]);
                 console.log(answer);
 
-                if (current_side_question[current_side_question_keys[j]].includes(answer)) {
-                    console.log("-> Found matching in " + side_keys[i]);
+                if (current_side_question[current_side_question_keys[z]].includes(answer)) {
+                    console.log("-> Found matching in " + side_keys[j]);
 
-                    question = question_texts[side_keys[i]][0] + answer + question_texts[side_keys[i]][1];
-                    answer = current_side_question_keys[j];
+                    question = question_texts[side_keys[j]][0] + answer + question_texts[side_keys[j]][1];
+                    answer = current_side_question_keys[z];
 
-                    question_string = "Question " + i + ".1";
+                    question_string = "Question " + (j+1) + ".1";
                     final_questions[question_string] = [answer, question];
 
-                    console.log("--> Done formulating question " + i + ".1");
+                    console.log("--> Done formulating question " + j + ".1");
 
-                    j = current_side_question_keys.length;
-                    i = side_keys.length;
+                    z = current_side_question_keys.length;
+                    j = side_keys.length;
                 }
 
             }
