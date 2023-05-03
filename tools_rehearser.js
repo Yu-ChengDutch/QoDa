@@ -215,6 +215,8 @@ function chooseQuestions(questions){
             }
         };
 
+        console.log("Done formulating question " + i);
+
     };
 
 }
