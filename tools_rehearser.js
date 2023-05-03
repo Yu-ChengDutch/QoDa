@@ -224,15 +224,7 @@ function chooseQuestions(questions){
 
         console.log("-> Now generating side questions");
 
-        for (var key in side_questions){
-
-            console.log("--> Going through " + key);
-
-            current_side_db[key] = side_questions[key];
-
-            addSides(answer, i);
-
-        }
+        console.log(side_questions["Division"])
 
         // console.log(final_questions);
 
