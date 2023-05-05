@@ -29,7 +29,7 @@ let questions = [];
 let databases = {
     "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts", "Alternative name"]},
     "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Parts", "Continues", "Branches at", "Branches to"]},
-    "Nervous System - Peripheral nerves": {"Database": './data_anatomy_nervous_peripheral_nerves.json', "Questions": ["Division", "Branches", "Continues"]},
+    "Nervous System - Peripheral nerves": {"Database": './data_anatomy_nervous_peripheral_nerves.json', "Questions": ["Division", "Branches", "Continues", "Alternative name"]},
     "Muscular System - Muscles": {"Database": './data_anatomy_muscular_muscles.json', "Questions": ["Division", "Innervation", "Origin", "Insertion"]},
     "Skeletal System - Joints": {"Database": './data_anatomy_skeletal_joints.json', "Questions": ["Division", "From", "To", "Joint type"]}
 };
