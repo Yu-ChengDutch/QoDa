@@ -323,7 +323,7 @@
                                             "Branches": [
                                                 {
                                                     "Name": "Superficial perineal nerve",
-                                                    "Continues as": [
+                                                    "Continues": [
                                                         {
                                                             "Name": "Posterior scrotal nerve",
                                                             "In": "Men"
@@ -341,7 +341,7 @@
                                             ]
                                         }                                        
                                     ],
-                                    "Continues as": [
+                                    "Continues": [
                                         {
                                             "Name": "Dorsal nerve of the penis",
                                             "In": "Men"

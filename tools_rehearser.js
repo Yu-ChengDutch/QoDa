@@ -1,7 +1,7 @@
 /* Create an empty dictionary */
 
 let question_texts = {
-    "Division": ["The body consists of groups of bones. Of what group is <", "> a part?"],
+    "Division": ["The body consists of groups of structures. Of what group is <", "> a part?"],
     "Parts": ["Structures may be divided in parts. Of what structure is <", "> a part?"],
     "Branches": ["Structures may branch off. Of what structure did <", "> branch off?"],
     "Continues": ["Structures may take a different name at some point. What is <", "> called further upstream?"],
