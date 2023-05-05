@@ -1,0 +1,220 @@
+{
+    "Name": "Bacteria",
+    "Division": [
+        {
+            "Name": "Terrabacteria",
+            "Gram": "Positive",
+            "Level": "Clade",
+            "Division": [
+                {
+                    "Name": "Bacilliales",
+                    "Level": "Order",
+                    "Division": [
+                        {
+                            "Name": "Bacillus",
+                            "Level": "Genus"
+                        },
+                        {
+                            "Name": "Listeria",
+                            "Level": "Genus"
+                        },
+                        {
+                            "Name": "Staphylococcus",
+                            "Shape": "Coccus",
+                            "Level": "Genus"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lactobacilliales",
+                    "Level": "Order",
+                    "Division": [
+                        {
+                            "Name": "Streptococcus",
+                            "Gram": "Positive",
+                            "Shape": "Coccus",
+                            "Level": "Genus"
+                        },
+                        {
+                            "Name": "Enterococcus",
+                            "Gram": "Positive",
+                            "Shape": "Coccus",
+                            "Level": "Genus"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Hydrobacteria",
+            "Gram": "Negative",
+            "Division": [
+                {
+                    "Name": "Hyphomicrobiales",
+                    "Level": "Order",
+                    "Division": [
+                        {
+                            "Name": "Bartonella",
+                            "Level": "Genus",
+                            "Gram": "Negative",
+                            "Division": [
+                                {
+                                    "Name": "B. Bacilliformis",
+                                    "Level": "Species",
+                                    "Infection": "Carrión's disease"
+                                },
+                                {
+                                    "Name": "B. Henselae",
+                                    "Infection": "Cat-scratch disease",
+                                    "Level": "Species"
+                                },
+                                {
+                                    "Name": "B. Quintana",
+                                    "Infection": "Trench fever",
+                                    "Level": "Species"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Spirochaetales",
+                    "Level": "Order",
+                    "Division": [
+                        {
+                            "Name": "Borrelia",
+                            "Level": "Genus",
+                            "Division": [
+                                {
+                                    "Name": "B. Burgdorferi",
+                                    "Alternative name": "B. Burgdorferi sensu stricto",
+                                    "Level": "Species"
+                                },
+                                {
+                                    "Name": "B. Afzelii",
+                                    "Level": "Species"
+                                },
+                                {
+                                    "Name": "B. Garinii",
+                                    "Level": "Species"
+                                },
+                                {
+                                    "Name": "B. Recurrentis",
+                                    "Level": "Species"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Treponema",
+                            "Level": "Genus",
+                            "Division": [
+                                {
+                                    "Name": "T. Pallidum",
+                                    "Level": "Species"
+                                },
+                                {
+                                    "Name": "T. Carateum",
+                                    "Level": "Species"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Chlamydiales",
+                    "Level": "Order",
+                    "Division": [
+                        {
+                            "Name": "Chlamydia",
+                            "Level": "Genus",
+                            "Division": [
+                                {
+                                    "Name": "Ch. Trachomatis",
+                                    "Level": "Species"
+                                },
+                                {
+                                    "Name": "Ch. Pneumoniae",
+                                    "Level": "Species"
+                                },
+                                {
+                                    "Name": "Ch. Psittaci",
+                                    "Level": "Species"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Neisseriales",
+                    "Level": "Order",
+                    "Division": [
+                        {
+                            "Name": "Kingella",
+                            "Level": "Genus",
+                            "Division": [
+                                {
+                                    "Name": "K. Kingae",
+                                    "Alternative name": "Moraxella kingae",
+                                    "Level": "Species",
+                                    "Shape": "Coccobacillus",
+                                    "Gram": "Negative",
+                                    "Metabolism": "Facultative anaerobe"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Neisseria",
+                            "Level": "Genus",
+                            "Gram": "Negative",
+                            "Shape": "Diplococci",
+                            "Division": [
+                                {
+                                    "Name": "N. Gonorrhoeae",
+                                    "Alternative name": "Gonococcus",
+                                    "Level": "Species"
+                                },
+                                {
+                                    "Name": "N. Meningitidis",
+                                    "Alternative name": "Meningococcus",
+                                    "Level": "Species"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Pseudomonas",
+                    "Level": "Genus",
+                    "Gram": "Negative",
+                    "Division": [
+                        {
+                            "Name": "P. Aeruginosa",
+                            "Level": "Species"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Fusobacteriales",
+                    "Level": "Order",
+                    "Division": [
+                        {
+                            "Name": "Fusobacterium",
+                            "Level": "Genus",
+                            "Shape": "Bacilli",
+                            "Division": [
+                                {
+                                    "Name": "F. Nucleatum",
+                                    "Level": "Species"
+                                },
+                                {
+                                    "Name": "F. Necrophorum",
+                                    "Level": "Species"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
