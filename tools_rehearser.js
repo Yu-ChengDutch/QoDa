@@ -13,7 +13,7 @@ let question_texts = {
     "From": ["Joints run from proximal to distal. Where does <", "> run from?"],
     "To": ["Joints run from proximal to distal. Where does <", "> run to?"],
     "Joint type": ["Joints are always of a certain type. What type does <", "> belong to?"],
-    "Alternative name": ["Many structures are known by multiple names. What does <", "> refer to?"]
+    "Alternative name": ["Many structures are known by multiple names. What is another name for the <", ">?"]
 };
 
 let possible_questions = {};
