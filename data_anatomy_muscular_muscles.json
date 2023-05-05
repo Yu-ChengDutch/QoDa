@@ -403,7 +403,7 @@
                         {
                             "Name": "M. Psoas minor",
                             "Innervation": "Lumbar nerves",
-                            "Origin": ["T12", "L1"],
+                            "Origin": ["Th12", "L1"],
                             "Insertion": ["Pectineal line", "Iliopubic eminence"]
                             
                         }

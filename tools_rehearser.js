@@ -130,15 +130,21 @@ function createQuestions(data, questions, output){
                 next_item = current_item[questions[i]]
 
                 if (Array.isArray(next_item)) {
-                    traversable = traversable.concat(next_item)
+
+                    if (typeof next_item[0] === 'string') {
+                        output[questions[i]][next_item] = current_item.Name
+                    } else {
+                        traversable = traversable.concat(next_item)
     
-                    let temp_array = []
-    
-                    for (let i = 0; i < next_item.length; i++) {
-                        temp_array.push(next_item[i].Name)
-                      }
-    
-                      output[questions[i]][current_item.Name] = temp_array
+                        let temp_array = []
+        
+                        for (let i = 0; i < next_item.length; i++) {
+                            temp_array.push(next_item[i].Name)
+                        }
+        
+                        output[questions[i]][current_item.Name] = temp_array
+                    }
+                    
     
                 } else if (typeof next_item === 'string' || next_item instanceof String) {
 
