@@ -1,0 +1,629 @@
+{
+    "Name": "Muscles of the body",
+    "Division": [
+        {
+            "Name": "Muscles of the head"
+        },{
+            "Name": "Muscles of the neck"
+        }
+        ,
+        {
+            "Name": "Muscles of the trunk",
+            "Division": [
+                {
+                    "Name": "Muscles of the abdomen",
+                    "Division": [
+                        {
+                            "Name": "M. Rectus abdominis"
+                        },
+                        {
+                            "Name": "M. Obliquus externus"
+                        },
+                        {
+                            "Name": "M. Obliquus internus"
+                        },
+                        {
+                            "Name": "M. Transversus abdominis"
+                        },
+                        {
+                            "Name": "M. Pyramidalis"
+                        },
+                        {
+                            "Name": "M. Quadratus lumborum"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the chest",
+                    "Division": [
+                        {
+                            "Name": "Mm. Intercostales externi"
+                        },
+                        {
+                            "Name": "Mm. Intercostales interni"
+                        },
+                        {
+                            "Name": "Mm. Intercostales intimi"
+                        },
+                        {
+                            "Name": "Mm. Subcostales"
+                        },
+                        {
+                            "Name": "M. Transversus thoracis"
+                        },
+                        {
+                            "Name": "M. Levatores costarum"
+                        },
+                        {
+                            "Name": "M. Serratus posterior inferior"
+                        },
+                        {
+                            "Name": "M. Serratus posterior superior"
+                        },
+                        {
+                            "Name": "M. Diaphragma"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the pelvis",
+                    "Division": [
+                        {
+                            "Name": "M. Coccygeus",
+                            "Innervation": "Pudendal nerve"
+                        },
+                        {
+                            "Name": "Levator ani",
+                            "Division": [
+                                {
+                                    "Name": "M. Iliococcygeus"
+                                },
+                                {
+                                    "Name": "M. Pubococcygeus"
+                                },
+                                {
+                                    "Name": "M. Puborectalis",
+                                    "Innervation": "Levator ani nerve"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the perineum",
+                    "Division": [
+                        {
+                            "Name": "Sphincter ani",
+                            "Division": [
+                                {
+                                    "Name": "M. Spincter ani externus"
+                                },
+                                {
+                                    "Name": "M. Spincter ani internus"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Superficial perineal pouch",
+                            "Division": [
+                                {
+                                    "Name": "M. Transversus perinei superficialis"
+                                },
+                                {
+                                    "Name": "M. Bulbospongiosus"
+                                },
+                                {
+                                    "Name": "M. Ischiocavernosus"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Deep perineal pouch",
+                            "Division": [
+                                {
+                                    "Name": "M. Transversus perinei profundus"
+                                },
+                                {
+                                    "Name": "M. Sphincter urethrae externus"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the back",
+                    "Division": [
+                        {
+                            "Name": "Erector spinae muscles",
+                            "Division": [
+                                {
+                                    "Name": "M. Iliocostalis"
+                                },
+                                {
+                                    "Name": "M. Longissimus"
+                                },
+                                {
+                                    "Name": "M. Spinalis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Transversospinales muscles",
+                            "Division": [
+                                {
+                                    "Name": "Semispinales muscles",
+                                    "Division": [
+                                        {
+                                            "Name": "M. Semispinalis thoracis"
+                                        },
+                                        {
+                                            "Name": "M. Semispinalis cervicis"
+                                        },
+                                        {
+                                            "Name": "M. Semispinalis capitis"
+                                        }
+                                    ]
+                                },                                
+                                {
+                                    "Name": "M. Multifidus"
+                                },
+                                {
+                                    "Name": "Rotatores muscles",
+                                    "Division": [
+                                        {
+                                            "Name": "M. Rotatores thoracis"
+                                        },
+                                        {
+                                            "Name": "M. Rotatores cervicis"
+                                        },
+                                        {
+                                            "Name": "M. Rotatores lumborum"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },                        
+                        {
+                            "Name": "M. Interspinales"
+                        },
+                        {
+                            "Name": "M. Intertransversarii"
+                        },
+                        {
+                            "Name": "Splenius muscles",
+                            "Division": [
+                                {
+                                    "Name": "M. Splenius capitis"
+                                },
+                                {
+                                    "Name": "M. Splenius cervicis"
+                                }
+                            ]
+                        }                        
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Muscles of the upper extremity",
+            "Division": [
+                {
+                    "Name": "Muscles of the vertebral column",
+                    "Division": [
+                        {
+                            "Name": "M. Trapezius"
+                        },
+                        {
+                            "Name": "M. Latissimus dorsi"
+                        },
+                        {
+                            "Name": "M. Levator scapulae"
+                        },
+                        {
+                            "Name": "Rhomboids",
+                            "Division": [
+                                {
+                                    "Name": "M. Rhomboideus maior"
+                                },
+                                {
+                                    "Name": "M. Rhomboideus minor"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the thoracic walls",
+                    "Division": [
+                        {
+                            "Name": "Pectoral muscles",
+                            "Division": [
+                                {
+                                    "Name": "M. Pectoralis maior"
+                                },
+                                {
+                                    "Name": "M. Pectoralis minor"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "M. Subclavius"
+                        },
+                        {
+                            "Name": "M. Serratus anterior"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the shoulder",
+                    "Division": [
+                        {
+                            "Name": "M. Deltoideus"
+                        },
+                        {
+                            "Name": "M. Teres maior"
+                        },
+                        {
+                            "Name": "Rotator cuff",
+                            "Division": [
+                                {
+                                    "Name": "M. Superaspinatus"
+                                },
+                                {
+                                    "Name": "M. Infraspinatus"
+                                },
+                                {
+                                    "Name": "M. Teres maior"
+                                },
+                                {
+                                    "Name": "M. Subscapularis"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the arm",
+                    "Division": [
+                        {
+                            "Name": "Anterior compartment of the arm",
+                            "Division": [
+                                {
+                                    "Name": "M. Coracobrachialis"
+                                },
+                                {
+                                    "Name": "M. Biceps brachii"
+                                },
+                                {
+                                    "Name": "M. Brachialis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Posterior compartment of the arm",
+                            "Division": [
+                                {
+                                    "Name": "M. Triceps brachii"
+                                },
+                                {
+                                    "Name": "M. Anconeus"
+                                }                                
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the forearm"
+                },
+                {
+                    "Name": "Muscles of the hand",
+                    "Division": [
+                        {
+                            "Name": "Lateral volar muscles of the hand",
+                            "Division": [
+                                {
+                                    "Name": "Muscles of the thenar eminence",
+                                    "Division": [
+                                        {
+                                            "Name": "M. Opponens pollicis"
+                                        },
+                                        {
+                                            "Name": "M. Flexor pollicis brevis"
+                                        },
+                                        {
+                                            "Name": "M. Abductor pollicis brevis"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Medial volar muscles of the hand",
+                            "Division": [
+                                {
+                                    "Name": "M. Palmaris brevis"
+                                },
+                                {
+                                    "Name": "Hypothenar muscles",
+                                    "Division": [
+                                        {
+                                            "Name": "M. Abductor digiti minimi"
+                                        },
+                                        {
+                                            "Name": "M. Flexor digiti minimi brevis"
+                                        },
+                                        {
+                                            "Name": "M. Opponens digiti minimi"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Intermediate muscles of the hand",
+                            "Division": [
+                                {
+                                    "Name": "Mm. Lumbricales manus"
+                                },
+                                {
+                                    "Name": "M. Interossei dorsales manus"
+                                },
+                                {
+                                    "Name": "M. Interossei palmares"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Muscles of the lower extremity",
+            "Division": [
+                {
+                    "Name": "Muscles of the iliac region",
+                    "Division": [
+                        {
+                            "Name": "M. Iliopsoas",
+                            "Division": [
+                                {
+                                    "Name": "M. Psoas maior",
+                                    "Innervation": "Lumbar plexus",
+                                    "Origin": ["Th12", "L1", "L2", "L3", "L4"],
+                                    "Insertion": "Lesser trochanter"
+                                },
+                                {
+                                    "Name": "M. Iliacus",
+                                    "Innervation": "Femoral nerve",
+                                    "Origin": "Iliac fossa",
+                                    "Insertion": "Lesser trochanter"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "M. Psoas minor",
+                            "Innervation": "Lumbar nerves",
+                            "Origin": ["T12", "L1"],
+                            "Insertion": ["Pectineal line", "Iliopubic eminence"]
+                            
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the gluteal region",
+                    "Division": [
+                        {
+                            "Name": "M. Tensor fasciae latae",
+                            "Innervation": "Superior gluteal nerve",
+                            "Origin": "Iliac crest",
+                            "Insertion": "Iliotibial band"
+                        },
+                        {
+                            "Name": "Gluteal muscles",
+                            "Division": [
+                                {
+                                    "Name": "M. Gluteus maximus",
+                                    "Innervation": "Inferior gluteal nerve",
+                                    "Origin": ["Gluteal surface", "Lumbar fascia", "Sacrum", "Sacrotuberous ligament"],
+                                    "Insertion": ["Iliotibial band", "Gluteal tuberosity"]
+                                },
+                                {
+                                    "Name": "M. Gluteus medius",
+                                    "Innervation": "Superior gluteal nerve",
+                                    "Origin": "Gluteal surface",
+                                    "Insertion": "Greater trochanter"
+                                },
+                                {
+                                    "Name": "M. Gluteus minimus",
+                                    "Innervation": "Superior gluteal nerve",
+                                    "Origin": "Gluteal surface",
+                                    "Insertion": "Greater trochanter"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Lateral rotator group",
+                            "Division": [
+                                {
+                                    "Name": "M. Piriformis",
+                                    "Innervation": "Piriformis nerve",
+                                    "Origin": "Sacrum",
+                                    "Insertion": "Greater trochanter"
+                                },
+                                {
+                                    "Name": "Obturator muscles",
+                                    "Division": [
+                                        {
+                                            "Name": "M. Obturator externus"
+                                        },
+                                        {
+                                            "Name": "M. Obturator internus"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Gemellus muscles",
+                                    "Division": [
+                                        {
+                                            "Name": "M. Gemellus superior"
+                                        },
+                                        {
+                                            "Name": "M. Gemellus inferior"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "M. Quadratus femoris"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the thigh",
+                    "Division": [
+                        {
+                            "Name": "Anterior compartment of the thigh",
+                            "Division": [
+                                {
+                                    "Name": "M. Articularis genus"
+                                },
+                                {
+                                    "Name": "M. Sartorius"
+                                },
+                                {
+                                    "Name": "Quadriceps femoris",
+                                    "Division": [
+                                        {
+                                            "Name": "M. Rectus femoris"
+                                        },
+                                        {
+                                            "Name": "Vastus muscles",
+                                            "Division": [
+                                                {
+                                                    "Name": "M. Vastus lateralis"
+                                                },
+                                                {
+                                                    "Name": "M. Vastus intermedius"
+                                                },
+                                                {
+                                                    "Name": "M. Vastus medialis"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Posterior compartment of the thigh",
+                            "Alternative name": "Hamstrings",
+                            "Division": [
+                                {
+                                    "Name": "M. Biceps femoris"
+                                },
+                                {
+                                    "Name": "M. Semitendinosus"
+                                },
+                                {
+                                    "Name": "M. Semimembranosus"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Medial compartment of the thigh",
+                            "Division": [
+                                {
+                                    "Name": "M. Gracilis"
+                                },
+                                {
+                                    "Name": "M. Pectineus"
+                                },
+                                {
+                                    "Name": "Adductor muscles",
+                                    "Division": [
+                                        {
+                                            "Name": "M. Adductor brevis"
+                                        },
+                                        {
+                                            "Name": "M. Adductor longus"
+                                        },
+                                        {
+                                            "Name": "M. Adductor magnus"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the leg",
+                    "Division": [
+                        {
+                            "Name": "Anterior compartment of the lower leg",
+                            "Division": [
+                                {
+                                    "Name": "M. Tibialis anterior"
+                                },
+                                {
+                                    "Name": "M. Extensor hallucis longus"
+                                },
+                                {
+                                    "Name": "M. Extensor digitorum longus"
+                                },
+                                {
+                                    "Name": "M. Fibularis tertius"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Posterior compartment of the lower leg",
+                            "Division": [
+                                {
+                                    "Name": "Superficial muscles of the posterior compartment of the lower leg"
+                                },
+                                {
+                                    "Name": "Deep muscles of the posterior compartment of the lower leg "
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Lateral compartment of the lower leg",
+                            "Division": [
+                                {
+                                    "Name": "M. Fibularis longus"
+                                },
+                                {
+                                    "Name": "M. Fibularis brevis"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the foot",
+                    "Division": [
+                        {
+                            "Name": "Dorsal muscles of the foot",
+                            "Division": [
+                                {
+                                    "Name": "M. Extensor digitorum brevis"
+                                },
+                                {
+                                    "Name": "M. Extensor hallucis brevis"
+                                },
+                                {
+                                    "Name": "Mm. Interossei dorales pedis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Plantar muscles of the foot"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

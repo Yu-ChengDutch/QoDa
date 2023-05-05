@@ -200,7 +200,51 @@
                 "Name": "Pelvic bone",
                 "Parts": [
                     {
-                        "Name": "Ilium"
+                        "Name": "Ilium",
+                        "Surfaces": [
+                            {
+                                "Name": "Interior surface"
+                            },
+                            {
+                                "Name": "Exterior surface",
+                                "Alternative name": "Gluteal surface",
+                                "Landmarks": [
+                                    {
+                                        "Name": "Anterior gluteal line"
+                                    },
+                                    {
+                                        "Name": "Posterior gluteal line"
+                                    },
+                                    {
+                                        "Name": "Inferior gluteal line"
+                                    }
+                                ]
+                            }
+                        ],
+                        "Borders": [
+                            {
+                                "Name": "Iliac crest"
+                            },
+                            {
+                                "Name": "Arcuate line"
+                            }
+                        ],
+                        "Projections": [
+                            {
+                                "Name": "Anterior Superior Iliac Spine",
+                                "Alternative name": "ASIS"
+                            },
+                            {
+                                "Name": "Posterior superior iliac spine",
+                                "Alternative name": "PSIS"
+                            },
+                            {
+                                "Name": "Iliac tubercle"
+                            },
+                            {
+                                "Name": "Iliac tuberosity"
+                            }
+                        ]
                     },
                     {
                         "Name": "Ischium"
@@ -340,7 +384,35 @@
                         "Name": "Femur",
                         "Parts": [
                             {
-                                "Name": "Upper extremity of the femur"
+                                "Name": "Upper extremity of the femur",
+                                "Projections": [
+                                    {
+                                        "Name": "Femoral head"
+                                    },
+                                    {
+                                        "Name": "Greater trochanter"
+                                    },
+                                    {
+                                        "Name": "Lesser trochanter"
+                                    },
+                                    {
+                                        "Name": "Intertrochanteric crest"
+                                    },
+                                    {
+                                        "Name": "Quadrate tubercle"
+                                    }
+                                ],
+                                "Landmarks": [
+                                    {
+                                        "Name": "Intertrochanteric line"
+                                    },
+                                    {
+                                        "Name": "Linea quadrata"
+                                    },
+                                    {
+                                        "Name": "Trochanteric fossa"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "Body of the femur"

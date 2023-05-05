@@ -1,0 +1,380 @@
+{
+    "Name": "Peripheral nervous system",
+    "Division": [
+        {
+            "Name": "Cranial nerves",
+            "Division": [
+                
+            ]
+        },
+        {
+            "Name": "Spinal nerves",
+            "Division": [
+                {
+                    "Name": "Cervical nerves",
+                    "Division": [
+                        {
+                            "Name": "Ventral cervical nerves",
+                            "Division": [
+                                {
+                                    "Name": "Cervical plexus"
+                                },
+                                {
+                                    "Name": "Brachial plexus",
+                                    "Branches": [
+                                        {
+                                            "Name": "Lateral cord",
+                                            "Branches": [
+                                                {
+                                                    "Name": "Lateral pectoral nerve"
+                                                },
+                                                {
+                                                    "Name": "Musculocutaneous nerve"
+                                                },
+                                                {
+                                                    "Name": "Median nerve"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Posterior cord",
+                                            "Branches": [
+                                                {
+                                                    "Name": "Upper subscapular nerve"
+                                                },
+                                                {
+                                                    "Name": "Thoracodorsal nerve"
+                                                },
+                                                {
+                                                    "Name": "Lower subscapular nerve"
+                                                },
+                                                {
+                                                    "Name": "Axillary nerve"
+                                                },
+                                                {
+                                                    "Name": "Radial nerve"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Medial cord",
+                                            "Branches": [
+                                                {
+                                                    "Name": "Medial pectoral nerve"
+                                                },
+                                                {
+                                                    "Name": "Median nerve"
+                                                },
+                                                {
+                                                    "Name": "Medial cutaneous nerve of the arm"
+                                                },
+                                                {
+                                                    "Name": "Medial cutaneous nerve of the forearm"
+                                                },
+                                                {
+                                                    "Name": "Ulnar nerve"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Dorsal cervical nerves"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Thoracic nerves",
+                    "Division": [
+                        {
+                            "Name": "Ventral thoracic nerves"
+                        },
+                        {
+                            "Name": "Dorsal thoracic nerves"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lumbar nerves",
+                    "Division": [
+                        {
+                            "Name": "Ventral lumbar nerves",
+                            "Division": [
+                                {
+                                    "Name": "Lumbar plexus",
+                                    "Branches": [
+                                        {
+                                            "Name": "Iliohypograstric nerve",
+                                            "Root": ["T12", "L1"],
+                                            "Branches": [
+                                                {
+                                                    "Name": "Iliac branch"
+                                                },
+                                                {
+                                                    "Name": "Hypogastric branch"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Ilioinguinal nerve",
+                                            "Root": ["L1"],
+                                            "Branches": [
+                                                {
+                                                    "Name": "Anterior scrotal nerve"
+                                                },
+                                                {
+                                                    "Name": "Anterior labial nerve"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Genitofemoral nerve",
+                                            "Root": ["L2", "L1"],
+                                            "Branches": [
+                                                {
+                                                    "Name": "Genital branch",
+                                                    "Alternative name": "External spermatic nerve"
+                                                },
+                                                {
+                                                    "Name": "Femoral branch"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Lateral femoral cutaneous nerve",
+                                            "Root": ["L2", "L3"],
+                                            "Branches": [
+                                                {
+                                                    "Name": "Anterior branch of the lateral femoral cutaneous nerve"
+                                                },
+                                                {
+                                                    "Name": "Posterior branch of the lateral femoral cutaneous nerve"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Obturator nerve",
+                                            "Root": ["L2", "L3", "L4"],
+                                            "Branches": [
+                                                {
+                                                    "Name": "Anterior branch of the obturator nerve"
+                                                },
+                                                {
+                                                    "Name": "Posterior branch of the obturator nerve"
+                                                },
+                                                {
+                                                    "Name": "Cutaneous branch of the obturator nerve"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Femoral nerve",
+                                            "Root": ["L2", "L3", "L4"],
+                                            "Branches": [
+                                                {
+                                                    "Name": "Muscular branches of the femoral nerve",
+                                                    "Branches": [
+                                                        {
+                                                            "Name": "Anterior division of the muscular branches of the femoral nerve"
+                                                        },
+                                                        {
+                                                            "Name": "Posterior division of the muscular branches of the femoral nerve"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Cutaneous branches of the femoral nerve",
+                                                    "Branches": [
+                                                        {
+                                                            "Name": "Anterior cutaneous branches of the femoral nerve",
+                                                            "Division": [
+                                                                {
+                                                                    "Name": "Intermediate femoral cutaneous nerve"
+                                                                },
+                                                                {
+                                                                    "Name": "Medial femoral cutaneous nerve"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "Name": "Saphenous nerve"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Lumbosacral trunk",
+                                    "Origin": ["L5", "L4"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Dorsal lumbar nerves",
+                            "Division": [
+                                {
+                                    "Name": "Superior cluneal nerves",
+                                    "Root": ["L1", "L2", "L3"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sacral nerves",
+                    "Division": [
+                        {
+                            "Name": "Ventral sacral nerves",
+                            "Division": [
+                                {
+                                    "Name": "Levator ani nerve",
+                                    "Root": ["S4"]
+                                },
+                                {
+                                    "Name": "Piriformis nerve"
+                                },
+                                {
+                                    "Name": "Sacral plexus",
+                                    "Root": ["Lumbosacral trunk", "S1"],
+                                    "Branches": [
+                                        {
+                                            "Name": "Superior gluteal nerve"
+                                        },
+                                        {
+                                            "Name": "Inferior gluteal nerve"
+                                        },
+                                        {
+                                            "Name": "Posterior cutaneous femoral nerve",
+                                            "Branches": [
+                                                {
+                                                    "Name": "Inferior cluneal nerves"
+                                                },
+                                                {
+                                                    "Name": "Perineal branches of the posterior cutaneaous femoral nerve"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Perforating cutaneous nerve"
+                                        },
+                                        {
+                                            "Name": "Sciatic nerve",
+                                            "Branches": [
+                                                {
+                                                    "Name": "Common fibular nerve",
+                                                    "Branches": [
+                                                        {
+                                                            "Name": "Superficial fibular nerve"
+                                                        },
+                                                        {
+                                                            "Name": "Deep fibular nerve"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Tibial nerve",
+                                                    "Branches": [
+                                                        {
+                                                            "Name": "Medial plantar nerve"
+                                                        },
+                                                        {
+                                                            "Name": "Lateral plantar nerve"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Dorsal sacral nerves",
+                            "Division": [
+                                {
+                                    "Name": "Medial cluneal nerves",
+                                    "Division": [
+                                        
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Coccygeal nerves",
+                    "Division": [
+                        {
+                            "Name": "Ventral coccygeal nerves",
+                            "Division": [
+                                {
+                                    "Name": "Pudendal nerve",
+                                    "Root": ["S2", "S3", "S4"],
+                                    "Branches": [
+                                        {
+                                            "Name": "Inferior rectal nerve"
+                                        },
+                                        {
+                                            "Name": "Perineal nerve",
+                                            "Branches": [
+                                                {
+                                                    "Name": "Superficial perineal nerve",
+                                                    "Continues as": [
+                                                        {
+                                                            "Name": "Posterior scrotal nerve",
+                                                            "In": "Men"
+                                                        },
+                                                        {
+                                                            "Name": "Posterior labial nerve",
+                                                            "In": "Women"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Deep perineal nerve",
+                                                    "Alternative name": "Muscular branch of the perineal nerve"
+                                                }
+                                            ]
+                                        }                                        
+                                    ],
+                                    "Continues as": [
+                                        {
+                                            "Name": "Dorsal nerve of the penis",
+                                            "In": "Men"
+                                        },
+                                        {
+                                            "Name": "Dorsal nerve of the clitoris",
+                                            "In": "Women"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Coccygeal plexus",
+                                    "Root": ["S4", "S5"],
+                                    "Branches": [
+                                        {
+                                            "Name": "Coccygeal nerve"
+                                        },
+                                        {
+                                            "Name": "Anococcygeal nerve"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Dorsal coccygeal nerves",
+                            "Division": [
+                                
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

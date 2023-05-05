@@ -6,26 +6,16 @@ let question_texts = {
     "Branches": ["Structures may branch off. Of what structure did <", "> branch off?"],
     "Continues": ["Structures may take a different name at some point. What is <", "> called further upstream?"],
     "Branches at": ["Branching occurs at a certain point. At what point does <", "> branch off?"],
-    "Branches to": ["Branching occurs in a certain direction. What direction does <", "> branch to?"]
+    "Branches to": ["Branching occurs in a certain direction. What direction does <", "> branch to?"],
+    "Innervation": ["Muscles receive their innervation from nerves. What nerve does <", "> receive its signals from?"],
+    "Origin": ["Muscles originate somewhere. Where does <", "> originate>?"],
+    "Insertion": ["Muscles have to insert somewhere. Where does <", "> insert?"]
+
 };
 
-let possible_questions = {
-    "Division": {},
-    "Parts": {},
-    "Branches": {},
-    "Continues": {},
-    "Branches at": {},
-    "Branches to": {}
-}
+let possible_questions = {};
 
-let side_questions = {
-    "Division": {},
-    "Parts": {},
-    "Branches": {},
-    "Continues": {},
-    "Branches at": {},
-    "Branches to": {}
-}
+let side_questions = {};
 
 let final_questions = {};
 let current_side_db = {};
@@ -35,12 +25,26 @@ let questions = [];
 
 let databases = {
     "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts"]},
-    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Parts", "Continues", "Branches at", "Branches to"]}
+    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Parts", "Continues", "Branches at", "Branches to"]},
+    "Nervous System - Peripheral nerves": {"Database": './data_anatomy_nervous_peripheral_nerves.json', "Questions": ["Division", "Branches", "Continues as"]},
+    "Muscular System - Muscles": {"Database": './data_anatomy_muscular_muscles.json', "Questions": ["Division", "Innervation", "Origin", "Insertion"]}
+
 };
 
-/* Check what database to load */ 
+/* The Set-up function
+
+- Takes and loads the main database
+- Takes and loads the side DBs
+- Calls all of the functions in the script
+
+*/ 
 
 function setUp(){
+
+    for (var key in question_texts) {
+        possible_questions[key] = {};
+        side_questions[key] = {};
+    }
 
     let subject_title = document.getElementById('true-title').innerText;
     let side_db = {};
@@ -62,7 +66,7 @@ function setUp(){
     .then(function(data){
         console.log("- > Accesing file: " + data.Name);
         createQuestions(data, questions, possible_questions);
-        chooseQuestions(["Branches at"]);
+        chooseQuestions(questions);
         setQuestion("Question 1");
     })
     .then(function(){
