@@ -12,7 +12,8 @@ let question_texts = {
     "Insertion": ["Muscles have to insert somewhere. Where does <", "> insert?"],
     "From": ["Joints run from proximal to distal. Where does <", "> run from?"],
     "To": ["Joints run from proximal to distal. Where does <", "> run to?"],
-    "Joint type": ["Joints are always of a certain type. What type does <", "> belong to?"]
+    "Joint type": ["Joints are always of a certain type. What type does <", "> belong to?"],
+    "Alternative name": ["Many structures are known by multiple names. What does <", "> refer to?"]
 };
 
 let possible_questions = {};
@@ -26,7 +27,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
-    "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts"]},
+    "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts", "Alternative name"]},
     "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Parts", "Continues", "Branches at", "Branches to"]},
     "Nervous System - Peripheral nerves": {"Database": './data_anatomy_nervous_peripheral_nerves.json', "Questions": ["Division", "Branches", "Continues"]},
     "Muscular System - Muscles": {"Database": './data_anatomy_muscular_muscles.json', "Questions": ["Division", "Innervation", "Origin", "Insertion"]},

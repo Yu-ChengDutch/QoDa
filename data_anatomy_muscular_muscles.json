@@ -14,22 +14,39 @@
                     "Name": "Muscles of the abdomen",
                     "Division": [
                         {
-                            "Name": "M. Rectus abdominis"
+                            "Name": "M. Rectus abdominis",
+                            "Alternative name": "Six pack",
+                            "Innervation": ["Thoraco-abdominal nerves", "Subcostal nerve"],
+                            "Origin": "Pubic crest",
+                            "Insertion": ["Costal cartilage of ribs",
+                                          "Xiphoid process"]
                         },
                         {
-                            "Name": "M. Obliquus externus"
+                            "Name": "M. Obliquus externus",
+                            "Insertion": ["Iliac crest", "Pubic crest", "Pubic tubercle", "Linea alba", "Inguinal ligament", "Anterior superior iliac spine"],
+                            "Origin": ["External surface of ribs", "Inferior border of ribs"],
+                            "Innervation": ["Thoraco-abdominal nerves", "Subcostal nerve"]
                         },
                         {
-                            "Name": "M. Obliquus internus"
+                            "Name": "M. Obliquus internus",
+                            "Insertion": ["Linea alba", "Conjoint tendon"],
+                            "Innervation": ["Thoraco-abdominal nerves", "Subcostal nerve", "Iliohypogastric nerve", "Ilioinguinal nerve"],
+                            "Blood supply": "Subcostal arteries"
                         },
                         {
-                            "Name": "M. Transversus abdominis"
+                            "Name": "M. Transversus abdominis",
+                            "Blood supply": "Subcostal arteries",
+                            "Innervation": ["Thoraco-abdominal nerves", "Subcostal nerve", "Iliohypogastric nerve", "Ilioinguinal nerve"]
                         },
                         {
-                            "Name": "M. Pyramidalis"
+                            "Name": "M. Pyramidalis",
+                            "Blood supply": ["Inferior epigasteric artery", "Superior epigastric artery"],
+                            "Innervation": "Subcostal nerve"
                         },
                         {
-                            "Name": "M. Quadratus lumborum"
+                            "Name": "M. Quadratus lumborum",
+                            "Blood supply": ["Lumbar arteries", "Lumbar branch of the iliolumbar artery"],
+                            "Innervation": ["Subcostal nerve", "L1 nerve", "L2 nerve", "L3 nerve", "L4 nerve"]
                         }
                     ]
                 },
@@ -70,10 +87,14 @@
                     "Division": [
                         {
                             "Name": "M. Coccygeus",
-                            "Innervation": "Pudendal nerve"
+                            "Innervation": ["Pudendal nerve"],
+                            "Origin": ["Sacrospinous ligament", "Ischial spine"],
+                            "Insertion": ["Coccyx", "Sacrum"]
                         },
                         {
                             "Name": "Levator ani",
+                            "Innervation": ["Levator ani nerve", "Inferior rectal nerve"],
+                            "Blood supply": ["Inferior gluteal artery"],
                             "Division": [
                                 {
                                     "Name": "M. Iliococcygeus"
@@ -96,10 +117,12 @@
                             "Name": "Sphincter ani",
                             "Division": [
                                 {
-                                    "Name": "M. Spincter ani externus"
+                                    "Name": "M. Spincter ani externus",
+                                    "Innervation": "Inferior rectal nerve"
                                 },
                                 {
-                                    "Name": "M. Spincter ani internus"
+                                    "Name": "M. Spincter ani internus",
+                                    "Innervation": "Pelvic splanchic nerves"
                                 }
                             ]
                         },
@@ -107,7 +130,11 @@
                             "Name": "Superficial perineal pouch",
                             "Division": [
                                 {
-                                    "Name": "M. Transversus perinei superficialis"
+                                    "Name": "M. Transversus perinei superficialis",
+                                    "Alternative name": "Lloyd-Beanie muscle",
+                                    "Origin": "Ischial tuberosity",
+                                    "Insertion": "Perineal body",
+                                    "Innervation": "Pudendal nerve"
                                 },
                                 {
                                     "Name": "M. Bulbospongiosus"
@@ -121,7 +148,10 @@
                             "Name": "Deep perineal pouch",
                             "Division": [
                                 {
-                                    "Name": "M. Transversus perinei profundus"
+                                    "Name": "M. Transversus perinei profundus",
+                                    "Origin": "Inferior ramus",
+                                    "Insertion": "M. Transversus perinei profundus",
+                                    "Innervation": "Pudendal nerve"
                                 },
                                 {
                                     "Name": "M. Sphincter urethrae externus"

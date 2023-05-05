@@ -247,10 +247,60 @@
                         ]
                     },
                     {
-                        "Name": "Ischium"
+                        "Name": "Ischium",
+                        "Parts": [
+                            {
+                                "Name": "Superior ischial ramus",
+                                "Projections": [
+                                    {
+                                        "Name": "Ischial tuberosity",
+                                        "Alternative name": "Sit bones"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Ischial body",
+                                "Projections": [
+                                    {
+                                        "Name": "Ischial spine"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Inferior ischial ramus"
+                            }
+                        ]
                     },
                     {
-                        "Name": "Pubis"
+                        "Name": "Pubis",
+                        "Parts": [
+                            {
+                                "Name": "Superior pubic ramus",
+                                "Projections": [
+                                    {
+                                        "Name": "Pubic tubercle"
+                                    },
+                                    {
+                                        "Name": "Pubic spine"
+                                    },
+                                    {
+                                        "Name": "Obturator crest"
+                                    }
+                                ],
+                                "Landmarks": [
+                                    {
+                                        "Name": "Pectineal line",
+                                        "Alternative name": "Pecten pubis"
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "Pubic body"
+                            },
+                            {
+                                "Name": "Inferior pubic ramus"
+                            }
+                        ]
                     }
                 ]
             },
@@ -264,13 +314,13 @@
                                 "Name": "Humerus",
                                 "Parts": [
                                     {
-                                        "Name": "Upper extremity of the humerus"
+                                        "Name": "Humeral upper extremity"
                                     },
                                     {
-                                        "Name": "Body of the humerus"
+                                        "Name": "Humeral body"
                                     },
                                     {
-                                        "Name": "Lower extremity of the humerus"
+                                        "Name": "Humeral lower extremity"
                                     }
                                 ]
                             },
@@ -384,7 +434,7 @@
                         "Name": "Femur",
                         "Parts": [
                             {
-                                "Name": "Upper extremity of the femur",
+                                "Name": "Femoral upper extremity",
                                 "Projections": [
                                     {
                                         "Name": "Femoral head"
@@ -415,10 +465,18 @@
                                 ]
                             },
                             {
-                                "Name": "Body of the femur"
+                                "Name": "Femoral body"
                             },
                             {
-                                "Name": "Lower extremity of the femur"
+                                "Name": "Femoral lower extremity",
+                                "Parts": [
+                                    {
+                                        "Name": "Medial femoral condyle"
+                                    },
+                                    {
+                                        "Name": "Lateral femoral condyle"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -429,18 +487,46 @@
                         "Name": "Tibia",
                         "Parts": [
                             {
-                                "Name": "Upper extremity of the tibia"
+                                "Name": "Tibial upper extremity",
+                                "Parts": [
+                                    {
+                                        "Name": "Medial tibial condyle"
+                                    },
+                                    {
+                                        "Name": "Lateral tibial condyle"
+                                    },
+                                    {
+                                        "Name": "Intercondyloid area"
+                                    }
+                                ]
                             },
                             {
-                                "Name": "Body of the tibia"
+                                "Name": "Tibial body"
                             },
                             {
-                                "Name": "Lower extremity of the tibia"
+                                "Name": "Tibial lower extremity",
+                                "Projections": [
+                                    {
+                                        "Name": "Medial malleolus"
+                                    }
+                                ]
                             }
                         ]
                     },
                     {
-                        "Name": "Fibula"
+                        "Name": "Fibula",
+                        "Alternative name": "Calf bone",
+                        "Parts": [
+                            {
+                                "Name": "Fibular head"
+                            },
+                            {
+                                "Name": "Fibular body"
+                            },
+                            {
+                                "Name": "Lateral malleolus"
+                            }
+                        ]
                     },
                     {
                         "Name": "Bones of the feet",

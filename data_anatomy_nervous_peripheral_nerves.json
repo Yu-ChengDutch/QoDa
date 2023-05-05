@@ -2,9 +2,91 @@
     "Name": "Peripheral nervous system",
     "Division": [
         {
-            "Name": "Cranial nerves",
+            "Name": "Autonomic nervous system",
+            "Division": [
+                {
+                    "Name": "Sympathetic nervous system",
+                    "Division": [
+                        {
+                            "Name": "Cardiopulmonary splanchnic nerves"
+                        },
+                        {
+                            "Name": "Thoracic splanchnic nerves"
+                        },
+                        {
+                            "Name": "Lumbar splanchnic nerves"
+                        },
+                        {
+                            "Name": "Sacral splanchnic nerves"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Parasympathetic nervous system",
+                    "Division": [
+                        {
+                            "Name": "Pelvic splanchnic nerves",
+                            "Root": ["S2", "S3", "S4"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Somatic nervous system",
             "Division": [
                 
+        {
+            "Name": "Cranial nerves",
+            "Division": [
+                {
+                    "Name": "Olfactory nerve",
+                    "Alternative name": "Cranial nerve I"
+                },
+                {
+                    "Name": "Optic nerve",
+                    "Alternative name": "Cranial nerve II"
+                },
+                {
+                    "Name": "Oculomotor nerve",
+                    "Alternative name": "Cranial nerve III"
+                },
+                {
+                    "Name": "Trochlear nerve",
+                    "Alternative name": "Cranial nerve IV"
+                },
+                {
+                    "Name": "Trigeminal nerve",
+                    "Alternative name": "Cranial nerve V"
+                },
+                {
+                    "Name": "Abducens nerve",
+                    "Alternative name": "Cranial nerve VI"
+                },
+                {
+                    "Name": "Facial nerve",
+                    "Alternative name": "Cranial nerve VII"
+                },
+                {
+                    "Name": "Vestibulocochlear nerve",
+                    "Alternative name": "Cranial nerve VIII"
+                },
+                {
+                    "Name": "Glossopharyngeal nerve",
+                    "Alternative name": "Cranial nerve IX"
+                },
+                {
+                    "Name": "Vagus nerve",
+                    "Alternative name": "Cranial nerve X"
+                },
+                {
+                    "Name": "Accessory nerve",
+                    "Alternative name": "Cranial nerve XI"
+                },
+                {
+                    "Name": "Hypoglossal nerve",
+                    "Alternative name": "Cranial nerve XII"
+                }
             ]
         },
         {
@@ -89,7 +171,26 @@
                     "Name": "Thoracic nerves",
                     "Division": [
                         {
-                            "Name": "Ventral thoracic nerves"
+                            "Name": "Ventral thoracic nerves",
+                            "Division": [
+                                {
+                                    "Name": "Intercostal nerves",
+                                    "Root": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11"],
+                                    "Branches": [
+                                        {
+                                            "Name": "Thoraco-abdominal nerves",
+                                            "Alternative name": "Thoracoabdominal intercostal nerves"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Intercostobrachial nerve"
+                                },
+                                {
+                                    "Name": "Subcostal nerve",
+                                    "Root": "T12"
+                                }
+                            ]
                         },
                         {
                             "Name": "Dorsal thoracic nerves"
@@ -313,7 +414,8 @@
                                     "Root": ["S2", "S3", "S4"],
                                     "Branches": [
                                         {
-                                            "Name": "Inferior rectal nerve"
+                                            "Name": "Inferior rectal nerve",
+                                            "Alternative name": ["Inferior anal nerve", "Inferior hemorrhoidal nerve"]
                                         },
                                         {
                                             "Name": "Perineal nerve",
@@ -371,6 +473,8 @@
                         }
                     ]
                 }
+            ]
+        }
             ]
         }
     ]
