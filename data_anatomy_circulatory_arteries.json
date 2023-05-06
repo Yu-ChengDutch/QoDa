@@ -5,10 +5,31 @@
             "Name": "Ascending aorta",
             "Branches": [
                 {
-                    "Name": "Left coronary artery"
+                    "Name": "Left coronary artery",
+                    "Alternative name": "LCA",
+                    "Continues as": [
+                        {
+                            "Name": "Left anterior descending artery",
+                            "Alternative name": "LAD"
+                        },
+                        {
+                            "Name": "Left circumflex artery"
+                        }
+                    ]
                 },
                 {
-                    "Name": "Right coronary artery"
+                    "Name": "Right coronary artery",
+                    "Alternative name": "RCA",
+                    "Branches": [
+                        {
+                            "Name": "Right marginal artery",
+                            "Alternative name": "RMA"
+                        },
+                        {
+                            "Name": "Posterior descending artery",
+                            "Alternative name": "PDA"
+                        }
+                    ]
                 }
             ]
         },
@@ -22,64 +43,120 @@
                             "Name": "Right common carotid artery"
                         },
                         {
-                            "Name": "Right subclavian artery",
+                            "Name": "Right subclavian artery"
+                        }
+                    ]                    
+                },
+                {
+                    "Name": "Common carotid artery"
+                },
+                {
+                    "Name": "Subclavian artery",
+                    "Parts": [
+                        {
+                            "Name": "Prescalene part of the subclavian artery"
+                        },
+                        {
+                            "Name": "Scalene part of the subclavian artery"
+                        },
+                        {
+                            "Name": "Post-scalene part of the subclavian artery"
+                        }
+                    ],
+                    "Branches": [
+                        {
+                            "Name": "Vertebral artery",
+                            "Branches at": "Prescalene part of the subclavian artery",
                             "Parts": [
                                 {
-                                    "Name": "Right prescalene part",
-                                    "Branches": [
-                                        {
-                                            "Name": "Right vertebral artery"
-                                        },
-                                        {
-                                            "Name": "Right internal thoracic artery"
-                                        },
-                                        {
-                                            "Name": "Right thyrocervical trunk"
-                                        }
-                                    ]
+                                    "Name": "Preforaminal part of the vertebral artery"
                                 },
                                 {
-                                    "Name": "Right scalene part",
-                                    "Branches": [
-                                        {
-                                            "Name": "Right costocervical trunk"
-                                        }
-                                    ]
+                                    "Name": "Foraminal part of the vertebral artery"
                                 },
                                 {
-                                    "Name": "Right postscalene part",
-                                    "Branches": [
+                                    "Name": "Extradural part of the vertebral artery",
+                                    "Alternative name": "Atlantic part of the vertebral artery"
+                                },
+                                {
+                                    "Name": "Intradural part of the vertebral artery",
+                                    "Alternative name": "Intracranial part of the vertebral artery"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Internal thoracic artery",
+                            "Alternative name": "Internal mammary artery",
+                            "Branches": [
+                                {
+                                    "Name": "Pericardiophrenic artery"
+                                },
+                                {
+                                    "Name": "Intercostal arteries"
+                                }
+                            ],
+                            "Continues as": [
+                                {
+                                    "Name": "Musculophrenic artery"
+                                },
+                                {
+                                    "Name": "Superior epigastric artery",
+                                    "Anastomoses with": "Inferior epigastric artery"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Thyrocervical trunk",
+                            "Continues as": [
+                                {
+                                    "Name": "Inferior thyroid artery"
+                                },
+                                {
+                                    "Name": "Suprascapular artery",
+                                    "Anastomoses with": "Thoracoacromial artery"
+                                },
+                                {
+                                    "Name": "Transverse cervical artery",
+                                    "Continues as": [
                                         {
-                                            "Name": "Right dorsal scapular artery"
+                                            "Name": "Superficial cervical artery"
+                                        },
+                                        {
+                                            "Name": "Dorsal scapular artery"
                                         }
                                     ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Costocervical trunk",
+                            "Continues as": [
+                                {
+                                    "Name": "Deep cervical artery"
+                                },
+                                {
+                                    "Name": "Supreme intercostal artery"
                                 }
                             ]
                         }
                     ],
                     "Continues": {
-                        "Name": "Right axillary artery",
+                        "Name": "Axillary artery",
                         "Parts": [
                             {
-                                "Name": "Right suprapectoral part"
+                                "Name": "Suprapectoral part"
                             },
                             {
-                                "Name": "Right pectoral part"
+                                "Name": "Pectoral part"
                             },
                             {
-                                "Name": "Right infrapectoral part"
+                                "Name": "Infrapectoral part"
                             }
                         ],
                         "Continues": {
-                            "Name": "Right brachial artery"
+                            "Name": "Brachial artery"
                         }
                     }
-                },
-                {
-                    "Name": "Left common carotid artery"
-                },
-                {
-                    "Name": "Left subclavian artery"
                 }
             ]
         },
@@ -209,10 +286,138 @@
                                 "Alternative name": "Hypogastric artery",
                                 "Continues": [
                                     {
-                                        "Name": "Anterior division"
+                                        "Name": "Anterior division of the internal iliac artery",
+                                        "Branches": [
+                                            {
+                                                "Name": "Umbilical artery",
+                                                "Arterial type": "Vesical",
+                                                "Branches": [
+                                                    {
+                                                        "Name": "Superior vesical artery",
+                                                        "Arterial type": "Vesical"
+                                                    },
+                                                    {
+                                                        "Name": "Artery to the ductus deferens",
+                                                        "Alternative name": "Deferential artery",
+                                                        "Gender": "Males"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "Name": "Inferior vesical artery",
+                                                "Gender": "Males",
+                                                "Arterial type": "Visceral"
+                                            },
+                                            {
+                                                "Name": "Middle rectal artery",
+                                                "Arterial type": "Visceral"
+                                            },
+                                            {
+                                                "Name": "Vaginal artery",
+                                                "Arterial type": "Visceral",
+                                                "Gender": "Females"
+                                            },
+                                            {
+                                                "Name": "Uterine artery",
+                                                "Arterial type": "Visceral",
+                                                "Gender": "Females",
+                                                "Branches": [
+                                                    {
+                                                        "Name": "Ovarian branches of the uterine artery"
+                                                    },
+                                                    {
+                                                        "Name": "Vaginal branches of the uterine artery",
+                                                        "Alternative name": "Azygos arteries of the vagina"
+                                                    },
+                                                    {
+                                                        "Name": "Tubal branches of the uterine artery"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "Name": "Obturator artery",
+                                                "Arterial type": "Parietal"
+                                            },
+                                            {
+                                                "Name": "Internal pudendal artery",
+                                                "Arterial type": "Parietal",
+                                                "Branches": [
+                                                    {
+                                                        "Name": "Inferior rectal artery"
+                                                    },
+                                                    {
+                                                        "Name": "Perineal artery"
+                                                    },
+                                                    {
+                                                        "Name": "Posterior labial branches of the internal pudendal artery",
+                                                        "Gender": "Females"
+                                                    },
+                                                    {
+                                                        "Name": "Posterior scrotal branches of the internal pudendal artery",
+                                                        "Gender": "Males"
+                                                    },
+                                                    {
+                                                        "Name": "Artery of bulb of vestibule",
+                                                        "Gender": "Females"
+                                                    },
+                                                    {
+                                                        "Name": "Artery of bulb of penis",
+                                                        "Gender": "Males"
+                                                    },
+                                                    {
+                                                        "Name": "Dorsal artery of clitoris",
+                                                        "Gender": "Females"
+                                                    },
+                                                    {
+                                                        "Name": "Dorsal artery of the penis",
+                                                        "Gender": "Males"
+                                                    },
+                                                    {
+                                                        "Name": "Deep artery of clitoris",
+                                                        "Gender": "Females"
+                                                    },
+                                                    {
+                                                        "Name": "Deep artery of the penis",
+                                                        "Gender": "Males"
+                                                    }
+
+                                                ]
+                                            },
+                                            {
+                                                "Name": "Inferior gluteal artery",
+                                                "Arterial type": "Parietal"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "Name": "Posterior division"
+                                        "Name": "Posterior division of the internal iliac artery",
+                                        "Branches": [
+                                            {
+                                                "Name": "Iliolumbar artery",
+                                                "Branches": [
+                                                    {
+                                                        "Name": "Lumbar branch"
+                                                    },
+                                                    {
+                                                        "Name": "Iliac branch"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "Name": "Lateral sacral artery",
+                                                "Continues as": [
+                                                    {
+                                                        "Name": "Superior lateral sacral artery"
+                                                    },
+                                                    {
+                                                        "Name": "Inferior lateral sacral artery"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "Name": "Superior gluteal artery"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
