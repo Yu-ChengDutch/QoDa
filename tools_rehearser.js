@@ -16,7 +16,8 @@ let question_texts = {
     "Alternative name": ["Many structures are known by multiple names. What is another name for the <", ">?"],
     "Level": ["Organisms are organised along different levels of taxons. What level of taxon is <", ">?"],
     "Gram": ["Bacteria may be classified along their gram staining. Is <", "> gram positive or negative?"],
-    "Shape": ["Bacteria all possess a certain shape. What shape does <", "> possess?"]
+    "Shape": ["Bacteria all possess a certain shape. What shape does <", "> possess?"],
+    "Gender": ["Certain structures only occur in males or females. Whom does <", "> occur in?"]
 };
 
 let possible_questions = {};
@@ -31,7 +32,7 @@ let questions = [];
 
 let databases = {
     "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts", "Alternative name"]},
-    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Parts", "Continues", "Branches at", "Branches to"]},
+    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Alternative name", "Parts", "Gender", "Continues", "Branches at", "Branches to"]},
     "Nervous System - Peripheral nerves": {"Database": './data_anatomy_nervous_peripheral_nerves.json', "Questions": ["Division", "Branches", "Continues", "Alternative name"]},
     "Muscular System - Muscles": {"Database": './data_anatomy_muscular_muscles.json', "Questions": ["Division", "Innervation", "Origin", "Insertion"]},
     "Skeletal System - Joints": {"Database": './data_anatomy_skeletal_joints.json', "Questions": ["Division", "From", "To", "Joint type"]},
