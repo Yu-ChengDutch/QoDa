@@ -191,20 +191,29 @@ function createQuestions(data, questions, output){
 function chooseQuestions(questions){
 
     let current_array = [];
-    let current_type = questions[rand(questions.length)];
+    let current_type = "";
     let answer = "";
+    let question_data = ""
 
     /* Iterate through all final questions*/
 
     for (let i = 0; i < 5; i++){
 
+        /* Assign to current_type a random question type */ 
+
+        current_type = questions[rand(questions.length)];
+
+        /* Assign to current array all possible questions of that type */
+
         current_array = possible_questions[current_type]
 
-        // TODO: Build in a check for duplicates
+        key_array = Object.keys(current_array);
+
+        answer = key_array[rand(key_array.length)];
+
+        // TODO: CREATE PROPER CHECK FOR DUPLICATES
         
         /* From all possible questions of this type, take the one matching the answer. From there, take a random instance */
-
-        let question_data = ""
         
         if (Array.isArray(current_array[answer])) {
             question_data = current_array[answer][rand(current_array[answer].length)];
