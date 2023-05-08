@@ -1,0 +1,222 @@
+{
+    "Name": "Genito urinary system and sex hormones",
+    "Subclass": [
+        {
+            "Name": "Sex hormones and modulators of the genital system",
+            "Subclass": [
+                {
+                    "Name": "Hormonal contraceptives for systemic use",
+                    "Subclass": [
+                        {
+                            "Name": "Progestogens and estrogens, fixed combinations",
+                            "Subclass": [
+                                {
+                                    "Name": "Estetrol/drospirenon",
+                                    "Brands": [
+                                        {
+                                            "Name": "Drovelis",
+                                            "Method": "Oral"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Estradiol/dienogest",
+                                    "Brands": [
+                                        {
+                                            "Name": "Qlaira",
+                                            "Method": "Oral"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Estradiol/nomegastrol",
+                                    "Brands": [
+                                        {
+                                            "Name": "Zoely",
+                                            "Method": "Oral"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ethinylestradiol/desogestrel",
+                                    "Brands": [
+                                        {
+                                            "Name": "Marvelon",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Mercilon",
+                                            "Method": "Oral"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ethinylestradiol/drospirenon",
+                                    "Brands": [
+                                        {
+                                            "Name": "Rosal",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Yasmin",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Yas",
+                                            "Method": "Oral"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ethinylestradiol/etonogestrel",
+                                    "Brands": [
+                                        {
+                                            "Name": "Nuvaring",
+                                            "Method": "Vaginal ring"
+                                        },
+                                        {
+                                            "Name": "Ornibel",
+                                            "Method": "Vaginal ring"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ethinylestradiol/gestodeen",
+                                    "Brands": [
+                                        {
+                                            "Name": "Minulet",
+                                            "Method": "Oral"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ethinylestradiol/levonorgestrel",
+                                    "Brands": [
+                                        {
+                                            "Name": "Trigynon",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Trinordiol",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Seasonique",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Lovette",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Microgynon 30",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Microgynon 50",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Stediril 30",
+                                            "Method": "Oral"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ethinylestradiol/norelgestromine",
+                                    "Brands": [
+                                        {
+                                            "Name": "Evra",
+                                            "Method": "Transdermal sticker"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ethinylestradiol/norgestimaat"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Progestogens",
+                            "Subclass": [
+                                {
+                                    "Name": "Desogestrel",
+                                    "Brands": [
+                                        {
+                                            "Name": "Cerazette",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Delamonie",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Zarelle",
+                                            "Method": "Oral"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Etonogestrel",
+                                    "Brands": [
+                                        {
+                                            "Name": "Implanon",
+                                            "Method": "Subdermal implant"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Levonogestrel",
+                                    "Brands": [
+                                        {
+                                            "Name": "Kyleena",
+                                            "Method": "IUD"
+                                        },
+                                        {
+                                            "Name": "Levosert",
+                                            "Method": "IUD"
+                                        },
+                                        {
+                                            "Name": "Mirena",
+                                            "Method": "IUD"
+                                        },
+                                        {
+                                            "Name": "Isteranda",
+                                            "Method": "Oral"
+                                        },
+                                        {
+                                            "Name": "Norlevo",
+                                            "Method": "Oral"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Medroxyprogesteron",
+                                    "Brands": [
+                                        {
+                                            "Name": "Depo-provera 150",
+                                            "Method": "Intramuscular injection"
+                                        },
+                                        {
+                                            "Name": "Sayana Press",
+                                            "Method": "Subcutaneous injection"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ulipristal",
+                                    "Brands": [
+                                        {
+                                            "Name": "Ellaone",
+                                            "Method": "Oral"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

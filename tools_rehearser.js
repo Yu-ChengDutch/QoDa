@@ -17,7 +17,9 @@ let question_texts = {
     "Level": ["Organisms are organised along different levels of taxons. What level of taxon is <", ">?"],
     "Gram": ["Bacteria may be classified along their gram staining. Is <", "> gram positive or negative?"],
     "Shape": ["Bacteria all possess a certain shape. What shape does <", "> possess?"],
-    "Gender": ["Certain structures only occur in males or females. Whom does <", "> occur in?"]
+    "Gender": ["Certain structures only occur in males or females. Whom does <", "> occur in?"],
+    "Subclass": ["Medication always belongs to a class. To what class does <", "> belong?"],
+    "Brands": ["Medication is produced by different brands. What brand produces <", ">?"]
 };
 
 let possible_questions = {};
@@ -31,6 +33,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
+    "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Questions": ["Subclass", "Brands"]},
     "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts", "Alternative name"]},
     "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Alternative name", "Parts", "Gender", "Continues", "Branches at", "Branches to"]},
     "Nervous System - Peripheral nerves": {"Database": './data_anatomy_nervous_peripheral_nerves.json', "Questions": ["Division", "Branches", "Continues", "Alternative name"]},
@@ -372,6 +375,11 @@ function checkAnswer(){
     } else {
 
         // console.log("The answer was incorrect, the correct answer is: " + right_answer);
+
+        let redo_string = "Redo: " + title_text;
+
+        final_questions[redo_string] = final_questions[title_text];
+        console.log(final_questions);
 
         document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + right_answer + ". Please enter this.";
     };
