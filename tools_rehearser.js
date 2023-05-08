@@ -19,7 +19,7 @@ let question_texts = {
     "Shape": ["Bacteria all possess a certain shape. What shape does <", "> possess?"],
     "Gender": ["Certain structures only occur in males or females. Whom does <", "> occur in?"],
     "Subclass": ["Medication always belongs to a class. To what class does <", "> belong?"],
-    "Brands": ["Medication is produced by different brands. What brand produces <", ">?"]
+    "Brands": ["Medication is produced by different brands. Of what medication is the brand <", "> an instance?"]
 };
 
 let possible_questions = {};
