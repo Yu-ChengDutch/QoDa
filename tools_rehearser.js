@@ -214,16 +214,16 @@ function chooseQuestions(questions){
 
             answer = key_array[rand(key_array.length)];
 
-            // console.log(answer);
+            console.log(answer);
 
-            for (let i = 0; i < Object.keys(final_questions); i++){
-                if (answer in final_questions[Object.keys(final_questions[i])]) {
+            for (var key in final_questions){
+                if (answer == final_questions[key][0]) {
                     console.log("Found a duplicate!");
                 } else {
                     passable = true;
                 }
             };
-            
+
         };
         
         /* From all possible questions of this type, take the one matching the answer. From there, take a random instance */
