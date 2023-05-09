@@ -24,7 +24,8 @@
                                     "Brands": [
                                         {
                                             "Name": "Qlaira",
-                                            "Method": "Oral"
+                                            "Method": "Oral",
+                                            "Alternative name": "De pil"
                                         }
                                     ]
                                 },
@@ -33,7 +34,8 @@
                                     "Brands": [
                                         {
                                             "Name": "Zoely",
-                                            "Method": "Oral"
+                                            "Method": "Oral",
+                                            "Alternative name": "De pil"
                                         }
                                     ]
                                 },
@@ -72,11 +74,13 @@
                                     "Brands": [
                                         {
                                             "Name": "Nuvaring",
-                                            "Method": "Vaginal ring"
+                                            "Method": "Vaginal ring",
+                                            "Alternative name": "Anticonceptiering"
                                         },
                                         {
                                             "Name": "Ornibel",
-                                            "Method": "Vaginal ring"
+                                            "Method": "Vaginal ring",
+                                            "Alternative name": "Anticonceptiering"
                                         }
                                     ]
                                 },
@@ -123,11 +127,12 @@
                                     ]
                                 },
                                 {
-                                    "Name": "Ethinylestradiol/norelgestromine",
+                                    "Name": "Ethinylestradiol/norelgestromin",
                                     "Brands": [
                                         {
                                             "Name": "Evra",
-                                            "Method": "Transdermal sticker"
+                                            "Method": "Transdermal sticker",
+                                            "Alternative name": "Anticonceptiepleister"
                                         }
                                     ]
                                 },
@@ -161,6 +166,7 @@
                                     "Brands": [
                                         {
                                             "Name": "Implanon",
+                                            "Alternative name": "Anticonceptiestaafje", 
                                             "Method": "Subdermal implant"
                                         }
                                     ]
@@ -170,6 +176,7 @@
                                     "Brands": [
                                         {
                                             "Name": "Kyleena",
+                                            "Alternative name": "Spiraaltje",
                                             "Method": "IUD"
                                         },
                                         {
@@ -178,6 +185,7 @@
                                         },
                                         {
                                             "Name": "Mirena",
+                                            "Alternative name": "Spiraaltje",
                                             "Method": "IUD"
                                         },
                                         {
@@ -191,14 +199,16 @@
                                     ]
                                 },
                                 {
-                                    "Name": "Medroxyprogesteron",
+                                    "Name": "Medroxyprogesteron", 
                                     "Brands": [
                                         {
-                                            "Name": "Depo-provera 150",
+                                            "Name": "Depo-provera 150",                                            
+                                            "Alternative name": "De prikpil",
                                             "Method": "Intramuscular injection"
                                         },
                                         {
-                                            "Name": "Sayana Press",
+                                            "Name": "Sayana Press",                                            
+                                            "Alternative name": "De prikpil",
                                             "Method": "Subcutaneous injection"
                                         }
                                     ]
