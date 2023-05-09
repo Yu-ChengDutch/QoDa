@@ -210,7 +210,17 @@
                                 {
                                     "Name": "Gonadal arteries",
                                     "Branches at": "L2",
-                                    "Branches to": "Anterior"
+                                    "Branches to": "Anterior",
+                                    "Division": [
+                                        {
+                                            "Name": "Ovarian artery",
+                                            "Gender": "Females"
+                                        },
+                                        {
+                                            "Name": "Testicular artery",
+                                            "Gender": "Males"
+                                        }
+                                    ]
                                 },
                                 {
                                     "Name": "Lumbar arteries",
