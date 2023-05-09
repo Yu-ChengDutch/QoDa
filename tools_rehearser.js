@@ -19,7 +19,8 @@ let question_texts = {
     "Shape": ["Bacteria all possess a certain shape. What shape does <", "> possess?"],
     "Gender": ["Certain structures only occur in males or females. Whom does <", "> occur in?"],
     "Subclass": ["Medication always belongs to a class. To what class does <", "> belong?"],
-    "Brands": ["Medication is produced by different brands. Of what medication is the brand <", "> an instance?"]
+    "Brands": ["Medication is produced by different brands. Of what medication is the brand <", "> an instance?"],
+    "Method": ["Medication may be taken in ways such as oral, intramuscular injection, IUD etc. With what method is <", "> taken?"
 };
 
 let possible_questions = {};
