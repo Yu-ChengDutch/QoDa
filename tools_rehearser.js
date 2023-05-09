@@ -7,7 +7,9 @@ let question_texts = {
     "Continues": ["Structures may take a different name at some point. What is <", "> called further upstream?"],
     "Branches at": ["Branching occurs at a certain point. At what point does <", "> branch off?"],
     "Branches to": ["Branching occurs in a certain direction. What direction does <", "> branch to?"],
-    "Innervation": ["Muscles receive their innervation from nerves. What nerve does <", "> receive its signals from?"],
+    "Nerve": ["Organs receive their innervation from nerves. What nerve does <", "> receive its signals from?"],
+    "Artery": ["Organs receive their oxygen from arteries. What artery does <", "> receive its blood from?"],
+    "Lymph": ["Organs drain their lymph to nodes. What node does <", "> drain to?"],
     "Origin": ["Muscles originate somewhere. Where does <", "> originate>?"],
     "Insertion": ["Muscles have to insert somewhere. Where does <", "> insert?"],
     "From": ["Joints run from proximal to distal. Where does <", "> run from?"],
@@ -38,9 +40,10 @@ let databases = {
     "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts", "Alternative name"]},
     "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Alternative name", "Parts", "Gender", "Continues", "Branches at", "Branches to"]},
     "Nervous System - Peripheral nerves": {"Database": './data_anatomy_nervous_peripheral_nerves.json', "Questions": ["Division", "Branches", "Continues", "Alternative name"]},
-    "Muscular System - Muscles": {"Database": './data_anatomy_muscular_muscles.json', "Questions": ["Division", "Innervation", "Origin", "Insertion"]},
+    "Muscular System - Muscles": {"Database": './data_anatomy_muscular_muscles.json', "Questions": ["Division", "Origin", "Insertion"]},
     "Skeletal System - Joints": {"Database": './data_anatomy_skeletal_joints.json', "Questions": ["Division", "From", "To", "Joint type"]},
-    "Pathogens - Bacteria": {"Database": './data_metamedica_pathogens_bacteria.json', "Questions": ["Division", "Level", "Gram", "Shape"]}
+    "Pathogens - Bacteria": {"Database": './data_metamedica_pathogens_bacteria.json', "Questions": ["Division", "Level", "Gram", "Shape"]},
+    "Reproductive System - Female": {"Database": './data_anatomy_reproductive_female.json', "Questions": ["Division", "Nerve", "Artery", "Lymph"]}
 };
 
 /* The Set-up function

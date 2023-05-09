@@ -1,0 +1,139 @@
+{
+    "Name": "Female reproductive system",
+    "Division": [
+        {
+            "Name": "External female reproductive organs",
+            "Alternative name": "Vulva",
+            "Division": [
+                {
+                    "Name": "Mons pubis",
+                    "Alternative name": "Mons veneris"
+                },
+                {
+                    "Name": "Labia",
+                    "Division": [
+                        {
+                            "Name": "Labia minora"
+                        },
+                        {
+                            "Name": "Labia majora"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Vulval vestibule",
+                    "Division": [
+                        {
+                            "Name": "Urinary meatus"
+                        },
+                        {
+                            "Name": "Introitus"
+                        },
+                        {
+                            "Name": "Glands of Bartholin",
+                            "Alternative name": "Greater vestibular glands"
+                        },
+                        {
+                            "Name": "Glands of Skene",
+                            "Alternative name": "Lesser vestibular glands"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Internal female reproductive organs",
+            "Division": [
+                {
+                    "Name": "Vagina",
+                    "Alternative name": "Birth canal",
+                    "Artery": "Vaginal artery",
+                    "Nerve": "Pelvic plexus"
+                },
+                {
+                    "Name": "Uterus",
+                    "Artery": "Ovarian artery",
+                    "Division": [
+                        {
+                            "Name": "Fundus",
+                            "Lymph": "Paraaortic lymph nodes"
+                        },
+                        {
+                            "Name": "Corpus uteri",
+                            "Lymph": "Internal iliac lymph nodes"
+                        },
+                        {
+                            "Name": "Cervix",
+                            "Lymph": "Internal iliac lymph nodes"
+                        },
+                        {
+                            "Name": "Cervical canal"
+                        }
+                    ],
+                    "Layers": [
+                        {
+                            "Name": "Endometrium",
+                            "Tissue": "Epithelium"
+                        },
+                        {
+                            "Name": "Myometrium",
+                            "Tissue": "Smooth muscle"
+                        },
+                        {
+                            "Name": "Perimetrium",
+                            "Tissue": "Visceral peritoneum"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Adnexa",
+                    "Division": [
+                        {
+                            "Name": "Fallopian tube",
+                            "Namesake": "Gabriele Falloppio",
+                            "Artery": "Ovarian artery",
+                            "Lymph": "Lumbar lymph node",
+                            "Division": [
+                                {
+                                    "Name": "Proximal ostium",
+                                    "Alternative name": "Proximal tubal opening"
+                                },
+                                {
+                                    "Name": "Intramural part",
+                                    "Alternative name": "Interstitial part"
+                                },
+                                {
+                                    "Name": "Isthmus"
+                                },
+                                {
+                                    "Name": "Ampulla"
+                                },
+                                {
+                                    "Name": "Infundibulum",
+                                    "Alternative name": "Distal tubal opening"
+                                },
+                                {
+                                    "Name": "Fimbriae"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Ovaries",
+                            "Artery": "Ovarian artery",
+                            "Nerve": "Ovarian plexus",
+                            "Lymph": "Paraaortic lymph node",
+                            "Layers": [
+                                {
+                                    "Name": "Ovarian cortex"
+                                },
+                                {
+                                    "Name": "Ovarian medulla"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -8,17 +8,82 @@
                     "Name": "Sympathetic nervous system",
                     "Division": [
                         {
-                            "Name": "Cardiopulmonary splanchnic nerves"
+                            "Name": "Splanchic nerves",
+                            "Division": [
+                                {
+                                    "Name": "Cardiopulmonary splanchnic nerves"
+                                },
+                                {
+                                    "Name": "Thoracic splanchnic nerves"
+                                },
+                                {
+                                    "Name": "Lumbar splanchnic nerves"
+                                },
+                                {
+                                    "Name": "Sacral splanchnic nerves"
+                                }
+                            ]
                         },
                         {
-                            "Name": "Thoracic splanchnic nerves"
-                        },
-                        {
-                            "Name": "Lumbar splanchnic nerves"
-                        },
-                        {
-                            "Name": "Sacral splanchnic nerves"
-                        }
+                            "Name": "Sympathetic plexuses",
+                            "Division": [
+                                {
+                                    "Name": "Celiac plexus",
+                                    "Alternative name": "Solar plexus",
+                                    "Division": [
+                                        {
+                                            "Name": "Hepatic plexus"
+                                        },
+                                        {
+                                            "Name": "Splenic plexus"
+                                        },
+                                        {
+                                            "Name": "Gastric plexus"
+                                        },
+                                        {
+                                            "Name": "Pancreatic plexus"
+                                        },
+                                        {
+                                            "Name": "Suprarenal plexus"
+                                        }
+                                    ],
+                                    "Continues as": [
+                                        {
+                                            "Name": "Renal plexus",
+                                            "Continues as": [
+                                                {
+                                                    "Name": "Ovarian plexus",
+                                                    "Gender": "Females"
+                                                },
+                                                {
+                                                    "Name": "Testicular plexus",
+                                                    "Gender": "Males"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Superior mesenteric plexus"
+                                        },
+                                        {
+                                            "Name": "Abdominal aortic plexus",
+                                            "Continues as": [
+                                                {
+                                                    "Name": "Superior hypogastric plexus",
+                                                    "Alternate name": "Presacral nerve",
+                                                    "Continues as": [
+                                                        {
+                                                            "Name": "Pelvic plexus",
+                                                            "Alternative name": "Inferior hypogastric plexus"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+
+                            ]
+                        }                        
                     ]
                 },
                 {
@@ -211,10 +276,10 @@
                                             "Root": ["T12", "L1"],
                                             "Branches": [
                                                 {
-                                                    "Name": "Iliac branch"
+                                                    "Name": "Iliac nerve"
                                                 },
                                                 {
-                                                    "Name": "Hypogastric branch"
+                                                    "Name": "Hypogastric nerve"
                                                 }
                                             ]
                                         },

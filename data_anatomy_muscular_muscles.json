@@ -16,7 +16,7 @@
                         {
                             "Name": "M. Rectus abdominis",
                             "Alternative name": "Six pack",
-                            "Innervation": ["Thoraco-abdominal nerves", "Subcostal nerve"],
+                            "Nerve": ["Thoraco-abdominal nerves", "Subcostal nerve"],
                             "Origin": "Pubic crest",
                             "Insertion": ["Costal cartilage of ribs",
                                           "Xiphoid process"]
@@ -25,28 +25,28 @@
                             "Name": "M. Obliquus externus",
                             "Insertion": ["Iliac crest", "Pubic crest", "Pubic tubercle", "Linea alba", "Inguinal ligament", "Anterior superior iliac spine"],
                             "Origin": ["External surface of ribs", "Inferior border of ribs"],
-                            "Innervation": ["Thoraco-abdominal nerves", "Subcostal nerve"]
+                            "Nerve": ["Thoraco-abdominal nerves", "Subcostal nerve"]
                         },
                         {
                             "Name": "M. Obliquus internus",
                             "Insertion": ["Linea alba", "Conjoint tendon"],
-                            "Innervation": ["Thoraco-abdominal nerves", "Subcostal nerve", "Iliohypogastric nerve", "Ilioinguinal nerve"],
-                            "Blood supply": "Subcostal arteries"
+                            "Nerve": ["Thoraco-abdominal nerves", "Subcostal nerve", "Iliohypogastric nerve", "Ilioinguinal nerve"],
+                            "Artery": "Subcostal arteries"
                         },
                         {
                             "Name": "M. Transversus abdominis",
-                            "Blood supply": "Subcostal arteries",
-                            "Innervation": ["Thoraco-abdominal nerves", "Subcostal nerve", "Iliohypogastric nerve", "Ilioinguinal nerve"]
+                            "Artery": "Subcostal arteries",
+                            "Nerve": ["Thoraco-abdominal nerves", "Subcostal nerve", "Iliohypogastric nerve", "Ilioinguinal nerve"]
                         },
                         {
                             "Name": "M. Pyramidalis",
-                            "Blood supply": ["Inferior epigasteric artery", "Superior epigastric artery"],
-                            "Innervation": "Subcostal nerve"
+                            "Artery": ["Inferior epigasteric artery", "Superior epigastric artery"],
+                            "Nerve": "Subcostal nerve"
                         },
                         {
                             "Name": "M. Quadratus lumborum",
-                            "Blood supply": ["Lumbar arteries", "Lumbar branch of the iliolumbar artery"],
-                            "Innervation": ["Subcostal nerve", "L1 nerve", "L2 nerve", "L3 nerve", "L4 nerve"]
+                            "Artery": ["Lumbar arteries", "Lumbar branch of the iliolumbar artery"],
+                            "Nerve": ["Subcostal nerve", "L1 nerve", "L2 nerve", "L3 nerve", "L4 nerve"]
                         }
                     ]
                 },
@@ -87,14 +87,14 @@
                     "Division": [
                         {
                             "Name": "M. Coccygeus",
-                            "Innervation": ["Pudendal nerve"],
+                            "Nerve": ["Pudendal nerve"],
                             "Origin": ["Sacrospinous ligament", "Ischial spine"],
                             "Insertion": ["Coccyx", "Sacrum"]
                         },
                         {
                             "Name": "Levator ani",
-                            "Innervation": ["Levator ani nerve", "Inferior rectal nerve"],
-                            "Blood supply": ["Inferior gluteal artery"],
+                            "Nerve": ["Levator ani nerve", "Inferior rectal nerve"],
+                            "Artery": ["Inferior gluteal artery"],
                             "Division": [
                                 {
                                     "Name": "M. Iliococcygeus"
@@ -104,7 +104,7 @@
                                 },
                                 {
                                     "Name": "M. Puborectalis",
-                                    "Innervation": "Levator ani nerve"
+                                    "Nerve": "Levator ani nerve"
                                 }
                             ]
                         }
@@ -118,11 +118,11 @@
                             "Division": [
                                 {
                                     "Name": "M. Spincter ani externus",
-                                    "Innervation": "Inferior rectal nerve"
+                                    "Nerve": "Inferior rectal nerve"
                                 },
                                 {
                                     "Name": "M. Spincter ani internus",
-                                    "Innervation": "Pelvic splanchic nerves"
+                                    "Nerve": "Pelvic splanchic nerves"
                                 }
                             ]
                         },
@@ -134,7 +134,7 @@
                                     "Alternative name": "Lloyd-Beanie muscle",
                                     "Origin": "Ischial tuberosity",
                                     "Insertion": "Perineal body",
-                                    "Innervation": "Pudendal nerve"
+                                    "Nerve": "Pudendal nerve"
                                 },
                                 {
                                     "Name": "M. Bulbospongiosus"
@@ -151,7 +151,7 @@
                                     "Name": "M. Transversus perinei profundus",
                                     "Origin": "Inferior ramus",
                                     "Insertion": "M. Transversus perinei profundus",
-                                    "Innervation": "Pudendal nerve"
+                                    "Nerve": "Pudendal nerve"
                                 },
                                 {
                                     "Name": "M. Sphincter urethrae externus"
@@ -418,13 +418,13 @@
                             "Division": [
                                 {
                                     "Name": "M. Psoas maior",
-                                    "Innervation": "Lumbar plexus",
+                                    "Nerve": "Lumbar plexus",
                                     "Origin": ["Th12", "L1", "L2", "L3", "L4"],
                                     "Insertion": "Lesser trochanter"
                                 },
                                 {
                                     "Name": "M. Iliacus",
-                                    "Innervation": "Femoral nerve",
+                                    "Nerve": "Femoral nerve",
                                     "Origin": "Iliac fossa",
                                     "Insertion": "Lesser trochanter"
                                 }
@@ -432,7 +432,7 @@
                         },
                         {
                             "Name": "M. Psoas minor",
-                            "Innervation": "Lumbar nerves",
+                            "Nerve": "Lumbar nerves",
                             "Origin": ["Th12", "L1"],
                             "Insertion": ["Pectineal line", "Iliopubic eminence"]
                             
@@ -444,7 +444,7 @@
                     "Division": [
                         {
                             "Name": "M. Tensor fasciae latae",
-                            "Innervation": "Superior gluteal nerve",
+                            "Nerve": "Superior gluteal nerve",
                             "Origin": "Iliac crest",
                             "Insertion": "Iliotibial band"
                         },
@@ -453,19 +453,19 @@
                             "Division": [
                                 {
                                     "Name": "M. Gluteus maximus",
-                                    "Innervation": "Inferior gluteal nerve",
+                                    "Nerve": "Inferior gluteal nerve",
                                     "Origin": ["Gluteal surface", "Lumbar fascia", "Sacrum", "Sacrotuberous ligament"],
                                     "Insertion": ["Iliotibial band", "Gluteal tuberosity"]
                                 },
                                 {
                                     "Name": "M. Gluteus medius",
-                                    "Innervation": "Superior gluteal nerve",
+                                    "Nerve": "Superior gluteal nerve",
                                     "Origin": "Gluteal surface",
                                     "Insertion": "Greater trochanter"
                                 },
                                 {
                                     "Name": "M. Gluteus minimus",
-                                    "Innervation": "Superior gluteal nerve",
+                                    "Nerve": "Superior gluteal nerve",
                                     "Origin": "Gluteal surface",
                                     "Insertion": "Greater trochanter"
                                 }
@@ -476,7 +476,7 @@
                             "Division": [
                                 {
                                     "Name": "M. Piriformis",
-                                    "Innervation": "Piriformis nerve",
+                                    "Nerve": "Piriformis nerve",
                                     "Origin": "Sacrum",
                                     "Insertion": "Greater trochanter"
                                 },
