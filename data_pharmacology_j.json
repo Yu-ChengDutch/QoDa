@@ -1,1 +1,103 @@
+{
+  "Name": "Antiinfectives for systemic use",
+  "Subclass": [
+    {
+      "Name": "Antibacterials for systemic use",
+      "Subclass": [
+        {
+          "Name": "Tetracyclines",
+          "Subclass": [
 
+          ]
+        },
+        {
+          "Name": "Amphenicols",
+          "Subclass": [
+
+          ]
+        },
+        {
+          "Name": "Beta-lactam antibacterials",
+          "Subclass": [
+            {
+              "Name": "Penicillins",
+              "Subclass": [
+                {
+                  "Name": "Amoxicilline"
+                },
+                {
+                  "Name": "Amoxicilline/clavulaanzuur",
+                  "Brands": [
+                    {
+                      "Name": "Amoxicilline",
+                      "Method": "Oral"
+                    }
+                    ]
+                },
+                {
+                  "Name": "Benzathinebenzylpenicilline",
+                  "Brands": [
+                    {
+                      "Name": "Extencin",
+                      "Method": "Parenteral"
+                    }
+                    ]
+                },
+                {
+                  "Name": "Benzylpenicilline"
+                },
+                {
+                  "Name": "Feneticilline"
+                },
+                {
+                  "Name": "Fenoxymethylpenicilline"
+                },
+                {
+                  "Name": "Flucloxacilline"
+                },
+                {
+                  "Name": "Piperacilline/tazobactam"
+                },
+              ]
+            },
+            {
+              "Name": "Cephalosporins",
+              "Subclass": [
+                {
+                  "Name": "First-generation cephalosporins",
+                  "Subclass": [
+
+                  ]
+                },
+                {
+                  "Name": "Second-generation cephalosporins",
+                  "Subclass": [
+
+                  ]
+                },
+                {
+                  "Name": "Third-generation cephalosporins",
+                  "Subclass": [
+
+                  ]
+                }
+              ]
+            },
+            {
+              "Name": "Monobactams",
+              "Subclass": [
+
+              ]
+            },
+            {
+              "Name": "Carbapenems",
+              "Subclass": [
+
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
