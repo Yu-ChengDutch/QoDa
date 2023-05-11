@@ -5,15 +5,144 @@
       "Name": "Antibacterials for systemic use",
       "Subclass": [
         {
+          "Name": "Other antibacterials for systemic use",
+          "Subclass": [
+            {
+              "Name": "Fosfomycine",
+              "Method": "Oral"
+            }
+            ]
+        },
+        {
+          "Name": "Nitrofuran derivatives",
+          "Subclass": [
+            {
+              "Name": "Nitrofurantoïne",
+              "Method": "Oral"
+            }
+            ]
+        },
+        {
+          "Name": "Imidazole derivatives",
+          "Subclass": [
+            {
+              "Name": "Metronidazol",
+              "Method": "Parenteral"
+            }
+            ]
+        },
+        {
+          "Name": "Steroid antibacterials",
+          "Subclass": [
+            {
+              "Name": "Fusidinezuur",
+              "Brands": [
+                {
+                  "Name": "Fucidin",
+                  "Method": "Oral"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Macrolides",
+          "Subclass": [
+            {
+              "Name": "Azitromycine",
+              "Brands": [
+                {
+                  "Name": "Zithromax",
+                  "Method": "Oral"
+                }
+                ]
+            },
+            {
+              "Name": "Claritromycine",
+              "Brands": [
+                {
+                  "Name": "Klacid",
+                  "Method": "Oral"
+                }
+                ]
+            },
+            {
+              "Name": "Erythromycine",
+              "Brands": [
+                {
+                  "Name": "Erytrocine"                
+                }
+                ]
+            }
+            ]
+        },
+        {
+          "Name": "Lincosamides",
+          "Subclass": [
+            {
+              "Name": "Clindamycine"
+            }
+            ]
+        },
+        {
           "Name": "Tetracyclines",
           "Subclass": [
-
+            {
+              "Name": "Demeclocycline",
+              "Brands": [
+                {
+                  "Name": "Ledermycine",
+                  "Method": "Oral"
+                }
+                ]
+            },
+            {
+              "Name": "Doxycycline",
+              "Brands": [
+                {
+                  "Name": "Efracea",
+                  "Method": "Oral"
+                },
+                {
+                  "Name": "Vibramycin",
+                  "Method": "Parenteral"
+                ]
+            },
+            {
+              "Name": "Eravacycline",
+              "Brands": [
+                {
+                  "Name": "Xerava",
+                  "Method": "Parenteral"
+                }
+                ]
+            },
+            {
+              "Name": "Minocycline",
+              "Method": "Oral"
+            },
+            {
+              "Name": "Tetracycline",
+              "Method": "Oral"
+            },
+            {
+              "Name": "Tigecycline",
+              "Brands": [
+                {
+                  "Name": "Tygacil",
+                  "Method": "Parenteral"
+                }
+                ]
+            }
           ]
         },
         {
           "Name": "Amphenicols",
           "Subclass": [
-
+            {
+              "Name": "Chlooramfenicol",
+              "Method": "Eye drops"
+            }
           ]
         },
         {
@@ -47,10 +176,22 @@
                   "Name": "Benzylpenicilline"
                 },
                 {
-                  "Name": "Feneticilline"
+                  "Name": "Feneticilline",
+                  "Brands": [
+                    {
+                      "Name": "Broxil",
+                      "Method": "Oral"
+                    }
+                    ]
                 },
                 {
-                  "Name": "Fenoxymethylpenicilline"
+                  "Name": "Fenoxymethylpenicilline",
+                  "Brands": [
+                    {
+                      "Name": "Acipen-V",
+                      "Method": "Oral"
+                    }
+                    ]
                 },
                 {
                   "Name": "Flucloxacilline"
@@ -66,19 +207,85 @@
                 {
                   "Name": "First-generation cephalosporins",
                   "Subclass": [
-
+                    {
+                      "Name": "Cefalexine",
+                      "Brands": [
+                        {
+                          "Name": "Keforal",
+                          "Method": "Oral"
+                        }
+                        ]
+                    },
+                    {
+                      "Name": "Cefazoline",
+                      "Brands": [
+                        {
+                          "Name": "Kefzol",
+                          "Method": "Parenteral"
+                        }
+                        ]
+                    }
                   ]
                 },
                 {
                   "Name": "Second-generation cephalosporins",
                   "Subclass": [
-
+                    {
+                      "Name": "Cefaclor",
+                      "Method": "Oral"
+                    },
+                    {
+                      "Name": "Cefuroxim",
+                      "Method": "Parenteral"
+                    },
+                    {
+                      "Name": "Cefuroximaxetil",
+                      "Brands": [
+                        {
+                          "Name": "Zinnat",
+                          "Method": "Oral"
+                        }
+                        ]
+                    }
                   ]
                 },
                 {
                   "Name": "Third-generation cephalosporins",
                   "Subclass": [
-
+                    {
+                      "Name": "Cefotaxim",
+                      "Method": "Oral"
+                    },
+                    {
+                      "Name": "Ceftazidim",
+                      "Method": "Oral"
+                    },
+                    {
+                      "Name": "Ceftazidim/avibactam",
+                      "Brands": [
+                        {
+                          "Name": "Zavicefta",
+                          "Method": "Parenteral"
+                        }
+                        ]
+                    },
+                    {
+                      "Name": "Ceftibuten",
+                      "Method": "Oral"
+                    },
+                    {
+                      "Name": "Ceftriaxon",
+                      "Brands": "Parenteral"
+                    }
+                  ]
+                },
+                {
+                  "Name": "Fourth-generation cephalosporins",
+                  "Subclass": [
+                    {
+                      "Name": "Cefepim",
+                      "Method": "Parenteral"
+                    }
                   ]
                 }
               ]
@@ -86,13 +293,46 @@
             {
               "Name": "Monobactams",
               "Subclass": [
-
+                {
+                  "Name": "Aztreonam",
+                  "Brands": [
+                    {
+                      "Name": "Cayston",
+                      "Method": "Inhalation"
+                    }
+                  ]
+                }
               ]
             },
             {
               "Name": "Carbapenems",
               "Subclass": [
-
+                {
+                  "Name": "Ertapenem",
+                  "Brands": [
+                    {
+                      "Name": "Invanz",
+                      "Method": "Parenteral"
+                    }
+                   ]
+                },
+                {
+                  "Name": "Imipenem/cilastatine",
+                  "Method": "Parenteral"
+                },
+                {
+                  "Name": "Impenem/cilastatine/relebactam",
+                  "Brands": [
+                    {
+                      "Name": "Recarbio",
+                      "Method": "Parenteral"
+                    }
+                    ]
+                },
+                {
+                  "Name": "Meropenem",
+                  "Method": "Parenteral"
+                }
               ]
             }
           ]
