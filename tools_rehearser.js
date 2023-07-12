@@ -24,7 +24,9 @@ let question_texts = {
     "Brands": ["Medication is produced by different brands. Of what medication is the brand <", "> an instance?"],
     "Method": ["Medication may be taken in ways such as oral, intramuscular injection, IUD etc. With what method is <", "> taken?"],
     "Subconditions": ["Diseases have subclasses. What is the subclass of <", ">?"],
-    "Dutch name": ["Dutch exists. What is the name of <", "> in Dutch?"]
+    "Dutch name": ["Dutch exists. What is the name of <", "> in Dutch?"],
+    "Individual conditions": [""],
+    "Subtypes": [""]
 };
 
 let possible_questions = {};
@@ -38,7 +40,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
-    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Questions": ["Subconditions", "Alternative name", "Dutch name"]},
+    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Questions": ["Individual conditions", "Subtypes", "Subconditions", "Alternative name", "Dutch name"]},
     "Pharmacology - N": {"Database": './data_pharmacology_n.json', "Questions": ["Subclass", "Brands"]},
     "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Questions": ["Subclass", "Brands", "Alternative name", "Method"]},
     "Pharmacology - J": {"Database": './data_pharmacology_j.json', "Questions": ["Subclass", "Brands", "Method"]},
