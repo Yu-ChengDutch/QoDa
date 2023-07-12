@@ -316,14 +316,17 @@ function checkAnswer(){
     if (Array.isArray(right_answer)) {
 
         console.log("Array found")
+        console.log(right_answer)
 
-        if (given_answer in right_answer) {
+        if (right_answer.includes(given_answer)) {
 
             console.log("Right answer in array found")
 
             document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + "/n" + given_answer
             
             let temp_arr = []
+
+            textfield.value = "";
 
             if (right_answer.length > 0) {
                 for (var i = 0; i < right_answer.length; i++){
@@ -339,6 +342,10 @@ function checkAnswer(){
                 nextQuestion();
 
             }
+
+        } else {
+
+            textfield.value = "";
 
         }
 
