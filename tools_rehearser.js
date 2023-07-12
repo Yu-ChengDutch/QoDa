@@ -36,6 +36,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
+    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Questions": ["Subconditions", "Alternative name", "Dutch name"]},
     "Pharmacology - N": {"Database": './data_pharmacology_n.json', "Questions": ["Subclass", "Brands"]},
     "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Questions": ["Subclass", "Brands", "Alternative name", "Method"]},
     "Pharmacology - J": {"Database": './data_pharmacology_j.json', "Questions": ["Subclass", "Brands", "Method"]},
@@ -186,6 +187,8 @@ function createQuestions(data, questions, output){
     }
 
     // console.log("Finished analysis...")
+
+    console.log(possible_questions)
 
     // console.log(possible_questions["Division"]);
     // console.log(possible_questions["Parts"]);
