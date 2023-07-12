@@ -40,7 +40,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
-    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Questions": ["Individual conditions", "Subtypes", "Subconditions", "Alternative name", "Dutch name"]},
+    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Subconditions", "Alternative name", "Dutch name"]},
     "Pharmacology - N": {"Database": './data_pharmacology_n.json', "Questions": ["Subclass", "Brands"]},
     "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Questions": ["Subclass", "Brands", "Alternative name", "Method"]},
     "Pharmacology - J": {"Database": './data_pharmacology_j.json', "Questions": ["Subclass", "Brands", "Method"]},
@@ -78,6 +78,7 @@ function setUp(){
 
     console.log("Fetching main DB at: " + current_database);
 
+    iterators = databases[subject_title]["Iterators"];
     questions = databases[subject_title]["Questions"];
 
     fetch(current_database)
@@ -87,7 +88,7 @@ function setUp(){
     })
     .then(function(data){
         console.log("- > Accesing file: " + data.Name);
-        createQuestions(data, questions, possible_questions);
+        createQuestions(data, iterators, questions, possible_questions);
         chooseQuestions(questions);
         setQuestion("Question 1");
     })
@@ -136,7 +137,7 @@ function setUp(){
 /* Load the database (for now still hardcoded) */
 
 
-function createQuestions(data, questions, output){
+function createQuestions(data, iterators, questions, output){
     
     // console.log("Starting analysis:")
 
@@ -146,7 +147,20 @@ function createQuestions(data, questions, output){
 
         let current_item = traversable[0]
 
+        for (let i =0; i< iterators.length; i++) {
+
+            if (iterators[i] in current_item){
+
+                next_item = current_item[iterators[i]]
+
+                traversable = traversable.concat(next_item)
+                
+            }
+
+        }
+
         for (let i =0; i < questions.length; i++){
+
             if (questions[i] in current_item){
 
                 next_item = current_item[questions[i]]
