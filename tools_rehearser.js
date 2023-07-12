@@ -329,8 +329,12 @@ function checkAnswer(){
             textfield.value = "";
 
             if (right_answer.length > 0) {
+                
                 for (var i = 0; i < right_answer.length; i++){
-                    temp_arr.append(right_answer[i]) 
+                    if (right_answer[i] != given_answer) {
+                        temp_arr.append(right_answer[i]) 
+                    }
+                    
                 }
 
                 final_questions[title_text][0] = temp_arr;
