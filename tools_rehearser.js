@@ -322,7 +322,7 @@ function checkAnswer(){
 
             console.log("Right answer in array found")
 
-            document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + "/n" + given_answer
+            document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + " - " + given_answer
             
             let temp_arr = []
 
