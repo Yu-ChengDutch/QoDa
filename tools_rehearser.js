@@ -328,12 +328,14 @@ function checkAnswer(){
 
             textfield.value = "";
 
-            if (right_answer.length > 0) {
+            if (right_answer.length > 1) {
                 
                 for (var i = 0; i < right_answer.length; i++){
                     if (right_answer[i] != given_answer) {
                         temp_arr.append(right_answer[i]) 
                     }
+
+                    console.log(temp_arr);
                     
                 }
 
