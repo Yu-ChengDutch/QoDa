@@ -22,7 +22,9 @@ let question_texts = {
     "Gender": ["Certain structures only occur in males or females. Whom does <", "> occur in?"],
     "Subclass": ["Medication always belongs to a class. To what class does <", "> belong?"],
     "Brands": ["Medication is produced by different brands. Of what medication is the brand <", "> an instance?"],
-    "Method": ["Medication may be taken in ways such as oral, intramuscular injection, IUD etc. With what method is <", "> taken?"]
+    "Method": ["Medication may be taken in ways such as oral, intramuscular injection, IUD etc. With what method is <", "> taken?"],
+    "Subconditions": ["Diseases have subclasses. What is the subclass of <", ">?"],
+    "Dutch name": ["Dutch exists. What is the name of <", "> in Dutch?"]
 };
 
 let possible_questions = {};
