@@ -25,8 +25,7 @@ let question_texts = {
     "Method": ["Medication may be taken in ways such as oral, intramuscular injection, IUD etc. With what method is <", "> taken?"],
     "Subconditions": ["Diseases have subclasses. What is the subclass of <", ">?"],
     "Dutch name": ["Dutch exists. What is the name of <", "> in Dutch?"],
-    "Individual conditions": [""],
-    "Subtypes": [""]
+    "Epidemiology": ["How much percentage of <", "> has <", ">?"]
 };
 
 let possible_questions = {};
@@ -40,7 +39,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
-    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Subconditions", "Alternative name", "Dutch name"]},
+    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Subconditions", "Epidemiology", "Alternative name", "Dutch name"]},
     "Pharmacology - N": {"Database": './data_pharmacology_n.json', "Questions": ["Subclass", "Brands"]},
     "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Questions": ["Subclass", "Brands", "Alternative name", "Method"]},
     "Pharmacology - J": {"Database": './data_pharmacology_j.json', "Questions": ["Subclass", "Brands", "Method"]},
@@ -154,7 +153,7 @@ function createQuestions(data, iterators, questions, output){
                 next_item = current_item[iterators[i]]
 
                 traversable = traversable.concat(next_item)
-                
+
             }
 
         }
@@ -168,7 +167,9 @@ function createQuestions(data, iterators, questions, output){
                 if (Array.isArray(next_item)) {
 
                     if (typeof next_item[0] === 'string') {
+
                         output[questions[i]][next_item] = current_item.Name
+
                     } else {
                         traversable = traversable.concat(next_item)
     
@@ -242,19 +243,24 @@ function chooseQuestions(questions){
         
         /* From all possible questions of this type, take the one matching the answer. From there, take a random instance */
         
-        if (Array.isArray(current_array[answer])) {
-            question_data = current_array[answer][rand(current_array[answer].length)];
+        question_data = current_array[answer];
+        
+        let question = ""
+        let question_string = ""
+
+        if (current_type == "Epidemiology") {
+
+            question = question_texts[current_type][0] + question_data[1] + question_texts[current_type][1] + answer + question_texts[current_type][2];
+            question_string = "Question " + (i+1);
+            final_questions[question_string] = [question_data[0], question];
+
         } else {
-            question_data = current_array[answer];
-        }        
-        
-        let question = question_texts[current_type][0] + question_data + question_texts[current_type][1];
-        
-        /* A question is added to the roster here */
 
-        let question_string = "Question " + (i+1);
-        final_questions[question_string] = [answer, question];
-
+            question = question_texts[current_type][0] + question_data + question_texts[current_type][1];            
+            question_string = "Question " + (i+1);
+            final_questions[question_string] = [answer, question];
+        
+        }
         /* First, I want to determine whether there's a side quest */
 
         // console.log(final_questions);
