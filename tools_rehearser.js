@@ -358,6 +358,8 @@ function checkAnswer(){
 
 function nextQuestion() {
 
+    const textfield = document.getElementById('text-field');
+
     // console.log("The answer is correct");
     textfield.value = "";
 
