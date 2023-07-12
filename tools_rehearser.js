@@ -315,7 +315,11 @@ function checkAnswer(){
 
     if (Array.isArray(right_answer)) {
 
+        console.log("Array found")
+
         if (given_answer in right_answer) {
+
+            console.log("Right answer in array found")
 
             document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + "/n" + given_answer
             
@@ -327,6 +331,8 @@ function checkAnswer(){
                 }
 
                 final_questions[title_text][0] = temp_arr
+
+                console.log(final_questions[title_text][0])
 
             } else {
 
