@@ -1,0 +1,999 @@
+{
+    "Name": "Emergency medicine",
+    "Subclass": [
+        {
+            "Name": "Muskeloskeletal traumas",
+            "Subclass": [
+                {
+                    "Name": "Spinal trauma",
+                    "Subclass": [
+                        {
+                            "Name": "Occipitocervical spinal trauma",
+                            "Subclass": [
+                                {
+                                    "Name": "Jefferson's fracture",
+                                    "Symptoms": ["Neck pain"],
+                                    "Mechanism of injury": ["Axial load", "Hyperextension"],
+                                    "Injured structure": [["C1", "Posterior arches"]],
+                                    "Treatment": ["External fixation"]
+                                },
+                                {
+                                    "Name": "Hangman's fracture",
+                                    "Prevalence": [["19%", "spinal fractures"],["55%", "cervical fractures in patients with head injury"]],
+                                    "Mechanism of injury": ["Distraction", "Hyperextension"],
+                                    "Injured structure": [["C2", "Pedicles"]]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Subaxial spinal trauma",
+                            "Subclass":[
+                                {
+                                    "Name": "Compression fractures",
+                                    "Definition": "Collapse of a vertebra",
+                                    "Risk factors": ["Osteoporosis", "Osteogenesis imperfecta", "Lytic laesions"],
+                                    "Mechanism of injury": ["Pathological fracture"],
+                                    "Sympoms": ["Back pain"],
+                                    "Signs": ["Loss of height", "Wedge shaped vertebra", "Loss of height of the vertebra"],
+                                    "Treatment": ["Vertebral augmentation", "Back brace"]
+                                },
+                                {
+                                    "Name": "Burst fracture",
+                                    "Definition": "High-energy vertebral fracture with shards penetrating surrounding tissue",
+                                    "Mechanism of injury": ["Axial load"],
+                                    "Complications": ["Spinal cord injury"]
+                                },
+                                {
+                                    "Name": "Chance fracture",
+                                    "Mechanism of injury": ["Hyperflexion"],
+                                    "Signs": ["Excessive distance between spinous processes"],
+                                    "Risk factors": ["Seatbelt sign"],
+                                    "Comorbidities": ["Splenic rupture"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Upper extremity trauma",
+                    "Subclass": [
+                        {
+                            "Name": "Forearm trauma",
+                            "Subclass": [
+                                {
+                                    "Name": "Colles' fracture",
+                                    "Definition": "Fracture in which the distal radius is bent dorsally",
+                                    "Mechanism of injury": {
+                                        "Formal": ["Axial load"],
+                                        "Informal": ["Fall with extended wrist"]
+                                    },
+                                    "Signs": ["Bayonet deformity", "Wrist pain", "Edema", "Haematoma"]                                },
+                                {
+                                    "Name": "Smith's fracture",
+                                    "Definition": "Fracture in which the distal radius is bnt volarly",
+                                    "Mechanism of injury": {
+                                        "Formal": ["Axial load"],
+                                        "Informal": ["Fall with flexed wrist"]
+                                    }
+                                },
+                                {
+                                    "Name": "Barton's fracture",
+                                    "Definition": "Fracture of the distal radius involving the articular rim"
+                                },
+                                {
+                                    "Name": "Chauffeur's fracture",
+                                    "Injured structure": [["Styloid process", "Radius"]]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Wrist trauma"
+                        },
+                        {
+                            "Name": "Hand trauma",
+                            "Subclass": [
+                                {
+                                    "Name": "Boxer's fracture",
+                                    "Injured structure": ["Metacarpal 5"],
+                                    "Prevalence": ["20%", "hand fractures"],
+                                    "Treatment": ["Buddy taping"],
+                                    "Mechanism of injury": {
+                                        "Formal": ["Axial load"],
+                                        "Informal": ["Hitting an object with a closed fist"]
+                                    }
+                                },
+                                {
+                                    "Name": "Scaphoid fracture",
+                                    "Injured structure": ["Scaphoid bone"],
+                                    "Prevalence": ["80%", "Carpal injuries"],
+                                    "Complications": ["Avascular necrosis"],
+                                    "Symptoms": ["Snuffbox tenderness"],
+                                    "Mechanism of injury": {
+                                        "Formal": ["Axial load"],
+                                        "Informal": ["Fall on an outstretched hand"]
+                                    }
+                                },
+                                {
+                                    "Name": "Rolando fracture",
+                                    "Definition": "Intra-articular fracture of the base of the thumb"
+                                },
+                                {
+                                    "Name": "Bennett's fracture",
+                                    "Definition": "Intra-articular fracture of the base of the thumb involving a (sub)luxation thereof",
+                                    "Symptoms": ["Pain"],
+                                    "Signs": ["Edema", "Ecchymosis", "Instability", "Weakness"],
+                                    "Mechanism of injury": {
+                                        "Formal": ["Axial load"],
+                                        "Informal": ["Hitting an object with a closed fist", "Falling on the thumb"]
+                                    }
+                                },
+                                {
+                                    "Name": "Gamekeeper's thumb",
+                                    "Alternative name": "Skier's thumb",
+                                    "Definition": "Rupture of the ulnar collateral ligament accompanied by an avulsion fraction of the proximal phalanx of the thumb",
+                                    "Mechanism of injury": {
+                                        "Formal": ["Hyperextension", "Hyperabduction"],
+                                        "Informal": ["Holding an object from the thumb", "Falling with an outstretched hand on a pole"]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Knee trauma",
+                    "Subclass": [
+                        {
+                            "Name": "Unhappy triad",
+                            "Definitions": ["Anterior cruciate ligament rupture", "Medial collateral ligament rupture", "Meniscus rupture"]
+                        },
+                        {
+                            "Name": "Knee ligament trauma",
+                            "Subclass": [
+                                {
+                                    "Name": "Cruciate ligament trauma",
+                                    "Subclass": [
+                                        {
+                                            "Name": "Anterior cruciate ligament trauma"
+                                        },
+                                        {
+                                            "Name": "Posterior cruciate ligament trauma"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Collateral ligament trauma",
+                                    "Subclass": [
+                                        {
+                                            "Name": "Lateral cruciate ligament trauma"
+                                        },
+                                        {
+                                            "Name": "Mediale cruciate ligament trauma"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Meniscus rupture",
+                            "Symptoms": ["Inability to walk", "Inability to extend knee", "Clicking feeling"],
+                            "Signs": ["Cooper's sign", "McMurray test", "Apley grind test"],
+                            "Mechanism of injury": ["Internal rotation while flexed", "External rotation while flexed"],
+                            "Subclass": [
+                                {
+                                    "Name": "Vertical meniscus rupture"
+                                },
+                                {
+                                    "Name": "Bucket-handle meniscus rupture"
+                                },
+                                {
+                                    "Name": "Transverse meniscus rupture"
+                                },
+                                {
+                                    "Name": "Degenerative meniscus rupture",
+                                    "Risk factors": ["Habitual squatting", "Habitual kneeling"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Tendon ruptures",
+                            "Subclass": [
+                                {
+                                    "Name": "Quadriceps tendon rupture",
+                                    "Symptoms": ["Pain", "Inability to extend knee"]
+                                },
+                                {
+                                    "Name": "Patellar tendon rupture",
+                                    "Symptoms": ["Pain", "Difficulty walking", "Inability to straighten the kneww"],
+                                    "Signs": ["Cranially translated patella"],
+                                    "Risk factors": ["Patellar tendinitis", "Kidney failure", "Diabetes mellitus", "Steroids", "Fluoroquinolone"],
+                                    "Mechanism of injury": ["Fall from height", "Direct trauma"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Knee fractures",
+                            "Subclass": [
+                                {
+                                    "Name": "Patellar fractures",
+                                    "Mechanism of injury": ["Direct trauma"],
+                                    "Prevalence": ["1%", "all broken bones"]
+                                },
+                                {
+                                    "Name": "Distal femur fractures"
+                                },
+                                {
+                                    "Name": "Proximal tibia fractures"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Patellar dislocations",
+                            "Prevalence": ["2%", "knee injuries"],
+                            "Recurrence": ["30%", "all cases"],
+                            "Mechanism of injury": ["Valgus"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Ankle trauma",
+                    "Subclass": [
+                        {
+                            "Name": "Ankle sprains",
+                            "Treatment": ["RICE"],
+                            "Subclass": [
+                                {
+                                    "Name": "Inversion ankle sprain",
+                                    "Mechanism of injury": ["Inversion"],
+                                    "Prevalence": ["85%", "ankle sprains"],
+                                    "Injured structure": ["Anterior talofibular ligament", "Calcaneofibular ligament"]
+                                },
+                                {
+                                    "Name": "Eversion ankle sprain",
+                                    "Mechanism of injury": ["Eversion"],
+                                    "Injured structure": ["Deltoid ligament"]
+                                },
+                                {
+                                    "Name": "High ankle sprain",
+                                    "Prevalence": ["15%", "ankle sprains"],
+                                    "Mechanism of injury": ["External rotation"],
+                                    "Injured structure": ["Tibiofibular syndesmosis"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Ankle fractures"
+                        },
+                        {
+                            "Name": "Ankle dislocations"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Neurotrauma",
+            "Subclass": [
+                {
+                    "Name": "Traumatic brain injury",
+                    "Classification": [
+                        {
+                            "Class": "Mild traumatic brain injury",
+                            "Class features": ["GCS", "Post-traumatic amnesia", "Loss of consciousness"],
+                            "Class values": ["13-15", "<1 day", "0-30 minutes"]
+                        },
+                        {
+                            "Class": "Moderate traumatic brain injury",
+                            "Class features": ["GCS", "Post-traumatic amnesia", "Loss of consciousness"],
+                            "Class values": ["9-12", ">1 to <7 days", ">30 minutes to <24 hours"]
+                        },
+                        {
+                            "Class": "Severe traumatic brain injury",
+                            "Class features": ["GCS", "Post-traumatic amnesia", "Loss of consciousness"],
+                            "Class values": ["3-8", ">7 days", ">24 hours"]
+                        }                
+                    ],
+                    "Subclass": [
+                        {
+                            "Name": "Cerebral contusion",
+                            "Prevalence": ["30%", "severe head injuries"],
+                            "Complications": ["Burst lobe", "Brain herniation", "Increased intracranial pressure"],
+                            "Symptoms": ["Headache", "Confusion", "Sleepiness", "Dizziness", "Loss of consciousness", "Nausea", "Vomiting", "Lightheadedness", "Tinnitus", "Vertigo"],
+                            "Injured structure": ["Cerebral cortex"],
+                            "Mechanism of injury": {
+                                "Formal": ["Direct impact"],
+                                "Informal": ["Coup", "Contre-coup"]
+                            }
+                        },
+                        {
+                            "Name": "Diffuse axonal injury",
+                            "Abbreviation": "DAI",
+                            "Prevalence": ["50%", "severe head injuries"],
+                            "Complications": ["Coma"],
+                            "Injured structure": ["White matter", "Grey matter"],
+                            "Definition": "Scattered lesions over a widespread area of white and gray matter",
+                            "Mechanism of injury": {
+                                "Informal": ["Rapid deceleration", "Rapid acceleration"]
+                            },
+                            "Prognosis": ["90%", "not regaining consciousness"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Intracranial haemorrhage",
+                    "Subclass": [
+                        {
+                            "Name": "Intra-axial haemorrhage",
+                            "Subclass": [
+                                {
+                                    "Name": "Intraparenchymal haemorrhage"
+                                },
+                                {
+                                    "Name": "Intraventricular haemorrhage"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Extra-axial haemorrhage",
+                            "Subclass": [
+                                {
+                                    "Name": "Subdural hematoma",
+                                    "Abbrevation": "SDH",
+                                    "Definition": "Haemorrhage of the veins causing hematoma between the dura mater and the arachnoid mater",
+                                    "Symptoms": ["Headache", "Confusion", "Loss of consciousness"],
+                                    "Onset": "Gradual",
+                                    "Signs": ["Crescent sign"],
+                                    "Injured structure": ["Bridging veins"],
+                                    "Risk factors": ["Advanced age", "Anticoagulants", "Habitual alcohol use", "Dementia"]
+                                },
+                                {
+                                    "Name": "Epidural hematoma",
+                                    "Definition": "Arterial haemorrhage causing hematoma between the skull and the dura mater, causing patients to faint, wake up and faint again",
+                                    "Onset": "Sudden",
+                                    "Signs": ["Biconcave lens sign"],
+                                    "Prevalence": ["10%", "traumatic brain injuries"],
+                                    "Symptoms": ["Talk-and-die sign", "Headache", "Confusion"],
+                                    "Complications": ["Tonsillar herniation"]
+                                },
+                                {
+                                    "Name": "Subarachnoid hematoma",
+                                    "Definition": "Haemorrhage of the area between the arachnoid membrane and the pia mater",
+                                    "Onset": "Sudden",
+                                    "Symptoms": ["Thunderclap headache", "Vomiting", "Neck pain", "Loss of consciousness"],
+                                    "Signs": ["Fever"],
+                                    "Cause": ["Trauma", "Cerebral aneurysm"],
+                                    "Prognosis": ["50%", "dies"]
+                                }
+                            ]
+                        }
+                    ]
+                }                
+            ]
+        },
+        {
+            "Name": "Cardiac emergencies",
+            "Subclass": [
+                {
+                    "Name": "Arrhythmias",
+                    "Subtypes": [
+                        {
+                            "Name": "Atrial arrhythmia",
+                            "Subtypes": [
+                                {
+                                    "Name": "Premature atrial contractions",
+                                    "Abbreviation": "PAC",
+                                    "Pathophysiology": "Earlier depolarisation by a different part of the atria than the SA node",
+                                    "Risk factors": ["Hypertension", "Advanced age", "Hypercholesterolaemia", "Family history"],
+                                    "Signs": ["Additional QRS-complexes"],
+                                    "Treatment": ["Beta blockers"],
+                                    "Complications": ["Atrial flutter", "Atrial fibrillation"]
+                                },
+                                {
+                                    "Name": "Atrial flutter",
+                                    "Signs": ["Sawtooth pattern"],
+                                    "Onset": "Sudden",
+                                    "Symptoms": ["Palpitations", "Chest pain", "Dyspnea", "Loss of consciousness"],
+                                    "Risk factors": ["Hypertension", "Diabetes mellitus"],
+                                    "Complications": ["Arterial embolism"]
+                                },
+                                {
+                                    "Name": "Atrial fibrillation",
+                                    "Abbreviation": "A-fib",
+                                    "Complications": ["Congestive heart failure", "Arterial embolism"],
+                                    "Risk factors": ["COPD", "Obesity", "Sleep apnea", "Habitual alcohol use", "Habitual tobacco use", "Diabetes mellitus"],
+                                    "Signs": ["Absence of P-waves", "Irregularly spaced QRS-complexes"],
+                                    "Prevalence": ["3%", "general population"],
+                                    "Therapy": ["Ablation", "Anticoagulants"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Junctional arrhythmia",
+                            "Subtypes": [
+                                {
+                                    "Name": "Junctional rhythm",
+                                    "Signs": ["Absence of P-wave", "Normale QRS-complex", "Normal T-wave"],
+                                    "Causes": ["Trauma", "Myocardial infarction", "Myocarditis", "Hypothyroidism", "Hyperkalemia"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Ventricular arrhythmia",
+                            "Subtypes": [
+                                {
+                                    "Name": "Premature ventricular contraction",
+                                    "Abbrevation": "PVC",
+                                    "Symptoms": ["Palpitations"],
+                                    "Risk factors": ["Male sex", "Advanced age"],
+                                    "Signs": ["Extremely tall P-wave"]
+                                },
+                                {
+                                    "Name": "Ventricular fibrillation",
+                                    "Abbrevation": "V-fib",
+                                    "Complications": ["Cardiac arrest", "Sudden cardiac death"],
+                                    "Signs": ["Absence of P-waves", "Irregular unformed QRS-complexes"],
+                                    "Treatment": ["Cardiopulmonary resuscitation", "Defibrillation"],
+                                    "Prognosis": [["17%", "survival rate, out of hospital"], ["46%", "survival rate, in hospital"]],
+                                    "Symptoms": ["Cardiac arrest", "Loss of consciousness", "Loss of pulse"]
+                                },
+                                {
+                                    "Name": "Ventricular tachycardia",
+                                    "Abbrevation": "V-tach",
+                                    "Symptoms": ["Lightheadedness", "Palpitations", "Chest pain"],
+                                    "Signs": ["Tachycardia", "Wide QRS-complexes", "Extreme heart axis", "Josephson's sign"],
+                                    "Complications": ["Ventricular fibrillation", "Cardiac arrest"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Heart blocks",
+                            "Injured structure": ["AV-node"],
+                            "Subtypes": [
+                                {
+                                    "Name": "First-degree heart block",
+                                    "Prevalence": ["1%", "general population"],
+                                    "Pathophysiology": ["Slowed conduction"],
+                                    "Symptoms": ["Asymptomatic"],
+                                    "Signs": ["Prolonged PR-interval"]
+                                },
+                                {
+                                    "Name": "Second-degree heart block",
+                                    "Pathophysiology": ["Intermittent conduction block"],
+                                    "Symptoms": ["Asymptomatic"],
+                                    "Subtypes": [
+                                        {
+                                            "Name": "Mobitz I heart block",
+                                            "Alternative name": "Wenkebach periodicity",
+                                            "Signs": ["Progressively lengthening PR-intervals"]
+                                        },
+                                        {
+                                            "Name": "Mobitz II heart block",
+                                            "Injured structure": ["His-Purkinje system"],
+                                            "Signs": ["Intermittently non conducted P-waves"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Third-degree heart block",
+                                    "Alternative name": "Complete heart block",
+                                    "Pathophysiology": ["Completely impaired conduction"],
+                                    "Signs": ["Bradycardia", "Hypotension", "Independant P-wave and QRS-complex rhythms"]
+                                }                                
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "Name": "Bundle branch blocks",
+                    "Subtypes": [
+                        {
+                            "Name": "Left bundle branch block",
+                            "Abbreviation": "LBBB",
+                            "Pathophysiology": "Delayed depolarisation of the left ventricle",
+                            "Etiologies": ["Lyme disease", "Myocardial infarction"],
+                            "Signs": ["Deep and wide QRS-complexes in the precordial leads"]
+                        },
+                        {
+                            "Name": "Right bundle branch block",
+                            "Abbreviation": "RBBB",
+                            "Pathophysiology": "Delayed depolarisation of the right ventricle",
+                            "Etiologies": ["Pulmonary embolism", "Trauma", "Right ventricular hypertrophy", "Myocarditis", "Hypertension"],
+                            "Signs": ["Prolonged S-wave in lead I", "Prolonged S-wave in V6", "Wide QRS-complex"]
+                        }
+                    ]
+                },   
+                {
+                    "Name": "Cardiac tamponade",
+                    "Incidence": ["0.02%", "general population", "year"],
+                    "Etiology": ["Trauma", "Tuberculosis", "Hypothyroidism", "Kidney failure", "Myocardial infarction", "Pericarditis"],
+                    "Pathophsyiology": ["Pericardial effusion"],
+                    "Signs": ["Pulsus paradoxus", "Beck's triad", "Pericardial rub", "ST-segment changes"],
+                    "Symptoms": ["Dyspnea", "Weakness", "Lightheadedness", "Ptysis"],
+                    "Complications": ["Obstructive shock"],
+                    "Treatment": ["Periocardiocentesis"]
+                },
+                {
+                    "Name": "Pericarditis",
+                    "Incidence": ["0.03%", "general population", "year"],
+                    "Onset": "Sudden",
+                    "Risk factors": ["Male sex"],
+                    "Symptoms": ["Palpitations", "Chest pain when sitting", "Radiating pain to shoulders", "Radiating pain to neck", "Radiating pain to back", "Weakness", "Dyspnea"],
+                    "Signs": ["Fever"],
+                    "Causes": [["85%", "Viral infeciton"], "Bacterial infection", "Myocardial infarction", "Trauma", "Uremia"],
+                    "Treatment": ["NSAIDs", "Colchicine"],
+                    "Complications": ["Cardiac tamponade", "Myocarditis", "Constrictive pericarditis"],
+                    "Prognosis": ["30%", "repeat episode"]
+                },            
+                {
+                    "Name": "Heart axis deviation",
+                    "Subclass": [
+                        {
+                            "Name": "Normal heart axis",
+                            "Signs": ["Positive R-wave in I", "Positive R-wave in II", "Positive R-wave in III"]
+                        },
+                        {
+                            "Name": "Left heart axis",                            
+                            "Signs": ["Positive R-wave in I", "Negative R-wave in II", "Negative R-wave in III"]
+                        },
+                        {
+                            "Name": "Right heart axis",
+                            "Signs": ["Negative R-wave in I", "Positive R-wave in II", "Positive R-wave in III"]
+                        },
+                        {
+                            "Name": "Extreme heart axis",
+                            "Signs": ["Negative R-wave in I", "Negative R-wave in II", "Negative R-wave in III"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Internal medicine emergencies",
+            "Subclass": [
+                {
+                    "Name": "Acid-base disorders",
+                    "Subclass": [
+                        {
+                            "Name": "Acidosis",
+                            "Symptoms": ["Headaches", "Confusion", "Fatigue", "Tremor"],
+                            "Subclass": [
+                                {
+                                    "Name": "Metabolic acidosis",
+                                    "Subclass": [
+                                        {
+                                            "Name": "High anion gap metabolic acidosis",
+                                            "Mnemonic": "MUDPILES",
+                                            "Pathophysiology": ["Overproduction of acid"],
+                                            "Etiology": ["Methanol", "Uremia", "Diabetic ketoacidosis", "Paracetamol, Propylene glycol", "Infection, iron, isoniazid, inborn errors of metabolism", "Lactic acididosis", "Ethylene glycol", "Salicylates"]
+                                        },
+                                        {
+                                            "Name": "Normal anion gap metabolic acidosis",
+                                            "Pathophysiology": ["Suboptimal filtration of acid"],
+                                            "Etiology": ["Diarrhea", "Renal tubular acidosis", "Spironolacton", "Chloride administration"]                                        
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Respiratory acidosis",
+                                    "Subtypes": [
+                                        {
+                                            "Name": "Acute respiratory acidosis",
+                                            "Definition": "An acidosis in which both the pH as well as the pCO2 are elevated",
+                                            "Pathophysiology": "Hypercapnia due to hypoventilation",
+                                            "Causes": ["Central respiratory disease", "Neuromuscular disease"]
+                                        },
+                                        {
+                                            "Name": "Chronic respiratory acidosis",
+                                            "Definition":"An acidosis in which the pH is normal but hypercapnia is present",
+                                            "Pathophysiology": "Hypercapnia due to hypoventilation, corrected by the kidneys",
+                                            "Causes": ["COPD", "Pickwickian syndrome"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Alkalosis",
+                            "Subclass": [
+                                {
+                                    "Name": "Metabolic alkalosis",
+                                    "Symptoms": ["Paresthesias", "Tetany", "Cardiac arhytmias"],
+                                    "Complications": ["Coma", "Seizures"],
+                                    "Subtypes": [
+                                        {
+                                            "Name": "Chloride-responsive metabolic alkalosis",
+                                            "Definition": "An alkalosis with a urine chloride of <25 mEq/L",
+                                            "Causes": ["Vomiting", "Contraction alkalosis", "Diurethic therapy", "Cystic fibrosis"]
+                                        },
+                                        {
+                                            "Name": "Chloride-resistant metabolic alkalosis",
+                                            "Definition": "An alkalosis with a urine chloride of >25 mEq/L",
+                                            "Causes": ["Hypokalemia", "Hyperaldosteronism", "Excess liquorice consumption", "Magnesium deficiency", "Hypercalcemia", "Bartter syndrome", "Gitelman syndrome", "Liddle syndrome"]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Respiratory alkalosis",
+                                    "Symptoms": ["Palpitation", "Tetany", "Convulsion", "Hidrosis"],
+                                    "Causes": ["Pulmonary disorder", "Salicylate poisoning", "Hyperventilation"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Embolism",
+                    "Subtypes": [
+                        {
+                            "Name": "Arterial embolism",
+                            "Risk factors": ["Atrial fibrillation", "Paroxysmal atrial fibrillation", "Artifical heart valves", "Atrial flutter", "Congestive heart failure"],
+                            "Definition": "Embolus formed in arterial system",
+                            "Subtypes": [
+                                {
+                                    "Name": "Ischemic stroke",
+                                    "Definition": "Interruption of the blood supply to the brain",
+                                    "Subtypes": [
+                                        {
+                                            "Name": "Transient ischaemic attack",
+                                            "Definition": "Interruption of the blood supply to the brain lasting less than 2 hours",
+                                            "Abbreviation": "TIA",
+                                            "Signs": ["Unilateral paresis", "Dysarthria", "Diplopia", "Amaurosis fugax"],
+                                            "Prognsosi": ["91%", "survival rate on hospital discharge"]
+                                        },
+                                        {
+                                            "Name": "Stroke proper",
+                                            "Subtypes": [
+                                                {
+                                                    "Name": "Brainstem stroke",
+                                                    "Subtypes": [
+                                                        {
+                                                            "Name": "Midbrain stroke syndrome",
+                                                            "Pathophysiology": "Occlusion of the posterior cerebral artery",
+                                                            "Ipsilateral signs": ["Oculomotor nerve palsy"],
+                                                            "Contralateral signs": ["Hemiparesis"]
+                                                        },
+                                                        {
+                                                            "Name": "Pontine stroke syndrome"
+                                                        },
+                                                        {
+                                                            "Name": "Medullary stroke syndrome"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Cerebrum stroke",
+                                                    "Subtypes": [
+                                                        {
+                                                            "Name": "Posterior cerebral artery syndrome",
+                                                            "Injured structures": ["Occipital lobe", "Temporal lobe", "Thalamus", "Brainstem", "Midbrain"],
+                                                            "General signs": ["Visual agnosia", "Prosopagnosia", "Anomic aphasia", "Topographic disorientation", "Chorea"],
+                                                            "Contralateral signs": ["Homonymous hemanopsia", "Hemiplegia"]
+                                                        },
+                                                        {
+                                                            "Name": "Middle cerebral artery syndrome",
+                                                            "Injured structures": ["Frontal lobe", "Temporal lobe", "Parietal lobe"],
+                                                            "Contralateral signs": ["Hemiparesis of upper extremities", "Hemisensory loss of upper extremities",
+                                                                                    "Hemiparesis of lower extremities", "Hemisensory loss of lower extremities",
+                                                                                    "Hemiparesis of face", "Hemisensory loss of face"],
+                                                            "General signs": ["Aphasia", "Apraxia"]
+                                                        },
+                                                        {
+                                                            "Name": "Anterior cerebral artery syndrome",
+                                                            "Injured structures": ["Frontal lobe", "Parietal lobe", "Basal ganglia", "Anterior fornix", "Corpus callosum"],
+                                                            "Contralateral signs": ["Hemiparesis", "Hemisensory loss of leg"],
+                                                            "General signs": ["Apraxia", "Disconnection syndrome", "Anosmia", "Urinary incontince"]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Acute coronary syndrome",
+                                    "Abbreviation": "ACS",
+                                    "Subclass": [
+                                        {
+                                            "Name": "Angina pectoris"
+                                        },
+                                        {
+                                            "Name": "Myocardial infarction",
+                                            "Alternative name": "Heart attack",
+                                            "Symptoms": ["Chest pain", "Dyspnea", "Nausea", "Weakness", "Radiating pain to right arm and shoulder"],
+                                            "Signs": ["Levine's sign", "Sweating", "Loss of consciousness"],
+                                            "Subclass": [
+                                                {
+                                                    "Name": "ST-elevation myocardial infarction",
+                                                    "Abbrevation": "STEMI",
+                                                    "Definition": "Complete blockage of a coronary artery resulting in necrosis in part of the heart muscle",
+                                                    "Prevalence": ["40%", "myocardial infarctions"],
+                                                    "Subclass": [
+                                                        {
+                                                            "Name": "Anterior wall infarction",
+                                                            "Signs": ["ST elevation in V1", "ST elevation in V2", "ST elevation in V3", "ST elevation in V4", "ST elevation in V5", "ST elevation in V6"],
+                                                            "Injured structure": ["Left anterior descending artery"]
+                                                        },
+                                                        {
+                                                            "Name": "Inferior wall infarction",
+                                                            "Signs": ["ST elevation in II", "ST elevation in III", "ST elevation in AVF"],
+                                                            "Injured structure": ["Right coronary artery"]
+                                                        },
+                                                        {
+                                                            "Name": "Posterior wall infarction",
+                                                            "Signs": ["ST elevation in V7", "ST elevation in V8", "ST elevation in V9"],
+                                                            "Injured structure": ["Right coronary artery"]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Name": "Non-ST elevation myocardial infarction",
+                                                    "Abbrevation": "NSTEMI",
+                                                    "Definition": "Incomplete blockage of a coronary artery resulting in partial necrosis",
+                                                    "Prevalence": ["60%", "myocardial infarctions"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Venous embolism",
+                            "Risk factors": ["Hormonal anticonception", "Gravidity", "Varicose veins", "Diabetes mellitus", "Pulmonary hypertension", "Immobilisation"],
+                            "Definition": "Embolus formed in venous system",
+                            "Subtypes": [
+                                {
+                                    "Name": "Pulmonary embolism",
+                                    "Abbrevation": "PE",
+                                    "Symptoms": ["Dyspnea", "Chest pain", "Inspiratory pain", "Hemoptysis"],
+                                    "Signs": ["Hypoxemia", "Tachypnea", "Tachycardia", "Pyrexia"],
+                                    "Comorbidities": ["Deep venous thrombosis"],
+                                    "Stratification": [
+                                        {
+                                            "Name": "Moderate pulmonary embolism",
+                                            "Treatment": ["Directly acting oral anticoagulants"]                                             
+                                        },
+                                        {
+                                            "Name": "Massive pulmonary embolism",
+                                            "Definition": "Pulmonary embolism causing hemodynamic instability",
+                                            "Signs": ["Loss of consciousness", "Hypotension"],
+                                            "Complications": ["Obstructive shock", "Pulmonary heart disease"],
+                                            "Treatment": ["Thrombolysis"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Paradoxical embolism"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Toxidromes",
+            "Subclass": [
+                {
+                    "Name": "Cholinergic toxidrome",
+                    "Signs": ["Miosis", "Hyperactive bowel sounds"],
+                    "Symptoms": ["Bronchorrhea", "Confusion", "Diaphoresis", "Diarrhea", "Emesis"],
+                    "Causes": ["Carbamates", "Mushrooms", "Organophosphates"],
+                    "Complications": ["Bradycardia", "Hypothermia", "Tachypneu"]
+                },
+                {
+                    "Name": "Opiate toxidrome",
+                    "Signs": ["Miosis", "Hypoactive bowel sounds"],
+                    "Symptoms": ["Bradypneu", "Coma", "Altered mental state", "Pulmonary edema"],
+                    "Complications": ["Bradycardia", "Hypotension", "Hyperthermia"],
+                    "Causes": ["Opioids"]
+                },
+                {
+                    "Name": "Sympathicomimetic toxidrome",
+                    "Signs": ["Normal pupils", "Hyperthermia", "Hyperactive bowel sounds"],
+                    "Symptoms": ["Anxiety", "Delusions", "Diaphoresis", "Hyperreflexia", "Piloerection"],
+                    "Causes": ["Cocaine", "Amphetamine", "Methamphetamine"]
+                },
+                {
+                    "Name": "Anticholinergic toxidrome",
+                    "Signs": ["Normal pupils", "Hyperthermia", "Hypoactive bowel sounds"],
+                    "Symptoms": ["Blurred vision", "Delirium", "Dry skin", "Hallucinations"],
+                    "Complications": ["Hypertension", "Hyperthermia", "Tachycardia"],
+                    "Causes": ["Antihistamines", "Antipsychotics", "Antidepressants", "Atropine"]
+                },
+                {
+                    "Name": "Hallucinogenic",
+                    "Signs": ["Normal pupils", "Normothermia", "Hyperactive bowel sounds"],
+                    "Symptoms": ["Disorientation", "Hallucinations", "Panic", "Seizures"],
+                    "Complications": ["Hypertension", "Tachycardia", "Tachypneu"],
+                    "Causes": ["Substituted amphetamines", "Cocaine", "Phencyclidine"]
+                },
+                {
+                    "Name": "Sedative-hypnotics",
+                    "Signs": ["Normal pupils", "Normothermia", "Hypoactive bowel sounds"],
+                    "Symptoms": ["Ataxia", "Blurred vision", "Confusion", "Delirium", "Diplopia", "Nystagmus"],
+                    "Causes": ["Anticonvulsants", "Barbiturates", "Benzodiazepines", "GHB", "Alcohol"],
+                    "Complications": ["Hypotension", "Hypothermia", "Bradycardia"]
+                }
+            ]
+        },
+        {
+            "Name": "Surgical emergencies",
+            "Subclass": [
+                {
+                    "Name": "Gastroenteritis",
+                    "Prevalence": ["13%", "abdominal pain"],
+                    "Complication": ["Dehydration"],
+                    "Causes": ["Rotavirus", "Norovirus", "E. Coli", "Campylobacter", "Giardia lamblia"],
+                    "Symptoms": ["Diarrhea", "Emesis"],
+                    "Subtypes": [
+                        {
+                            "Name": "Bacterial gastroenteritis",
+                            "Prevalence": ["60%", "cases of gastroenteritis"],
+                            "Additional symptoms": ["Haematochezia"]
+                        },
+                        {
+                            "Name": "Viral gastroenteritis",
+                            "Prevalence": ["40%", "cases of gastroenteritis"],
+                            "Additional symptoms": ["Pyrexia", "Fatigue", "Headache", "Muscle pain"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gastritis",
+                    "Prevalence": ["5%", "abdominal pain"],
+                    "Symptoms": ["Gastritis", "Nausea", "Vomiting"],
+                    "Complications": ["Gastric haemorrhage", "Dyspepsia", "Peptic ulcer disease", "Gastric carcinoma", "Pernicious anaemia"],
+                    "Treatment": ["Antacids"],
+                    "Subtypes": [
+                        {
+                            "Name": "Erosive gastritis",
+                            "Causes": ["Stress", "Habitual alcohol use", "NSAIDs"]
+                        },
+                        {
+                            "Name": "Non-erosive gastritis",
+                            "Causes": ["H. Pylori"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Diverticulosis",
+                    "Prevalence": ["35%", "people in the Western world"]
+                },
+                {
+                    "Name": "Diverticulitis",
+                    "Prevalence": [["3%", "abdominal pain"], ["25%", "patients with diverticulosis"]],
+                    "Definition": ["Inflammations of abnormal diverticula in the large bowel"],
+                    "Risk factors": ["Hypovitaminosis D", "Obesity", "Habitual tobacco use", "NSAIDs", "Family history"],
+                    "Onset": ["Sudden"],
+                    "Complications": ["Peritonitis"],
+                    "Symptoms": ["Abdominal pain", "Nausea", "Constipation", "Diarrhea", "Haematochezia"],
+                    "Signs": ["Elevated CRP", "Elevated leukocytes", "Fever"]
+                },  
+                {
+                    "Name": "Appendicitis",
+                    "Prevalence": ["2%", "abdominal pain"],
+                    "Definition": "Inflammation of the appendix",
+                    "Complications": ["Peritonitis", "Sepsis"],
+                    "Symptoms": ["Abdominal pain", "Emesis", "Anorexia"],
+                    "Pathophysiology": "Primary obstruction of the appendix by bezoars or fecaliths, leading to stasis of mucus",
+                    "Signs": ["McBurney's sign", "Hamburger sign", "Blumberg's sign", "Fever", "Dunphy's sign"]
+                },
+                {
+                    "Name": "Pancreaticobiliary emergencies",
+                    "Subclass": [
+                        {
+                            "Name": "Cholelithiasis",
+                            "Prevalence": ["4%", "abdominal pain"],
+                            "Symptoms": ["Biliary colic", "Referred pain to shoulder", "Pruritus"],
+                            "Signs": ["Jaundice", "Murphy's sign"],
+                            "Complications": ["Cholecystitis", "Pancreatitis", "Hepatitis"],
+                            "Risk factors": ["Hormonal contraceptives", "Obesity", "European descent", "Female sex", "Rapid weight loss"],
+                            "Subtypes": [
+                                {
+                                    "Name": "Cholesterol stones",
+                                    "Prevalence": ["75%", "all gallstones"],
+                                    "Pathophysiology": ["Buildup of excess cholesterol in the bile"]
+                                },
+                                {
+                                    "Name": "Pigment stones",
+                                    "Prevalence": ["25%", "all gallstones"],
+                                    "Pathophysiology": ["Buildup of bilirubin"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Cholecystitis",
+                            "Symptoms": ["Biliary colic", "Nausea", "Vomiting", "Abdominal pain"],
+                            "Signs": ["Fever", "Jaundice", "Murphy's sign"],
+                            "Complications": ["Biliary gangrene", "Gallbladder rupture"]
+                        },
+                        {
+                            "Name": "Pancreatitis",
+                            "Symptoms": ["Abdominal pain", "Nausea", "Emesis"],
+                            "Signs": ["Hypoactive bowel sounds"],
+                            "Subtypes": [
+                                {
+                                    "Name": "Acute pancreatitis",
+                                    "Complications": ["Pancreatic pseudocyst"],
+                                    "Causes": ["Choledocholithiasis", "Habitual alcohol use", "Trauma"],
+                                    "Additional signs": ["Fever", "Chills", "Tachycardia"]
+                                },
+                                {
+                                    "Name": "Chronic pancreatitis",
+                                    "Additional symptoms": ["Weight loss", "Steatorrhea", "Diarrhea"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Peritonitis",
+                            "Symptoms": ["Abdominal pain", "Rigidity"],
+                            "Signs": ["Abdominal tenderness", "Abdominal guarding", "Blumberg's sign"],
+                            "Complications": ["Sepsis"]
+                        },
+                        {
+                            "Name": "Cholangitis",
+                            "Definition": "Inflammation of the bile duct",
+                            "Cause": "Choledocholithiasis",
+                            "Complications": ["Kidney failure", "Respiratory failure", "Cardiac arrhythmias", "Pneumonia", "Myocardial infarction"],
+                            "Symptoms": ["Abdominal pain", "Confusion"],
+                            "Signs": ["Jaundice", "Hypotension", "Fever", "Rigors"]
+                        }
+                    ]
+                }                
+            ]
+        },
+        {
+            "Name": "Shock syndromes",
+            "Subtypes": [
+                {
+                    "Name": "Distributive shock",
+                    "Subtypes": [
+                        {
+                            "Name": "Septic shock"
+                        },
+                        {
+                            "Name": "Non-septic distributive shock"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Cardiogenic shock",
+                    "Subtypes": [
+                        {
+                            "Name": "Cardiomyopathic shock"
+                        },
+                        {
+                            "Name": "Rhythmogenic shock"
+                        },
+                        {
+                            "Name": "Mechanical cardiogenic shock"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Hypovolemic shock",
+                    "Subtypes": [
+                        {
+                            "Name": "Haemorrhagic shock"
+                        },
+                        {
+                            "Name": "Non-haemorrhagic hypovolemic shock"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Obstructive shock",
+                    "Subtypes": [
+                        {
+                            "Name": "Vasculair obstructive shock"
+                        },
+                        {
+                            "Name": "Mechanical obstructive shock"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

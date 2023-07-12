@@ -1,0 +1,184 @@
+{
+    "Name": "Analgesics",
+    "Subclass": [
+        {
+            "Name": "Opioids",
+            "Subclass": [
+                {
+                    "Name": "Natural opium alkaloids",
+                    "Subclass": [
+                        {
+                            "Name": "Hydromorfon",
+                            "Brands": [
+                                {
+                                    "Name": "Palladon"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Morfine",
+                            "Brands": [
+                                {
+                                    "Name": "Maracex"
+                                },
+                                {
+                                    "Name": "Oramorph"
+                                },
+                                {
+                                    "Name": "Sendolor"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Oxycodon",
+                            "Brands": [
+                                {
+                                    "Name": "OxyContin"
+                                },
+                                {
+                                    "Name": "OxyNorm"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Phenylpiperidine derivatives",
+                    "Subclass": [
+                        {
+                            "Name": "Fentanyl",
+                            "Brands": [
+                                {
+                                    "Name": "Actiq"
+                                },
+                                {
+                                    "Name": "Abstral"
+                                },
+                                {
+                                    "Name": "Effentora"
+                                },
+                                {
+                                    "Name": "Instanyl"
+                                },
+                                {
+                                    "Name": "Pecfent"
+                                },
+                                {
+                                    "Name": "Recivit"
+                                }
+                            ]
+                        },
+                        {
+                            "Name":"Pethidine" 
+                        }
+                    ]
+                },
+                {
+                    "Name": "Diphenylpropylamine derivatives",
+                    "Subclass": [
+                        {
+                            "Name":"Piritramide",
+                            "Brands": [
+                                {
+                                    "Name": "Dipidolor"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Oripavine derivatives",
+                    "Subclass": [
+                        {
+                            "Name": "Buprenorfine",
+                            "Brands": [
+                                {
+                                    "Name": "BuTrans"
+                                },
+                                {
+                                    "Name": "Temgesic"
+                                },
+                                {
+                                    "Name": "Transtec"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Morphinan derivatives",
+                    "Subclass": [
+                        {
+                            "Name": "Nalbufine",
+                            "Metabolisation": {"RoM": "Liver", "Activation": "Inactive"},
+                            "Elimination": {"RoE": "Urine", "FoE": "Metabolite"},
+                            "Brands": [
+                                {
+                                    "Name": "Nubain"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Tramadol",
+                    "Metabolisation": {"RoM": "Liver", "Activation": "Active"},
+                    "Elimination": {"RoE": "Urine", "FoE": "Metabolite"},
+                    "Brands": [
+                        {
+                            "Name": "Tramal"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Salicylic acid and derivatives",
+            "Subclass": [
+                {
+                    "Name":"Acetylsalicylzuur",
+                    "Brands": [
+                        {
+                            "Name": "Aspégic"
+                        },
+                        {
+                            "Name": "Asperine"
+                        },
+                        {
+                            "Name": "Aspro"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Carbasalaatcalcium",
+                    "Brands": [
+                        {
+                            "Name": "Ascal"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Gapapentids",
+            "Subclass": [
+                {
+                    "Name": "Gabapentine",
+                    "Brands": [
+                        {
+                            "Name": "Neurontin"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Pregabaline",
+                    "Brands": [
+                        {
+                            "Name": "Lyrica"
+                        }
+                    ]
+                }
+            ]
+        }        
+    ]
+}

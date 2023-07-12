@@ -1,0 +1,636 @@
+{
+    "Name": "Signs and symptoms",
+    "Subclass": [
+        {
+            "Name": "Signs",
+            "Subclass": [
+                {
+                    "Name": "Physical examination",
+                    "Subclass": [
+                        {
+                            "Name": "Blood pressure",
+                            "Values": [
+                                {
+                                    "Name": "Optimal blood pressure",
+                                    "Value": "120/80"
+                                },
+                                {
+                                    "Name": "Hypertension",
+                                    "Value": ">140/90"
+                                },
+                                {
+                                    "Name": "Hypotension",
+                                    "Value": "<90/60"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Temperature",
+                            "Subtypes": [
+                                {
+                                    "Name": "Pyrexia",
+                                    "Alternative name": "Fever",
+                                    "Value": ">38",
+                                    "Unit": "Degrees Celsius",
+                                    "Mechanism": "Increase in body's temperature set point"
+                                },
+                                {
+                                    "Name": "Hyperpyrexia",
+                                    "Value": ">41",
+                                    "Unit": "Degrees Celsius",
+                                    "Mechanism": "Increase in body's temperature set point"
+                                },
+                                {
+                                    "Name": "Hypothermia",
+                                    "Value": "<35",
+                                    "Unit": "Degrees Celsius",
+                                    "Mechanism": "Increase in body's temperature set point"
+                                },
+                                {
+                                    "Name": "Hyperthermia",
+                                    "Alternative name": "Overheating",
+                                    "Value": ">38",
+                                    "Unit": "Degrees Celsius",
+                                    "Mechanism": "Failure of thermoregulation"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Oxygen saturation",
+                            "Subtypes": [
+                                {
+                                    "Name": "Normal blood oxygen saturation",
+                                    "Upper value": "100%",
+                                    "Lower value": "97%"
+                                },
+                                {
+                                    "Name": "Low normal blood oxygen saturation",
+                                    "Upper value": "96%",
+                                    "Lower value": "91%"
+                                },
+                                {
+                                    "Name": "Hypoxemia",
+                                    "Upper value": "90%",
+                                    "Lower value": "81%"
+                                },
+                                {
+                                    "Name": "Hypoxemia, at risk for organ damage",
+                                    "Upper value": "80%"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Heart rate",
+                            "Too high": "Tachycardia",
+                            "Too low": "Bradycardia",
+                            "Unit": "BPM",
+                            "Categories": [
+                                {
+                                    "Name": "Newborn <1 m/o",
+                                    "Upper normal value": "190",
+                                    "Lower normal value": "70"
+                                },
+                                {
+                                    "Name": "Infants <1 y/o",
+                                    "Upper normal value": "160",
+                                    "Lower normal value": "80"
+                                },
+                                {
+                                    "Name": "Children <2 y/o",
+                                    "Upper normal value": "130",
+                                    "Lower normal value": "80"
+                                },
+                                {
+                                    "Name": "Children <4 y/o",
+                                    "Upper normal value": "120",
+                                    "Lower normal value": "80"
+                                },
+                                {
+                                    "Name": "Children <6 y/o",
+                                    "Upper normal value": "115",
+                                    "Lower normal value": "75"
+                                },
+                                {
+                                    "Name": "Children <9 y/o",
+                                    "Upper normal value": "110",
+                                    "Lower normal value": "70"
+                                },
+                                {
+                                    "Name": "Children >10 y/o, adults and seniors",
+                                    "Upper normal value": "100",
+                                    "Lower normal value": "60"
+                                },
+                                {
+                                    "Name": "Athletes",
+                                    "Upper normal value": "60",
+                                    "Lower normal value": "40"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Medical imaging",
+                    "Subclass": [
+                        {
+                            "Name": "Ultrasonography",
+                            "Subclass": [
+                                {
+                                    "Name": "Obstetric ultrasonography",
+                                    "Subclass": [
+                                        {
+                                            "Name": "Amniotic fluid index",
+                                            "Abbreviation": "AFI",
+                                            "Categories": [
+                                                {
+                                                    "Name": "Oligohydramnios",
+                                                    "Lower normal value": "8",
+                                                    "Upper normal value": "18"
+                                                },
+                                                {
+                                                    "Name": "Polyhydramnios"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Transvaginal ultrasonography",
+                                    "Subclass": [
+                                        {
+                                            "Name": "Endometrioma",
+                                            "Alternative name": "Chocolate cyst",
+                                            "Prevalence": ["44%", "women with endometriosis"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Laboratory testing",
+                    "Subclass": [
+                        {
+                            "Name": "Arterial blood gas",
+                            "Abbreviation": "ABG",
+                            "Subclass": [
+                                {
+                                    "Name": "pH",
+                                    "Alternative name": "Acidity",
+                                    "Upper normal value": 7.45,
+                                    "Lower normal value": 7.35,
+                                    "Upper term": "Acidosis",
+                                    "Lower term": "Alkalosis" 
+                                },
+                                {
+                                    "Name": "HCO3",
+                                    "Unit": "mmol/L",
+                                    "Alternative name": "Bicarbonate",
+                                    "Upper normal value": 26,
+                                    "Lower normal value": 22,
+                                    "Upper term": "Metabolic acidosis",
+                                    "Lower term": "Metabolic alkalosis"
+                                },
+                                {
+                                    "Name": "PaCO2",
+                                    "Unit": "kPa",
+                                    "Upper normal value": 6,
+                                    "Lower normal value": 4.5,
+                                    "Upper term": "Respiratory acidosis",
+                                    "Lower term": "Respiratory alkalosis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Serial hcG",
+                            "Categories": {
+
+                            }
+                        },
+                        {
+                            "Name": "Iron",
+                            "Unit": "mmol/L",
+                            "Categories": [
+                                {
+                                    "Name": "Men",
+                                    "Lower normal value": 14,
+                                    "Upper normal value": 28
+                                },
+                                {
+                                    "Name": "Non-pregnant women",
+                                    "Lower normal value": 10,
+                                    "Upper normal value": 25
+                                },
+                                {
+                                    "Name": "Pregnant women",
+                                    "Lower normal value": 10,
+                                    "Upper normal value": 25
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Glucose",
+                            "Unit": "mmol/L",
+                            "Upper term": "Hyperglycemia",
+                            "Lower term": "Hypoglycemia",
+                            "Categories": [
+                                {
+                                    "Name": "Non-diabetic",
+                                    "Measurement": "Pre-prandial",
+                                    "Lower normal value": 4.0,
+                                    "Upper normal value": 5.9
+                                },
+                                {
+                                    "Name": "Non-diabetic",
+                                    "Measurement": "Post-prandial",
+                                    "Upper normal value": 7.8
+                                },
+                                {
+                                    "Name": "Type 2 diabetic",
+                                    "Measurement": "Pre-prandial",
+                                    "Lower normal value": 4.0,
+                                    "Upper normal value": 7
+                                },
+                                {
+                                    "Name": "Type 2 diabetic",
+                                    "Measurement": "Post-prandial",
+                                    "Upper normal value": 8.5
+                                },
+                                {
+                                    "Name": "Type 1 diabetic",
+                                    "Measurement": "Pre-prandial",
+                                    "Lower normal value": 4.0,
+                                    "Upper normal value": 7
+                                },
+                                {
+                                    "Name": "Type 1 diabetic",
+                                    "Measurement": "Post-prandial",
+                                    "Lower normal value": 5,
+                                    "Upper normal value": 8.5
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Natrium",
+                            "Unit": "mmol/L",
+                            "Lower normal value": 136,
+                            "Upper normal value": 144,
+                            "Upper term": "Hypernatremia",
+                            "Lower term": "Hyponatremia"
+                        },
+                        {
+                            "Name": "Kalium",
+                            "Unit": "mmol/L",
+                            "Upper normal value": 5.0,
+                            "Lower normal value": 3.5,
+                            "Upper term": "Hyperkalemia",
+                            "Lower term": "Hypokalemia"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Electrography",
+                    "Subclass": [
+                        {
+                            "Name": "Electrocardiography",
+                            "Interpretation": [
+                                {
+                                    "Name": "Waves and complexes",
+                                    "Interpretation": [
+                                        {
+                                            "Name": "P wave",
+                                            "Mechanism": "Atrial depolarisation"
+                                        },
+                                        {
+                                            "Name": "QRS complex",
+                                            "Mechanism": "Ventricular depolarisation"
+                                        },
+                                        {
+                                            "Name": "T wave",
+                                            "Mechanism": "Ventricular repolarisation"
+                                        },
+                                        {
+                                            "Name": "U wave",
+                                            "Mechanism": "Interventricular septum repolarisation"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Intervals and segments",
+                                    "Interpretation": [
+                                        {
+                                            "Name": "PR segment",
+                                            "Start": "End of P wave",
+                                            "End": "Start of QRS complex"
+                                        },
+                                        {
+                                            "Name": "PR interval",
+                                            "Start": "Start of P wave",
+                                            "End": "Start of QRS complex",
+                                            "Mechanism": "Travel time of the electric signal from the sinus node through the AV node"
+                                        },
+                                        {
+                                            "Name": "QT interval",
+                                            "Start": "Start of QRS complex",
+                                            "End": "End of T wave"
+                                        },
+                                        {
+                                            "Name": "ST segment",
+                                            "Start": "End of QRS complex",
+                                            "End": "Start of T wave",
+                                            "Mechanism": "Period of depolarisation of the ventricles"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Lead groups": [
+                                {
+                                    "Name": "Limb leads",
+                                    "Leads": [
+                                        {
+                                            "Name": "Lead I",
+                                            "Positions": ["Right arm", "Left arm"],
+                                            "Directionality": "Lateral lead"
+                                        },
+                                        {
+                                            "Name": "Lead II",
+                                            "Positions": ["Left leg", "Right arm"],
+                                            "Directionality": "Inferior lead"
+                                        },
+                                        {
+                                            "Name": "Lead III",
+                                            "Positions": ["Left leg", "Left arm"],
+                                            "Directionality": "Inferior lead"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Augmented limb leads",
+                                    "Leads": [
+                                        {
+                                            "Name": "aVR"
+                                        },
+                                        {
+                                            "Name": "aVL",
+                                            "Directionality": "Lateral lead"
+                                        },
+                                        {
+                                            "Name": "aVF",
+                                            "Directionality": "Inferior lead"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Precordial leads",
+                                    "Subclass": [
+                                        {
+                                            "Name": "V1",
+                                            "Directionality": "Septal lead"
+                                        },
+                                        {
+                                            "Name": "V2",
+                                            "Directionality": "Septal lead"
+                                        },
+                                        {
+                                            "Name": "V3",
+                                            "Directionality": "Anterior lead"
+                                        },
+                                        {
+                                            "Name": "V4",
+                                            "Directionality": "Anterior lead"
+                                        },
+                                        {
+                                            "Name": "V5",
+                                            "Directionality": "Lateral lead"
+                                        },
+                                        {
+                                            "Name": "V6",
+                                            "Directionality": "Lateral lead"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Symptoms",
+            "Subclass": [
+                {
+                    "Name": "General symptoms",
+                    "Subclass": [
+                        {
+                            "Name": "Pain",
+                            "Subclass": [
+                                
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Integumentary symptoms",
+                    "Subclass": [
+                        {
+                            "Name": "Edema",
+                            "Alternative name": "Hydropsy",
+                            "Subclass": [
+                                {
+                                    "Name": "Pitting edema"
+                                },
+                                {
+                                    "Name": "Non-pitting edema"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gynaecological symptoms",
+                    "Subclass": [
+                        {
+                            "Name": "Vaginal bleeding",
+                            "Subclass": [
+                                {
+                                    "Name": "Menorrhagia",
+                                    "Alternative name": "Heavy menstrual bleeding",
+                                    "Abbreviation": "HMB",
+                                    "Definition": "Excessive vaginal blood loss during menstruation"
+                                },
+                                {
+                                    "Name": "Metrorrhagia",
+                                    "Alternative name": "Intermenstrual bleeding",
+                                    "Definition": "Vaginal blood loss between menstrual periods"
+                                },
+                                {
+                                    "Name": "Dysfunctional uterine bleeding",
+                                    "Alternative name": "Abnormal uterine bleeding",
+                                    "Abbreviation": "AUB",
+                                    "Definition": "Frequent irregular vaginal blood loss"
+                                },
+                                {
+                                    "Name": "Antepartum bleeding",
+                                    "Alternative name": "Antepartum haemorrhage",
+                                    "Abbreviation": "APH",
+                                    "Definition": "Vaginal blood loss after the 28th week of pregnancy"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Amenorrhea",
+                            "Definition": "Absence of menstruation in a woman of reproductive age",
+                            "Subclass": [
+                                {
+                                    "Name": "Primary amenorrhea",
+                                    "Definition": "Absence of menstruation in a woman by the age of 16"
+                                },
+                                {
+                                    "Name": "Secondary amenorrhea",
+                                    "Definition": "Absence of menstruation for three months in a woman with a history of normal menstrual cycles"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Gynaecological pain",
+                            "Subclass": [
+                                {
+                                    "Name": "Dyspareunia",
+                                    "Definition": "Painful penetrative intercourse"
+                                },
+                                {
+                                    "Name": "Mittelschmerz",
+                                    "Alternative name": "Ovulation pain",
+                                    "Definition": "Pain during ovulation", 
+                                    "Prevalence": ["20%", "women"],
+                                    "Mechanism": "Follicular swelling"
+                                },
+                                {
+                                    "Name": "Dysmenorrhea",
+                                    "Alternative name": "Period pain",
+                                    "Definition": "Pain during menstruation"
+                                }
+                            ]
+                        }                        
+                    ]
+                },
+                {
+                    "Name": "Obstetrical symptoms",
+                    "Subclass": [
+                        {
+                            "Name": "Pregnancy",
+                            "Subclass": [
+                                {
+                                    "Name": "Post term pregnancy",
+                                    "Definition": ["Pregnancy beyond", "42 weeks of gestation"]
+                                },
+                                {
+                                    "Name": "Late term pregnancy",
+                                    "Definition": ["Pregnancy beyond", "41 weeks of gestation"]
+                                },
+                                {
+                                    "Name": "Full term pregnancy",
+                                    "Definition": ["Pregnancy beyond", "39 weeks of gestation"]
+                                },
+                                {
+                                    "Name": "Early term pregnancy",
+                                    "Definition": ["Pregnancy beyond", "37 weeks of gestation"]
+                                },
+                                {
+                                    "Name": "Pre term pregnancy",
+                                    "Definition": ["Pregnancy beyond", "36 weeks of gestation"]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Scores",
+            "Subclass": [
+                {
+                    "Name": "EMV",
+                    "Parts": [
+                        {
+                            "Name": "Eyes",
+                            "Score": [
+                                {
+                                    "Score": 4,
+                                    "Value": "Opens eyes spontaneously"
+                                },
+                                {
+                                    "Score": 3,
+                                    "Value": "Opens eyes when asked"
+                                },
+                                {
+                                    "Score": 2,
+                                    "Value": "Opens eyes on pain"
+                                },
+                                {
+                                    "Score": 1,
+                                    "Value": "Does not open eyes"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Motor",
+                            "Score": [
+                                {
+                                    "Score": 6,
+                                    "Value": "Executes simple assignment"
+                                },
+                                {
+                                    "Score": 5,
+                                    "Value": "Localises pain"
+                                },
+                                {
+                                    "Score": 4,
+                                    "Value": "Normal flexion on pain"
+                                },
+                                {
+                                    "Score": 3,
+                                    "Value": "Abnormal flexion on pain"
+                                },
+                                {
+                                    "Score": 2,
+                                    "Value": "Extension on pain"
+                                },
+                                {
+                                    "Score": 1,
+                                    "Value": "No reaction to pain"
+                                }                                
+                            ]
+                        },
+                        {
+                            "Name": "Verbal",
+                            "Score": [
+                                {
+                                    "Score": 5,
+                                    "Value": "Fully oriented"
+                                },
+                                {
+                                    "Score": 4,
+                                    "Value": "Confused but conversational"
+                                },
+                                {
+                                    "Score": 3,
+                                    "Value": "Speaking but no conversation possible"
+                                },
+                                {
+                                    "Score": 2,
+                                    "Value": "Only moaning"
+                                },
+                                {
+                                    "Score": 1,
+                                    "Value": "Not verbal"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

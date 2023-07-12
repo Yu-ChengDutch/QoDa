@@ -1,0 +1,468 @@
+{
+    "Name": "Gynaecological and obstetric diseases",
+    "Subtype": [
+        {
+            "Name": "Gynaecological conditions",
+            "Subtype": [
+                {
+                    "Name": "Gynaecological oncological conditions",
+                    "Subtype": [
+                        {
+                            "Name": "Vulvar cancer",
+                            "Summary": {
+                                "Signs": ["White discolouration", "Red discoloration", "Rash", "Warts"],
+                                "Symptoms": ["Itching", "Burning sensation", "Bleeding", "Dysuria", "Dyspareunia"],
+                                "Risk factors": ["Advanced age", "History", "Sexual promiscuity", "Habitual tobacco use", "Lichen sclerosus", "HIV", "Immunodeficiencies", "Northern European descent"]
+                            },
+                            "Subtype": [
+                                {
+                                    "Name": "Vulvar squamous cell carcinoma",
+                                    "Summary": {
+                                        "Prevalence": ["75%", "vulvar cancers"]
+                                    }
+                                },
+                                {
+                                    "Name": "Vulvar basal cell carcinoma",
+                                    "Summary": {
+                                        "Onset": ["70", "years of age"],
+                                        "Prevalence": ["8%", "vulvar cancers"]
+                                    }
+                                },
+                                {
+                                    "Name": "Vulvar melanoma",
+                                    "Summary": {
+                                        "Onset": ["70", "years of age"],
+                                        "Prevalence": ["6%", "vulvar cancers"]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Ovarian cancer",
+                            "Summary": {
+                                "Genes": ["BRCA1", "BRCA2"],
+                                "Risk factors": ["Early menarche", "Late menopause", "Nulligravida", "Obesity", "Hormone replacement therapy", "Advanced age", "Diabetes mellitus", "Habitual alcohol use", "Habitual tobacco use", "Family history"],
+                                "Complications": ["Ovarian torsion", "Metastasis"],
+                                "Symptoms": ["Bloating", "Abdominal pain", "Back pain", "Irregular menstruation", "Dyspareunia", "Postmenopausal vaginal bleeding", "Pericoital bleeding", "Fatigue", "Loss of appetite", "Hirsutisim", "Virilisation"]
+                            },
+                            "Subtypes": [
+                                {
+                                    "Name": "Ovarian adenocarcinoma",
+                                    "Alternative name": "Surface epithelial-stromal tumors",
+                                    "Summary": {
+                                        "Signs": ["Elevated CA-125"],
+                                        "Onset": ["Post-menopausal", "reproductive era"],
+                                        "Prevalence": ["90%", "ovarian cancer"]
+                                    }
+                                },
+                                {
+                                    "Name": "Ovarian carcinoma",
+                                    "Summary": {
+                                        "Prevalence": ["6%", "ovarian cancer"]
+                                    }
+                                },
+                                {
+                                    "Name": "Ovarian Mullerian tumor",
+                                    "Summary": {
+                                        "Prevalence": ["2%", "ovarian cancer"]
+                                    }
+                                },
+                                {
+                                    "Name": "Ovarian germ cell tumor",
+                                    "Summary": {
+                                        "Prevalence": ["2%", "ovarian cancer"]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Uterine cancer"
+                        },
+                        {
+                            "Name": "Uterine cancer"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Incontinence of urine",
+                    "Subtypes": [
+                        {
+                            "Name": "Urge incontinence",
+                            "Definition": "Incontence due to an overactive bladder",
+                            "Summary": {
+                                "Treatment": ["Lifestyle modification", "Caffeine consumption decrease"],
+                                "Symptoms": ["Urgency", "Increased urinary frequency", "Nocturia"],
+                                "Risk factors": ["Obesity", "Habitual caffeine use", "Constipation", "Advanced age"],
+                                "Prevalence": ["5%", "population"],
+                                "Mechanism": ["Overactive bladder"]
+                            }
+                        },
+                        {
+                            "Name": "Stress incontinence",
+                            "Definition": "Urinary loss whenever an increase in abdominal pressure occurs",
+                            "Summary": {
+                                "Treatment": ["Lifestyle modification", "Caffeine consumption decrease", "Pelvic floor physiotherapy", "Sling procedure", "Transobturator tape"],
+                                "Mechanism": ["Inadequate bladder closure"]
+                            }
+                        },
+                        {
+                            "Name": "Overflow incontinence",
+                            "Definition": "Urinary loss from an overfull bladder without any urge to urinate",
+                            "Summary": {
+                                "Mechanism": ["Bladder deficiency", "Urethra blockage"]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Pelvic organ prolapse",
+                    "Abbrevation": "POP",
+                    "Classifiction": {
+                        "Name": "Pelvic Organ Prolapse Quantification System",
+                        "Abbreviation": "POP-Q",
+                        "System": {
+                            "Stage 0": "No prolapse",
+                            "Stage 1": "Prolapse doesn't extend beyond -1 cm out from the hymen",
+                            "Stage 2": "Prolapse extends between -1 and 1 cm out from the hymen",
+                            "Stage 3": "Prolapse extends more than 1 cm out from the hymen",
+                            "Stage 4": "Total prolapse"
+                        }
+                    },
+                    "Subtype": [
+                        {
+                            "Name": "Anterior wall prolapse",
+                            "Subtype": [
+                                {
+                                    "Name": "Cystocele"
+                                },
+                                {
+                                    "Name": "Urethrocele"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Posterior wall prolapse",
+                            "Subtype": [
+                                {
+                                    "Name": "Enterocele"
+                                },
+                                {
+                                    "Name": "Rectocele"
+                                },
+                                {
+                                    "Name": "Sigmoidocele"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Apical wall prolapse",
+                            "Subtype": [
+                                {
+                                    "Name": "Uterine prolapse"
+                                },
+                                {
+                                    "Name": "Vaginal vault prolapse"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gynaecological infections"
+                },
+                {
+                    "Name": "Pelvic inflammatory disease",
+                    "Abbrevation": "PID"
+                },
+                {
+                    "Name": "Polycystic ovary syndrome",
+                    "Summary": {
+                        "Prevalence": ["4%", "women between 18 and 44 years of age"],
+                        "Complications": ["Diabetes Mellitus", "Dyslipidemia", "Miscarriage", "Sleep apnea"],
+                        "Signs": ["Ovarian cysts", "Enlarged ovaries", "Increased androgen hormones", "Weight gain", "Hirsutism"],
+                        "Symptoms": ["Amenorrhea", "Menorrhagia", "Hirsutism", "Acne", "Infertility", "Acanthosis nigricans", "Pelvic pain"]
+                    }
+                },
+                {
+                    "Name": "Premenstrual syndrome",
+                    "Abbrevation": "PMS",
+                    "Summary": {
+                        "Prevalence": ["20%", "women"],
+                        "Treatment": ["Hormonal contraceptives", "Lifestyle modification", "Education", "NSAIDs"],
+                        "Symptoms": ["Mental stress", "Anxiety", "Headache", "Fatigue", "Emotional instability", "Bloating", "Breast tenderness", "Headache"],
+                        "Risk factors": ["High-salt diet", "Habitual alcohol use", "Habitual caffeine use"],
+                        "Onset": ["1 week before menstruation"]
+                    }
+                },
+                {
+                    "Name": "Endometriosis",
+                    "Summary": {
+                        "Treatment": ["NSAIDs", "Hormonal contraceptives"],
+                        "Location": ["Ovaries", "Fallopian tubes", "Ligamentum Sacrouterina"],
+                        "Prevalence": ["11%", "women"],
+                        "Signs": ["Pelvic adhesions", "Endometrioma", "Thoracic endometriosis syndrome", "Blue discoloration of the anterior fornix"],
+                        "Symptoms": ["Dysmenorrhea", "Dyspareunia", "Dysuria", "Pelvic pain", "Back pain", "Mittelschmerz", "Infertility", "Constipation", "Chronic fatigue", "Nausea", "Vomitting", "Menorrhagia"]
+                    }
+                },
+                {
+                    "Name": "Lichen sclerosus",
+                    "Summary": {
+                        "Onset": ["7 year old", "60 year old"],
+                        "Treatment": ["Clobetasol", "Cetomacrogolcrème"],
+                        "Risk factors": ["Autoimmune diseases", "Thyroid disease"],
+                        "Complications": ["Meatal stenosis", "Vulvar squamous cell carcinoma"],
+                        "Location": ["Vulva", "Anus"],
+                        "Symptoms": ["Itching", "Pain", "Dyspareunia"],
+                        "Signs": ["Hyperkeratosis", "Ivory-white discoloration"]
+                    }
+                },
+                {
+                    "Name": "Vulvar cysts",
+                    "Subtype": [
+                        {
+                            "Name": "Bartholin cyst"
+                        },
+                        {
+                            "Name": "Skene cyst"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Obstetric conditions",
+            "Subtype": [
+                {
+                    "Name": "Complications of pregnancy",
+                    "Subtype": [
+                        {
+                            "Name": "Maternal complications of preganancy",
+                            "Subtype": [
+                                {
+                                    "Name":"Hypertensive states of pregnancy",
+                                    "Alternative name": "Maternal pregancy",
+                                    "Epidemiology": {
+                                        "Prevalence": ["10%", "pregnancies"]
+                                    },
+                                    "Subtype": [
+                                        {
+                                            "Name": "Pregnancy-induced hypertension",
+                                            "Alternative name": "Gestational hypertension",
+                                            "Abbreviation": "PIH",
+                                            "Definition": {
+                                                "Condition": "Hypertension",
+                                                "Population": "Pregnant women after 20 weeks of gestation",
+                                                "Exclusion": "Signs of pre-eclampsia"
+                                            }
+                                        },
+                                        {
+                                            "Name": "Pre-eclampsia",
+                                            "Etymology": {
+                                                "Language of origin": "Greek",
+                                                "Original word": "Eclampsia",
+                                                "Original meaning": "Lightning"
+                                            },
+                                            "Risk factors": ["Nulliparity", "Diabetes mellitus", "Advanced maternal age", "Hypertension", "Multiple gestation", "Hypothyroidism", "Obesity"],
+                                            "Features": [
+                                                {
+                                                    "Signs": ["Pitting edema", "Hypertension", "Proteinuria"]
+                                                },
+                                                {
+                                                    "Symptoms": ["Headache", "Paresthesia", "Epigastric abdominal pain", "Thrombocytopenia", "Impaired liver function", "Visual disturbances"]
+                                                }                                
+                                            ],
+                                            "Diagnostic criteria": [
+                                                {
+                                                    "Measurement": "Blood pressure",
+                                                    "Relation": "Absolute",
+                                                    "Value": ">140 systolic or >90 diastolic"
+                                                },
+                                                {
+                                                    "Measurement": "Blood pressure",
+                                                    "Relation": "Increase",
+                                                    "Value": ">30 systolic or >15 diastolic"
+                                                },
+                                                {
+                                                    "Measurement": "Proteinuria",
+                                                    "Relation": "Absolute",
+                                                    "Value": ">0.3 gram"
+                                                }
+                                            ],
+                                            "Complications": ["Eclampsia"]
+                                        },
+                                        {
+                                            "Name": "Eclampsia",
+                                            "Etymology": {
+                                                "Language of origin": "Greek",
+                                                "Original word": "Eclampsia",
+                                                "Original meaning": "Lightning"
+                                            },
+                                            "Definition": "Severe pre-eclampsia with seizures",
+                                            "Features": [
+                                                {
+                                                    "Signs": ["Tonic-clonic seizure"]
+                                                },
+                                                {
+                                                    "Symptoms": ["Visual disturbances", "Headache", "Photophobia", "Abdominal pain", "Altered mental status"]
+                                                }                                
+                                            ]
+                                        }
+                                    ] 
+                                },
+                                
+                                {
+                                    "Name": "Gestational diabetes",
+                                    "Alternative name": "Diabetes gravidarum",
+                                    "Summary": {
+                                        "Risk factors": ["PCOS", "Family history", "Advanced maternal age", "Obesity", "Habitual tobacco use"],
+                                        "Prevalence": ["10%", "pregnant women"]
+                                    }
+                                },
+                                {
+                                    "Name": "Anaemia in pregnancy",
+                                    "Summary": {
+                                        "Symptoms": ["Fatigue", "Dyspnea", "Palpitations", "Vertigo"],
+                                        "Prevlance": [["6%", "pregnant women in first-world countries"], "56%", "pregnant women in developing countries"],
+                                        "Treatment": "Ferrofumaraat"
+                                    }
+                                },
+                                {
+                                    "Name": "Hemolysis, elevated liver enzymes and low platelet count syndrome", 
+                                    "Abbreviation": "HELLP syndrome",
+                                    "Summary": {
+                                        "Risk factors": ["Nosebleeds", "Fatigue", "Advanced maternal age","Hypertension", "Diabetes Mellitus", "Obesity", "Metabolic disorders", "Antiphospholipid syndrome"],
+                                        "Onset": "Third trimester of pregnancy",
+                                        "Symptoms": ["Abdominal pain", "Nausea", "Vomiting", "Backpain", "Headache", "Visual disturbances", "Hematoma"],
+                                        "Signs": ["Anaemia", "Hypertension","Thrombocytopenia", "Proteinuria", "Leukocytosis", "Increased LDH", "Increased ALT", "Increased AST"],
+                                        "Treatment": "Delivery",
+                                        "Prevalence": [["0.9", "pregnancies"], ["20%", "patients with pre-ecclampsia"]],
+                                        "Complications": ["DIC", "Placental abruption", "Kidney failure", "Pulmonary edema"]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Foetal complications of pregnancy",
+                            "Subtype": [
+                                {
+                                    "Name": "Preterm birth",
+                                    "Definition": "Birth of a baby before 37 weeks of gestational age",
+                                    "Summary": {
+                                        "Risk factors": ["Advanced maternal age", "Obesity", "Miscarriage", "Abortion", "Coeliac disease", "Infertility", "Physical trauma", "Habitual tobacco use"],
+                                        "Prevalence": ["13%", "babies born"],
+                                        "Prevention": ["Lifestyle modification", "Progestogens", "Cervical cerclage"]
+                                    }
+                                },
+                                {
+                                    "Name": "Loss of pregnancy",
+                                    "Subtype": [
+                                        {
+                                            "Name": "Miscarriage",
+                                            "Alternative name": "Spontaneous abortion",
+                                            "Definition": "Loss of pregnancy before 20 weeks of gestation",
+                                            "Summary": {
+                                                "Risk factors": ["Advanced maternal age", "History", "Habitual tobacco use", "Obesity", "Diabetes Mellitus"],
+                                                "Symptoms": ["Vaginal bleeding", "Abdominal pain", "Abdominal cramps"],
+                                                "Signs": ["Gestational sac without embryo", "Decreasing hCG", "Slow-rising hCG"]
+                                            }
+                                        },
+                                        {
+                                            "Name": "Incomplete miscarriage",
+                                            "Summary": {
+                                                "Treatment": ["Vacuum aspiration", "Misoprostol"]
+                                            }
+                                        },
+                                        {
+                                            "Name": "Stillbirth",
+                                            "Definition": "Loss of pregnancy after 20 weeks of gestation",
+                                            "Summary": {
+                                                "Risk factors": ["Obesity", "Hypertension", "Diabetes Mellitus", "Habitual tobacco use", "Post term pregnancy", "Physical trauma", "History"],
+                                                "Prevalence": ["0.4%", "pregnancies"]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Ectopic pregnancy",
+                                    "Alternative name": "Extra Uterine Gravidity",
+                                    "Abbreviation": "EUG"
+                                },
+                                {
+                                    "Name": "Foetal distress",
+                                    "Definition": "Foetal hypoxia",
+                                    "Summary": {
+                                        "Risk factors": ["Gestational hypertension", "Post term pregnancy", "Oligohydramnios"],
+                                        "Symptoms": ["Decreased foetal movement"],
+                                        "Signs": ["Altered foetal heart rate", "Decreased foetal heart rate variability", "Meconium stained fluid"],
+                                        "Complications": ["Stillbirth"],
+                                        "Treatment": "Delivery"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Placental complications of pregnancy",
+                            "Subtype": [
+                                {
+                                    "Name": "Placental abruption",
+                                    "Summary": {
+                                        "Onset": "25 weeks of pregnancy",
+                                        "Risk factors": ["Trauma", "Habitual tobacco use", "Previous placental abruption"],
+                                        "Prevalence": ["0.5%", "pregnancies"],
+                                        "Symptoms": ["Abdominal pain", "Vaginal bleeding", "Contractions"],
+                                        "Signs": ["Enlarged uterus", "Decreased fetal heart rate", "Decreased fetal movement"],
+                                        "Complications": ["DIC", "Preterm delivery", "Stillbirth"],
+                                        "Treatment": "Delivery"
+                                    }
+                                },
+                                {
+                                    "Name": "Placenta praevia",
+                                    "Summary": {
+                                        "Onset": "Second trimester of pregnancy",
+                                        "Risk factors": ["Previous sectio caesarea", "Advanced maternal age", "Habitual tobacco use"],
+                                        "Prevalence": ["0.5%", "pregnancies"],
+                                        "Symptoms": ["Antepartum bleeding"],
+                                        "Complications": ["Postpartum bleeding", "Intrauterine growth restriction", "Premature delivery"],
+                                        "Treatment": "Sectio caesarea"
+                                    }
+                                    
+                                },
+                                {
+                                    "Name": "Placenta accreta spectrum disorders",
+                                    "Abbrevation": "PAS",
+                                    "Subtype": [
+                                        {
+                                            "Name": "Placenta accreta",
+                                            "Summary": {
+                                                "Prevalence": ["76%", "PAS cases"]
+                                            }
+                                        },
+                                        {
+                                            "Name": "Placenta increta",
+                                            "Summary": {
+                                                "Prevalence": ["17%", "PAS cases"]
+                                            }
+                                        },
+                                        {
+                                            "Name": "Placenta percreta",
+                                            "Summary": {
+                                                "Prevalence": ["7%", "PAS cases"]
+                                            }
+                                        }
+                                    ],
+                                    "Summary": {
+                                        "Risk factors": ["Placenta praevia", "Previous sectio caesarea", "Advanced maternal age"],
+                                        "Prevalence": ["0.4%", "pregnancies"],
+                                        "Complications": ["Postoperative bleeding", "Damage to local organs", "Amniotic fluid embolism"],
+                                        "Treatment": ["Sectio caesarea", "Hysterectomy"]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+
+                }          
+            ]
+        }
+    ]
+}

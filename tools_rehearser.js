@@ -36,6 +36,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
+    "Pharmacology - N": {"Database": './data_pharmacology_n.json', "Questions": ["Subclass", "Brands"]},
     "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Questions": ["Subclass", "Brands", "Alternative name", "Method"]},
     "Pharmacology - J": {"Database": './data_pharmacology_j.json', "Questions": ["Subclass", "Brands", "Method"]},
     "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts", "Alternative name"]},
