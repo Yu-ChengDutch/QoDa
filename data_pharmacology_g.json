@@ -225,7 +225,68 @@
                             ]
                         }
                     ]
-                }
+                },
+                {
+                    "Name": "Gonadotropins",
+                    "Subclass": [
+                        {
+                            "Name": "Choriongonadotrofine"
+                        },
+                        {
+                            "Name": "Choriongonadotrofine alfa",
+                            "Brands": [
+                                {
+                                    "Name": "Ovitrelle",
+                                    "Method": "Subcutaneous injection"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Corifollitropine alfa"
+                        },
+                        {
+                            "Name": "Follitropine alfa",
+                            "Brands": [
+                                {
+                                    "Name": "Bemfola",
+                                    "Method": "Subcutaneous injection"
+                                },
+                                {
+                                    "Name": "Gonal-F",
+                                    "Method": "Subcutaneous injection"
+                                },
+                                {
+                                    "Name": "Ovaleap",
+                                    "Method": "Subcutaneous injection"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Follitropine bèta"
+                        },                        
+                        {
+                            "Name": "Follitropine delta"
+                        },
+                        {
+                            "Name": "Follitropine/lutotropine"
+                        },
+                        {
+                            "Name": "Lutropine",
+                            "Brands": [
+                                {
+                                    "Name": "Luveris",
+                                    "Method": "Subcutaneous injection"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Menopauzegonadotrofine"
+                        },
+                        {
+                            "Name": "Urofollitropine"
+                        }                        
+                    ]
+                }                    
             ]
         }
     ]
