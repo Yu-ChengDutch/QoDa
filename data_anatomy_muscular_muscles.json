@@ -344,67 +344,7 @@
                 },
                 {
                     "Name": "Muscles of the forearm"
-                },
-                {
-                    "Name": "Muscles of the hand",
-                    "Division": [
-                        {
-                            "Name": "Lateral volar muscles of the hand",
-                            "Division": [
-                                {
-                                    "Name": "Muscles of the thenar eminence",
-                                    "Division": [
-                                        {
-                                            "Name": "M. Opponens pollicis"
-                                        },
-                                        {
-                                            "Name": "M. Flexor pollicis brevis"
-                                        },
-                                        {
-                                            "Name": "M. Abductor pollicis brevis"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "Name": "Medial volar muscles of the hand",
-                            "Division": [
-                                {
-                                    "Name": "M. Palmaris brevis"
-                                },
-                                {
-                                    "Name": "Hypothenar muscles",
-                                    "Division": [
-                                        {
-                                            "Name": "M. Abductor digiti minimi"
-                                        },
-                                        {
-                                            "Name": "M. Flexor digiti minimi brevis"
-                                        },
-                                        {
-                                            "Name": "M. Opponens digiti minimi"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "Name": "Intermediate muscles of the hand",
-                            "Division": [
-                                {
-                                    "Name": "Mm. Lumbricales manus"
-                                },
-                                {
-                                    "Name": "M. Interossei dorsales manus"
-                                },
-                                {
-                                    "Name": "M. Interossei palmares"
-                                }
-                            ]
-                        }
-                    ]
-                }
+                }                
             ]
         },
         {

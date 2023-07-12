@@ -1,0 +1,821 @@
+{
+    "Name": "Dermatoses",
+    "Subtypes": [
+        {
+            "Name": "Erythematous dermatoses",
+            "Individual conditions": [
+                {
+                    "Name": "Pityriasis rosea",
+                    "Signs": ["Many small erythematosquamous annular maculae", "Location: trunk; symmetrical; follow Langer's lines", "Christmas tree distribution", "Pruritus"]
+                },
+                {
+                    "Name": "Rosacea",
+                    "Epidemiology": ["5%", "general population"],
+                    "Risk factor": "White skin",
+                    "Triggers": ["UV light", "Alcohol consumption"],
+                    "Signs": ["Erythematopapulous and -pustulous laesion", "Teleangiectasias", "Location: face; symmetrical", "lichenification", "Burning sensation", "Pain", "Pruritus", "Rhinophyma"],
+                    "Complications": ["Conjunctivitis", "Keratitis"],
+                    "Therapy": ["Advice: avoid alcohol, hot drinks, humid environments and spicy food AND use sunscreen", "Erythema -> Medication: Metronidazol", "Teleangiectasias -> Medication: pulsed dye laser", "Papula and pustula -> Medication: doxycyclin"]
+                }
+            ]
+        },
+        {
+            "Name": "Erythematosquamous dermatoses",
+            "Individual conditions": [
+                {
+                    "Name": "Psoriasis",
+                    "Epidemiology": ["3%", "Dutch population"],
+                    "Basis": ["Hypertrophy and dysplasia", "epidermal cells"],
+                    "Complications": ["Psoriatic arthritis"],
+                    "Subconditions": [
+                        {
+                            "Name": "Psoriasis vulgaris",
+                            "Signs": ["Sharply delineated erythematopapulosquamous plaques and papulae", "Location: dorsal side elbow, ventral side knee, right above the ass crack, scalp, navel", "candle wax phenomenon", "point bleeds", "hyperkeratosis", "Koebnerphenomenon"],
+                            "Therapy": ["Medication -> FIRST class III-IV corticosteroid THEN lighttherapy THEN methotrexate"]
+                        },
+                        {
+                            "Name": "Psoriasis guttata",
+                            "Triggers": "Group A-streptococci infection",
+                            "Signs": ["Lenticular red-pink erythematosquamous papulae", "candle wax phenomenon", "Pruritus"],
+                            "Therapy": ["Medication -> Class II corticosteroids OR moisturising cream"]
+                        },
+                        {
+                            "Name": "Psoriasis inversa",
+                            "Signs": ["Erythematosquamous plaque", "Circumscript", "Location: Folds"],
+                            "Therapy": ["Medication -> Class II corticosteroids (because of the increased uptake due to the occlusion)"]
+                        },
+                        {
+                            "Name": "Psoriasis unguium",
+                            "Epidemiology": ["7%", "Dutch population"],
+                            "Signs": ["Subungual hyperkeratosis, distal onchyolysis", "oil spill phenomenon", "dents in the nail", "pustulosis", "point bleeds", "paronychia", "Koebnerphenomenon"],
+                            "Therapy": ["Advice: keep the nails short", "Medication -> Class III-IV corticosteroids OR Kenacort 10 injections"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Eczematous dermatoses",
+            "Individual conditions": [
+                {
+                    "Name": "Exogenous eczema",
+                    "Subconditions": [
+                        {
+                            "Name": "Allergic contact eczema",
+                            "Basis": ["Type IV allergic reaction", "Epidermis"],
+                            "Signs": ["Oedema", "Vesicles", "Bulla", "Chronic -> Erythematosquamous laesions"],                            
+                            "Complications": ["Ide reaction"],
+                            "Therapy": ["Acute phase -> Medication: Drying cream AND class II-IV corticosteroids"]
+                        },
+                        {
+                            "Name": "Irritative contact eczema"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Endogenous eczema",
+                    "Subconditions": [
+                        {
+                            "Name": "Eczema atopicum",
+                            "Basis": ["Filagrin-deficiency mediated underdevelopment", "stratum corneum"],
+                            "Signs": ["Erythematopapulous plaques", "Lichenification", "Itch", "Location: ventral side elbows and dorsal side knees, neck, face, hands, genital region, ankles and wrists"],
+                            "Therapy": ["Advice: don't wash to hot AND don't wash too often AND don't use too much soap TO prevent drying out the skin", "Advice: keep the nails short and sleep with cotton gloves on TO prevent scratching", "Severe flare-up -> Prednison", "Mild eczema -> Protopic", "Severe eczema -> Dermovate"]
+
+                        },
+                        {
+                            "Name": "Eczema seborrhoicum",
+                            "Pathogen": "M. Furfur",
+                            "Epidemiology": ["4%", "general population"],
+                            "Signs": ["Erythematosquamous plaque", "mildly circumscript"],
+                            "Complications": ["Bacterial skin infection", "Erythrodermia"],
+                            "Therapy": ["Laesions on hairy skin -> anti-dandruff shampoo", "Laesions on non-hairy skin -> ketoconazol"]
+                        },
+                        {
+                            "Name": "Eczema dyshidroticum",
+                            "Dutch name": "Acrovesiculeus eczeem",
+                            "Risk factors": {
+                                "Acronym": "CAN",
+                                "C": "Contact allergies",
+                                "A": "Atopy",
+                                "N": "Nikkel allergy"
+                            },
+                            "Signs": ["Lenticular spongiotic vesicles and bullae", "Location: lateral side of the fingers, palma mani", "Itch", "Burning sensation"],
+                            "Complications": ["Bacterial skin infection", "Nail dystrophy"]
+
+                        },
+                        {
+                            "Name": "Eczema tyloticum",
+                            "Signs": ["Hyperkeratosis", "Rhagades", "Location: palma mani, sola pedis"],
+                            "Therapy": ["Medication -> Moisturising cream", "Medication -> Class II-IV corticosteroid"]
+                        },
+                        {
+                            "Name": "Eczema nummulare",
+                            "Signs": ["Round or oval erythematosquamous itchy plaques", "Crustae"],
+                            "Complications": ["Bacterial skin infection", "Hyperpigmentation"],
+                            "Therapy": ["Medication -> Class III-IV corticosteroid, if necessary under occlusion", "Advice: prevent drying out the skin"]
+                        },
+                        {
+                            "Name": "Eczema craquelatum",
+                            "Signs": ["Extreme dehydration of the skin", "Pattern of cracks in the skin", "Location: Lower legs"],
+                            "Therapy": ["Medication -> Moisturising cream"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Papulous dermatoses",
+            "Individual conditions": [
+                {
+                    "Name": "Lichen planus",
+                    "Signs": ["Flat, glossy, polygonal lenticular papulae", "Colour: red to purple", "Wickham's striae", "Itch", "Koebner phenomenon"],
+                    "Prognosis": ["Spontaneous regression within 1 to 2 years"],
+                    "Therapy": ["Medication -> Topical corticosteroids under plastic"]
+                },
+                {
+                    "Name": "Prurigo circumscripta",
+                    "Alternative name": "Lichen simplex chronicus",
+                    "Basis": ["Chronic scratching-mediated lichenification", "skin"],
+                    "Signs": ["Vaguely circumscript erythematosquamous lichenified plaque", "hyperpigmentation", "severe itch"],
+                    "Therapy": ["Medication -> Topical corticosteroids under plastic"]
+                },
+                {
+                    "Name": "Prurigo nodularis",
+                    "Signs": ["Multiple, lenticular, papulae with excorriations", "Colour: red, purple or blue", "Location: extremities", "Severe itch"],
+                    "Therapy": ["Moisurising cream", "Menthol cream", "Advice: prevent scratching by keeping the nails short and wearing cotton gloves at night, avoid perfume, avoid factors which may dry out the skin"]
+                }
+            ]
+        },
+        {
+            "Name": "Urticaria",
+            "Individual conditions": [
+                {
+                    "Name": "Urticaria",
+                    "Basis": ["Histamine-mediated vasodilation", "dermis"],
+                    "Signs": ["Flat, circumscript, plaque", "itch", "Colour: red or pale"],
+                    "Therapy": ["Mild disease -> antihistaminica", "Severe disease -> prednison"],
+                    "Subconditions": [
+                        {
+                            "Name": "Urticaria factitia",
+                            "Alternative name": "Dermatographic urticaria",
+                            "Risk factors": "Atopy",
+                            "Epidemiology": ["3%", "general population"],
+                            "Signs": ["Itchy, pink-white, raised plaque after writing on the skin"],
+                            "Therapy": ["Antihistaminica", "Advice: don't scratch the skin, don't wear tight clothing, don't dry off too harshly"]
+                        },
+                        {
+                            "Name": "Cholinergic urticaria",
+                            "Signs": ["Lenticular papulae on an erythematous macula when starting to sweat"],
+                            "Therapy": ["Antihistaminica", "Advice: shower less and colder, avoid triggers, use the 24-hour refractory period"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Angio-oedema",
+                    "Basis": ["Histamine-mediated vasodilation", "subcutaneous tissue"]
+                }
+            ]
+        },
+        {
+            "Name": "Nodulous dermatoses",
+            "Individual conditions": [
+                {
+                    "Name": "Erythema nodosum",
+                    "Risk factors": {
+                        "Acronym": "FeMSCI",
+                        "Fe": "Female sex",
+                        "S": "Sarcoidosis",
+                        "C": "Colitis ulcerosa and M. Crohn",
+                        "I": "Infection",
+                        "M": "Malignancies"
+                    },
+                    "Basis": ["Vasculitis", "Subcutaneous adipose tissue"],
+                    "Signs": ["Painful, nummular, inflamed nodi", "Location: ventral side of the lower legs", "Lymphadenopathy"],
+                    "Prognosis": ["Regression within 2 months"]
+                }
+            ]
+        },
+        {
+            "Name": "Benign skin tumours",
+            "Individual conditions": [
+                {
+                    "Name": "Hemangioma",
+                    "Subconditions": [
+                        {
+                            "Name": "Infantile hemangioma",
+                            "Onset": ["Absence at birth", "Fast growth"],
+                            "Epidemiology": ["2%", "neonates"],
+                            "Signs": ["Raised, lobed, bright red plaques", "Location: Head- and neck"],
+                            "Complications": ["Ulceration"],
+                            "Basis": [["Hyperplasia", "Endothelial cells"], ["Hyperplasia", "Vasculature"]]
+                        },
+                        {
+                            "Name": "Hemangioma senilis",
+                            "Alternative name": "Cherry angioma",
+                            "Dutch name": "Bloedvin",
+                            "Basis": ["Hypertrophy and hyperplasia", "Venules"],
+                            "Signs": ["Multiple, lenticular, dome-shaped tumours", "Colour: Bright red"],
+                            "Therapy": ["Small lesion -> electrocoagulation", "Larger lesion -> excsision"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Premalignant and malignant skin tumours",
+            "Individual conditions": [
+                {
+                    "Name": "Keratosis actinica",
+                    "Basis": ["UV-induced DNA damage", "Keratocytes"],
+                    "Signs": ["Lightbrown pigmented hyperkeratotic laesions", "Location: regio facialis, dorsum mani"],
+                    "Therapy": ["Few lesions -> cryotherapy", "Advice: prevent sunburn", "Advice: many lesions -> yearly skin check"],
+                    "Epidemiology": ["25%", "adults >40 y/o"]
+                },
+                {
+                    "Name": "Cheilitis actinica",
+                    "Risk factors": {
+                        "Acronym": "SWOM",
+                        "S": "Sun exposure",
+                        "W": "White skin",
+                        "O": "Old age",
+                        "M": "Male sex"
+                    },
+                    "Signs": ["Hyperkeratosis with a disturbed vermilion border", "Location: Lower lip", "Atrophy", "Erosions", "Crustae", "Ulcera", "Oedema"],
+                    "Prognosis": ["10%", "progression to a squamous-cell carcinoma"],
+                    "Therapy": ["Cryotherapy"]
+                },
+                {
+                    "Name": "Morbus Bowen",
+                    "Alternative name": "Squamous-cell carcinoma in situ",
+                    "Signs": ["Erythematosquamous plaque with crustae", "Growth: slow", "Border: sharp", "Location: Crus"],
+                    "Prognosis": ["3-5%", "progression to an invasive carcinoma"],
+                    "Therapy": ["Small laesion -> Curratage", "Large lesion -> Photodynamic therapy"]
+                },
+                {
+                    "Name": "Basal cell carcinoma",
+                    "Prognosis": ["Almost never", "Metastasis"],
+                    "Risk factors": {
+                        "Acronym": "WHIch UFO?",
+                        "W": "White skin",
+                        "H": "Hydochloorthiazide",
+                        "I": "Immunosuppression",
+                        "U": "UV-exposure",
+                        "F": "Familial history",
+                        "O": "Old age"
+                    },
+                    "Therapy": ["Tumour <1 cm -> Excision with 3 mm margin", "Tumour >1 cm -> Excision with 5 mm margin"],
+                    "Subconditions": [
+                        {
+                            "Name": "Superficial BCC",
+                            "Signs": ["Erythematous macula", "Hyperkeratotic centre"]
+                        },
+                        {
+                            "Name": "Ulcerative BCC",
+                            "Signs": ["Red-black ulcer with a raised edge"]
+                        },
+                        {
+                            "Name": "Morphea-type BCC",
+                            "Signs": ["Sclerosing ulcer with an erythematous border"]
+                        },
+                        {
+                            "Name": "Nodular BCC",
+                            "Signs": ["Raised lenticular tumour with teleangiectasias", "Colour: skin colour to light pink, glossy", "Location: Sun-exposed skin"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Squamous cell carcinoma",
+                    "Alternative name": "Epidermoid carcinoma",
+                    "Dutch name": "Plaveiselcelcarcinoom",
+                    "Basis": ["UV-induced malignancy", "squamous cells"],
+                    "Risk factors": {
+                        "Acronym": "SMISE",
+                        "SM": "Smoking",
+                        "I": "Immunosuppression",
+                        "SE": "Sun exposure"
+                    },
+                    "Signs": ["Nodulus with a hyperkeratotic or ulcerative centre", "Colour: skin colour to red", "Location: Caput, auricules, regio facialis, labiae, antebrachiae, dorsum mani, legs"],
+                    "Prognosis": [["4%", "metastasis"], ["1.3%", "mortality"]],
+                    "Therapy": ["Stage I -> Excision with a 5 mm margin", "Stage II -> Excision with a 10 mm margin"]
+                },
+                {
+                    "Name": "Melanoma",
+                    "Risk factors": {
+                        "Acronym": "BIG SCUM",
+                        "B": "Blond and blue eyes",
+                        "I": "Skin type I",
+                        "G": "Ginger hair",
+                        "SC": "Sunburns as a child",
+                        "U": "UV-exposure",
+                        "M": "Many naevi"
+                    },
+                    "Prognosis": ["4%", "all patients", "mortality"],                    
+                    "Subconditions": [
+                        {
+                            "Name": "Superficial spreading melanoma",
+                            "Epidemiology": ["70%", "all melanomas"],
+                            "Basis": ["UV-induced malignancy", "Melanocytes"],
+                            "Signs": ["Assymetric hyperpigmented macula", "Border: ragged but sharp", "Colour: Varied", "Size: Lenticular or larger"],
+                            "Therapy": ["Diagnostic excision with a 2mm margin", "Therapeutic re-excision with a 2 cm margin"]
+                        },
+                        {
+                            "Name": "Nodular melanoma",
+                            "Epidemiology": ["20%", "all melanomas"],
+                            "Basis": ["UV-induced malignancy", "Melanocytes"],
+                            "Signs": ["Assymetric hyperpigmented macula", "Border: ragged but sharp", "Colour: Varied", "Size: Lenticular or larger", "Elevation: May be partially raised"],
+                            "Therapy": ["Diagnostic excision with a 2mm margin", "Therapeutic re-excision with a 2 cm margin"]
+                        },
+                        {
+                            "Name": "Lentigo maligna melanoma",
+                            "Alternative name": "Melanoma in-situ",
+                            "Basis": ["UV-induced malignancy", "Melanocytes"],
+                            "Risk factors": {
+                                "Acronym": "OM",
+                                "O": "Old age",
+                                "M": "All risk factors for a melanoma"
+                            },
+                            "Epidemiology": ["5%", "all melanomas"],
+                            "Signs": ["Assymetric hyperpigmented macula", "Border: ragged but unsharp", "Colour: Varied", "Size: Lenticular or larger", "Dermascopy -> annular-granular pattern & hyperpigmented follicular openings & rhomboidal hyperpigmentation & obliterated hair follicles"],
+                            "Therapy": ["Excision with a 5 mm margin"]
+                        },
+                        {
+                            "Name": "Acral lentiginous melanoma",
+                            "Epidemiology": ["5%", "all melanomas"],
+                            "Risk factors": {
+                                "Acronym": "No WUS",
+                                "W": "Not white skin",
+                                "U": "Not UV-exposure",
+                                "S": "Not sun exposure"
+                            },
+                            "Basis": ["Spontaneous malignancy", "Melanocytes"],
+                            "Signs": ["Hyperpigmented maculae", "Location: Nails, palma mani, planta pedis"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Ulcurous dermatoses",
+            "Individual conditions": [
+                {
+                    "Name": "Ulcus cruris venosum",
+                    "Alternative name": "Venous ulcer",
+                    "Signs": ["Location: Pes, Tarsus", "Ulcus with a white-yellow centre", "Hyperpigmentation, hyperkeratosis, varices, pitting oedema and atrophic blanche of the surrounding skin", "Pain reduction with raised leg"],
+                    "Basis": ["Insufficiency", "Venous valves"],
+                    "Therapy": ["Compression stockings"]
+                }
+            ]
+        },
+        {
+            "Name": "Folliculoses",
+            "Individual conditions": [
+                {
+                    "Name": "Acne vulgaris",
+                    "Alternative name": "Jeugdpuistjes",
+                    "Basis": ["Obstruction", "Hair follicles"],
+                    "Risk factors": {
+                        "Acronym": "FaSH",
+                        "F": "Family",
+                        "S": "Stress",
+                        "H": "High-glycaemic load diet"
+                    },
+                    "Signs": ["Comedones", "Papulae", "Pustulae", "Location: Regio facialis, dorsum, thorax"],
+                    "Therapy": ["Medication: Mostly comedones -> FIRST benzoylperoxide THEN local vitamin A", "Medication: Mostly papulae and pustulae -> Benzoylperoxide AND Erytromycin", "Advice: Reduce washing", "Advice: Soap"]
+                },
+                {
+                    "Name": "Hidradenitis suppurativa",
+                    "Alternative name": "Acne inversa",
+                    "Signs": ["Pustulae", "Fistulae", "Inflamed cysts", "Large abcesses", "Location: Axilla, regio pubogenitalis"],
+                    "Basis": ["Obstruction", "Hair follicles"],
+                    "Risk factors": {
+                        "Acronym": "PHOCT",
+                        "P": "Post-pubescent",
+                        "H": "Hyperhidrosis",
+                        "O": "Obesity",
+                        "C": "Tight clothing",
+                        "T": "Tropical climate"
+                        
+                    }
+                }                
+            ]
+        },
+        {
+            "Name": "Trichoses",
+            "Individual conditions": [
+                {
+                    "Name": "Alopecia",
+                    "Subconditions": [
+                        {
+                            "Name": "Alopecia areata",
+                            "Risk factors": {
+                                "Acronym": "PLoV",
+                                "P": "Pernicious anaemia",
+                                "L": "Lupus",
+                                "V": "Vitiligo"
+                            },
+                            "Signs": ["Spotting hairloss with intact follicles", "Trichoscopy -> Exclamation mark hairs, pigtail hairs"],
+                            "Complications": "Alopecia totalis"
+                        },
+                        {
+                            "Name": "Alopecia androgenetica",
+                            "Signs": ["Male-pattern baldness"]
+                        },
+                        {
+                            "Name": "Telogeen effluvium",
+                            "Signs": ["Diffuse hairloss"],
+                            "Risk factors": {
+                                "Acronym": "TAZED",
+                                "T": "Thyroid problems",
+                                "A": "Anaemia",
+                                "Z": "Zink deficiency",
+                                "E": "Essential fatty acids and insufficient diet",
+                                "D": "Diabetes"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Dyschromiae",
+            "Individual conditions": [
+                {
+                    "Name": "Lentigo",
+                    "Subconditions": [
+                        {
+                            "Name": "Lentigo solaris",
+                            "Risk factors": {
+                                "Acronym": "FaSt",
+                                "F": "Fourty and over",
+                                "S": "Sun exposure"
+                            },
+                            "Dutch name": ["Ouderdomsvlek", "Levervlek"],
+                            "Signs": ["Delineated, hyperpigmented macula", "Location: Sun-exposed skin", "Colour: Light brown"]
+                        },
+                        {
+                            "Name": "Lentigo simplex",
+                            "Alternative name": "Lentigo juvenilis",
+                            "Signs": "Multiple lenticular hyperpigmented maculae",
+                            "Basis": ["Hypertrophy and hyperplasia", "Melanocytes"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Vitiligo",
+                    "Basis": ["Autoimmune destruction", "Melanocytes"],
+                    "Risk factors": {
+                        "Acronym": "A TAD light",
+                        "T": "Tropical heritage",
+                        "A": "Adolescence",
+                        "D": "Dark skin"
+                    },
+                    "Signs": ["Koebner phenomenon", "Sharply delineated hypopigmented maculae", "Grouping: Symmetrical", "Location: Regio anogenitalis, manus, dorsum, pes, facie, axila", "Poliosis", "PA -> Absence of melanocytes in the stratum basale"]
+                },                
+                {
+                    "Name": "Naevus",
+                    "Subconditions": [
+                        {
+                            "Name": "Naevus naevocellularis",
+                            "Dutch name": "Moedervlek",
+                            "Basis": ["Hypertrophy", "Naevus cells"],
+                            "Signs": ["Efflorescence: Macula or papulae", "Colour: skin colour to black"]
+                        },
+                        {
+                            "Name": "Halo naevus",
+                            "Alternative name": "Sutton's naevus",
+                            "Basis": ["Regression", "Naevus"],
+                            "Signs": ["Hypopigmented annular macula with a hyperpigmented centre"],
+                            "Risk factors": {
+                                "Acronym": "VAT",
+                                "V": "Vitiligo",
+                                "A": "Adolescence",
+                                "T": "Turner"
+                            }
+                        },
+                        {
+                            "Name": "Naevus coeruleus",
+                            "Alternative name": "Blue naevus",
+                            "Signs": ["Raised papula", "Colour: Blue", "Location: Dorsum mani or dorsum pedis"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Naevus flammeus",
+                    "Dutch name": "Wijnvlek",
+                    "Basis": ["Capillary malformation"],
+                    "Signs": ["Teleangiectatic macula", "Color: Bordeaux to purple", "Location: Unilateral or segmental"],
+                    "Therapy": ["Pulsed dye laser"]
+                }
+            ]
+        },
+        {
+            "Name": "Purpura",
+            "Individual conditions": [
+                {
+                    "Name": "Purpura senilis",
+                    "Alternative name": "Bateman's actinic senile purpura",
+                    "Signs": ["Purpura occuring spontaneously or after minimal trauma", "Location: Sun-exposed skin"]
+                }
+            ]
+        },
+        {
+            "Name": "Pyodermiae",
+            "Individual conditions": [
+                {
+                    "Name": "Cellulitis"
+                },
+                {
+                    "Name": "Erysipelas"
+                },
+                {
+                    "Name": "Folliculites",
+                    "Individual conditions": [
+                        {
+                            "Name": "Folliculitis",
+                            "Basis": ["Hair follicle", "Infection"],
+                            "Symptoms": ["Itch"],
+                            "Signs": ["Erythematous papulae", "Crustae", "Location: Neck, armpit or groin"]
+                        },
+                        {
+                            "Name": "Furuncle",
+                            "Dutch name": "Steenpuist",
+                            "Basis": ["Hair follicle", "Infection"],
+                            "Sign": ["Single abcesses", "Central necrosis"],
+                            "Therapy": ["Incision and drainage", "Improve hygeine"]
+
+                        },
+                        {
+                            "Name": "Carbuncle",
+                            "Dutch name": "Negenoog",
+                            "Pathogen": ["S. Aureus", "S. Epidermis"],
+                            "Basis": ["Hair follicle", "Infection"],
+                            "Sign": ["Multiple confluating abcesses", "Central necrosis"],
+                            "Therapy": ["Flucloxacilline"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Impetigo",
+                    "Dutch name": "Krentenbaard",
+                    "Pathogen": ["S. Aureus", "S. Pyogenes"],
+                    "Signs": ["Honey-yellow crustae", "Location: Nose and mouth"],
+                    "Prognosis": "Self-limiting in weeks",
+                    "Therapy": ["Prevent scratching", "Remove crustae with oil"],
+                    "Basis": ["Epidermis", "Infection"],
+                    "Subconditions": [
+                        {
+                            "Name": "Impetigo bullosa",
+                            "Pathogen": ["S. Aureus"],
+                            "Signs": ["Honey-yellow crustae", "Bullae", "Location: Nose and mouth"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Viral skin conditions",
+            "Individual conditions": [
+                {
+                    "Name": "Herpes infections",
+                    "Individual conditions": [
+                        {
+                            "Name": "Herpes simplex infection",
+                            "Subconditions": [
+                                {
+                                    "Name": "Herpes labialis",
+                                    "Pathogen": "Herpes simplex type I",
+                                    "Signs": ["Grouped vesicles", "Burning sensation", "Pain"],
+                                    "Therapy": ["Keep the area dry", "Onset less than 10 days ago -> Aciclovir"]
+                                },
+                                {
+                                    "Name": "Herpes genitalis",
+                                    "Pathogen": "Herpes simplex type II",
+                                    "Signs": ["Grouped vesicles", "Burning sensation", "Pain"],
+                                    "Therapy": ["Valaciclovir"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Herpes zoster infection",
+                            "Dutch name": "Gordelroos",
+                            "Signs": ["Grouped vesicles, bound to a dermatome", "Burning sensation", "Pain"],
+                            "Complications": ["Post-herpetic pain"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Verrucae",
+                    "Pathogen": "HPV", 
+                    "Subconditions": [
+                        {
+                            "Name": "Verruca vulgaris",
+                            "Pathogen": ["HPV 1", "HPV 2", "HPV 4", "HPV 57"],
+                            "Dutch name": "Gewone wrat",
+                            "Signs": ["Multiple wart-like papulae on the fingers or the hand"],
+                            "Prognosis": "Self-limiting in months to years"
+                        },
+                        {
+                            "Name": "Verruca plana",
+                            "Dutch name": "Vlakke wrat",
+                            "Pathogen": ["HPV 3", "HPV 10"],
+                            "Signs": "Multiple flat nummular papulae on the back of the hand",
+                            "Prognosis": "Self-limiting in months to years"
+                        },
+                        {
+                            "Name": "Condylomata acuminata",
+                            "Dutch name": "Genitale wrat",
+                            "Pathogen": ["HPV 16", "HPV 18", "HPV 33"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Mollusca contagiosa",
+                    "Dutch name": "Waterwratjes",
+                    "Signs": ["Glossy, pearl-white, bulbous papulae on the torso", "Eczema surrounding the mollusca"],
+                    "Prognosis": "Self-limiting",
+                    "Basis": ["Epidermis", "Infection"]
+                },
+                {
+                    "Name": "Candidiasis",
+                    "Subconditions": [
+                        {
+                            "Name": "Candidiasis intertriginosa",
+                            "Therapy": ["Keep the area dry", "Loprox or sulfur praecipitatum or fluconazol"]
+                        },
+                        {
+                            "Name": "Candidiasis oris",
+                            "Dutch name": "Spruw",
+                            "Signs": "White discoloration of the tongue",
+                            "Risk factors": {
+                                "Acronym": "BABI",
+                                "B": "Babyleeftijd",
+                                "AB": "Antibiotica gebruik",
+                                "I": "Immunogecomprimeerde status"
+                            },
+                            "Therapy": [["Oral miconazol gel", "Itraconazol", "Fluconazol"]]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Dermatomycoses",
+            "Individual conditions": [
+                {
+                    "Name": "Dermatophytosis",
+                    "Subconditions": [
+                        {
+                            "Name": "Tinea versicolor",
+                            "Alternative name": "Pityriasis versicolor",
+                            "Pathogen": ["M. Globosa", "M. Furfur"],
+                            "Signs": ["Fine squamae", "Sharply delineated dyschromic plaques", "Wood's lamp -> Copper-orange fluorescence"],
+                            "Therapy": ["Ketoconazol"]
+                        },
+                        {
+                            "Name": "Tinea capitis",
+                            "Signs": ["Grey patches", "Black spots", "Kerion", "Alopecia", "Pustulae", "Favus"],
+                            "Subconditions": [
+                                {
+                                    "Name": "Microsporum tinea capitis",
+                                    "Pathogen": ["M. Canis", "M. Audouinii"],
+                                    "Signs": ["Wood's lamp -> Green fluoresence", "KOH-sample -> visible threads"],
+                                    "Therapy": ["Wood's lamp negative -> terbafin", "Wood's lamp positive -> griseofulvin"]
+                                },
+                                {
+                                    "Name": "Trichophyton tinea capitis",
+                                    "Pathogen": ["T. Tonsurans", "T. Violaceum"],
+                                    "Risk factors": {
+                                        "Acronym": "TriCo-phyton",
+                                        "Tri": "History of travel to Turkey",
+                                        "Co": "History of travel to Marocco"
+                                    },
+                                    "Signs": ["KOH-sample -> visible threads"],
+                                    "Therapy": ["Griseofulvin"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Tinea corporis",
+                            "Alternative name": "Ringworm",
+                            "Pathogen": ["Trichophyton", "Microsporum", "Epidermophyton"],
+                            "Risk factors": {
+                                "Acronym": "YAS",
+                                "Y": "Young",
+                                "A": "Contact with animals",
+                                "S": "Does sports"
+                            },
+                            "Signs": ["Annular erythematosquamous laesion", "Centrifugal spread", "Pruritus", "Burning sensation", "KOH-sample -> visible threads"],
+                            "Therapy": ["Miconazol salve"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Epizoonoses",
+            "Individual conditions": [
+                {
+                    "Name": "Scabies",
+                    "Basis": ["Dermis", "Infestation"],
+                    "Dutch name": "Schurft",
+                    "Pathogen": "Sarcoptes scabiei",
+                    "Risk factors": {
+                        "Acronym": "Health, heat, hot, home",
+                        "Health": "Working or living in a healthcare facility",
+                        "Heat": "History of travel",
+                        "Hot": "Sexual activity",
+                        "Home": "Homelessness"
+                    },
+                    "Symptoms": ["Nightly pruritus all over the body"],
+                    "Signs": ["Excorriations", "Tunnelling", "Erythematopapulous dermatoses"],
+                    "Complications": ["Bacterial skin infection"],
+                    "Treatment": [["Permetrin", "Ivermectin"], "Washing clothing and bedding"],
+                    "Subconditions": [
+                        {
+                            "Name":"Scabies crustosa",
+                            "Risk factors": {
+                                "Acronym": "2I",
+                                "I 1": "Immunosuppression",
+                                "I 2": "Immobility"
+                            },
+                            "Signs": ["Erythematosquamous plaques", "Hyperkeratotic plaques", "Papulae", "Nodi"]
+                        },
+                        {
+                            "Name":"Scabies incognita"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Pediculosis",
+                    "Subconditions": [
+                        {
+                            "Name": "Pediculosis capitis",
+                            "Alternative name": "Head lice",
+                            "Basis": ["Skin surface", "Infestation"],
+                            "Pathogen": "Pediculus humanus capitis",
+                            "Symptoms": ["Pruritus all over the head"],
+                            "Signs": ["Visible lice and bites"],
+                            "Complications": ["Bacterial skin infection"],
+                            "Treatment": [["Dimethicone", "Ivermectin"], "Combing"]
+                        },
+                        {
+                            "Name": "Pediculosis corporis",
+                            "Alternative name": "Vagabond's disease",
+                            "Basis": ["Skin surface", "Infestation"],
+                            "Pathogen": "Pediculus humanus humanus",
+                            "Risk factors": {
+                                "Acronym": "SEX",
+                                "SEX": "Sexual activity"
+                            },
+                            "Symptoms": ["Pruritus all over the body"],
+                            "Complications": ["Endemic typhus"],
+                            "Treatment": ["Improving hygeine", "Washing clothing and bedding"]
+                        },
+                        {
+                            "Name": "Pediculosis pubis",
+                            "Basis": ["Skin surface", "Infestation"],
+                            "Alternative name": "Crabs",
+                            "Pathogen": "Pthirus pubis",
+                            "Risk factors": {
+                                "Acronym": "PHD",
+                                "P": "Poor hygiene",
+                                "H": "Homelessness",
+                                "D": "Dirty clothes"
+                            },
+                            "Symptoms": ["Nightly pruritus in the groin"],
+                            "Signs": ["Visible lice and eggs", "Grey-blue discoloration", "Excorriations"],
+                            "Complications": ["Bacterial skin infection"],
+                            "Treatment": [["Permethrin", "Dimethicone"], "Combing", "Washing clothing and bedding"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Sexually transmittable diseases",
+            "Individual conditions": [
+                {
+                    "Name": "Syphilis",
+                    "Dutch name": "Lues",
+                    "Pathogen": "T. Pallidum",
+                    "Stages": [
+                        {
+                            "Name": "Primary syphilis",
+                            "Onset": "10-90 days after contact",
+                            "Signs": ["Ulcus durum of the contact spot", "Lymphadenopathy"]
+                        },
+                        {
+                            "Name": "Secondary syphilis",
+                            "Onset": "3-6 weeks after contact",
+                            "Signs": ["Maculopapulous exanthema", "Roseolae", "Generalised lymphadenopathy", "Condylomata lata", "Enanthema", "Moth-eaten alopecia", "Syphilis maligna"]
+                        },
+                        {
+                            "Name": "Tertiary syphilis",
+                            "Alternative name": "Organ symphilis"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

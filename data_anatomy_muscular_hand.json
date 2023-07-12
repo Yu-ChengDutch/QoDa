@@ -1,0 +1,146 @@
+{
+    "Name": "Muscles of the hand",
+    "Groups": [
+        {
+            "Name": "Intrinsic muscles",
+            "Groups": [
+                {
+                    "Name": "Thenar muscles",
+                    "Innervation": {
+                        "Nerve": "Median nerve",
+                        "Branch": "Recurrent"
+                    },
+                    "Division": [
+                        {
+                            "Name": "M. Opponens pollicis",
+                            "Joint": "Trapeziometacarpal",
+                            "Action": "Flexion",                            
+                            "Origin": ["Trapezium"],
+                            "Insertion": ["Proximal phalanx"]
+                        },
+                        {
+                            "Name": "M. Flexor pollicis brevis",
+                            "Joint": "Trapeziometacarpal",
+                            "Action": "Flexion",                            
+                            "Origin": ["Scaphoid", "Trapezium"],
+                            "Insertion": ["Proximal phalanx"]
+                        },
+                        {
+                            "Name": "M. Abductor pollicis brevis",
+                            "Action": "Abduction",
+                            "Origin": ["Scaphoid", "Trapezium"],
+                            "Insertion": ["Proximal phalanx"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Hypothenar muscles",
+                    "Division": [
+                        {
+                            "Name": "M. Abductor digiti minimi"
+                        },
+                        {
+                            "Name": "M. Flexor digiti minimi brevis"
+                        },
+                        {
+                            "Name": "M. Opponens digiti minimi"
+                        }
+                    ]
+                },
+                {
+                    "Name": "M. Interossei"
+                },
+                {
+                    "Name": "M. Lumbrical"
+                },
+                {
+                    "Name": "M. Palmaris brevis"
+                },
+                {
+                    "Name": "M. Adductor pollicis"
+                }
+            ]
+        },
+        {
+            "Name": "Extrensic muscles",
+            "Groups": [
+                {
+                    "Name": "Flexors",
+                    "Muscle": [
+                        {
+                            "Name": "M. Flexor digitorum profundus"
+                        },
+                        {
+                            "Name": "M. Flexor digitorum superficialis",
+                            "Alternative name": "M. Flexor digitorum sublimis"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Extensors",
+                    "Compartments": [
+                        {
+                            "Name": "Compartment 1",
+                            "Position": "Most radial",
+                            "Muscles": [
+                                {
+                                    "Name": "M. Abductor pollicis longus"
+                                },
+                                {
+                                    "Name": "M. Extensor pollicis brevis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Compartment 2",
+                            "Muscles": [
+                                {
+                                    "Name": "M. Extensor carpi radialis longus"
+                                },
+                                {
+                                    "Name": "M. Extensor carpi radialis brevis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Compartment 3",
+                            "Muscles": [
+                                {
+                                    "Name": "M. Extensor pollicis longus"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Compartment 4",
+                            "Muscles": [
+                                {
+                                    "Name": "M. Extensor indicis"
+                                },
+                                {
+                                    "Name": "M. Extensor digitorum communis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Compartment 5",
+                            "Muscles": [
+                                {
+                                    "Name": "M. Extensor digiti minimi"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Compartment 6",
+                            "Position": "Most ulnar",
+                            "Muscles": [
+                                {
+                                    "Name": "M. Extensor carpi ulnaris"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
