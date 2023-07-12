@@ -23,7 +23,7 @@ let question_texts = {
     "Subclass": ["Medication always belongs to a class. To what class does <", "> belong?"],
     "Brands": ["Medication is produced by different brands. Of what medication is the brand <", "> an instance?"],
     "Method": ["Medication may be taken in ways such as oral, intramuscular injection, IUD etc. With what method is <", "> taken?"],
-    "Subconditions": ["Diseases have subclasses. What is the subclass of <", ">?"],
+    "Subconditions": ["Diseases have subclasses. What are the subclasses of <", ">?"],
     "Dutch name": ["Dutch exists. What is the name of <", "> in Dutch?"],
     "Epidemiology": ["How much percentage of <", "> has <", ">?"]
 };
@@ -254,6 +254,12 @@ function chooseQuestions(questions){
             question_string = "Question " + (i+1);
             final_questions[question_string] = [question_data[0], question];
 
+        } else if (current_type == "Subconditions") {
+
+            question = question_texts[current_type][0] + answer + question_texts[current_type][1];
+            question_string = "Question " + (i+1);
+            final_questions[question_string] = [question_data, question];
+
         } else {
 
             question = question_texts[current_type][0] + question_data + question_texts[current_type][1];            
@@ -280,6 +286,12 @@ function setQuestion(question_title){
     document.getElementById('question-title').innerText = question_title;
     document.getElementById('question-description').innerText = q_and_a[1];
 
+    if (Array.isArray(q_and_a[0])) {
+
+        document.getElementById('remark-card').innerText = "List of things: ";
+
+    }
+
     console.log(final_questions)
 
 }
@@ -301,94 +313,34 @@ function checkAnswer(){
 
     let right_answer = final_questions[title_text][0]
 
-    if (given_answer == right_answer) {
+    if (Array.isArray(right_answer)) {
 
-        // console.log("The answer is correct");
-        textfield.value = "";
+        if (given_answer in right_answer) {
 
-        let next_int = Object.keys(final_questions).indexOf(title_text) + 1;
-        
-        // console.log(next_int);
+            document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + "/n" + given_answer
+            
+            let temp_arr = []
 
-        document.getElementById('remark-card').innerText = "";
-
-        let new_dict = {}
-
-        let temp_dict = {}
-        let temp_string = ""
-        let temp_type = ""
-        let temp_answer = ""
-
-        if (title_text.includes(".1")) {
-
-            console.log("Already recursive")
-
-        } else {
-
-            for (var key in side_questions) {
-
-                console.log("Analysing: " + key);
-    
-                new_dict = side_questions[key]
-                temp_type = key
-    
-                console.log(new_dict)
-    
-                for (var key in new_dict) {
-    
-                    // console.log(new_dict[key])
-                    // console.log(given_answer)
-    
-                    if (new_dict[key].includes(given_answer)) {
-                        
-                        console.log("Found a match!")
-                        console.log(temp_type)
-    
-                        temp_answer = key
-    
-                        console.log(temp_answer)
-    
-                        for (var key in final_questions) {
-    
-                            if (key === title_text) {
-    
-                                temp_string = key + ".1"
-    
-                                let question = question_texts[temp_type][0] + given_answer + question_texts[temp_type][1];
-    
-                                temp_dict[key] = final_questions[key]
-                                temp_dict[temp_string] = [temp_answer, question]
-    
-                            } else {
-    
-                                temp_dict[key] = final_questions[key]
-    
-                            }
-                            
-    
-                        }
-    
-                        final_questions = temp_dict
-    
-                        console.log(final_questions)
-    
-                    }
-    
+            if (right_answer.length > 0) {
+                for (var i = 0; i < right_answer.length; i++){
+                    temp_arr.append(right_answer[i]) 
                 }
-    
+
+                final_questions[title_text][0] = temp_arr
+
+            } else {
+
+                nextQuestion();
+
             }
 
         }
 
-        if (next_int <= Object.keys(final_questions).length - 1) {
-            // console.log("To question: " + Object.keys(final_questions)[next_int])
-            setQuestion(Object.keys(final_questions)[next_int])
-        } else {
-            document.getElementById('question-title').innerText = "Done!";
-            document.getElementById('question-description').innerText = "";
-        };
+    }
 
-        // console.log("Set up new question");
+    if (given_answer == right_answer) {
+
+        nextQuestion();
 
     } else {
 
@@ -401,6 +353,97 @@ function checkAnswer(){
 
         document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + right_answer + ". Please enter this.";
     };
+
+};
+
+function nextQuestion() {
+
+    // console.log("The answer is correct");
+    textfield.value = "";
+
+    let next_int = Object.keys(final_questions).indexOf(title_text) + 1;
+    
+    // console.log(next_int);
+
+    document.getElementById('remark-card').innerText = "";
+
+    let new_dict = {}
+
+    let temp_dict = {}
+    let temp_string = ""
+    let temp_type = ""
+    let temp_answer = ""
+
+    if (title_text.includes(".1")) {
+
+        console.log("Already recursive")
+
+    } else {
+
+        for (var key in side_questions) {
+
+            console.log("Analysing: " + key);
+
+            new_dict = side_questions[key]
+            temp_type = key
+
+            console.log(new_dict)
+
+            for (var key in new_dict) {
+
+                // console.log(new_dict[key])
+                // console.log(given_answer)
+
+                if (new_dict[key].includes(given_answer)) {
+                    
+                    console.log("Found a match!")
+                    console.log(temp_type)
+
+                    temp_answer = key
+
+                    console.log(temp_answer)
+
+                    for (var key in final_questions) {
+
+                        if (key === title_text) {
+
+                            temp_string = key + ".1"
+
+                            let question = question_texts[temp_type][0] + given_answer + question_texts[temp_type][1];
+
+                            temp_dict[key] = final_questions[key]
+                            temp_dict[temp_string] = [temp_answer, question]
+
+                        } else {
+
+                            temp_dict[key] = final_questions[key]
+
+                        }
+                        
+
+                    }
+
+                    final_questions = temp_dict
+
+                    console.log(final_questions)
+
+                }
+
+            }
+
+        }
+
+    }
+
+    if (next_int <= Object.keys(final_questions).length - 1) {
+        // console.log("To question: " + Object.keys(final_questions)[next_int])
+        setQuestion(Object.keys(final_questions)[next_int])
+    } else {
+        document.getElementById('question-title').innerText = "Done!";
+        document.getElementById('question-description').innerText = "";
+    };
+
+    // console.log("Set up new question");
 
 };
 
