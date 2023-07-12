@@ -333,7 +333,8 @@ function checkAnswer(){
                     temp_arr.append(right_answer[i]) 
                 }
 
-                final_questions[title_text][0] = temp_arr
+                final_questions[title_text][0] = temp_arr;
+                right_answer = temp_arr;
 
                 console.log(final_questions[title_text][0])
 
