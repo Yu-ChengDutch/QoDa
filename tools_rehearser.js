@@ -250,9 +250,9 @@ function chooseQuestions(questions){
 
         if (current_type == "Epidemiology") {
 
-            question = question_texts[current_type][0] + question_data[1] + question_texts[current_type][1] + answer + question_texts[current_type][2];
+            question = question_texts[current_type][0] + answer[1] + question_texts[current_type][1] + question_data + question_texts[current_type][2];
             question_string = "Question " + (i+1);
-            final_questions[question_string] = [question_data[0], question];
+            final_questions[question_string] = [answer[0], question];
 
         } else {
 
