@@ -336,9 +336,7 @@ function checkAnswer(){
 
         }
 
-    }
-
-    if (given_answer == right_answer) {
+    } else if (given_answer == right_answer) {
 
         nextQuestion();
 
