@@ -84,7 +84,7 @@
                         },
                         {
                             "Name": "Eczema seborrhoicum",
-                            "Pathogen": "M. Furfur",
+                            "Pathogen": ["M. Furfur"],
                             "Epidemiology": ["4%", "general population"],
                             "Signs": ["Erythematosquamous plaque", "mildly circumscript"],
                             "Complications": ["Bacterial skin infection", "Erythrodermia"],
@@ -583,13 +583,13 @@
                             "Subconditions": [
                                 {
                                     "Name": "Herpes labialis",
-                                    "Pathogen": "Herpes simplex type I",
+                                    "Pathogen": ["Herpes simplex type I"],
                                     "Signs": ["Grouped vesicles", "Burning sensation", "Pain"],
                                     "Therapy": ["Keep the area dry", "Onset less than 10 days ago -> Aciclovir"]
                                 },
                                 {
                                     "Name": "Herpes genitalis",
-                                    "Pathogen": "Herpes simplex type II",
+                                    "Pathogen": ["Herpes simplex type II"],
                                     "Signs": ["Grouped vesicles", "Burning sensation", "Pain"],
                                     "Therapy": ["Valaciclovir"]
                                 }
@@ -605,7 +605,7 @@
                 },
                 {
                     "Name": "Verrucae",
-                    "Pathogen": "HPV", 
+                    "Pathogen": ["HPV"], 
                     "Subconditions": [
                         {
                             "Name": "Verruca vulgaris",
@@ -645,7 +645,7 @@
                         {
                             "Name": "Candidiasis oris",
                             "Dutch name": "Spruw",
-                            "Signs": "White discoloration of the tongue",
+                            "Signs": ["White discoloration of the tongue"],
                             "Risk factors": {
                                 "Acronym": "BABI",
                                 "B": "Babyleeftijd",
@@ -718,7 +718,7 @@
                     "Name": "Scabies",
                     "Basis": ["Dermis", "Infestation"],
                     "Dutch name": "Schurft",
-                    "Pathogen": "Sarcoptes scabiei",
+                    "Pathogen": ["S. Scabiei"],
                     "Risk factors": {
                         "Acronym": "Health, heat, hot, home",
                         "Health": "Working or living in a healthcare facility",
@@ -752,7 +752,7 @@
                             "Name": "Pediculosis capitis",
                             "Alternative name": "Head lice",
                             "Basis": ["Skin surface", "Infestation"],
-                            "Pathogen": "Pediculus humanus capitis",
+                            "Pathogen": ["Pediculus humanus capitis"],
                             "Symptoms": ["Pruritus all over the head"],
                             "Signs": ["Visible lice and bites"],
                             "Complications": ["Bacterial skin infection"],
@@ -762,7 +762,7 @@
                             "Name": "Pediculosis corporis",
                             "Alternative name": "Vagabond's disease",
                             "Basis": ["Skin surface", "Infestation"],
-                            "Pathogen": "Pediculus humanus humanus",
+                            "Pathogen": ["Pediculus humanus humanus"],
                             "Risk factors": {
                                 "Acronym": "SEX",
                                 "SEX": "Sexual activity"
@@ -775,7 +775,7 @@
                             "Name": "Pediculosis pubis",
                             "Basis": ["Skin surface", "Infestation"],
                             "Alternative name": "Crabs",
-                            "Pathogen": "Pthirus pubis",
+                            "Pathogen": ["Pthirus pubis"],
                             "Risk factors": {
                                 "Acronym": "PHD",
                                 "P": "Poor hygiene",
@@ -797,7 +797,7 @@
                 {
                     "Name": "Syphilis",
                     "Dutch name": "Lues",
-                    "Pathogen": "T. Pallidum",
+                    "Pathogen": ["T. Pallidum"],
                     "Stages": [
                         {
                             "Name": "Primary syphilis",

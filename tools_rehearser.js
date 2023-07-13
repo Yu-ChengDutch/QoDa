@@ -26,7 +26,8 @@ let question_texts = {
     "Subconditions": ["Diseases have subclasses. What are the subclasses of <", ">?"],
     "Dutch name": ["Dutch exists. What is the name of <", "> in Dutch?"],
     "Epidemiology": ["How much percentage of <", "> has <", ">?"],
-    "Signs": ["What disease is hallmarked by the following symptoms <", ">?"]
+    "Signs": ["What disease is hallmarked by the following symptoms <", ">?"],
+    "Pathogen": ["Infectious diseases are caused by pathogens. By what pathogen is <", "> caused?"]
 };
 
 let possible_questions = {};
@@ -40,7 +41,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
-    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Signs", "Subconditions", "Epidemiology", "Alternative name", "Dutch name"]},
+    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Iterators": ["Pathogen", "Individual conditions", "Subtypes"], "Questions": ["Signs", "Subconditions", "Epidemiology", "Alternative name", "Dutch name"]},
     "Pharmacology - N": {"Database": './data_pharmacology_n.json', "Questions": ["Subclass", "Brands"]},
     "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Questions": ["Subclass", "Brands", "Alternative name", "Method"]},
     "Pharmacology - J": {"Database": './data_pharmacology_j.json', "Questions": ["Subclass", "Brands", "Method"]},
@@ -256,7 +257,7 @@ function chooseQuestions(questions){
             question_string = "Question " + (i+1);
             final_questions[question_string] = [question_data[0], question];
 
-        } else if (current_type == "Subconditions") {
+        } else if (current_type == "Subconditions" || current_type == "Pathogen") {
 
             question = question_texts[current_type][0] + answer + question_texts[current_type][1];
             question_string = "Question " + (i+1);
