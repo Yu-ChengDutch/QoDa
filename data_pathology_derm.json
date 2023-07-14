@@ -23,6 +23,13 @@
             "Name": "Erythematosquamous dermatoses",
             "Individual conditions": [
                 {
+                    "Name": "Intertrigo",
+                    "Alternative name": "Eczema intertriginosa",
+                    "Dutch name": "Smetplekken",
+                    "Signs": ["Erythematosquamous macula", "Maceratio cutis", "Location: Folds"],
+                    "Therapy": ["Advice: keep the skin dry, loose weight", "Medicine: zinkoxide"]
+                },
+                {
                     "Name": "Psoriasis",
                     "Epidemiology": ["3%", "Dutch population"],
                     "Basis": ["Hypertrophy and dysplasia", "epidermal cells"],
@@ -78,8 +85,16 @@
                         {
                             "Name": "Eczema atopicum",
                             "Basis": ["Filagrin-deficiency mediated underdevelopment", "stratum corneum"],
-                            "Signs": ["Erythematopapulous plaques", "Lichenification", "Itch", "Location: ventral side elbows and dorsal side knees, neck, face, hands, genital region, ankles and wrists"],
-                            "Therapy": ["Advice: don't wash to hot AND don't wash too often AND don't use too much soap TO prevent drying out the skin", "Advice: keep the nails short and sleep with cotton gloves on TO prevent scratching", "Severe flare-up -> Prednison", "Mild eczema -> Protopic", "Severe eczema -> Dermovate"]
+                            "Signs": ["Hertoghe's sign", "Erythematopapulous plaques", "Lichenification", "Itch", "Location: ventral side elbows and dorsal side knees, neck, face, hands, genital region, ankles and wrists"],
+                            "Therapy": ["Advice: don't wash to hot AND don't wash too often AND don't use too much soap TO prevent drying out the skin", "Advice: keep the nails short and sleep with cotton gloves on TO prevent scratching", "Severe flare-up -> Prednison", "Mild eczema -> Protopic", "Severe eczema -> Dermovate"],
+                            "Subconditions": [
+                                {
+                                    "Name": "Eczema atopic acuta",
+                                    "Dutch name": "Dauwworm",
+                                    "Epidemiology": ["5%", "Infants"],
+                                    "Signs": ["Wet erythematopapulous plaques", "Pruritus", "Location: Cheeks, chin"]
+                                }
+                            ]
 
                         },
                         {
@@ -227,7 +242,7 @@
                 {
                     "Name": "Keratosis actinica",
                     "Basis": ["UV-induced DNA damage", "Keratocytes"],
-                    "Signs": ["Lightbrown pigmented hyperkeratotic laesions", "Location: regio facialis, dorsum mani"],
+                    "Signs": ["Fast onset", "Lightbrown pigmented hyperkeratotic laesions", "Location: regio facialis, dorsum mani"],
                     "Therapy": ["Few lesions -> cryotherapy", "Advice: prevent sunburn", "Advice: many lesions -> yearly skin check"],
                     "Epidemiology": ["25%", "adults >40 y/o"]
                 },
@@ -249,7 +264,8 @@
                     "Alternative name": "Squamous-cell carcinoma in situ",
                     "Signs": ["Erythematosquamous plaque with crustae", "Growth: slow", "Border: sharp", "Location: Crus"],
                     "Prognosis": ["3-5%", "progression to an invasive carcinoma"],
-                    "Therapy": ["Small laesion -> Curratage", "Large lesion -> Photodynamic therapy"]
+                    "Therapy": ["Small laesion -> Curratage", "Large lesion -> Photodynamic therapy"],
+                    "Complications": ["Basal cell carcinoma"]
                 },
                 {
                     "Name": "Basal cell carcinoma",
@@ -300,6 +316,7 @@
                 },
                 {
                     "Name": "Melanoma",
+                    "Signs": ["Hyperpigmentation", "Satelite laesions"],
                     "Risk factors": {
                         "Acronym": "BIG SCUM",
                         "B": "Blond and blue eyes",
@@ -348,7 +365,12 @@
                                 "S": "Not sun exposure"
                             },
                             "Basis": ["Spontaneous malignancy", "Melanocytes"],
-                            "Signs": ["Hyperpigmented maculae", "Location: Nails, palma mani, planta pedis"]
+                            "Signs": ["Hutchinson's sign", "Hyperpigmented maculae", "Location: Nails, palma mani, planta pedis"]
+                        },
+                        {
+                            "Name": "Melanoma subungalis",
+                            "Epidemiology": ["1%", "all melanomae"],
+                            "Signs": ["Melanonychia striata", "Hutchinson's sign", "Hyperpigmented maculae or tumor", "Location: Nails"]
                         }
                     ]
                 }
@@ -360,7 +382,7 @@
                 {
                     "Name": "Ulcus cruris venosum",
                     "Alternative name": "Venous ulcer",
-                    "Signs": ["Location: Pes, Tarsus", "Ulcus with a white-yellow centre", "Hyperpigmentation, hyperkeratosis, varices, pitting oedema and atrophic blanche of the surrounding skin", "Pain reduction with raised leg"],
+                    "Signs": ["Corona phlebectatica", "Location: Pes, Tarsus", "Ulcus with a white-yellow centre", "Hyperpigmentation, hyperkeratosis, varices, pitting oedema and atrophic blanche of the surrounding skin", "Pain reduction with raised leg"],
                     "Basis": ["Insufficiency", "Venous valves"],
                     "Therapy": ["Compression stockings"]
                 }
@@ -469,7 +491,7 @@
                         "A": "Adolescence",
                         "D": "Dark skin"
                     },
-                    "Signs": ["Koebner phenomenon", "Sharply delineated hypopigmented maculae", "Grouping: Symmetrical", "Location: Regio anogenitalis, manus, dorsum, pes, facie, axila", "Poliosis", "PA -> Absence of melanocytes in the stratum basale"]
+                    "Signs": ["Punshi's sign", "Koebner phenomenon", "Sharply delineated hypopigmented maculae", "Grouping: Symmetrical", "Location: Regio anogenitalis, manus, dorsum, pes, facie, axila", "Poliosis", "PA -> Absence of melanocytes in the stratum basale"]
                 },                
                 {
                     "Name": "Naevus",
@@ -637,6 +659,7 @@
                 },
                 {
                     "Name": "Candidiasis",
+                    "Signs": "Coastal-islands sign",
                     "Subconditions": [
                         {
                             "Name": "Candidiasis intertriginosa",
@@ -668,7 +691,7 @@
                             "Name": "Tinea versicolor",
                             "Alternative name": "Pityriasis versicolor",
                             "Pathogen": ["M. Globosa", "M. Furfur"],
-                            "Signs": ["Fine squamae", "Sharply delineated dyschromic plaques", "Wood's lamp -> Copper-orange fluorescence"],
+                            "Signs": ["Besnier's sign", "Stretch sign", "Fine squamae", "Sharply delineated dyschromic plaques", "Wood's lamp -> Copper-orange fluorescence"],
                             "Therapy": ["Ketoconazol"]
                         },
                         {
@@ -706,6 +729,12 @@
                             },
                             "Signs": ["Annular erythematosquamous laesion", "Centrifugal spread", "Pruritus", "Burning sensation", "KOH-sample -> visible threads"],
                             "Therapy": ["Miconazol salve"]
+                        },
+                        {
+                            "Name": "Tinea pedis",
+                            "Signs": ["Erythematosquamous plaque with colerette", "Grouping: mocassin-pattern", "Location: Foot", "Interdigital maceration"],
+                            "Pathogen": ["Epidermophyton", "Trichophyton", "Microsporum"],
+                            "Therapy": ["Loprox"]
                         }
                     ]
                 }
@@ -807,13 +836,29 @@
                         {
                             "Name": "Secondary syphilis",
                             "Onset": "3-6 weeks after contact",
-                            "Signs": ["Maculopapulous exanthema", "Roseolae", "Generalised lymphadenopathy", "Condylomata lata", "Enanthema", "Moth-eaten alopecia", "Syphilis maligna"]
+                            "Signs": ["Hertoghe's sign", "Maculopapulous exanthema", "Roseolae", "Generalised lymphadenopathy", "Condylomata lata", "Enanthema", "Moth-eaten alopecia", "Syphilis maligna"]
                         },
                         {
                             "Name": "Tertiary syphilis",
                             "Alternative name": "Organ symphilis"
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "Name": "Edematous conditions",
+            "Individual conditions": [
+                {
+                    "Name": "Lipedema",
+                    "Signs": ["Disproportionally large extremities", "Cuff sign"]
+                },
+                {
+                    "Name": "Lymphedema",
+                    "Signs": ["Disproportionally large extremities", "Stemmer's sign"]
+                },
+                {
+                    "Name": ""
                 }
             ]
         }
