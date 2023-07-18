@@ -333,7 +333,7 @@ function checkAnswer(){
         let temp_arr = []
 
         for (var i = 0; i < right_answer.length; i++){
-            if (!remark.contains(right_answer[i])) {
+            if (!remark.includes(right_answer[i])) {
                 temp_arr.push(right_answer[i]) 
             }
 
