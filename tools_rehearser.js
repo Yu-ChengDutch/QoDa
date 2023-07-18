@@ -341,9 +341,9 @@ function checkAnswer(){
 
         right_answer = temp_arr;
 
-        console.log(right_answer);
-
-        if (right_answer.includes(given_answer)) {
+        if (right_answer.length == 0) {
+            nextQuestion()
+        } else if (right_answer.includes(given_answer)) {
 
             console.log("Right answer in array found")
 
@@ -379,7 +379,7 @@ function checkAnswer(){
             final_questions[redo_string] = final_questions[title_text];
             console.log(final_questions);
 
-            document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + final_questions[title_text][0] + ". Please enter this.";
+            document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + right_answer + ". Please enter this.";
 
         }
 
