@@ -189,8 +189,8 @@ function createQuestions(data, iterators, questions, output){
     
                 } else if (typeof next_item === 'string' || next_item instanceof String) {
 
-                    print(next_item)
-                    print(current_item.Name)
+                    console.log(next_item)
+                    console.log(current_item.Name)
 
                     output[questions[i]][next_item] = current_item.Name
 
