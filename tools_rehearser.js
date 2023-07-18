@@ -354,6 +354,8 @@ function checkAnswer(){
 
             textfield.value = "";
 
+            temp_arr = [];
+
             if (right_answer.length > 1) {
                 
                 for (var i = 0; i < right_answer.length; i++){
@@ -371,6 +373,7 @@ function checkAnswer(){
                 console.log(final_questions[title_text])
 
                 if (document.getElementById('remark-card').innerText.includes("Oops, that wasn't correct!")) {
+                    console.log("Correcting correction")
                     document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + right_answer + ". Please enter this.";
                 }
 
