@@ -322,8 +322,6 @@ function checkAnswer(){
 
     let right_answer = final_questions[title_text][0];
 
-    let original_right_answer = right_answer;
-
     if (Array.isArray(right_answer)) {
 
         console.log("Array found")
@@ -352,7 +350,7 @@ function checkAnswer(){
 
                 right_answer = temp_arr;
 
-                console.log(final_questions[title_text][0])
+                console.log(final_questions[title_text])
 
             } else {
 
@@ -364,7 +362,7 @@ function checkAnswer(){
 
             let redo_string = "Redo: " + title_text;
 
-            final_questions[redo_string] = final_questions[title_text][0];
+            final_questions[redo_string] = final_questions[title_text];
             console.log(final_questions);
 
             document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + final_questions[title_text][0] + ". Please enter this.";
