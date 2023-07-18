@@ -1,0 +1,350 @@
+{
+    "Name": "Ophthalmological conditions",
+    "Subtypes": [
+        {
+            "Name": "Ocular adnexa conditions",
+            "Subtypes": [
+                {
+                    "Name": "Orbit conditions",
+                    "Individual conditions": [
+                        {
+                            "Name": "Orbital fracture",
+                            "Subconditions": [
+                                {
+                                    "Name": "Blowout fracture",
+                                    "Definition": "Isolated fracture of the orbital walls"
+                                },
+                                {
+                                    "Name": "Orbital rim fracture",
+                                    "Definition": "Fracture of the orbital rim"
+                                },
+                                {
+                                    "Name": "Orbital floor fracture",
+                                    "Definition": "Fracture of the orbital floor",
+                                    "Signs": ["Diplopia on upward gaze", "Limitation of upward gaze"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Eyelid conditions",
+                    "Individual conditions": [
+                        {
+                            "Name": "Hordeolum",
+                            "Alternative name": "Stye",
+                            "Signs": ["Tumor on the eyelid", "Swelling", "Pain", "Ptsosis", "Light sensitivity"],
+                            "Subconditions": [
+                                {
+                                    "Name": "Internal styes",
+                                    "Definition": "Infection of the meibomian gland"
+                                },
+                                {
+                                    "Name": "External styes",
+                                    "Definition": "Infection of the gland of Zeis"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Chalazion",
+                            "Alternative name": "Meibomian cyst",
+                            "Definition": "Sterile cyst of the eyelid secondary to a blocked Meibomian gland",
+                            "Signs": ["Painless edema of the eyelid", "Epiphora", "Heaviness of the eyelid", "Conjunctival redness"]
+                        },
+                        {
+                            "Name": "Blepharitis",
+                            "Alternative name": "Granulated eyelids",
+                            "Definition": "Chronic inflammation of the eyelid",
+                            "Signs": ["Inflammation of the eyelid", "Irritation", "Redness", "Photophobia", "Blurred vision"]
+                        },
+                        {
+                            "Name": "Ectropion",
+                            "Definition": "Turned-out lower eyelid"
+                        },
+                        {
+                            "Name": "Graves' ophthalmopathy",
+                            "Alternative name": "Thyroid eye disease",
+                            "Signs": ["Upper eyelid retraction", "Lid lag", "Swelling", "Erythema", "Exopthalmos"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lacrimal apparatus conditions",
+                    "Individual conditions": [
+                        {
+                            "Name": "Nasolacrimal duct obstruction",
+                            "Signs": ["Epiphora", "Infection", "pain at the medial canthus"],
+                            "Therapy": ["Surgery -> Dacryocystorhinostomy"]
+                        },
+                        {
+                            "Name": "Dacryoadenitis",
+                            "Definition": "Inflammation of the lacrimal glands",
+                            "Signs": ["Swelling of the lateral upper lid", "Pain", "Epiphora", "Pre-aurical lymphadenopathy"]
+                        },
+                        {
+                            "Name": "Xerophthalmia",
+                            "Definition": "Dryness of the eyes"
+                        },
+                        {
+                            "Name": "Keratoconjunctivitis sicca",
+                            "Alternative name": "Dry eye syndrome",
+                            "Epidemiology": ["25%", "general population"],
+                            "Signs": ["Dryness of the eye", "Burning", "Eye irritation which worsens during the day", "Worsening on eye strain"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Ocular conditions",
+            "Subtypes": [
+                {
+                    "Name": "Extraocular muscular conditions",
+                    "Individual conditions": [
+                        {
+                            "Name": "Strabismus",
+                            "Definition": "Improper alignment of the eyes",
+                            "Signs": ["Decreased depth perception", "Positive Hirschberg test", "Positive cover test"],
+                            "Subconditions": [
+                                {
+                                    "Name": "Esotropia",
+                                    "Definition": "Crossing eyes"
+                                },
+                                {
+                                    "Name": "Exotropia",
+                                    "Definition": "Diverging eyes"
+                                },
+                                {
+                                    "Name": "Hypertropia",
+                                    "Definition": "Eyes vertically misaligned"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Amblyopia",
+                            "Alternative name": "Lazy eye",
+                            "Causes": ["Strabismus", "Anisometropia", "Cataract"],
+                            "Signs": ["Poor stereopsis", "Poor visual acuity", "Poor contrast sensitivity", "Poor vernier acuity"],
+                            "Therapy": ["Intervention: Eye patch"]
+                        }
+
+                    ]
+                },
+                {
+                    "Name": "Ocular conditions",
+                    "Individual conditions": [
+                        {
+                            "Name": "Cataract",
+                            "Definition": "Cloudy disruption of the lens",
+                            "Subconditions": [
+                                {
+                                    "Name": "Nuclear sclerotic cataract",
+                                    "Alternative name": "Brunescent cataract",
+                                    "Definition": "Central hardening of the lens",
+                                    "Signs": ["Myopic shift -> Second sight sign", "Browning of the vision", "Reduction of distance vision"]
+                                },
+                                {
+                                    "Name": "Cortical cataract",
+                                    "Definition": "Becoming opaque of the outer layer of the lens",
+                                    "Signs": ["Ophthalmoscope -> Spoke-like appearance of the lens"]
+                                },
+                                {
+                                    "Name": "Posterior subcapsular cataract",
+                                    "Definition": "Becoming opaque of the posterior layer of the lens",
+                                    "Signs": ["Severe visual disturbance", "Severe glare"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Glaucoma",
+                            "Subconditions": [
+                                {
+                                    "Name": "Open-angle glaucoma",
+                                    "Epidemiology": ["90%", "all glaucoma cases"],
+                                    "Alternative name": "Chronic simple glaucoma",
+                                    "Signs": ["Painless visual field loss", "Fundoscopy -> increased cup-to-disc ratio", "Mild ocular hypertension", "Advanced stage -> Tubular vision, arcuate scotoma"]
+                                },
+                                {
+                                    "Name": "Closed-angle glaucoma",
+                                    "Epidemiology": ["10%", "all glaucoma cases"],
+                                    "Alternative name": "Acute congestive glaucoma",
+                                    "Signs": ["Sudden ocular pain", "Seeing halos around lights", "Red eye", "Severe ocular hypertension", "Nausea and vomiting", "Fixed pupil", "Glaukomflecken", "Advanced stage -> Tubular vision, arcuate scotoma"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Diabetic retinopathy",
+                            "Signs": ["Retinal exam -> Microaneurysms, cotton wool spots", "Dark floating spots", "Macular edema"],
+                            "Complications": ["Retinal detachment"]
+                        },
+                        {
+                            "Name": "Macular degeneration",
+                            "Definition": "Age-related macular degeneration",
+                            "Signs": ["Amsler grid -> disappearing lines and blank patches", "Snellen chart -> 2 lines decline", "Metamorphsia", "Positive photostress test", "Decreased colour discernment", "Decreased contrast sensitivity"],
+                            "Subconditions": [
+                                {
+                                    "Name": "Dry AMD",
+                                    "Alternative name": "Nonexudative AMD",
+                                    "Epidemiology": ["80%", "all AMD"],
+                                    "Signs": ["AMD symptoms", "Fundoscopy -> Drusen spots"]
+                                },
+                                {
+                                    "Name": "Geographic atrophy"
+                                },
+                                {
+                                    "Name": "Wet AMD",
+                                    "Definition": ["AMD caused by fragile neovascularisation in the choriocapillaris"],
+                                    "Alternative name": "Neovascular AMD",
+                                    "Epidemiology": ["20%", "all AMD"],
+                                    "Signs": ["AMD symptoms", "Rapidly increasing blurred vision", "Visual hallucinations and flashing light"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Retinal detachment",
+                            "Definition": "Retina peeling away from the underlying layer",
+                            "Signs": ["Sudden appearance of floaters", "Flashes of light in vision", "Shadow moving across the field of vision", "Sudden blurred vision"]
+                        },
+                        {
+                            "Name": "Endophthalmitis",
+                            "Alternative name": "Endophthalmia",
+                            "Definition": "Infection of the interior cavity of the eye",
+                            "Causes": ["Eye sugery", "Systemic candidiasis"],
+                            "Signs": ["Severe pain", "Vision loss", "Conjunctival redness", "Hypopyon", "Martin-Farina sign"]
+                        },
+                        {
+                            "Name": "Uveitis",
+                            "Definition": "Inflamation of the uvea",
+                            "Subconditions": [
+                                {
+                                    "Name": "Anterior uveitis",
+                                    "Subconditions": [
+                                        {
+                                            "Name": "Iridocyclitis",
+                                            "Definition": "Inflammation of the iris and ciliary body"
+                                        },
+                                        {
+                                            "Name": "Iritis",
+                                            "Definition": "Inflamation of the anterior chamber and iris"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Pars planitis",
+                                    "Alternative name": "Intermediate uveitis",
+                                    "Definition": "Vitritis with snowbanking on the pars plana"
+                                },
+                                {
+                                    "Name": "Chorioretinitis",
+                                    "Alternative name": "Posterior uveitis",
+                                    "Definition": "Inflammation of the retina and choroid"
+                                },
+                                {
+                                    "Name": "Panuveitis",
+                                    "Definition": "Inflammation of all layers of the uvea"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Open-globe injury",
+                            "Epidemiology": ["0,0035%", "general population"],
+                            "Signs": ["Visible corneal lasceration", "Sub-conjunctival hemorrhage", "Protruding foreign bodies", "Vitreous fluid leakage", "Changes in pupil shape"],
+                            "Therapy": ["Intervention: Eye shield, 30-degree elevation of the head", "Medication: anti-emetics"]
+                        },
+                        {
+                            "Name": "Conjunctivitis",
+                            "Alternative name": "Pink eye",
+                            "Definition": "Inflammation of the conjuctiva",
+                            "Signs": ["Red eye", "Conjunctival edema", "Epiphora", "Itch", "Burning sensation"]
+                        },
+                        {
+                            "Name": "Scleritis",
+                            "Definition": "Inflammation of the conjunctive",
+                            "Signs": ["Red eye", "Severe deep ocular pain, possibility radiating to temple", "Photophobia", "Tearing", "Decrease in visual acuity"]
+                        },
+                        {
+                            "Name": "Keratitis",
+                            "Definition": "Inflammation of the cornea",
+                            "Signs": ["Pain", "Impaired eyesight", "Photophobia", "Red eye", "Gritty sensation in the eye"],
+                            "Subconditions": [
+                                {
+                                    "Name": "Herpes simplex keratitis",
+                                    "Signs": ["Keratitis signs", "Dendritic ulcer"]
+                                },
+                                {
+                                    "Name": "Photokeratitis",
+                                    "Therapy": ["Advice: cold compresses over the eyes; artificial tears"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Corneal abrasion",
+                            "Signs": ["Pain", "Photophobia", "Corpus alienum-sensation", "Excessive squiting", "Epiphora", "Slit lamp with fluorescein -> shows scratch"],
+                            "Therapy": ["Medication: anti-biotic ointment"],
+                            "Prognosis": ["Sponataneous regression in 3 days"]
+                        },
+                        {
+                            "Name": "Retinoschisis",
+                            "Definition": "Splitting of the retina's neurosensory layers",
+                            "Signs": ["Asymptomatic", "Fundography -> visible tears"]
+                        },
+                        {
+                            "Name": "Hypertensive retinopathy",
+                            "Definition": "Damage to the retina due to hypertension",
+                            "Signs": ["Asymptomatic", "Funduscopy -> AV-nicking, cotton wool spots"],
+                            "Grading": ["Keith Wagener Barker", "KWB"],
+                            "Therapy": ["Medication: Antihypertensive"]
+                        },
+                        {
+                            "Name": "Macular edema",
+                            "Definition": "Deposition of fluid and protein under the macula",
+                            "Causes": {
+                                "Acronym": "DEPRIVE2N",
+                                "D": "Diabetes mellitus",
+                                "E": "Epinephrine",
+                                "P": "Pars planitis",
+                                "R": "Retinitis pigmentosa",
+                                "I": "Irvine-Glass syndrome",
+                                "V": "Venous occlusion",
+                                "E2":"E2-prostaglandin analogues",
+                                "N":"Nicotinic acid/niacin"
+                            },
+                            "Signs": ["Amsler grid -> Central metamorphopsia"]
+
+                        },
+                        {
+                            "Name": "Refractive errors",
+                            "Individual conditions": [
+                                {
+                                    "Name": "Myopia",
+                                    "Alternative name": "Nearsightedness",
+                                    "Definition": "Focus point in front of retina due to long eyeball",
+                                    "Signs": ["Distant objects appear blurry", "Headache", "Eye strain"],
+                                    "Complications": ["Retinal detachment", "Cataract", "Glaucoma"],
+                                    "Therapy": ["Intervention: Eyeglasses, contactlensen", "Surgery: Refractive surgery"]
+                                },
+                                {
+                                    "Name": "Presbyopia",
+                                    "Alternative name": "Age-related farsightedness",
+                                    "Definition": ["Focusing behind a close object due to decreased flexibility of the lens and strength of the ciliary muscle"],
+                                    "Causes": ["Degeneration"],
+                                    "Signs": ["Close objects appear blurry", "Headache", "Eye strain"],
+                                    "Therapy": ["Intervention: Eyeglasses, contactlensen", "Surgery: Refractive surgery"]
+                                },
+                                {
+                                    "Name": "Hypermetropia",
+                                    "Definition": "Farsightedness due to natural variation",
+                                    "Alternative name": "Farsightedness",
+                                    "Signs": ["Close objects appear blurry", "Headache", "Eye strain"]
+                                },
+                                {
+                                    "Name": "Astigmatism"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

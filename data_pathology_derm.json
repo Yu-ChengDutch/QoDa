@@ -23,6 +23,18 @@
             "Name": "Erythematosquamous dermatoses",
             "Individual conditions": [
                 {
+                    "Name": "Pustulosis palmoplantaris",
+                    "Dutch name": "Andrews-Barber disease",
+                    "Risk factors": {
+                        "Acronym": "SWiM",
+                        "S": "Smoking",
+                        "W": "Woman",
+                        "M": "Middle-aged"
+                    },
+                    "Signs": ["Lenticular sterile pustulae", "Location: sola pedis, palma manis; symmetrical", "Red halo", "Dried in -> brown crusta, chronic hyperkeratosis", "Rhagades"],
+                    "Therapy": ["Advice: Stop smoking", "Medication: class III or IV corticosteroids"]
+                },
+                {
                     "Name": "Intertrigo",
                     "Alternative name": "Eczema intertriginosa",
                     "Dutch name": "Smetplekken",
@@ -56,6 +68,11 @@
                             "Epidemiology": ["7%", "Dutch population"],
                             "Signs": ["Subungual hyperkeratosis, distal onchyolysis", "oil spill phenomenon", "dents in the nail", "pustulosis", "point bleeds", "paronychia", "Koebnerphenomenon"],
                             "Therapy": ["Advice: keep the nails short", "Medication -> Class III-IV corticosteroids OR Kenacort 10 injections"]
+                        },
+                        {
+                            "Name": "Psoriasis pustulosa generalisata",
+                            "Alternative name": "Von Zumbusch disease",
+                            "Signs": ["Sterile pustulae on an erythematous background", "Squamae", "Fever", "Tachycardia", "Tachypnea", "Malaise", "Shivers"]
                         }
                     ]
                 }
