@@ -315,7 +315,7 @@ function checkAnswer(){
 
     const textfield = document.getElementById('text-field');
 
-    const remark = document.getElementById('remark-card').innerText
+    remark = document.getElementById('remark-card').innerText
 
     const given_answer = textfield.value;
 
