@@ -41,7 +41,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
-    "Pathology - Ophthalmology": {"Database": './data_pathology_ophth.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Definition", "Signs", "Subconditions", "Epidemiology", "Alternative name"]},
+    "Pathology - Ophthalmology": {"Database": './data_pathology_ophtha.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Definition", "Signs", "Subconditions", "Epidemiology", "Alternative name"]},
     "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Pathogen", "Signs", "Subconditions", "Epidemiology", "Alternative name", "Dutch name"]},
     "Pharmacology - N": {"Database": './data_pharmacology_n.json', "Questions": ["Subclass", "Brands"]},
     "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Questions": ["Subclass", "Brands", "Alternative name", "Method"]},
