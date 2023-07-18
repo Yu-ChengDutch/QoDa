@@ -313,9 +313,7 @@ function checkAnswer(){
 
     const title_text = document.getElementById('question-title').innerText;
 
-    const textfield = document.getElementById('text-field');
-
-    remark = document.getElementById('remark-card').innerText
+    const textfield = document.getElementById('text-field');    
 
     const given_answer = textfield.value;
 
@@ -333,7 +331,7 @@ function checkAnswer(){
         let temp_arr = []
 
         for (var i = 0; i < right_answer.length; i++){
-            if (!remark.includes(right_answer[i])) {
+            if (!document.getElementById('remark-card').innerText.includes(right_answer[i])) {
                 temp_arr.push(right_answer[i]) 
             }
 
@@ -343,11 +341,13 @@ function checkAnswer(){
 
         right_answer = temp_arr;
 
+        console.log(right_answer);
+
         if (temp_arr.includes(given_answer)) {
 
             console.log("Right answer in array found")
 
-            remark = remark + " - " + given_answer
+            document.getElementById('remark-card').innerText = document.getElementById('remark-card').innerText + " - " + given_answer
 
             textfield.value = "";
 
