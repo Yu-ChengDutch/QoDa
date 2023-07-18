@@ -354,7 +354,7 @@ function checkAnswer(){
             if (right_answer.length > 1) {
                 
                 for (var i = 0; i < right_answer.length; i++){
-                    if (right_answer[i] != given_answer) {
+                    if (right_answer[i] != given_answer && !temp_arr.contains(right_answer[i])) {
                         temp_arr.push(right_answer[i]) 
                     }
 
