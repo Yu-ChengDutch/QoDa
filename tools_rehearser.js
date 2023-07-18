@@ -350,7 +350,7 @@ function checkAnswer(){
                     
                 }
 
-                final_questions[title_text][0] = temp_arr;
+                right_answer = temp_arr;
 
                 console.log(final_questions[title_text][0])
 
@@ -364,10 +364,10 @@ function checkAnswer(){
 
             let redo_string = "Redo: " + title_text;
 
-            final_questions[redo_string] = right_answer;
+            final_questions[redo_string] = final_questions[title_text][0];
             console.log(final_questions);
 
-            document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + right_answer + ". Please enter this.";
+            document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + final_questions[title_text][0] + ". Please enter this.";
 
         }
 
