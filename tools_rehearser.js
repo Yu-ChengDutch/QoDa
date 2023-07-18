@@ -361,6 +361,7 @@ function checkAnswer(){
                         temp_arr.push(right_answer[i]) 
                     }
 
+                    console.log("Right")
                     console.log(temp_arr);
                     
                 }
@@ -368,6 +369,10 @@ function checkAnswer(){
                 right_answer = temp_arr;
 
                 console.log(final_questions[title_text])
+
+                if (document.getElementById('remark-card').innerText.includes("Oops, that wasn't correct!")) {
+                    document.getElementById('remark-card').innerText = "Oops, that wasn't correct! The correct answer is: " + right_answer + ". Please enter this.";
+                }
 
             } else {
 
