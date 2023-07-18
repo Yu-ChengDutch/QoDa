@@ -335,7 +335,7 @@ function checkAnswer(){
                  temp_arr.push(right_answer[i]) 
             }
 
-            console.log(temp_arr);
+            console.log("ONE" + temp_arr);
             
         }
 
