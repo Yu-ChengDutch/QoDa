@@ -36,11 +36,11 @@
                             "Signs": ["Tumor on the eyelid", "Swelling", "Pain", "Ptsosis", "Light sensitivity"],
                             "Subconditions": [
                                 {
-                                    "Name": "Internal styes",
+                                    "Name": "Internal stye",
                                     "Definition": "Infection of the meibomian gland"
                                 },
                                 {
-                                    "Name": "External styes",
+                                    "Name": "External stye",
                                     "Definition": "Infection of the gland of Zeis"
                                 }
                             ]

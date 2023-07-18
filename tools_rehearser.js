@@ -190,10 +190,11 @@ function createQuestions(data, iterators, questions, output){
     
                 } else if (typeof next_item === 'string' || next_item instanceof String) {
 
-                    console.log(next_item)
-                    console.log(current_item.Name)
-
-                    output[questions[i]][next_item] = current_item.Name
+                    if (questions[i] == "Definition") {
+                        output[questions[i]][current_item.Name] = next_item
+                    } else {
+                        output[questions[i]][next_item] = current_item.Name
+                    }                    
 
                 } else {
 
