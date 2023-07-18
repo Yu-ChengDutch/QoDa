@@ -330,20 +330,20 @@ function checkAnswer(){
 
         let temp_arr = []
 
-        // for (var i = 0; i < right_answer.length; i++){
-        //     if (!document.getElementById('remark-card').innerText.includes(right_answer[i])) {
-        //         temp_arr.push(right_answer[i]) 
-        //     }
+        for (var i = 0; i < right_answer.length; i++){
+            if (!document.getElementById('remark-card').innerText.includes(right_answer[i]) && !temp_arr.includes(right_answer[i])) {
+                 temp_arr.push(right_answer[i]) 
+            }
 
-        //     console.log(temp_arr);
+            console.log(temp_arr);
             
-        // }
+        }
 
         right_answer = temp_arr;
 
         console.log(right_answer);
 
-        if (temp_arr.includes(given_answer)) {
+        if (right_answer.includes(given_answer)) {
 
             console.log("Right answer in array found")
 
