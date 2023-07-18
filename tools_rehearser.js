@@ -27,7 +27,8 @@ let question_texts = {
     "Dutch name": ["Dutch exists. What is the name of <", "> in Dutch?"],
     "Epidemiology": ["How much percentage of <", "> has <", ">?"],
     "Signs": ["What disease is hallmarked by the following symptoms <", ">?"],
-    "Pathogen": ["Infectious diseases are caused by pathogens. By what pathogen is <", "> caused?"]
+    "Pathogen": ["Infectious diseases are caused by pathogens. By what pathogen is <", "> caused?"],
+    "Definition": ["Guess what disease is defined like <", ">?"]
 };
 
 let possible_questions = {};
