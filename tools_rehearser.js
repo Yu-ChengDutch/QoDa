@@ -334,7 +334,7 @@ function checkAnswer(){
             if (document.getElementById('remark-card').innerText.includes("Oops, that wasn't correct!") && document.getElementById('remark-card').innerText.includes(right_answer[i])) {
                 console.log("Correction")
                 temp_arr.push(right_answer[i])
-            } else if (!document.getElementById('remark-card').innerText.includes(right_answer[i]) && !temp_arr.includes(right_answer[i])) {
+            } else if (!document.getElementById('remark-card').innerText.includes("Oops, that wasn't correct!") && !document.getElementById('remark-card').innerText.includes(right_answer[i]) && !temp_arr.includes(right_answer[i])) {
                 temp_arr.push(right_answer[i]) 
             }
 
