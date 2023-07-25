@@ -2,12 +2,6 @@
     "Name": "Muscles of the body",
     "Division": [
         {
-            "Name": "Muscles of the head"
-        },{
-            "Name": "Muscles of the neck"
-        }
-        ,
-        {
             "Name": "Muscles of the trunk",
             "Division": [
                 {
@@ -170,7 +164,18 @@
                                     "Name": "M. Iliocostalis"
                                 },
                                 {
-                                    "Name": "M. Longissimus"
+                                    "Name": "M. Longissimus",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "M. Longissimus thoracis et lumborum"
+                                        },
+                                        {
+                                            "Name": "M. Cervicis"
+                                        },
+                                        {
+                                            "Name": "M. Capitis"
+                                        }
+                                    ]
                                 },
                                 {
                                     "Name": "M. Spinalis"

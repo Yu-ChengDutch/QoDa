@@ -1,0 +1,315 @@
+{
+    "Name": "Muscles of the head and neck",
+    "Division": [
+        {
+            "Name": "Muscles of the head",
+            "Division": [
+                {
+                    "Name": "Facial muscles",
+                    "Subdivision": [
+                        {
+                            "Name": "M. Occipitofrontalis",
+                            "Origin": ["Epicranial neurosis"],
+                            "Insertion": ["Skin", "forehead"],
+                            "Function": ["Elevates", "Eyebrows"]
+                        },
+                        {
+                            "Name": "M. Corrugator supercilii",
+                            "Origin": ["O. Frontalis"],
+                            "Insertion": ["Skin", "eyebrow"],
+                            "Function": ["Depresses", "Eyebrows"]
+                        },
+                        {
+                            "Name": "M. Nasalis",
+                            "Origin": ["Maxilla"],
+                            "Insertion": ["O. Nasale"],
+                            "Function": ["Flares", "Nostrils"]
+                        },
+                        {
+                            "Name": "M. Levator labii superioris",
+                            "Origin": ["Maxilla"],
+                            "Insertion": ["M. Orbicularis oris"],
+                            "Function": ["Elevates", "Upper lip"]
+                        },
+                        {
+                            "Name": "M. Depressor labii inferioris",
+                            "Origin": ["Mandibula"],
+                            "Insertion": ["Skin", "Lower lip"],
+                            "Function": ["Depresses", "Lower lip"]
+                        },
+                        {
+                            "Name": "M. Zygomaticus major",
+                            "Origin": ["O. Zygomaticum"],
+                            "Insertion": ["M. Orbicularis oris"],
+                            "Function": ["Smiling"]
+                        },
+                        {
+                            "Name": "M. Orbicularis oris",
+                            "Origin": ["Skin", "Lips"],
+                            "Insertion": ["Skin", "Lips"],
+                            "Function": ["Closing", "Lips"]
+                        },
+                        {
+                            "Name": "M. Buccinator",
+                            "Origin": ["Mandibula"],
+                            "Insertion": ["Orbicularis oris"],
+                            "Function": [["Adduction", "Cheeks"], ["Abduction", "Cheeks"]]
+                        },
+                        {
+                            "Name": "M. Risorius"
+                        },
+                        {
+                            "Name": "M. Mentalis",
+                            "Origin": ["Mandibula"],
+                            "Insertion": ["Skin", "Chin"],
+                            "Function": [["Protrudes", "Lower lip"], ["Wrinkles", "Skin of chin"]]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muscles of the auditory system",
+                    "Subdivision": [
+                        {
+                            "Name": "M. Stapedius",
+                            "Insertion": ["Pyramidal process", "O. Temporalis"],
+                            "Origin": ["Neck", "Stapes"],
+                            "Innervation": "N. Stapedius",
+                            "Function": ["Stabilise", "Stapes"]
+                        },
+                        {
+                            "Name": "M. Tensor tympani",
+                            "Insertion": ["Manubrium", "Malleus"],
+                            "Origin": ["Tuba auditiva"],
+                            "Innervation": "N. Pterygoideus internus",
+                            "Function": ["Tensing", "Tympanic membrane"]
+                        }
+                    ]
+                },                
+                {
+                    "Name": "Jaw muscles",
+                    "Division": [
+                        {
+                            "Name": "Muscles of mastication",
+                            "Subdivision": [
+                                {
+                                    "Name": "M. Masseter",
+                                    "Insertion": ["Mandibula"],
+                                    "Origin": ["Maxillary process", "O. Zygomaticum"],
+                                    "Function": ["Elevates", "Mandibula"]
+                                },
+                                {
+                                    "Name": "M. Temporalis",
+                                    "Insertion": ["Mandibula"],
+                                    "Origin": ["O. Temporalis"],
+                                    "Function": [["Elevates", "Mandibula"], ["Retracts", "Mandibula"]]
+                                },
+                                {
+                                    "Name": "M. Pterygoideus lateralis",
+                                    "Insertion": ["Mandibula"],
+                                    "Origin": ["Pterygoid process", "O. Sphenoidale"],
+                                    "Function": [["Depresses", "Mandibula"], ["Retracts", "Mandibula"], ["Abducts", "Mandibula"], ["Adducts", "Mandibula"]]
+                                },
+                                {
+                                    "Name": "M. Pterygoideus medialis",
+                                    "Insertion": ["Mandibula"],
+                                    "Origin": ["Pterygoid process", "O. Sphenoidale"],
+                                    "Function": [["Elevates", "Mandibula"], ["Retracts", "Mandibula"], ["Abducts", "Mandibula"], ["Adducts", "Mandibula"]]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Tongue muscles",
+                    "Division": [
+                        {
+                            "Name": "Extrinsic tongue muscles",
+                            "Subdivision": [
+                                {
+                                    "Name": "M. Genioglossus"
+                                },
+                                {
+                                    "Name": "M. Hyoglossus"
+                                },
+                                {
+                                    "Name": "M. Styloglossus"
+                                },
+                                {
+                                    "Name": "M. Palatoglossus"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Intrinsic tongue muscles",
+                            "Subdivision": [
+                                {
+                                    "Name": "M. Lingualis superior"
+                                },
+                                {
+                                    "Name": "M. Lingualis inferior longitudinalis"
+                                },
+                                {
+                                    "Name": "M. Lingualis verticalis"
+                                },
+                                {
+                                    "Name": "M Lingualis verticalis"
+                                }
+                            ]
+                        }
+                    ]
+                }                
+            ]
+        },
+        {
+            "Name": "Muscles of the neck",
+            "Subdivision": [
+                {
+                    "Name": "Mm. Suboccipitales",
+                    "Subdivision": [
+                        {
+                            "Name": "M. Obliquus capitis"
+                        },
+                        {
+                            "Name": "M. Rectus capitis posterior",
+                            "Subdivision": [
+                                {
+                                    "Name": "M. Rectus capitis posterior major",
+                                    "Insertion": ["O. Occipitale", "Inferior nuchal line"],
+                                    "Origin": ["C2", "Spinous process"],
+                                    "Innervation": "N. Suboccipitalis",
+                                    "Function": [["Rotation", "Head"], ["Extension", "Head"]]
+                                },
+                                {
+                                    "Name": "M. Rectus capitis posterior minor",
+                                    "Insertion": ["O. Occipitale", "Inferior nuchal line"],
+                                    "Origin": ["C1", "Posterior arch"],
+                                    "Innervation": "N. Suboccipitalis",
+                                    "Function": [["Extension", "Head"]]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Mm. Suprahyoidei",
+                    "Subdivision": [
+                        {
+                            "Name": "M. Digastricus"
+                        },
+                        {
+                            "Name": "M. Mylohyoideus"
+                        },
+                        {
+                            "Name": "M. Stylohyoideus"
+                        },
+                        {
+                            "Name": "M. Geniohyoideus"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Mm. Infrahyoidei",
+                    "Subdivision": [
+                        {
+                            "Name": "M. Thyrohyoideus"
+                        },
+                        {
+                            "Name": "M. Sternohyoideus"
+                        },
+                        {
+                            "Name": "M. Sternothyroideus"
+                        },
+                        {
+                            "Name": "M. Omohyoideus"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Mm. Pharyngeales",
+                    "Subdivision": [
+                        {
+                            "Name": "Outer pharyngeal muscles",
+                            "Subdivision": [
+                                {
+                                    "Name": "M. Constrictor pharyngis superior"
+                                },
+                                {
+                                    "Name": "M. Constrictor pharyngis medius"
+                                },
+                                {
+                                    "Name": "M. Constrictor pharyngis inferior"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Inner pharyngeal muscles",
+                            "Subdivision": [
+                                {
+                                    "Name": "M. Stylopharyngeus",
+                                    "Origin": ["Styloid process", "O. Temporalis"],
+                                    "Insertion": ["Thyroid cartilage"],
+                                    "Innervation": "N. Glossopharyngeus",
+                                    "Function": [["Elevates", "Larynx"], ["Elevates", "Pharynx"], ["Dilates", "Pharynx"]]
+                                },
+                                {
+                                    "Name": "M. Salpingopharyngeus",
+                                    "Origin": ["Cartilage", "Auditory tube"],
+                                    "Insertion": ["M. Palatopharyngeus"],
+                                    "Innervation": ["N. Vagus"],
+                                    "Function": [["Elevates", "Pharynx"], ["Opens", "Auditory tube"]]
+                                },
+                                {
+                                    "Name": "M. Palatopharyngeus",
+                                    "Origin": ["Palatine aponeurosis"],
+                                    "Insertion": ["Upper border", "Thyroid cartilage"],
+                                    "Innervation": ["Ramus pharyngeus"],
+                                    "Function": [["Elevates", "Pharynx"], ["Elevates", "Larynx"]]
+                                }
+                            ]
+                        }                        
+                    ]
+                },
+                {
+                    "Name": "Mm. Laryngeales",
+                    "Subdivision": [
+                        {
+                            "Name": "M. Cricothyroideus",
+                            "Origin": "Cricoid cartilage",
+                            "Insertion": "Thyroid cartilage",
+                            "Innervation": "N. Laryngeus superior",
+                            "Function": ["Elongates", "Vocal folds"]
+                        },
+                        {
+                            "Name": "M. Cricoarytaenoideus posterior",
+                            "Origin": "Cricoid cartilage",
+                            "Insertion": "Arythenoid cartilage",
+                            "Innervation": "N. Laryngeus recurrens",
+                            "Function": [["Opens", "Rima glottidis"], ["Elongates", "Vocal folds"]]
+                        },
+                        {
+                            "Name": "M. Cricoarytaenoideus lateralis",
+                            "Origin": "Cricoid cartilage",
+                            "Insertion": "Arythenoid cartilage",
+                            "Innervation": "N. Laryngeus recurrens",
+                            "Function": ["Closes", "Rima glottidis"]
+                        },
+                        {
+                            "Name": "M. Arytenoideus",
+                            "Origin": "Arytenoid cartilage",
+                            "Insertion": "Arytenoid cartilage",
+                            "Innervaiton": "N. Laryngeus recurrens",
+                            "Function": ["Closes", "Rima glottidis"]
+                        },
+                        {
+                            "Name": "M. Thyroarytenoid",
+                            "Origin": "Thyroid cartilage",
+                            "Insertion": "Arytenoid cartilage",
+                            "Innervation": "N. Laryngeus recurrens",
+                            "Function": ["Shortens", "Vocal folds"]
+                        }
+                    ]
+                }                
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "Name": "Cartilage of the body",
+    "Division": [
+        {
+            "Name": "Laryngeal skeleton",
+            "Subdivision": [
+                {
+                    "Name": "Thyroid cartilage",
+                    "Alternative name": "Adam's apple"
+                },
+                {
+                    "Name": "Cricoid cartilage"
+                },
+                {
+                    "Name": "Epiglottis"
+                },
+                {
+                    "Name": "Arytenoid cartilage"
+                },
+                {
+                    "Name": "Corniculate cartilage"
+                },
+                {
+                    "Name": "Cuneiform cartilage"
+                }
+            ]
+        }
+    ]
+}

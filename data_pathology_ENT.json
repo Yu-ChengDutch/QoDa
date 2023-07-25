@@ -1,0 +1,324 @@
+{
+    "Name": "ENT conditions",
+    "Division": [
+        {
+            "Name": "Otological conditions",
+            "Division": [
+                {
+                    "Name": "Outer ear diseases",
+                    "Division": [
+                        {
+                            "Name": "Otitis externa",
+                            "Alternative name": "Swimmer's ear",
+                            "Signs": ["Pain of pinna", "Swelling of ear canal", "Eczema-like appearance of the ear canal", "Decreased cerumen"],
+                            "Therapy": ["Medication: Burow's solution"],
+                            "Subconditions": [
+                                {
+                                    "Name": "Acute otitis externa",
+                                    "Definition": "Otitis externa lasting less than six weeks",
+                                    "Cause": ["Bacterial infection"],
+                                    "Pathogen": ["P. Aeruginosa", "S. Aureus"]
+                                },
+                                {
+                                    "Name": "Chronic otitis externa",
+                                    "Definition": "Otitis externa lasting more than three months",
+                                    "Cause": ["Allergy", "Autoimmune disorder"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Middle ear diseases",
+                    "Division": [
+                        {
+                            "Name": "Otitis media",
+                            "Signs": ["Ear pain", "Fever", "Conductive hearing loss", "Otoscopy: bulging eardrum"],
+                            "Therapy": ["Intervention: >3 episodes of AOM in 6 months -> tympanostomy tubes"],
+                            "Cause": ["Secondary to upper airway infection"],
+                            "Complications": ["Mastoiditis", "Perforated eardrum"],
+                            "Subconditions": [
+                                {
+                                    "Name": "Acute otitis media",
+                                    "Alternative name": "AOM",
+                                    "Signs": ["OM symptoms", "Rapid onset"]
+                                },
+                                {
+                                    "Name": "Otitis media with effusion",
+                                    "Definition": "Otitis media with sterile fluid accumulation in the middle ear",
+                                    "Alternative name": "OME",
+                                    "Signs": ["OM symptoms", "Significant conductive hearing loss"]
+                                },
+                                {
+                                    "Name": "Chronic suppurative otitis media",
+                                    "Alternative name": "CSOM",
+                                    "Definition": "Otitis media with otorrhoea through a perforated eardrum for at least 6 weeks",
+                                    "Signs": ["OM symptoms", "Otorrhoea"]
+                                },
+                                {
+                                    "Name": "Adhesive otitis media",
+                                    "Definition": "Otitis media where the retracted ear drum becomes stuck to the ossicles"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Perforated eardrum",
+                            "Signs": ["Conductive hearing loss", "Tinnitus", "Ear pain", "Vertigo", "Otoscopy -> visible middle ear"],
+                            "Cause": ["Otitis media", "Trauma", "Overpressure"],
+                            "Therapy": ["Self-limiting: weeks to months", "Intervention: Recurrent episodes -> Tympanoplasty"]
+                        },
+                        {
+                            "Name": "Mastoiditis",
+                            "Definition": "Infection of the mucosal lining of the mastoid antrum",
+                            "Cause": ["Otitis media"],
+                            "Signs": ["Retroaurical pain", "Retroaurical edema", "Fever", "Severe -> Otorrhoea"],
+                            "Therapy": ["Medication: Ceftriaxone", "Non-responsive to medication -> Tympanostomy tube"],
+                            "Complications": ["Labyrinthitis", "Bell's palsy", "Meningitis"]
+                        },
+                        {
+                            "Name": "Otosclerosis",
+                            "Alternative name": "Otospongiosis",
+                            "Definition": "Hardening of the stapes secondary to remodeling of the bony labyrinth",
+                            "Signs": ["Otoscopy -> Schwartz' sign", "Conductive hearing loss", "Audiometry -> Carhart's notch (2kHz, 15 dB), low-frequency hearing loss", "Tympanometry -> Absent auditory reflex", "Tinnitus"],
+                            "Cause": ["Genetic", "Measles infection"]
+                        },
+                        {
+                            "Name": "Cholesteatoma",
+                            "Definition": "Destructive and expanding growth of keratinising squamous epithelium in the middle ear",
+                            "Signs": ["Otorrhoea", "Conductive hearing loss", "Otalgia", "Tinnitus", "CT -> Visible ingrowth"],
+                            "Therapy": ["Intervention: mastoidectomy"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Inner ear diseases",
+                    "Division": [
+                        {
+                            "Name": "Primary hearing-loss conditions",
+                            "Division": [
+                                {
+                                    "Name": "Presbyacusis",
+                                    "Alternative name": "Age-related hearing loss",
+                                    "Signs": ["Reduced otoacoustic emission", "Sensorineural hearing loss", "Audiogram -> High-frequency hearing loss", "Decreased cocktail party effect", "Hyperacusis", "Tinnitus", "Decreased sensitivity to sibilants and fricatives"],
+                                    "Causes": ["Genetic", "Sociocusis", "Nosocusis"],
+                                    "Definition": "Hearing-loss caused by degeneration of hair cells in the organ of Corti, the spiral ganglion, atrophy of the endolymph-producing striae vasculares in teh cochlea and stiffening of the basilar membrane",
+                                    "Therapy": ["Intervention: Hearing aids"]
+                                },
+                                {
+                                    "Name": "Noise-induced hearing loss",
+                                    "Signs": ["Reduced otoacoustic emission", "Reduced cocktail effect", "Clarity loss in sibilants", "Tinnitus", "Otalgia", "Hyperacusis", "Audiometry -> Notch around 4000 Hz"],
+                                    "Definition": ["Hearing-loss caused by damaged hair cells and inflammation of the inner ear and synaptic damages by excitotoxicity"],
+                                    "Causes": ["Short exposure to sound >120 dB", "Long-term exposure to sound >85 dB"],
+                                    "Therapy": ["Acute acoustic trauma -> Hyperbaric oxygen therapy + corticosteroids", "Chronic NIHL -> Hearing aids"]
+                                },
+                                {
+                                    "Name": "Auditory neuropathy",
+                                    "Cause": ["Genetic"],
+                                    "Signs": ["Sensorineural hearing loss", "Normal otoacoustic emissions", "Reduced auditory brainstem response"]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Primary vertigo conditions",
+                            "Division": [
+                                {
+                                    "Name": "Benign paroxysmal positional vertigo",
+                                    "Alternative name": "BPPV",
+                                    "Description": "Otolith from the utricle moving around in the semicircular canals, causing positional vertigo",
+                                    "Signs": ["Vertigo on positional change", "Torsional nystagmus towards the affected ear"],
+                                    "Therapy": ["Intervention: Epley manoeuvre"]
+                                },
+                                {
+                                    "Name": "Labyrinthitis",
+                                    "Definition": "Inflammation of the labyrinth",
+                                    "Signs": ["Consistent vertigo and nystagmus", "Tinnitus", "Otalgia", "Possibly upper respiratory infection prior"],
+                                    "Therapy": ["Self-limiting in weeks", "Medication: Antihistamines (symptom suppression)", "Intervention: Gaze stability exercises, Brandt-Daroff exercises"]
+                                },
+                                {
+                                    "Name": "Vestibular neuronitis",
+                                    "Definition": "Inflammation of the vestibular nerve",
+                                    "Signs": ["Consistent vertigo and nystagmus", "Tinnitus", "Otalgia", "Possibly upper respiratory infection prior"],
+                                    "Therapy": ["Self-limiting in weeks", "Medication: Antihistamines (symptom suppression)", "Intervention: Gaze stability exercises, Brandt-Daroff exercises"]
+                                },
+                                {
+                                    "Name": "Ménière's disease",
+                                    "Signs": ["Recurrent episodes of vertigo for 20 minutes to a few hours", "Fluctuating sensorimotor hearing loss and tinnitus", "Headache", "Drop attacks", "Audiometry -> low-to-medium frequency hearing loss during or after an episode"],
+                                    "Definition": "Recurrent vertigo associated with endolymphatic hydrops",
+                                    "Therapy": ["Medication: Chloortalidone", "Advice: Reduce sodium intake and caffeine", "Surgery -> Endolymphatic sac decompression"],
+                                    "Complications": ["Bilateral Ménière's disease in 30%"]
+                                },
+                                {
+                                    "Name": "Endolymphatic hydrops",
+                                    "Signs": ["Fullness in the ears", "Hearing loss", "Tinnitus", "Balance problems"],
+                                    "Causes": ["Head trauma", "Infection", "Degeneration"],
+                                    "Therapy": ["Advice: low salt, low suger, low caffeine, stay hydrated", "Medication: chloortalidone"],
+                                    "Complications": ["Ménière's disease"]
+                                },
+                                {
+                                    "Name": "Labyrinthine fistula",
+                                    "Alternative name": "Perilymph fistula",
+                                    "Definition": "Abnormal connection between the inner and middle ear by a rupture of the round or oval window",
+                                    "Signs": ["Aural fullness", "Hearing loss", "Tinnitus", "Dizziness", "Positive explorative tympanostomy"],
+                                    "Cause": ["Excessive pressure changes", "Extremely loud noise"],
+                                    "Therapy": ["Advice: Bed rest, avoid changes in intracranial pressure"]
+                                }                                
+                            ]
+                        },
+                        {
+                            "Name": "Vestibular schwannoma",
+                            "Alternative name": "Acoustic neuroma",
+                            "Definition": "Benign tumour which forms on vestibulocochlear nerve",
+                            "Signs": ["Gradual, single-sided sensorineural hearing loss", "Decreased Auditoyr Brainstem Response", "CT -> Visible tumour"],
+                            "Therapy": ["Surgery -> Tumour removal"]
+                        }                        
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Rhinological conditions",
+            "Division": [
+                {
+                    "Name": "Sinusitis",
+                    "Alternative name": "Rhinosinusitis",
+                    "Definition": "Inflammation of the mucous membranes lining the sinuses",
+                    "Signs": ["Headache", "Facial pain", "Dull ache over the sinuses", "Worsening when bending over, lying down or Valsalva", "Thick, green nasal discharge"],
+                    "Therapy": ["Advice: rest and hydrate to thin the mucous", "Intervention: Steambath", "Doesn't resolve in 10 days -> Augmentin"],
+                    "Subconditions": [
+                        {
+                            "Name": "Acute sinusitis",
+                            "Definition": "Sinusitis precipitated by an upper respiratory tract infection",
+                            "Pathogen": ["S. Pneumoniae", "H. Influenzae", "M. Catarrhalis"],
+                            "Prognosis": ["Viral sinusitis -> Self limiting in two weeks"]
+                        },
+                        {
+                            "Name": "Chronic sinusitis",
+                            "Definition": "Sinusitis lasting longer than 12 weeks"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Nasal polyps",
+                    "Signs": ["Nasal endoscopy -> Visible polyps", "Nasal congestion", "Anosmia", "Thick nasal discharge", "Facial pressure", "Nasal speech", "Mouth breathing"],
+                    "Complications": ["Sinusitis"],
+                    "Cause": ["Cystic fibrosis"],
+                    "Therapy": ["Surgery: Endoscopic sinus surgery"],
+                    "Epidemiology": ["40%", "people with CF"],
+                    "Subconditions": [
+                        {
+                            "Name": "Ethmoid polyps",
+                            "Definition": "Nasal polyps originating in the ethmoid sinuses",
+                            "Epidemiology": ["95%", "all nasal polyps"]
+                        },
+                        {
+                            "Name": "Antrochoanal polyps",
+                            "Definition": "Nasal polyps originating in the maxillary sinuses",
+                            "Epidemiology": ["5%", "all nasal polyps"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Nasal septum deviation",
+                    "Epidemiology": ["80%", "general population"],
+                    "Signs": ["Sinusitis", "Sleep apnea", "Snoring", "Sneezing", "Facial pain", "Epistaxis", "Mouth breathing", "Dyspnea", "Anosmia"],
+                    "Therapy": ["Surgery -> Septoplasty"]
+                },
+                {
+                    "Name": "Rhinitis",
+                    "Alternative name": "Coryza",
+                    "Signs": ["Nasal congestion", "Rhinorrhoea", "Sneezing", "Post-nasal drip"],
+                    "Subconditions": [
+                        {
+                            "Name": "Infectious rhinitis"
+                        },
+                        {
+                            "Name": "Non-infectious non-allergic rhinitis"
+                        },
+                        {
+                            "Name": "Allergic rhinitis",
+                            "Epidemiology": ["20%", "general adult population"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Empty nose syndrome",
+                    "Definition": "Definition of suffocation despite a free airway"
+                },
+                {
+                    "Name": "Epistaxis",
+                    "Alternative name": "Nosebleed",
+                    "Epidemiology": ["60%", "general population, at least once in their life"],
+                    "Therapy": ["Advice: direct pressure", "Medication: tranexaminic acid", "Intervention: Nasal packing, silver nitrate cauterisation, intra-arterial embolisation"],
+                    "Subconditions": [
+                        {
+                            "Name": "Anterior epistaxis",
+                            "Definition": "Bleeding from Kiesselbach's plexus"
+                        },
+                        {
+                            "Name": "Posterior epistaxis",
+                            "Definition": "Bleeding from Woodruff's plexus"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Laryngological conditions",
+            "Division": [
+                {
+                    "Name": "Vocal fold nodules",
+                    "Signs": ["Dysphonia", "Breathiness of voice", "Reduced vocal range", "Laryngeal endoscopy -> visible nodules"],
+                    "Definition": "Growths on the vocal chords due to overuse or misuse",
+                    "Prognossis": ["Regression under non-surgical therapy"],
+                    "Therapy": ["Intervention: behavioural voice therapy", "Therapy unresponsive -> Surgery: laryngeal microsurgery"]
+                },
+                {
+                    "Name": "Vocal fold cysts",
+                    "Definition": "Growths in the vocal cords due to overuse or misuse",
+                    "Therapy": ["Surgery: Marsupialisation of the cyst, followed by vocal rest"],
+                    "Subconditions": [
+                        {
+                            "Name": "Sub-epithelial cysts",
+                            "Alternative name": "Mucous retention cysts",
+                            "Definition": "Cyst in the upper lamina propria of the vocal cords, not disrupting the mucosal wave",
+                            "Signs": ["Reduced vocal range", "Pain near the larynx"]
+                        },
+                        {
+                            "Name": "Ligament cysts",
+                            "Alternative name": "Epidermoid cysts",
+                            "Definition": "Cyst in the deep layers of the lamina propria of the vocal cords, disrupting the mucosal wave",
+                            "Signs": ["Dysphonia", "Fatigue when speaking", "Variations in pitch when speaking", "Reduced vocal range", "Pain near the larynx"]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Spasmodic dysphonia",
+                    "Alternative name": "Laryngeal dystonia",
+                    "Signs": ["Gradual onset", "Breaks in phonation", "Vocal tremor"],
+                    "Therapy": ["Medication: Botox injections"]
+                },
+                {
+                    "Name": "Laryngopharyngeal reflux",
+                    "Definition": "Retrograde flow of gastric contents into the larynx and pharynx",
+                    "Signs": ["Dysphonia", "Postnasal drip", "Sore throat", "Dysphagia", "Indigestion"],
+                    "Complications": ["Muscle tension dysphonia"],
+                    "Epidemiology": ["50%", "patients with voice disorders"],
+                    "Therapy": "Proton-pump inhibitors"
+                },
+                {
+                    "Name": "Laryngitis",
+                    "Definition": "Inflammation of the larynx",
+                    "Signs": ["Dysphonia", "Fever", "Globus pharyngeus", "Cough", "Pain in front of neck", "Dysphagia"],
+                    "Therapy": ["Self-limiting in weeks"]
+                },
+                {
+                    "Name": "Reinke's edema",
+                    "Definition": "Swelling of the vocal cords seen in smokers",
+                    "Risk factors": ["Stroboscopy -> abnormal waves", "Smoking at 97% of patients", "Gastric reflux", "Hypothyroidism"],
+                    "Signs": ["Dysphonia", "Deepening of the voice", "Decreased vocal range", "Dyspnoea"],
+                    "Therapy": ["Advice: stop smoking", "Surgery: Laser disection of the oedema"]
+                }
+            ]
+        }
+    ]
+}

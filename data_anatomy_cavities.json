@@ -1,0 +1,326 @@
+{
+    "Name": "Tracts of the body",
+    "Division": [
+        {
+            "Name": "Auditory tract",
+            "Division": [
+                {
+                    "Name": "Outer ear",
+                    "Division": [
+                        {
+                            "Name": "Auricle",
+                            "Alternative name": "Pinna"
+                        },
+                        {
+                            "Name": "External auditory meatus",
+                            "Alternative name": "Ear canal",
+                            "Outlet": ["Eardrum", "Middle ear"],
+                            "Subdivision": [
+                                {
+                                    "Name": "Cartilaginous part"
+                                },
+                                {
+                                    "Name": "Fibrous part"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Middle ear",
+                    "Inlet": ["Eardrum", "Outer ear"],
+                    "Outlet": [["Oval window", "Inner ear"], ["Auditory tube", "Nasopharynx"]],
+                    "Subdivision": [
+                        {
+                            "Name": "Tympanic cavity"
+                        },
+                        {
+                            "Name": "Auditory tube",
+                            "Alternative name": "Eustachian tube"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Inner ear",
+                    "Subdivision": [
+                        {
+                            "Name": "Bony labyrinth",
+                            "Subdivision": [
+                                {
+                                    "Name": "Vestibulum",
+                                    "Inlet": ["Oval window", "Middle ear"],
+                                    "Structures": [
+                                        {
+                                            "Name": "Ductus endolymphaticus"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Semicircular canals",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Horizontal semicircular canal",
+                                            "Inlet": ["Horizontal ampulla", "Vestibulum"],
+                                            "Outlet": ["Horizontal ampulla", "Vestibulum"],
+                                            "Function": ["Detects motion", "Transverse plane"]
+                                        },
+                                        {
+                                            "Name": "Superior semicircular canal",
+                                            "Inlet": ["Superior ampulla", "Vestibulum"],
+                                            "Outlet": ["Crus commune", "Vestibulum"],
+                                            "Function": ["Detects motion", "Sagittal plane"]
+                                        },
+                                        {
+                                            "Name": "Posterior semicircular canal",
+                                            "Inlet": ["Posterior ampulla", "Vestibulum"],
+                                            "Outlet": ["Crus commune", "Vestibulum"],
+                                            "Function": ["Detects motion", "Coronal plane"]
+                                        }
+                                    ],
+                                    "Microanatomy": [
+                                        {
+                                            "Name": "Cupula",
+                                            "Note": "This is a gelatinous cap with the same specific gravity as the surrounding endolymph, lying in the ampulla"
+                                        },
+                                        {
+                                            "Name": "Crista ampullaris",
+                                            "Note": "The crista ampullaris is a mound in the ampulla covered in stereocilia. When the endolymph in the canals, fluid lags behind, drags the cupula and moves the hair cells"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Cochlea",
+                                    "Inlet": ["Helicotrema", "Vestibulum"],
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Vestibular duct",
+                                            "Alternative name": "Scala vestibuli"
+                                        },
+                                        {
+                                            "Name": "Tympanic duct",
+                                            "Alternative name": "Scala tympani",
+                                            "Outlet": ["Round window", "Middle ear"]
+                                        },
+                                        {
+                                            "Name": "Cochlear duct",
+                                            "Alternative name": "Scala media"
+                                        }
+                                    ],
+                                    "Microanatomy": [
+                                        {
+                                            "Name": "Organ of Corti",
+                                            "Note": "This organ, covered in microcillia, picks up vibrations to induce hearing"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Membranous labyrinth",
+                            "Subdivision": [
+                                {
+                                    "Name": "Semicircular ducts"
+                                },
+                                {
+                                    "Name": "Cochlear duct"
+                                },
+                                {
+                                    "Name": "Otolith organs",
+                                    "Subdivision": [
+                                        {
+                                            "Name": "Utricle",
+                                            "Inlet": ["Ampullae", "Semicircular ducts"],
+                                            "Outlet": ["Ductus utriculosaccularis", "Ductus endolymphaticus"],
+                                            "Function": [["Detects motion", "Horizontal acceleration"], ["Detects gravity"]],
+                                            "Microanatomy": [
+                                                {
+                                                    "Name": "Otolithic membrane",
+                                                    "Subdivision": [
+                                                        {
+                                                            "Name": "Otoconia"
+                                                        },
+                                                        {
+                                                            "Name": "Hair cells",
+                                                            "Subdivision": [
+                                                                {
+                                                                    "Name": "Stereocillia"
+                                                                },
+                                                                {
+                                                                    "Name": "Kinocilium"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "Saccule",
+                                            "Inlet": ["Ductus endolymphaticus", "Saccus endolymphaticus"],
+                                            "Outlet": ["Canalis reuniens of Hensen", "Ductus cochlearis"],
+                                            "Function": [["Detects motion", "Vertical acceleration"], ["Detects gravity"]]
+                                        }
+                                    ]
+                                }                                
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Respiratory tract",
+            "Division": [
+                {
+                    "Name": "Upper respiratory tract",
+                    "Subdivision": [
+                        {
+                            "Name": "Nasal cavity",
+                            "Inlet": ["Nostrils", "Outside"],
+                            "Outlet": ["Choanae", "Nasopharynx"],
+                            "Subdivision": [
+                                {
+                                    "Name": "Nasal vestibule"
+                                },
+                                {
+                                    "Name": "Respiratory segment",
+                                    "Structures": [
+                                        {
+                                            "Name": "Nasal conchae",
+                                            "Subdivision": [
+                                                {
+                                                    "Name": "Superior conchae"
+                                                },
+                                                {
+                                                    "Name": "Middle conchae"
+                                                },
+                                                {
+                                                    "Name": "Inferior conchae"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Olfactory segment",
+                                    "Innervation": "N. Olfactorius"
+                                },
+                                {
+                                    "Name": "Nasal septum",
+                                    "Innervation": "N. Ethmoidalis anterior",
+                                    "Structures": [
+                                        {
+                                            "Name": "Vomeronasal organ",
+                                            "Alternative name":"Jacobson's organ"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Oral cavity"
+                        },
+                        {
+                            "Name": "Pharynx",
+                            "Subdivision": [
+                                {
+                                    "Name": "Nasopharynx",
+                                    "Inlet": [["Chonae", "Nasal cavity"], ["Torus tubarius", "Auditory tube"]],
+                                    "Outlet": ["Soft palate", "Oropharynx"],
+                                    "Structures": [
+                                        {
+                                            "Name": "Adenoids",
+                                            "Alternative name": "Pharyngeal tonsils",
+                                            "Location": ["Posterior wall", "Nasopharynx"]
+                                        },
+                                        {
+                                            "Name": "Waldeyer's ring"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Oropharynx",
+                                    "Inlet": ["Isthmus faucium", "Oral cavity"],
+                                    "Outlet": ["Epiglottis", "Laryngopharynx"],
+                                    "Structures": [
+                                        {
+                                            "Name": "Palatine tonsils"                                            
+                                        },
+                                        {
+                                            "Name": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Laryngopharynx",
+                                    "Alternative name": "Hypopharynx",
+                                    "Outlet": [["Laryngeal inlet", "Larynx"], ["M. Constrictor pharyngis inferior", "Oesophagus"]],
+                                    "Subdivisions": [
+                                        {
+                                            "Name": "Pyriform sinus"
+                                        },
+                                        {
+                                            "Name": "Precricoid area"
+                                        },
+                                        {
+                                            "Name": "Postcricoid area"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "Larynx",
+                            "Alternative name": "Voice box",
+                            "Inlet": ["Laryngeal inlet", "Laryngopharynx"],
+                            "Subdivision": [
+                                {
+                                    "Name": "Laryngeal vestibule",
+                                    "Structures": [
+                                        {
+                                            "Name": "Vestibular folds",
+                                            "Alternative name": "False vocal cords"
+                                        },
+                                        {
+                                            "Name": "Laryngeal ventricles",
+                                            "Alternative name": "Morgagni's sinus"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Glottis",
+                                    "Structures": [
+                                        {
+                                            "Name": "Vocal folds",
+                                            "Alternative name": "Vocal cords"
+                                        },
+                                        {
+                                            "Name": "Rima glottidis"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name": "Infraglottic cavity"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lower respiratory tract",
+                    "Subdivision": [
+                        {
+                            "Name": "Trachea"
+                        },
+                        {
+                            "Name": "Primary bronchi"
+                        },
+                        {
+                            "Name": "Lungs"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

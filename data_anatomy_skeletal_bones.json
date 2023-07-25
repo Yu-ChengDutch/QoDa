@@ -83,10 +83,12 @@
                         "Name": "Cervical spine",
                         "Division": [
                             {
-                                "Name": "Atlas"
+                                "Name": "C1",
+                                "Alternative name": "Atlas"
                             },
                             {
-                                "Name": "Axis"
+                                "Name": "C2",
+                                "Alternative name": ["Epistropheus", "Axis"]
                             },
                             {
                                 "Name": "C3"
