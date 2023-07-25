@@ -28,7 +28,8 @@ let question_texts = {
     "Epidemiology": ["How much percentage of <", "> has <", ">?"],
     "Signs": ["What disease is hallmarked by the following symptoms <", ">?"],
     "Pathogen": ["Infectious diseases are caused by pathogens. By what pathogen is <", "> caused?"],
-    "Definition": ["Guess what disease is defined like <", ">?"]
+    "Definition": ["Guess what disease is defined like <", ">?"],
+    "Complications": ["Of what conditions are <", "> known complications?"]
 };
 
 let possible_questions = {};
