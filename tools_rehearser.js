@@ -311,6 +311,10 @@ function rand(length){
 
     min = Math.floor(Math.random() * (length - 1));
 
+    console.log(min)
+    console.log(Math.random() * (length - min) + min)
+    
+
 
     return Math.random() * (length - min) + min;
 }
