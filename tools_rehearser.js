@@ -240,6 +240,7 @@ function chooseQuestions(questions){
 
         /* Assign to current_type a random question type */ 
 
+        console.log("Determining type...")
         current_type = questions[rand(questions.length)];
 
         /* Assign to current array all possible questions of that type */
@@ -248,6 +249,7 @@ function chooseQuestions(questions){
 
         key_array = Object.keys(current_array);
 
+        console.log("-> Determining question...")
         answer = key_array[rand(key_array.length)];
 
         // TODO: CREATE PROPER CHECK FOR DUPLICATES
@@ -308,7 +310,7 @@ function setQuestion(question_title){
 }
 
 function rand(length){
-    
+
     min = Math.ceil(Math.random() * ((length - 1) + 1));
     max = Math.floor(Math.random() * (length - min + 1)) + min;
 
