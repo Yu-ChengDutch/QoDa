@@ -453,63 +453,68 @@ function nextQuestion(given_answer) {
     let temp_type = ""
     let temp_answer = ""
 
-    if (title_text.includes(".1")) {
+    if (title_text.includes(".")) {
 
         console.log("Already recursive")
 
     } else {
 
-        for (var key in side_questions) {
+        arr = [side_questions, possible_questions]
 
-            console.log("Analysing: " + key);
+        for (var curr_arr in arr) {
 
-            new_dict = side_questions[key]
-            temp_type = key
+            for (var key in curr_arr) {
 
-            console.log(new_dict)
+                console.log("Analysing: " + key);
 
-            for (var key in new_dict) {
+                new_dict = side_questions[key]
+                temp_type = key
 
-                // console.log(new_dict[key])
-                // console.log(given_answer)
+                console.log(new_dict)
 
-                if (new_dict[key].includes(given_answer)) {
-                    
-                    console.log("Found a match!")
-                    console.log(temp_type)
+                for (var key in new_dict) {
 
-                    temp_answer = key
+                    // console.log(new_dict[key])
+                    // console.log(given_answer)
 
-                    console.log(temp_answer)
+                    if (new_dict[key].includes(given_answer)) {
+                        
+                        console.log("Found a match!")
+                        console.log(temp_type)
 
-                    for (var key in final_questions) {
+                        temp_answer = key
 
-                        if (key === title_text) {
+                        console.log(temp_answer)
 
-                            temp_string = key + ".1"
+                        for (var key in final_questions) {
 
-                            let question = question_texts[temp_type][0] + given_answer + question_texts[temp_type][1];
+                            if (key === title_text) {
 
-                            temp_dict[key] = final_questions[key]
-                            temp_dict[temp_string] = [temp_answer, question]
+                                temp_string = key + ".1"
 
-                        } else {
+                                let question = question_texts[temp_type][0] + given_answer + question_texts[temp_type][1];
 
-                            temp_dict[key] = final_questions[key]
+                                temp_dict[key] = final_questions[key]
+                                temp_dict[temp_string] = [temp_answer, question]
+
+                            } else {
+
+                                temp_dict[key] = final_questions[key]
+
+                            }
+                            
 
                         }
-                        
+
+                        final_questions = temp_dict
+
+                        console.log(final_questions)
 
                     }
-
-                    final_questions = temp_dict
-
-                    console.log(final_questions)
 
                 }
 
             }
-
         }
 
     }
