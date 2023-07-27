@@ -242,6 +242,7 @@ function chooseQuestions(questions){
 
         console.log("Determining type...")
         current_type = questions[rand(questions.length)];
+        console.log("-> Type is: " + current_type)
 
         /* Assign to current array all possible questions of that type */
 
@@ -251,6 +252,7 @@ function chooseQuestions(questions){
 
         console.log("-> Determining question...")
         answer = key_array[rand(key_array.length)];
+        console.log("-> Question is: " + answer)
 
         // TODO: CREATE PROPER CHECK FOR DUPLICATES
         
