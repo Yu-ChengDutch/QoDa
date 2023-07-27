@@ -312,7 +312,7 @@ function rand(length){
     min = Math.floor(Math.random() * (length - 1));
 
 
-    return Math.floor(Math.random() * (length - min) + min);
+    return Math.random() * (length - min) + min;
 }
 
 function checkAnswer(){
