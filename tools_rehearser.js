@@ -308,8 +308,8 @@ function setQuestion(question_title){
 }
 
 function rand(length){
-
-    min = Math.floor(Math.random() * (length - (length - 1) + 1)) + (length - 1);
+    
+    min = Math.ceil(Math.random() * ((length - 1) + 1));
     max = Math.floor(Math.random() * (length - min + 1)) + min;
 
     console.log(min)
