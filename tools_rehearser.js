@@ -46,16 +46,16 @@ let databases = {
     "Pathology - ENT": {"Database": './data_pathology_ENT.json', "Iterators": ["Division"], "Questions": ["Definition", "Signs", "Subconditions", "Complications"]},//"Epidemiology", "Alternative name", 
     "Pathology - Ophthalmology": {"Database": './data_pathology_ophtha.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Definition", "Signs", "Subconditions"]}, //"Epidemiology", "Alternative name"
     "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Pathogen", "Signs", "Subconditions"]}, //"Epidemiology", "Alternative name", "Dutch name"
-    "Pharmacology - N": {"Database": './data_pharmacology_n.json', "Questions": ["Subclass", "Brands"]},
-    "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Questions": ["Subclass", "Brands", "Alternative name", "Method"]},
-    "Pharmacology - J": {"Database": './data_pharmacology_j.json', "Questions": ["Subclass", "Brands", "Method"]},
-    "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Questions": ["Division", "Parts", "Alternative name"]},
-    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Questions": ["Branches", "Alternative name", "Parts", "Gender", "Continues", "Branches at", "Branches to"]},
-    "Nervous System - Peripheral nerves": {"Database": './data_anatomy_nervous_peripheral_nerves.json', "Questions": ["Division", "Branches", "Continues", "Alternative name"]},
-    "Muscular System - Muscles": {"Database": './data_anatomy_muscular_muscles.json', "Questions": ["Division", "Origin", "Insertion"]},
-    "Skeletal System - Joints": {"Database": './data_anatomy_skeletal_joints.json', "Questions": ["Division", "From", "To", "Joint type"]},
-    "Pathogens - Bacteria": {"Database": './data_metamedica_pathogens_bacteria.json', "Questions": ["Division", "Level", "Gram", "Shape"]},
-    "Reproductive System - Female": {"Database": './data_anatomy_reproductive_female.json', "Questions": ["Division", "Nerve", "Artery", "Lymph"]}
+    "Pharmacology - N": {"Database": './data_pharmacology_n.json', "Iterators": [], "Questions": ["Subclass", "Brands"]},
+    "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Iterators": [], "Questions": ["Subclass", "Brands", "Alternative name", "Method"]},
+    "Pharmacology - J": {"Database": './data_pharmacology_j.json', "Iterators": [], "Questions": ["Subclass", "Brands", "Method"]},
+    "Skeletal System - Bones": {"Database": './data_anatomy_skeletal_bones.json', "Iterators": ["Division"], "Questions": ["Parts", "Alternative name"]},
+    "Circulatory System - Arteries": {"Database": './data_anatomy_circulatory_arteries.json', "Iterators": [], "Questions": ["Branches", "Alternative name", "Parts", "Gender", "Continues", "Branches at", "Branches to"]},
+    "Nervous System - Peripheral nerves": {"Database": './data_anatomy_nervous_peripheral_nerves.json', "Iterators": ["Division"], "Questions": ["Branches", "Continues", "Alternative name"]},
+    "Muscular System - Muscles": {"Database": './data_anatomy_muscular_muscles.json', "Iterators": [], "Questions": ["Division", "Origin", "Insertion"]},
+    "Skeletal System - Joints": {"Database": './data_anatomy_skeletal_joints.json', "Iterators": [], "Questions": ["Division", "From", "To", "Joint type"]},
+    "Pathogens - Bacteria": {"Database": './data_metamedica_pathogens_bacteria.json', "Iterators": [], "Questions": ["Division", "Level", "Gram", "Shape"]},
+    "Reproductive System - Female": {"Database": './data_anatomy_reproductive_female.json', "Iterators": [], "Questions": ["Division", "Nerve", "Artery", "Lymph"]}
 };
 
 /* The Set-up function
@@ -121,7 +121,7 @@ function setUp(){
                 })
                 .then(function(side_data){
                     console.log("- > Accesing file: " + side_data.Name);
-                    createQuestions(side_data, databases[Object.keys(databases)[i]]["Questions"], side_questions);
+                    createQuestions(side_data, databases[Object.keys(databases)[i]]["Iterators"], databases[Object.keys(databases)[i]]["Questions"], side_questions);
                 })
     
                 console.log("- > Generated the following side database: ");
@@ -144,6 +144,8 @@ function setUp(){
 
 function createQuestions(data, iterators, questions, output){
     
+
+
     // console.log("Starting analysis:")
 
     let traversable = [data]
