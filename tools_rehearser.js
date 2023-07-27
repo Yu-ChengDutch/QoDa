@@ -364,7 +364,7 @@ function checkAnswer(){
         right_answer = temp_arr;
 
         if (right_answer.length == 0) {
-            nextQuestion()
+            nextQuestion(given_answer);
         } else if (right_answer.includes(given_answer)) {
 
             console.log("Right answer in array found")
@@ -398,7 +398,7 @@ function checkAnswer(){
 
             } else {
 
-                nextQuestion();
+                nextQuestion(given_answer);
 
             }
 
@@ -415,7 +415,7 @@ function checkAnswer(){
 
     } else if (given_answer == right_answer) {
 
-        nextQuestion();
+        nextQuestion(given_answer);
 
     } else {
 
@@ -431,7 +431,7 @@ function checkAnswer(){
 
 };
 
-function nextQuestion() {
+function nextQuestion(given_answer) {
 
     const title_text = document.getElementById('question-title').innerText;
 
