@@ -80,7 +80,8 @@
                             "Alternative name": "Otospongiosis",
                             "Definition": "Hardening of the stapes secondary to remodeling of the bony labyrinth",
                             "Signs": ["Otoscopy -> Schwartz' sign", "Conductive hearing loss", "Audiometry -> Carhart's notch (2kHz, 15 dB), low-frequency hearing loss", "Tympanometry -> Absent auditory reflex", "Tinnitus"],
-                            "Cause": ["Genetic", "Measles infection"]
+                            "Cause": ["Genetic", "Measles infection"],
+                            "Therapy": ["Surgery: Stapedotomia"]
                         },
                         {
                             "Name": "Cholesteatoma",
@@ -125,7 +126,7 @@
                                     "Name": "Benign paroxysmal positional vertigo",
                                     "Alternative name": "BPPV",
                                     "Description": "Otolith from the utricle moving around in the semicircular canals, causing positional vertigo",
-                                    "Signs": ["Vertigo on positional change", "Torsional nystagmus towards the affected ear"],
+                                    "Signs": ["Vertigo on positional change <1 min", "Torsional nystagmus towards the affected ear"],
                                     "Therapy": ["Intervention: Epley manoeuvre"]
                                 },
                                 {
@@ -317,6 +318,16 @@
                     "Risk factors": ["Stroboscopy -> abnormal waves", "Smoking at 97% of patients", "Gastric reflux", "Hypothyroidism"],
                     "Signs": ["Dysphonia", "Deepening of the voice", "Decreased vocal range", "Dyspnoea"],
                     "Therapy": ["Advice: stop smoking", "Surgery: Laser disection of the oedema"]
+                }
+            ]
+        },
+        {
+            "Name": "Miscellaneous conditions",
+            "Division": [
+                {
+                    "Name": "Trismus",
+                    "Alternative name": "Lockjaw",
+                    "Signs": ["Painful opening of the mouth due to spasm", "Often preced by pericoronitis, peritonsillar abscess etc."]
                 }
             ]
         }
