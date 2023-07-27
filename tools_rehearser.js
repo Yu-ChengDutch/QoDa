@@ -459,62 +459,57 @@ function nextQuestion(given_answer) {
 
     } else {
 
-        arr = [side_questions, possible_questions]
+        for (var key in side_questions) {
 
-        for (var curr_arr in arr) {
+            console.log("Analysing: " + key);
 
-            for (var key in curr_arr) {
+            new_dict = side_questions[key]
+            temp_type = key
 
-                console.log("Analysing: " + key);
+            console.log(new_dict)
 
-                new_dict = side_questions[key]
-                temp_type = key
+            for (var key in new_dict) {
 
-                console.log(new_dict)
+                // console.log(new_dict[key])
+                // console.log(given_answer)
 
-                for (var key in new_dict) {
+                if (new_dict[key].includes(given_answer)) {
+                    
+                    console.log("Found a match!")
+                    console.log(temp_type)
 
-                    // console.log(new_dict[key])
-                    // console.log(given_answer)
+                    temp_answer = key
 
-                    if (new_dict[key].includes(given_answer)) {
-                        
-                        console.log("Found a match!")
-                        console.log(temp_type)
+                    console.log(temp_answer)
 
-                        temp_answer = key
+                    for (var key in final_questions) {
 
-                        console.log(temp_answer)
+                        if (key === title_text) {
 
-                        for (var key in final_questions) {
+                            temp_string = key + ".1"
 
-                            if (key === title_text) {
+                            let question = question_texts[temp_type][0] + given_answer + question_texts[temp_type][1];
 
-                                temp_string = key + ".1"
+                            temp_dict[key] = final_questions[key]
+                            temp_dict[temp_string] = [temp_answer, question]
 
-                                let question = question_texts[temp_type][0] + given_answer + question_texts[temp_type][1];
+                        } else {
 
-                                temp_dict[key] = final_questions[key]
-                                temp_dict[temp_string] = [temp_answer, question]
-
-                            } else {
-
-                                temp_dict[key] = final_questions[key]
-
-                            }
-                            
+                            temp_dict[key] = final_questions[key]
 
                         }
-
-                        final_questions = temp_dict
-
-                        console.log(final_questions)
+                        
 
                     }
+
+                    final_questions = temp_dict
+
+                    console.log(final_questions)
 
                 }
 
             }
+
         }
 
     }
