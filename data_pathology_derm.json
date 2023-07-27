@@ -2,6 +2,27 @@
     "Name": "Dermatoses",
     "Subtypes": [
         {
+            "Name": "Allergic reactions",
+            "Subconditions": [
+                {
+                    "Name": "Type I allergic reaction",
+                    "Definition": "IgE-allergy, with an anaphylactic reaction being an extreme example"
+                },
+                {
+                    "Name": "Type II allergic reaction",
+                    "Definition": "Cytotoxic reaciton; IgG mediated allergic reaction"
+                },
+                {
+                    "Name": "Type III allergic reaciton",
+                    "Definition": "Allergic reaction aimed at surface-antigens on tissues"
+                },
+                {
+                    "Name": "Type IV allergic reaction",
+                    "Definition": "Celmediated allergic reaction"
+                }
+            ]
+        },
+        {
             "Name": "Erythematous dermatoses",
             "Individual conditions": [
                 {

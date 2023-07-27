@@ -43,9 +43,9 @@ let current_database = ""
 let questions = [];
 
 let databases = {
-    "Pathology - ENT": {"Database": './data_pathology_ENT.json', "Iterators": ["Division"], "Questions": ["Definition", "Signs", "Subconditions", "Epidemiology", "Alternative name", "Complications"]},
+    "Pathology - ENT": {"Database": './data_pathology_ENT.json', "Iterators": ["Division"], "Questions": ["Definition", "Signs", "Subconditions", "Complications"]},//"Epidemiology", "Alternative name", 
     "Pathology - Ophthalmology": {"Database": './data_pathology_ophtha.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Definition", "Signs", "Subconditions"]}, //"Epidemiology", "Alternative name"
-    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Pathogen", "Signs", "Subconditions", "Epidemiology", "Alternative name", "Dutch name"]},
+    "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Pathogen", "Signs", "Subconditions"]}, //"Epidemiology", "Alternative name", "Dutch name"
     "Pharmacology - N": {"Database": './data_pharmacology_n.json', "Questions": ["Subclass", "Brands"]},
     "Pharmacology - G": {"Database": './data_pharmacology_g.json', "Questions": ["Subclass", "Brands", "Alternative name", "Method"]},
     "Pharmacology - J": {"Database": './data_pharmacology_j.json', "Questions": ["Subclass", "Brands", "Method"]},
@@ -308,7 +308,11 @@ function setQuestion(question_title){
 }
 
 function rand(length){
-    return Math.floor(Math.random() * length);
+
+    min = Math.floor(Math.random() * (length - 1));
+
+
+    return Math.floor(Math.random() * (length - min) + min);
 }
 
 function checkAnswer(){
