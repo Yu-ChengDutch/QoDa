@@ -309,14 +309,15 @@ function setQuestion(question_title){
 
 function rand(length){
 
-    min = Math.floor(Math.random() * (length - 1));
+    min = Math.floor(Math.random() * (length - (length - 1) + 1)) + (length - 1);
+    max = Math.floor(Math.random() * (length - min + 1)) + min;
 
     console.log(min)
-    console.log(Math.random() * (length - min) + min)
-    
+    console.log(max)    
+    console.log(Math.floor(Math.random() * (max - min + 1)) + min);
 
 
-    return Math.random() * (length - min) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function checkAnswer(){
