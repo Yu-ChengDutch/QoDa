@@ -286,6 +286,8 @@ function nextMnemonicQuestion() {
             new_index = 0;
         }
 
+        console.log(new_index);
+
         document.getElementById('question-description').innerText = mnemonics[new_index].Question
         document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
 
