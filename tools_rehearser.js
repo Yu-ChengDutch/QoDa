@@ -180,13 +180,17 @@ function checkMnemonicAnswer() {
     const given_answer = (textfield.value).toLowerCase();
     const correct_answer = mnemonics[correct_index].Title
 
-    if ((document.getElementById('remark-card').innerText).includes("Mnemonic")) {
+    if ((document.getElementById('remark-card').innerText).includes("mnemonic")) {
         
         console.log("- - > Checking mnemonic")
         console.log("Right answer is: " + correct_answer)
 
         if (given_answer == correct_answer.toLowerCase()) {
             console.log("- - > Correct!")
+        } else {
+            console.log("Given answer: " + given_answer);
+            console.log("Right answer: " + correct_answer);
+
         }
 
     }
