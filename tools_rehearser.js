@@ -91,10 +91,7 @@ function setUp(){
     })
     .then(function(data){
 
-        console.log("Keys are: ")
-        console.log(Object.keys(data))
-
-        if ("Name" in Object.keys(data)) {
+        if (Object.keys(data).includes("Name")) {
             console.log("- > Accesing file: " + data.Name);
 
             iterators = databases[subject_title]["Iterators"];
@@ -103,7 +100,7 @@ function setUp(){
             createQuestions(data, iterators, questions, possible_questions);
             chooseQuestions(questions);
             setQuestion("Question 1");
-        } else if ("Mnemonics" in Object.keys(data)){
+        } else if (Object.keys(data).includes("Mnemonics")){
             console.log("- > Accessing mnemonic file")
         }        
     })
