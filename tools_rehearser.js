@@ -267,20 +267,32 @@ function nextMnemonicQuestion() {
 
     resetButtons();
 
-    const correct_index = parseInt(document.getElementById('question-title').innerText);
-    const textfield = document.getElementById('text-field'); 
+    const textfield = document.getElementById('text-field');
+    textfield.value = "";
 
-    if (correct_index < (mnemonics.length - 1)) {
-        new_index = correct_index + 1;
+    indices = (document.getElementById('question-title').innerText).split('.')
+    keys = Object.keys(mnemonics[parseInt(indices[0])].Mnemonic)
+
+    if (indices.length == 1 || parseInt(indices[1]) >= (keys.length - 1)) {
+
+        if (correct_index < (mnemonics.length - 1)) {
+            new_index = correct_index + 1;
+        } else {
+            new_index = 0;
+        }
+
+        document.getElementById('question-description').innerText = mnemonics[new_index].Question
+        document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
+
     } else {
-        new_index = 0;
+
+        new_index = indices[0] + (parseInt(indices[1]) + 1)
+        document.getElementById('question-description').innerText = "What is the meaning of: " + keys[parseInt(indices[1]) + 1]
+        document.getElementById('remark-card').innerText = "Please enter the answer"
+
     }
 
     document.getElementById('question-title').innerText = new_index
-    document.getElementById('question-description').innerText = mnemonics[new_index].Question
-    document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
-
-    textfield.value = "";
 
 }
 
