@@ -160,10 +160,16 @@ function setMnemonicQuestion(database){
     console.log("- > There are a total of " + nr_q + " questions.");
     console.log("- > We're starting at " + starting_point)
 
-    document.getElementById('question-title').innerText = "Question " + (starting_point + 1)
+    document.getElementById('question-title').innerText = "Question " + (starting_point + 1) + ": Mnemonic"
     document.getElementById('question-description').innerText = database[5].Question
 
 };
+
+function checkMnemonicAnswer() {
+    if ((document.getElementById('question-title').innerText).includes("Mnemonic")) {
+        console.log("This is a mnemonic")
+    }
+}
 
 function createQuestions(data, iterators, questions, output){
     
