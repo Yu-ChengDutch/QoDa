@@ -101,7 +101,8 @@ function setUp(){
             chooseQuestions(questions);
             setQuestion("Question 1");
         } else if (Object.keys(data).includes("Mnemonics")){
-            console.log("- > Accessing mnemonic file")
+            console.log("Welcome to the mnemonics rehearser!");
+            setMnemonicQuestion(data.Mnemonics);
         }        
     })
     .then(function(){
@@ -148,6 +149,13 @@ function setUp(){
 
 /* Load the database (for now still hardcoded) */
 
+function setMnemonicQuestion(database){
+
+    nr_questions = database.length
+
+    console.log("There are a total of " + nr_questions + " questions.");
+
+};
 
 function createQuestions(data, iterators, questions, output){
     
