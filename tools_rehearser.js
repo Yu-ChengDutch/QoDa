@@ -43,6 +43,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
+    "Pathology - Geriatrics": {"Database": './data_pathology_geriatrics.json'},
     "Pathology - ENT": {"Database": './data_pathology_ENT.json', "Iterators": ["Division"], "Questions": ["Definition", "Signs", "Subconditions", "Complications"]},//"Epidemiology", "Alternative name", 
     "Pathology - Ophthalmology": {"Database": './data_pathology_ophtha.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Definition", "Signs", "Subconditions"]}, //"Epidemiology", "Alternative name"
     "Pathology - Dermatology and Venereology": {"Database": './data_pathology_derm.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Pathogen", "Signs", "Subconditions"]}, //"Epidemiology", "Alternative name", "Dutch name"
@@ -83,9 +84,6 @@ function setUp(){
 
     console.log("Fetching main DB at: " + current_database);
 
-    iterators = databases[subject_title]["Iterators"];
-    questions = databases[subject_title]["Questions"];
-
     fetch(current_database)
     .then(function(response){
         console.log("- > File found and accessed at " + current_database);
@@ -95,6 +93,10 @@ function setUp(){
 
         if ("Name" in Object.keys(data)) {
             console.log("- > Accesing file: " + data.Name);
+
+            iterators = databases[subject_title]["Iterators"];
+            questions = databases[subject_title]["Questions"];
+
             createQuestions(data, iterators, questions, possible_questions);
             chooseQuestions(questions);
             setQuestion("Question 1");
