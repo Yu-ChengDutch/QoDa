@@ -197,7 +197,13 @@ function checkMnemonicAnswer() {
             console.log("Given answer: " + given_answer);
             console.log("Right answer: " + correct_answer);
 
-            document.getElementById('remark-card').innerText = "Please repeat the mnemonic phrase again"
+            if (document.getElementById('remark-card').innerText != "Please repeat the mnemonic phrase again") {
+                document.getElementById('remark-card').innerText = "Please repeat the mnemonic phrase again";
+            } else {
+                document.getElementById('remark-card').innerText = "The right answer is: " + correct_answer;
+            }
+
+            
             textfield.value = "";
 
         }
