@@ -152,8 +152,10 @@ function setUp(){
 function setMnemonicQuestion(database){
 
     nr_questions = database.length
+    starting_point = Math.floor(Math.random() * nr_questions);
 
-    console.log("There are a total of " + nr_questions + " questions.");
+    console.log("- > There are a total of " + nr_questions + " questions.");
+    console.log("- > We're starting at " + starting_point)
 
 };
 
