@@ -216,7 +216,7 @@ function nextMnemonicQuestion() {
     const correct_index = parseInt(document.getElementById('question-title').innerText);
     const textfield = document.getElementById('text-field'); 
 
-    if (correct_index < mnemonics.length) {
+    if (correct_index < (mnemonics.length - 1)) {
         new_index = correct_index + 1;
     } else {
         new_index = 0;
