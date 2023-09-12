@@ -291,7 +291,7 @@ function nextMnemonicQuestion() {
 
         console.log("- - > Giving you a new subquestion")
 
-        new_index = indices[0] + (parseInt(indices[1]) + 1)
+        new_index = indices[0] + "." + (parseInt(indices[1]) + 1)
         document.getElementById('question-description').innerText = "What is the meaning of: " + keys[parseInt(indices[1]) + 1]
         document.getElementById('remark-card').innerText = "Please enter the answer"
 
