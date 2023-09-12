@@ -273,6 +273,8 @@ function nextMnemonicQuestion() {
     indices = (document.getElementById('question-title').innerText).split('.')
     keys = Object.keys(mnemonics[parseInt(indices[0])].Mnemonic)
 
+    console.log(keys)
+
     if (indices.length == 1 || parseInt(indices[1]) >= (keys.length - 1)) {
 
         if (correct_index < (mnemonics.length - 1)) {
@@ -285,6 +287,8 @@ function nextMnemonicQuestion() {
         document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
 
     } else {
+
+        console.log("- - > Giving you a new subquestion")
 
         new_index = indices[0] + (parseInt(indices[1]) + 1)
         document.getElementById('question-description').innerText = "What is the meaning of: " + keys[parseInt(indices[1]) + 1]
