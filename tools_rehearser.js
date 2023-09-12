@@ -278,7 +278,7 @@ function nextMnemonicQuestion() {
 
     if (indices.length == 1 || parseInt(indices[1]) >= (keys.length - 1)) {
 
-        correct_index = indices[0]
+        correct_index = parseInt(indices[0])
 
         if (correct_index < (mnemonics.length - 1)) {
             new_index = correct_index + 1;
