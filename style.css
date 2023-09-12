@@ -139,7 +139,7 @@ a:hover, a:active {
     margin-top: 2.5vh;
 }
 
-.button:hover {
+.button:active {
     background-color: lightgray;
 }
 
