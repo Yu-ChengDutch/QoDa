@@ -181,7 +181,7 @@ function checkMnemonicAnswer() {
 
     console.log(mnemonics);
 
-    const correct_answer = mnemonics[correct_index].Title
+    const correct_answer = mnemonics[correct_index].Mnemonic.Title
 
     if ((document.getElementById('remark-card').innerText).includes("mnemonic")) {
         
