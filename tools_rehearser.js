@@ -216,19 +216,54 @@ function checkMnemonicAnswer() {
 
         }
 
+    } else {
+        
+        key = (document.getElementById('question-description').innerText).split(' ').pop()
+        indices = (document.getElementById('question-title').innerText).split('.')
+
+        correct_answer = mnemonics[indices[0]].Mnemonic[key];
+
+        console.log(correct_answer);
+
+        if (given_answer == correct_answer.toLowerCase()) {
+
+            nextMnemonicQuestion();
+
+        } else {
+
+            if (document.getElementById('remark-card').innerText == "Please enter the answer") {
+                document.getElementById('remark-card').innerText = "Please try again"
+            } else {
+                document.getElementById('remark-card').innerText = "The correct answer is: " + correct_answer
+            }            
+
+            textfield.value = "";
+
+        }
+
     }
+}
+
+function expandMnemonic() {
+
+    const correct_index = parseInt(document.getElementById('question-title').innerText);
+    const textfield = document.getElementById('text-field');
+
+    const keys = Object.keys(mnemonics[correct_index].Mnemonic)
+
+    document.getElementById('question-title').innerText = correct_index.toString() + ".1"
+    document.getElementById('question-description').innerText = "What is the meaning of: " + keys[1]
+    document.getElementById('remark-card').innerText = "Please enter the answer"
+
+    resetButtons();
+
+    textfield.value = "";
+
 }
 
 function nextMnemonicQuestion() {
 
-    document.getElementById('question-input-card').innerHTML = 
-            
-    `
-    
-    <input type="text" id="text-field">
-    <input type="button" class="button" id ="check-button" value="Enter" onclick="checkMnemonicAnswer()">
-    
-    `;
+    resetButtons();
 
     const correct_index = parseInt(document.getElementById('question-title').innerText);
     const textfield = document.getElementById('text-field'); 
@@ -244,6 +279,19 @@ function nextMnemonicQuestion() {
     document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
 
     textfield.value = "";
+
+}
+
+function resetButtons() {
+    
+    document.getElementById('question-input-card').innerHTML = 
+            
+    `
+    
+    <input type="text" id="text-field">
+    <input type="button" class="button" id ="check-button" value="Check" onclick="checkMnemonicAnswer()">
+    
+    `;
 
 }
 
