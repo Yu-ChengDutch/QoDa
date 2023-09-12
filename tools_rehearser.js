@@ -190,13 +190,35 @@ function checkMnemonicAnswer() {
 
         if (given_answer == correct_answer.toLowerCase()) {
             console.log("- - > Correct!")
+
+            nextMnemonicQuestion();
+
         } else {
             console.log("Given answer: " + given_answer);
             console.log("Right answer: " + correct_answer);
 
+            document.getElementById('remark-card').innerText = "Please repeat the mnemonic phrase again"
+            document.getElementById('text-field').innerText = "";
+
         }
 
     }
+}
+
+function nextMnemonicQuestion() {
+
+    const correct_index = parseInt(document.getElementById('question-title').innerText);
+
+    if (correct_index < mnemonics.length) {
+        new_index = correct_index + 1;
+    } else {
+        new_index = 0;
+    }
+
+    document.getElementById('question-title').innerText = new_index
+    document.getElementById('question-description').innerText = mnemonics[new_index].Question
+    document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
+
 }
 
 function createQuestions(data, iterators, questions, output){
