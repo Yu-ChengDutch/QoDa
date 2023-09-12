@@ -191,7 +191,15 @@ function checkMnemonicAnswer() {
         if (given_answer == correct_answer.toLowerCase()) {
             console.log("- - > Correct!")
 
-            nextMnemonicQuestion();
+            document.getElementById('question-input-card').innerHTML = 
+            
+            `
+            
+            <input type="text" id="text-field">
+            <input type="button" class="button" id ="next_button" value="Next" onclick="nextMnemonicQuestion();"></input>
+            <input type="button" class="button" id ="expand_button" value="More" onclick="expandMnemonic()"></input>
+            
+            `;
 
         } else {
             console.log("Given answer: " + given_answer);
@@ -212,6 +220,15 @@ function checkMnemonicAnswer() {
 }
 
 function nextMnemonicQuestion() {
+
+    document.getElementById('question-input-card').innerHTML = 
+            
+    `
+    
+    <input type="text" id="text-field">
+    <input type="button" class="button" id ="check-button" value="Enter" onclick="checkMnemonicAnswer()">
+    
+    `;
 
     const correct_index = parseInt(document.getElementById('question-title').innerText);
     const textfield = document.getElementById('text-field'); 
