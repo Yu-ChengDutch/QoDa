@@ -36,6 +36,8 @@ let possible_questions = {};
 
 let side_questions = {};
 
+let mnemonics = [];
+
 let final_questions = {};
 let current_side_db = {};
 
@@ -154,20 +156,39 @@ function setMnemonicQuestion(database){
     console.log("- > Setting mnemonic question")
     console.log(database)
 
+    mnemonics = database; 
+
     nr_q = database.length
     starting_point = Math.floor(Math.random() * nr_q);
 
     console.log("- > There are a total of " + nr_q + " questions.");
     console.log("- > We're starting at " + starting_point)
 
-    document.getElementById('question-title').innerText = "Question " + (starting_point + 1) + ": Mnemonic"
-    document.getElementById('question-description').innerText = database[5].Question
+    document.getElementById('question-title').innerText = starting_point
+    document.getElementById('question-description').innerText = database[starting_point].Question
+    document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
 
 };
 
 function checkMnemonicAnswer() {
-    if ((document.getElementById('question-title').innerText).includes("Mnemonic")) {
-        console.log("This is a mnemonic")
+
+    // There are basically two options: either we're checking the mnemonic, 
+    // or the individual elements
+
+    const correct_index = parseInt(document.getElementById('question-title').innerText);
+    const textfield = document.getElementById('text-field');    
+    const given_answer = (textfield.value).toLowerCase();
+    const correct_answer = mnemonics[correct_index].Title
+
+    if ((document.getElementById('remark-card').innerText).includes("Mnemonic")) {
+        
+        console.log("- - > Checking mnemonic")
+        console.log("Right answer is: " + correct_answer)
+
+        if (given_answer == correct_answer.toLowerCase()) {
+            console.log("- - > Correct!")
+        }
+
     }
 }
 
