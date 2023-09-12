@@ -178,6 +178,9 @@ function checkMnemonicAnswer() {
     const correct_index = parseInt(document.getElementById('question-title').innerText);
     const textfield = document.getElementById('text-field');    
     const given_answer = (textfield.value).toLowerCase();
+
+    console.log(mnemonics);
+
     const correct_answer = mnemonics[correct_index].Title
 
     if ((document.getElementById('remark-card').innerText).includes("mnemonic")) {
