@@ -221,8 +221,10 @@ function checkMnemonicAnswer() {
         key = (document.getElementById('question-description').innerText).split(' ').pop()
         indices = (document.getElementById('question-title').innerText).split('.')
 
-        correct_answer = mnemonics[indices[0]].Mnemonic[key];
+        correct_answer = mnemonics[parseInt(indices[0])].Mnemonic[key];
 
+        console.log(indices);
+        console.log(mnemonics[parseInt(indices[0])]);
         console.log(correct_answer);
 
         if (given_answer == correct_answer.toLowerCase()) {
