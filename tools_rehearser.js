@@ -91,6 +91,9 @@ function setUp(){
     })
     .then(function(data){
 
+        console.log("Keys are: ")
+        console.log(Object.keys(data))
+
         if ("Name" in Object.keys(data)) {
             console.log("- > Accesing file: " + data.Name);
 
