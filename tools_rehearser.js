@@ -220,7 +220,7 @@ function checkMnemonicAnswer() {
 
     } else {
         
-        key = (document.getElementById('question-description').innerText).split(' ').pop()
+        key = (document.getElementById('question-description').innerText).split(': ').pop()
 
         correct_answer = mnemonics[parseInt(indices[0])].Mnemonic[key];
 
