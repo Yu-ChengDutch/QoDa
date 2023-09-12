@@ -1,0 +1,106 @@
+{
+    "Mnemonics": [
+        {
+            "Question": "What are the Geriatric Giants?",
+            "Mnemonic": {
+                "Title": "Confused Deer Discover Red Mountains In Fall",
+                "Confused": "Confusion",
+                "Deer": "Depression",
+                "Discover": "Dizziness",
+                "Red Mountains": "Reduced mobility",
+                "In": "Incontinence",
+                "Fall": "Falls"
+            }
+        },
+        {
+            "Question": "What are 3 common aetiologies for confusion in the elderly?",
+            "Mnemonic": {
+                "Title": "Delilah Deposes Demagogues",
+                "Delilah": "Delirium",
+                "Deposes": "Depression", 
+                "Demagogues": "Dementia"
+            }
+        },
+        {
+            "Question": "What are the 4 types of dizziness?",
+            "Mnemonic": {
+                "Title": "Very Precise Drugs Needed",
+                "Very": "Vertigo",
+                "Precise": "Pre-syncope",
+                "Drugs": "Disequilibrium",
+                "Needed": "Non-specific dizziness"
+            }
+        },
+        {
+            "Question": "What are 7 common aetiologies for reduced mobility?",
+            "Mnemonic": {
+                "Title": "Reducing Carp, Sturgeons, Prawns and Electric Fish Seriously Imbalances Sea Life",
+                "Reducing Carp": "Reduced cardiovascular function",
+                "Reducing Sturgeons": "Reduced stride length",
+                "Reducing Prawns": "Reduced processing speed",
+                "Reducing Electric Fish": "Reduced executive function",
+                "Seriously": "Sarcopenia",
+                "Imbalances": "Imbalance",
+                "Sea Life": "Sedentary lifestyle"
+            }
+        },
+        {
+            "Question": "What are the 3 types of incontinence and their aetiologies?",
+            "Mnemonic": {
+                "Title": "Stress Sweeps Urges Over Actively Flowing Brooks",
+                "Stress": "Stress incontinence",
+                "Sweeps": "Sphincter dysfunction",
+                "Urges": "Urge incontinence",
+                "Over Actively": "Overactive bladder",
+                "Flowing": "Overflow incontinence",
+                "Brooks": "Blockage of the urethra"
+            }
+        },
+        {
+            "Question": "What are 10 common aetiologies for falls in the elderly?",
+            "Mnemonic": {
+                "Title": "Poor Folk Focus Pretty Obviously On Lower Visions, Reducing More Imbalance Serves Depressing Suburbs",
+                "Poor Folk": "Poor footwear",
+                "Focus Pretty": "Foot problems",
+                "Obviously": "Obstacles",
+                "On": "Objects",
+                "Lower Visions": "Vision problems",
+                "Reducing More": "Reduced mobility",
+                "Imbalance": "Imbalance",
+                "Serves": "Sedatives",
+                "Depressing": "Antidepressants",
+                "Suburbs": "Substance abuse"
+            }
+        },
+        {
+            "Question": "What are 10 common aetiologies for vertigo?",
+            "Mnemonic": {
+                "Title": "Many Birds Love Very Interesting Amino-acids; My Parakeet Cares Too",
+                "Many": "Ménière's disease",
+                "Birds": "BPPV",
+                "Love": "Labyrinthitis",
+                "Very": "Vestibular neuronitis",
+                "Interesting": "Infections",
+                "Amino-acids": "Aminoglycosides",
+                "My": "MS",
+                "Parakeet": "Parkinsonism",
+                "Cares": "Cerebellar dysfunction",
+                "Too": "Tumours"
+            }
+        },
+        {
+            "Question": "What are 9 common aetiologies for presyncope?",
+            "Mnemonic": {
+                "Title": "Hurried Hippos Glide Tensely In Abnormally Deep Antarctic Seas",
+                "Hurried": "Hyperventilation",
+                "Hippos Glide": "Hypoglycaemia",
+                "Hippos Tensely": "Hypotension",
+                "In": "Infections",
+                "Abnormally": "Anaemia",
+                "Deep": "Dehydration",
+                "Antarctic": "Antihistamines",
+                "Seas": "SSRIs"
+            }
+        }
+    ]
+}

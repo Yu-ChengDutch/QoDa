@@ -92,10 +92,15 @@ function setUp(){
         return response.json();
     })
     .then(function(data){
-        console.log("- > Accesing file: " + data.Name);
-        createQuestions(data, iterators, questions, possible_questions);
-        chooseQuestions(questions);
-        setQuestion("Question 1");
+
+        if ("Name" in Object.keys(data)) {
+            console.log("- > Accesing file: " + data.Name);
+            createQuestions(data, iterators, questions, possible_questions);
+            chooseQuestions(questions);
+            setQuestion("Question 1");
+        } else if ("Mnemonics" in Object.keys(data)){
+            console.log("- > Accessing mnemonic file")
+        }        
     })
     .then(function(){
         for (let i = 0; i < Object.keys(databases).length; i++) {
