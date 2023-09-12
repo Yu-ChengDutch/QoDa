@@ -175,15 +175,17 @@ function checkMnemonicAnswer() {
     // There are basically two options: either we're checking the mnemonic, 
     // or the individual elements
 
-    const correct_index = parseInt(document.getElementById('question-title').innerText);
     const textfield = document.getElementById('text-field');    
     const given_answer = (textfield.value).toLowerCase();
 
+    const indices = (document.getElementById('question-title').innerText).split('.')
+
     console.log(mnemonics);
 
-    var correct_answer = mnemonics[correct_index].Mnemonic.Title
+    if (indices.length == 1) {
 
-    if ((document.getElementById('remark-card').innerText).includes("mnemonic")) {
+        correct_index = indices[0];
+        correct_answer = mnemonics[correct_index].Mnemonic.Title
         
         console.log("- - > Checking mnemonic")
         console.log("Right answer is: " + correct_answer)
@@ -219,7 +221,6 @@ function checkMnemonicAnswer() {
     } else {
         
         key = (document.getElementById('question-description').innerText).split(' ').pop()
-        indices = (document.getElementById('question-title').innerText).split('.')
 
         correct_answer = mnemonics[parseInt(indices[0])].Mnemonic[key];
 
