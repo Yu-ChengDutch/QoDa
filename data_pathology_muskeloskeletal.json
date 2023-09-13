@@ -1,0 +1,48 @@
+{
+    "Mnemonics": [
+        {
+            "Question": "What are the 6 main muscles of locomotion?",
+            "Mnemonic": {
+                "Title": "Early Spanish Gastronomy Typically Abandoned Gluteal Ham",
+                "Early Spanish": "M. Erector Spinae",
+                "Gastronomy": "M. Gastrocnemius",
+                "Typically": "M. Tibialis Anterior",
+                "Abandoned": "Mm. Abdominales",
+                "Gluteal": "M. Gluteus Maximus",
+                "Ham": "Hamstrings"
+            }
+        },
+        {
+            "Question": "What are the 7 scapulohumeral muscles",
+            "Mnemonic": {
+                "Title": "The Major Coffee Bean Dealer Roasts Surprisingly Special Though Maybe Subpar Coffee",
+                "The Major": "M. Teres Major",
+                "Coffe Bean": "M. Coracobrachialis",
+                "Dealer": "M. Deltoideus",
+                "Roasts": "Rotator cuff",
+                "Surprisingly Special": "M. Supraspinatus",
+                "Though Maybe": "M. Teres Minor",
+                "Subpar Coffee": "M. Subscapularis"
+            }
+        },
+        {
+            "Question": "What are the 3 compartments of the thigh and what muscles do they contain?",
+            "Mnemonic": {
+                "Title": "All Quality Saddles Are Generally Made Of Extra Graceful Parts All Made to Be Loved by Posterior Hams",
+                "All": "Anterior compartment",
+                "Quality": "M. Quadriceps",
+                "Saddles": "M. Sartorius",
+                "Are Generally": "M. Articularis Genus",
+                "Made": "Medial compartment",
+                "Of Extra": "M. Obturator Externus",
+                "Graceful": "Gracilis",
+                "Parts": "Pectineus",
+                "All Made": "Adductor Magnus",
+                "All Be": "Adductor Brevis",
+                "All Loved": "Adductor Longus",
+                "Posterior": "Posterior compartment",
+                "Hams": "Hamstrings"
+            }
+        }
+    ]
+}

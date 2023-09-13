@@ -45,6 +45,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
+    "Pathology - Muscles": {"Database": './data_pathology_muskeloskeletal.json'},
     "Pathology - Geriatrics": {"Database": './data_pathology_geriatrics.json'},
     "Pathology - ENT": {"Database": './data_pathology_ENT.json', "Iterators": ["Division"], "Questions": ["Definition", "Signs", "Subconditions", "Complications"]},//"Epidemiology", "Alternative name", 
     "Pathology - Ophthalmology": {"Database": './data_pathology_ophtha.json', "Iterators": ["Individual conditions", "Subtypes"], "Questions": ["Definition", "Signs", "Subconditions"]}, //"Epidemiology", "Alternative name"

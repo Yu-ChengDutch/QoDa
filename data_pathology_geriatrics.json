@@ -101,6 +101,73 @@
                 "Antarctic": "Antihistamines",
                 "Seas": "SSRIs"
             }
+        },
+        {
+            "Question": "What are the 4 main types of dementia?",
+            "Mnemonic": {
+                "Title": "All Valour Left Forgotten",
+                "All": "Alzheimer's dementia",
+                "Valour": "Vascular dementia",
+                "Left": "Lewy-body dementia",
+                "Forgotten": "Fronto-temporal dementa"
+
+            }
+        },
+        {
+            "Question": "What are the 4 types of delirium?",
+            "Mnemonic": {
+                "Title": "Hyperactive Hippos Make No Movement",
+                "Hyperactive": "Hyperactive delirium",
+                "Hippos": "Hypoactive delirium",
+                "Make": "Mixed type delirium",
+                "No Movement": "Delirium without motor symptoms"
+                
+            }
+        },
+        {
+            "Question": "What are the 6 types of depression?",
+            "Mnemonic": {
+                "Title": "My Anxious Psychologist Can't Season Meat",
+                "My": "Melancholic",
+                "Anxious": "Anxious",
+                "Psychologist": "Psychotic",
+                "Can't": "Catatonic",
+                "Season": "Seasonal",
+                "Meat": "Mixed"
+                
+            }
+        },
+        {
+            "Question": "What are the 5 cardinal symptoms of delirium?",
+            "Mnemonic": {
+                "Title": "I Don't Forget Very Happy People Though",
+                "I": "Inattentiveness",
+                "Don't": "Disorientation",
+                "Forget": "Fluctuation",
+                "Very Happy": "Visual hallucinations",
+                "People Though": "Provoking trigger"
+            }
+        },
+        {
+            "Question": "What are the 6 cardinal symptoms of vascular dementia?",
+            "Mnemonic": {
+                "Title": "Apparently Following Deer In Preserves Requires Able Steps",
+                "Apparently": "Apathy",
+                "Following Deer": "Focal deficits",
+                "In": "Inattentiveness",
+                "Preserves Requires": "Preserved recall",
+                "Able": "Abula",
+                "Steps": "Stepwise decline"
+            }
+        },
+        {
+            "Question": "What are the 3 types of frontotemporal dementia?",
+            "Mnemonic": {
+                "Title": "Bees Seem Problematic",
+                "Bees": "Behavioural",
+                "Seem": "Semantic",
+                "Problematic": "Progressive non-fluent aphasia"
+            }
         }
     ]
 }
