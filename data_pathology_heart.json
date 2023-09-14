@@ -1,0 +1,65 @@
+{
+    "Mnemonics": [
+        {
+            "Question": "What is the direction of blood through the heart?",
+            "Mnemonic": {
+                "Title": "Try Pushing My Arse",
+                "Try": "Tricuspid Valve",
+                "Pushing": "Pulmonary Valve",
+                "My": "Mitral Valve",
+                "Arse": "Aortic Valve"
+            }
+        },
+        {
+            "Question": "What are the 3 types of systolic heart murmurs and their most common etiologies?",
+            "Mnemonic": {
+                "Title": "My Sad Art Pushes Stoners. Lately, My Tripod Collapsed. How Might Trying to Regain my Venture Seem Dumb?",
+                "My Sad": "Mid-systolic ejection murmur",
+                "Art Stoners": "Aortic Stenosis",
+                "Pushes Stoners": "Pulmonary Stenosis",
+                "Lately": "Late-systolic ejection murmur",
+                "My Collapsed": "Mitral valve prolapse",
+                "Tripod Collapsed": "Tricuspid valve prolaps",
+                "How": "Holosystolic ejection murmur",
+                "Might Regain": "Mitral valve regurgitation",
+                "Trying Regain": "Tricuspid valve regurgitation",
+                "Venture Seem Dumb": "Ventricular septal defect"
+            }
+        },
+        {
+            "Question": "What are the 3 types of varicose veins?",
+            "Mnemonic": {
+                "Title": "Cowboys Ride Beasts",
+                "Cowboys": "Convolutes",
+                "Ride": "Reticular veins",
+                "Beasts": "Besenresier veins"
+            }
+        },
+        {
+            "Question": "What are the 4 cardinal symptoms of arterial insufficiency?",
+            "Mnemonic": {
+                "Title": "Might I Add, Always Clean Smooth, Shiny Skin With Cold Red Pears",
+                "Might I Add": "Muscular Atrophy",
+                "Always": "Alopecia",
+                "Clean": "Claudicatio intermittens",
+                "Smooth, Shiny Skin": "Smooth, shiny skin",
+                "With": "Reduced wound healing",
+                "Cold": "Cold skin",
+                "Red Pears": "Reduced pulse"
+            }
+        },
+        {
+            "Question": "What are the cardinal symptoms of venous insufficiency?",
+            "Mnemonic": {
+                "Title": "Live Karate Varies Enormously Compared to Atrociously Hard Punching",
+                "Live": "Lipodermatosclerosis",
+                "Karate": "Keratosis",
+                "Varies": "Varicose veins",
+                "Enormously": "Edema",
+                "Compared": "Corona phlebectatica",
+                "Atrociously": "Atrophy blanche",
+                "Hard Punching": "Hyperpigmentation"
+            }
+        }
+    ]
+}

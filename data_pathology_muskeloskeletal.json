@@ -43,6 +43,35 @@
                 "Posterior": "Posterior compartment",
                 "Hams": "Hamstrings"
             }
+        },
+        {
+            "Question": "What are the 2 compartments of the upper arm and their muscles?",
+            "Mnemonic": {
+                "Title": "Antique Bicycles Bring Core Briefings Posted Truly By Any Army Captains",
+                "Antique": "M. Anterior compartment",
+                "Bring": "M. Brachialis",
+                "Core Briefings": "M. Coracobrachialis",
+                "Posted": "Posterior compartment",
+                "Truly By": "M. Triceps Brachii",
+                "Any": "M. Anconeus",
+                "Army Captain": "M. Articularis cubiti"
+            }
+        },
+        {
+            "Question": "What are the 7 extraocular muscles and their nerves?",
+            "Mnemonic": {
+                "Title": "Not To Openly See, Not Able to Really Laugh, Not Obviously Really MISsing. Oh I Love the Power to See",
+                "Not To": "N. Trochlearis",
+                "Openly See": "M. Obliquus Superior",
+                "Not Able": "N. Abducens",
+                "Really Laugh": "M. Rectus Lateralis",
+                "Not Obviously": "N. Oculomotorius",
+                "Really M": "M. Rectus Medialis",
+                "Really I": "M. Rectus Inferior",
+                "Really S": "M. Rectus Superior",
+                "Oh I": "M. Obliquus Inferior",
+                "Love Power See": "M. Levator Palpebrae Superior"
+            }
         }
     ]
 }
