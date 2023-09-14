@@ -35,11 +35,11 @@
                 "Are Generally": "M. Articularis Genus",
                 "Made": "Medial compartment",
                 "Of Extra": "M. Obturator Externus",
-                "Graceful": "Gracilis",
-                "Parts": "Pectineus",
-                "All Made": "Adductor Magnus",
-                "All Be": "Adductor Brevis",
-                "All Loved": "Adductor Longus",
+                "Graceful": "M. Gracilis",
+                "Parts": "M. Pectineus",
+                "All Made": "M. Adductor Magnus",
+                "All Be": "M. Adductor Brevis",
+                "All Loved": "M. Adductor Longus",
                 "Posterior": "Posterior compartment",
                 "Hams": "Hamstrings"
             }
@@ -48,7 +48,7 @@
             "Question": "What are the 2 compartments of the upper arm and their muscles?",
             "Mnemonic": {
                 "Title": "Antique Bicycles Bring Core Briefings Posted Truly By Any Army Captains",
-                "Antique": "M. Anterior compartment",
+                "Antique": "Anterior compartment",
                 "Bring": "M. Brachialis",
                 "Core Briefings": "M. Coracobrachialis",
                 "Posted": "Posterior compartment",
