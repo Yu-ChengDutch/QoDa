@@ -15,12 +15,13 @@
         {
             "Question": "What are the 7 scapulohumeral muscles",
             "Mnemonic": {
-                "Title": "The Major Coffee Bean Dealer Roasts Surprisingly Special Though Maybe Subpar Coffee",
+                "Title": "The Major Coffee Bean Dealer Roasts Surprisingly Special and Inspiring Though Maybe Subpar Coffee",
                 "The Major": "M. Teres Major",
                 "Coffe Bean": "M. Coracobrachialis",
                 "Dealer": "M. Deltoideus",
                 "Roasts": "Rotator cuff",
                 "Surprisingly Special": "M. Supraspinatus",
+                "Inspiring": "M. Infraspinatus",
                 "Though Maybe": "M. Teres Minor",
                 "Subpar Coffee": "M. Subscapularis"
             }
@@ -47,14 +48,15 @@
         {
             "Question": "What are the 2 compartments of the upper arm and their muscles?",
             "Mnemonic": {
-                "Title": "Antique Bicycles Bring Core Briefings Posted Truly By Any Army Captains",
-                "Antique": "Anterior compartment",
-                "Bring": "M. Brachialis",
-                "Core Briefings": "M. Coracobrachialis",
-                "Posted": "Posterior compartment",
-                "Truly By": "M. Triceps Brachii",
-                "Any": "M. Anconeus",
-                "Army Captain": "M. Articularis cubiti"
+                "Title": "A BBC Post Ties An Arm",
+                "A": "Anterior compartment",
+                "B1": "M. Biceps brachii",
+                "B2": "M. Brachialis",
+                "C": "M. Coracobrachialis",
+                "Post": "Posterior compartment",
+                "Tries": "M. Triceps Brachii",
+                "An": "M. Anconeus",
+                "Arm": "M. Articularis cubiti"
             }
         },
         {
@@ -71,6 +73,144 @@
                 "Really S": "M. Rectus Superior",
                 "Oh I": "M. Obliquus Inferior",
                 "Love Power See": "M. Levator Palpebrae Superior"
+            }
+        },
+        {
+            "Question": "What are the 6 cardinal symptoms of M. Bechterew?",
+            "Mnemonic": {
+                "Title": "Yo CRIP, Move In the Night",
+                "CRIP": "Chronic inflammatory back pain",
+                "Yo": "Young patient",
+                "In": "Insidious onset",
+                "Move": "Improvement with movement",
+                "Night": "Nightpain"
+            }
+        },
+        {
+            "Question": "What are the 4 main radiographic findings in osteoarthritis?",
+            "Mnemonic": {
+                "Title": "Sin Sucks. Seek JOSS",
+                "Sin": "Synovitis",
+                "Sucks": "Subchondral cysts",
+                "J": "Joint space narrowing",
+                "O": "Osteophytosis",
+                "SS": "Subchondral sclerosis"
+            }
+        },
+        {
+            "Question": "What are the 3 cardinal symptoms of Frozen Shoulder (adhesive capsulitis)?",
+            "Mnemonic": {
+                "Title": "MoRe Apps, Extra Abs",
+                "More A": "Active motion restriction",
+                "More P": "Passive motion restriction",
+                "Extra": "External rotation restriction",
+                "Abs": "Abduction restriction"
+
+            }
+        },
+        {
+            "Question": "What are the 3 cardinal symptoms of a rotator cuff tear?",
+            "Mnemonic": {
+                "Title": "TABS",
+                "T": "Tender palpation", 
+                "AB": "Abduction restriction",
+                "S": "Scapular dyskinesis"
+            }
+        },
+        {
+            "Question": "What are the 3 main tests for rotator cuff tear?",
+            "Mnemonic": {
+                "Title": "Empty CanSS, aRE IT! Be SCared",                
+                "Empty Can": "Empty can",
+                "SS": "M. Supraspinatus",
+                "aRE": "Resisted external rotation",
+                "IT": "M. Infraspinatus and M. Teres Minor",
+                "Be": "Belly press test",
+                "SCared": "M. Subscapularis"
+            }
+        },
+        {
+            "Question": "What are the 4 cardinal symptoms of De Quervain's syndrome",
+            "Mnemonic": {
+                "Title": "SO, About thumbs: Find Rest",
+                "SO": "Sudden onset",
+                "About thumbs": "Abduction restriction of the thumb",
+                "Rest": "Radial wrist pain",
+                "Find": "Finkelstein test"
+            }
+        },
+        {
+            "Question": "What are the 2 tendons affected in De Quervain's syndrome?",
+            "Mnemonic": {
+                "Title": "APPLY Every Policy Briefly",
+                "Every Policy Briefly": "M. Extensor Pollicis Brevis",
+                "APPLY": "M. Abductor Pollicis Longus"
+            }
+        },
+        {
+            "Question": "What are the 3 cardinal signs of a Baker's cyst?",
+            "Mnemonic": {
+                "Title": "Increasing Joint Swelling",
+                "Joint": "Underlying joint problems",
+                "Swelling": "Swelling in the fossa poplitea",
+                "Increasing": "Crescent sign"
+
+            }
+        },
+        {
+            "Question": "What are the cardinal symptoms of Golfer's and Tennis elbow?",
+            "Mnemonic": {
+                "Title": "Tennis players Loves Acting Extra, Passively Flexing. Golf is the opposite",
+                "Tennis players": "Tennis elbow",
+                "Loves": "Lateral epicondylitis",
+                "Acting extra": "Active wrist extension restriction",
+                "Passively flexing": "Passive wrist flexion restriciton",
+                "Golf is the opposite": "Golfer's elbow displays the opposite signs"
+            }
+        },
+        {
+            "Question": "What are the 3 bursites of the knee?",
+            "Mnemonic": {
+                "Title": "Priests in preparation house geese",
+                "In": "Infrapatellar bursitis",
+                "Priest": "Vicar's knee",
+                "Preparation": "Prepatellar bursitis",
+                "House": "Housemaid's knee",
+                "Geese": "Pes anserinus bursitis"
+            }
+        },
+        {
+            "Question": "What are the 4 main types of non-vertebral inflammatory joint problems?",
+            "Mnemonic": {
+                "Title": "My Good Old Reader, Pooh Seems Red As Psoriasis",
+                "My": "Monoarthritis",
+                "Good": "Gout",
+                "Old": "Oligoarthritis",
+                "Reader": "Reactive arthritis",
+                "Pooh Seems": "Symmetric polyarthritis",
+                "Red": "Reumatoid arthritis",
+                "Pooh As": "Asymmetric polyarthritis",
+                "Psoriasis": "Psoriatic arthritis"
+            }
+        },
+        {
+            "Question": "What are 3 characteristics of pseudogout different from gout?",
+            "Mnemonic": {
+                "Title": "Calling Pyrotechnicians Does Mean Proper Kebab",
+                "Calling Pyrotechnicians Does": "Calcium pyrophosphate dihydrate crystals",
+                "Mean Proper": "Mono- or polyarthritis",
+                "Kebab": "Knee"
+            }
+        },
+        {
+            "Question": "What are the 4 main tests for the knee and what are they for?",
+            "Mnemonic": {
+                "Title": "AP is crucial! Men apply competition, varied distraction validly collapses",
+                "A crucial": "Anterior drawer for lig. cruciatum anterius",
+                "P crucial": "Posterior drawer for lig. cruciatum posterius",
+                "Men apply competition": "Appley test compression for meniscus",
+                "Distraction": "Appley test distraction for lig. collaterale fibulare",
+                "Varied validly": "Varus/valgus test for lig. collaterale fibulare"
             }
         }
     ]
