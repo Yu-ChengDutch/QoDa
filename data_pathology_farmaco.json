@@ -1,0 +1,149 @@
+{
+    "Mnemonics": [
+        {
+            "Question": "Welke 4 medicamenten behoren tot de categorie 'meest veilig' m.b.t. borstvoeding?",
+            "Mnemonic": {
+                "Title": "PAIN",
+                "P": "Paracetamol",
+                "A": "Acenocoumarol",
+                "I": "Ibuprofen",
+                "N": "Nadroparine"
+            }
+        },
+        {
+            "Question": "Welke 6 medicamenten behoren tot de categorie 'waarschijnlijk veilig' m.b.t. borstvoeding?",
+            "Mnemonic": {
+                "Title": "DEAF ProForma",
+                "D": "Diclofenac",
+                "A": "Acetylsalicylzuur",
+                "E": "Enalapril",
+                "F": "Fenprocoumon",
+                "Pro": "Metoprolol",
+                "Form": "Metformine"
+            }
+        },
+        {
+            "Question": "Welke medicament behoort tot de categorie 'risico onbekend' m.b.t. borstvoeding?",
+            "Answer": "Ciprofloxacine"
+        },
+        {
+            "Question": "Welke 2 medicamenten behoren tot de categorie 'mogelijk risico' m.b.t. borstvoeding?",
+            "Mnemonic": {
+                "Title": "Lake CoMo",
+                "Co": "Codeïne",
+                "Mo": "Morfine"                
+            }
+        },
+        {
+            "Question": "Welke 2 medicamenten behoren tot de categorie 'risico' m.b.t. borstvoeding?",
+            "Mnemonic": {
+                "Title": "DO not",
+                "D": "Diazepam",
+                "O": "Oxazepam"                
+            }
+        },
+        {
+            "Question": "Welke effecten kunnen medicamenten hebben tijdens de 3 trimesters?",
+            "Mnemonic": {
+                "Title": "1 AB, 2 C, 3D",
+                "1 A": "Eerste trimester: Abortus",
+                "1 B": "Eerste trimester: Spina Bifida",
+                "2 C": "Compromised growth",
+                "3 D": "Drug-related effects"
+            }
+        },
+        {
+            "Question": "Which 2 classes of medication can inhibit labour?",
+            "Mnemonic": {
+                "Title": "NO labour",
+                "N": "NSAIDs",
+                "O": "Opiates"                
+            }
+        },
+        {
+            "Question": "Welke 5 medicamenten kunnen veilig worden gebruikt tijdens de zwangerschap?",
+            "Mnemonic": {
+                "Title": "CAMP NAC",
+                "C": "Claritromycine",
+                "AM": "Amoxicilline",
+                "P": "Paracetamol",
+                "N": "Nadroparine",
+                "AC": "Acetylsalicylzuur"
+                
+            }
+        },
+        {
+            "Question": "Welke 4 medicamenten kunnen waarschijnlijk veilig worden gebruikt tijdens de zwangerschap?",
+            "Mnemonic": {
+                "Title": "ID ProForma",
+                "I": "Ibuprofen",
+                "D": "Diclofenac",
+                "Pro": "Metoprolol",
+                "Form": "Metformine"
+            }
+        },
+        {
+            "Question": "Welke 6 medicamenten geven risico op aangeboren afwijkingen?",
+            "Mnemonic": {
+                "Title": "DOG FACE",
+                "DO": "Doxycycline",
+                "G": "Gentamicine",
+                "F": "Fenprocoumon",
+                "A": "Acenocoumarol",
+                "C": "Carbamazepine",
+                "E": "Enalapril"              
+            }
+        },
+        {
+            "Question": "Noem 7 CYP3A4 enzyminhibitors?",
+            "Mnemonic": {
+                "Title": "ClEVer Grape, KIM",
+                "Cl": "Claritromicyine",
+                "E": "Erytromycine",
+                "Ver": "Verapamil",
+                "Grape": "Grapefruitsap",
+                "K": "Ketaconazol",
+                "I": "Itraconazol",
+                "M": "Miconazol"                
+            }
+        },
+        {
+            "Question": "Noem 4 CYP3A4 enzyminducers?",
+            "Mnemonic": {
+                "Title": "F SCAR",
+                "R": "Rifampicine",
+                "Ca": "Carbamazepine",
+                "F": "Fenytoïne",
+                "S": "Sint-Janskruid"
+            }
+        },
+        {
+            "Question": "Noem 4 medicamenten waarvan de reden van voorschrijven vermeld moet worden?",
+            "Mnemonic": {
+                "Title": "Flu CRiMe",
+                "C": "Carbamazepine",
+                "Flu": "Fluconazol",
+                "Me": "Methotrexaat",
+                "Ri": "Rifampicine"
+            }
+        },
+        {
+            "Question": "Noem 2 medicamenten in categorie 1 m.b.t. verkeersdeelname?",
+            "Mnemonic": {
+                "Title": "Twenty Over Fifty",
+                "Twenty": "Temazepam under 20 mg",
+                "Over Fifty": "Oxazepam under 50 mg"
+            }
+        },
+        {
+            "Question": "Noem 4 medicamenten in categorie 3 m.b.t. rijveiligheid?",
+            "Mnemonic": {
+                "Title": "TraM TO Home",
+                "M": "Morfine",
+                "Tra": "Tramadol",
+                "T Home": "Temazepam (hoge dosis)",
+                "O Home": "Oxazepam (hoge dosis)"
+            }
+        }
+    ]
+}

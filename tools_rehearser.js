@@ -38,6 +38,8 @@ let side_questions = {};
 
 let mnemonics = [];
 
+let repeat = false;
+
 let final_questions = {};
 let current_side_db = {};
 
@@ -45,6 +47,7 @@ let current_database = ""
 let questions = [];
 
 let databases = {
+    "Pathology - Farmaco": {"Database": './data_pathology_farmaco.json'},
     "Pathology - Heart": {"Database": './data_pathology_heart.json'},
     "Pathology - Muscles": {"Database": './data_pathology_muskeloskeletal.json'},
     "Pathology - Geriatrics": {"Database": './data_pathology_geriatrics.json'},
@@ -187,7 +190,16 @@ function checkMnemonicAnswer() {
     if (indices.length == 1) {
 
         correct_index = indices[0];
-        correct_answer = mnemonics[correct_index].Mnemonic.Title
+
+        expandable = false;
+
+        if (Object.keys(mnemonics[correct_index].Mnemonic).includes("Title")) {
+            correct_answer = mnemonics[correct_index].Mnemonic.Title
+            expandable = true;
+        } else {
+            correct_answer = mnemonics[correct_index].Mnemonic.Answer;
+            expandable = false;
+        }        
         
         console.log("- - > Checking mnemonic")
         console.log("Right answer is: " + correct_answer)
@@ -195,28 +207,47 @@ function checkMnemonicAnswer() {
         if (given_answer == correct_answer.toLowerCase()) {
             console.log("- - > Correct!")
 
-            document.getElementById('question-input-card').innerHTML = 
+            if (expandable == true) {
+                document.getElementById('question-input-card').innerHTML = 
             
-            `
+                `
+                
+                <input type="text" id="text-field">
+                <input type="button" class="button" id ="next_button" value="Next" onclick="nextMnemonicQuestion();"></input>
+                <input type="button" class="button" id ="expand_button" value="More" onclick="expandMnemonic()"></input>
+                
+                `;
+            } else {
+                document.getElementById('question-input-card').innerHTML = 
             
-            <input type="text" id="text-field">
-            <input type="button" class="button" id ="next_button" value="Next" onclick="nextMnemonicQuestion();"></input>
-            <input type="button" class="button" id ="expand_button" value="More" onclick="expandMnemonic()"></input>
+                `
+                
+                <input type="text" id="text-field">
+                <input type="button" class="button" id ="next_button" value="Next" onclick="nextMnemonicQuestion();"></input>
+                
+                `;
+            }
+
             
-            `;
+
+            repeat = false; 
 
         } else {
+
             console.log("Given answer: " + given_answer);
             console.log("Right answer: " + correct_answer);
 
             if (document.getElementById('remark-card').innerText != "Please repeat the mnemonic phrase again") {
                 document.getElementById('remark-card').innerText = "Please repeat the mnemonic phrase again";
             } else {
-                document.getElementById('remark-card').innerText = "The right mnemonic is: " + correct_answer;
+                document.getElementById('remark-card').innerText = "The right mnemonic is: " + correct_answer + ". You'll repeat this questions once more afterwards.";
+
+                repeat = true;
+
             }
 
             
-            textfield.value = "";
+            textfield.value = "";            
 
         }
 
@@ -282,16 +313,28 @@ function nextMnemonicQuestion() {
 
         correct_index = parseInt(indices[0])
 
-        if (correct_index < (mnemonics.length - 1)) {
-            new_index = correct_index + 1;
+        if (repeat == false) {            
+
+            if (correct_index < (mnemonics.length - 1)) {
+                new_index = correct_index + 1;
+            } else {
+                new_index = 0;
+            }
+
+            document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase."
+
         } else {
-            new_index = 0;
-        }
+
+            new_index = correct_index;
+
+            document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase. This is a repeated question."
+
+        }        
 
         console.log(new_index);
 
         document.getElementById('question-description').innerText = mnemonics[new_index].Question
-        document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase"
+        
 
     } else {
 
