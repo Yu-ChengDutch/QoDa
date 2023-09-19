@@ -310,11 +310,8 @@ function nextMnemonicQuestion() {
     textfield.value = "";
 
     indices = (document.getElementById('question-title').innerText).split('.')
-    keys = Object.keys(mnemonics[parseInt(indices[0])].Mnemonic)
 
-    console.log(keys)
-
-    if (indices.length == 1 || parseInt(indices[1]) >= (keys.length - 1)) {
+    if (Object.keys(mnemonics[parseInt(indices[0])]).includes("Answer")) {
 
         correct_index = parseInt(indices[0])
 
@@ -339,18 +336,50 @@ function nextMnemonicQuestion() {
         console.log(new_index);
 
         document.getElementById('question-description').innerText = mnemonics[new_index].Question
-        
 
     } else {
 
-        console.log("- - > Giving you a new subquestion")
+        keys = Object.keys(mnemonics[parseInt(indices[0])].Mnemonic)
 
-        new_index = indices[0] + "." + (parseInt(indices[1]) + 1)
-        document.getElementById('question-description').innerText = "What is the meaning of: " + keys[parseInt(indices[1]) + 1]
-        document.getElementById('remark-card').innerText = "Please enter the answer"
+        console.log(keys)
+        
+        if (indices.length == 1 || parseInt(indices[1]) >= (keys.length - 1)) {
 
+            correct_index = parseInt(indices[0])
+
+            if (repeat == false) {            
+
+                if (correct_index < (mnemonics.length - 1)) {
+                    new_index = correct_index + 1;
+                } else {
+                    new_index = 0;
+                }
+
+                document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase."
+
+            } else {
+
+                new_index = correct_index;
+
+                document.getElementById('remark-card').innerText = "Please enter the mnemonic phrase. This is a repeated question."
+
+            }        
+
+            console.log(new_index);
+
+            document.getElementById('question-description').innerText = mnemonics[new_index].Question
+
+        } else {
+
+            console.log("- - > Giving you a new subquestion")
+
+            new_index = indices[0] + "." + (parseInt(indices[1]) + 1)
+            document.getElementById('question-description').innerText = "What is the meaning of: " + keys[parseInt(indices[1]) + 1]
+            document.getElementById('remark-card').innerText = "Please enter the answer"
+
+        }
     }
-
+    
     document.getElementById('question-title').innerText = new_index
 
 }
