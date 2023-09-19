@@ -197,7 +197,7 @@ function checkMnemonicAnswer() {
             correct_answer = mnemonics[correct_index].Mnemonic.Title
             expandable = true;
         } else {
-            correct_answer = mnemonics[correct_index].Mnemonic.Answer;
+            correct_answer = mnemonics[correct_index].Answer;
             expandable = false;
         }        
         
