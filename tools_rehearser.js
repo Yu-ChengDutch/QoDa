@@ -193,7 +193,7 @@ function checkMnemonicAnswer() {
 
         expandable = false;
 
-        if (Object.keys(mnemonics[correct_index].Mnemonic).includes("Title")) {
+        if (Object.keys(mnemonics[correct_index]).includes("Mnemonic")) {
             correct_answer = mnemonics[correct_index].Mnemonic.Title
             expandable = true;
         } else {
@@ -255,7 +255,12 @@ function checkMnemonicAnswer() {
         
         key = (document.getElementById('question-description').innerText).split(': ').pop()
 
-        correct_answer = mnemonics[parseInt(indices[0])].Mnemonic[key];
+        if (Object.keys(mnemonics[parseInt(indices[0])]).includes("Mnemonic")) {
+            correct_answer = mnemonics[parseInt(indices[0])].Mnemonic[key];
+        } else {
+            correct_answer = mnemonics[parseInt(indices[0])].Answer;
+        }
+        
 
         console.log(indices);
         console.log(mnemonics[parseInt(indices[0])]);

@@ -144,6 +144,71 @@
                 "T Home": "Temazepam (hoge dosis)",
                 "O Home": "Oxazepam (hoge dosis)"
             }
+        },
+        {
+            "Question": "Which 3 classes of bèta-lactam antibiotics are there?",
+            "Mnemonic": {
+                "Title": "CarPe Cefalo",
+                "Car": "Carbapenems",
+                "Pe": "Penicillinen",
+                "Cefalo": "Cefalosporinen"
+            }
+        },
+        {
+            "Question": "Welke 5 niet-bèta lactam antibiotica bestaan er?",
+            "Mnemonic": {
+                "Title": "STAM CT",
+                "T": "Tetracyclinen",
+                "A": "Aminoglycosiden",
+                "M": "Macroliden",
+                "ST": "Sulfonamiden/Trimethoprim",
+                "C": "Chinolonen"
+                
+            }
+        },
+        {
+            "Question": "Tot welke klasse behoort ceftriaxon?",
+            "Answer": "Cefalosporines"
+        },
+        {
+            "Question": "Tot welke klasse behoort doxycyline?",
+            "Answer": "Tetracyclines"
+        },
+        {
+            "Question": "Tot welke klasse behoort gentamicine",
+            "Answer": "Aminoglycosiden"
+        },
+        {
+            "Question": "Tot welke klasse behoort azitromycine?",
+            "Answer": "Macroliden"
+        },
+        {
+            "Question": "Tot welke klasse behoort ciprofloxacine?",
+            "Answer": "Chinolonen"
+        },
+        {
+            "Question": "Tot welke klasse behoort digoxine?",
+            "Answer": "Hartglycosiden"
+        },
+        {
+            "Question": "Tot welke klasse behoort losartan",
+            "Answer": "ARB's"
+        },
+        {
+            "Question": "Tot welke klasse behoort protamine?",
+            "Answer": "Heparine antagonisten"
+        },
+        {
+            "Question": "Tot welke klasse behoort naloxon?",
+            "Answer": "Opiaatagonisten"
+        },
+        {
+            "Question": "Tot welke klasse behoort furosemide",
+            "Answer": "Lisdiuretica"
+        },
+        {
+            "Question": "Tot welke klasse behoort tamsulosine",
+            "Answer": "Alfa-receptorblokkerende sympathicolytica"
         }
     ]
 }
